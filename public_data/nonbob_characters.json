@@ -1,0 +1,32 @@
+[
+  {
+    "affiliation": "Howard",
+    "id": "Bridget",
+    "name": "Bridget"
+  },
+  {
+    "affiliation": "USE",
+    "id": "Butterworth",
+    "name": "Colonel Butterworth"
+  },
+  {
+    "affiliation": "Family",
+    "id": "Julia",
+    "name": "Julia Hendricks"
+  },
+  {
+    "affiliation": "Family",
+    "id": "Justin",
+    "name": "Justin Hendricks"
+  },
+  {
+    "affiliation": "Deltans",
+    "id": "Archimedes",
+    "name": "Archimedes"
+  },
+  {
+    "affiliation": "FAITH",
+    "id": "Landers",
+    "name": "Landers"
+  }
+]
