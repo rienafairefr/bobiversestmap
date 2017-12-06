@@ -47,4 +47,4 @@ for book in books:
 
     book_chapters.append(chapters)
 
-json.dump(book_chapters, open(os.path.join('generated', 'Combined.json'), 'w'))
+json.dump(book_chapters, open(os.path.join('generated', 'Combined.json'), 'w'), indent=2)

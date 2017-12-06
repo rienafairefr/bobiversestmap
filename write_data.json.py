@@ -6,4 +6,4 @@ characters.extend(json.load(open(os.path.join('public_data', 'nonbob_characters.
 
 scenes = json.load(open(os.path.join('generated', 'scenes.json')))
 
-json.dump({'characters': characters, 'scenes': scenes}, open('data.json', 'w'))
+json.dump({'characters': characters, 'scenes': scenes}, open('data.json', 'w'), indent=2)

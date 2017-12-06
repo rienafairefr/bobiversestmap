@@ -18,4 +18,4 @@ for nb, book_chapters in enumerate(chapters_books):
         if len(link) > 0:
             scenes.append(list(link))
 
-json.dump(scenes, open(os.path.join('generated','scenes.json', 'w')), indent=2)
+json.dump(scenes, open(os.path.join('generated','scenes.json'), 'w'), indent=2)
