@@ -26,7 +26,7 @@ def read_genealogy():
 
     json.dump(bob_characters, open(os.path.join('generated', 'bob_characters.json'), 'w'), indent=2)
 
-    with open(os.path.join('generated', 'bob_styles.css'),'w') as css:
+    with open(os.path.join('css', 'bob_styles.css'),'w') as css:
         for i, bob_character in enumerate(bob_characters):
             template = 'path.%s {stroke: %s;}\n'
 
