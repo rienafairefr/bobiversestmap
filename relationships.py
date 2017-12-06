@@ -4,6 +4,8 @@ import json
 characters = json.load(open(os.path.join('generated', 'bob_characters.json')))
 characters.extend(json.load(open(os.path.join('public_data', 'nonbob_characters.json'))))
 
+characters = {character['id']: character for character in characters}
+
 chapters_books = json.load(open(os.path.join('generated', 'Combined.json')))
 
 locations = json.load(open(os.path.join('generated', 'locations.json')))
@@ -16,21 +18,30 @@ for nb, book_chapters in enumerate(chapters_books):
         link = {book_chapter['bob']}
         for line in lines:
             words = line.split()
-            for character in characters:
+            for character_id, character in characters.items():
                 if character['name'] in words:
                     link.add(character['id'])
                 if 'other_names' in character:
                     for name in character['other_names']:
                         if name in words:
-                            link.add(character['id'])
+                            link.add(character_id)
 
-        scenes.append(list(link))
+        # scene_characters = list(characters[character_id] for character_id in link)
+        # scenes.append(list(link))
+
+        scenes.append({'character_ids': list(link)})
+        # {'characters': scene_characters, 'start': book_chapter['date']})
         scenes_locations.append(book_chapter['location'])
 
 # Removing, false positive matches:
 
 # Tom Hanks in chapter 13
-scenes[12].remove('Tom')
+scenes[12]['character_ids'].remove('Tom')
+
+# Dr Landers mentions after his death
+for i, s in enumerate(scenes):
+    if i > 13 and 'Landers' in s['character_ids']:
+        scenes[i]['character_ids'].remove('Landers')
 
 # Bob on Earth
 for i in range(0, 12):
@@ -67,6 +78,11 @@ scenes_locations[180] = 'Epsilon Indi -> '
 
 # Icarus & Deadalus destroying GL877
 scenes_locations[207] = 'GL 877'
+
+# scenes_dates = json.load(open(os.path.join('generated', 'scenes_dates.json')))
+
+# for i,s in enumerate(scenes):
+#    scenes[i].update(scenes_dates[i])
 
 json.dump(scenes, open(os.path.join('generated', 'scenes.json'), 'w'), indent=2)
 

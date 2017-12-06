@@ -36,7 +36,7 @@ d3.json('data.json', function(err, response){
 	narrative = d3.layout.narrative()
 		.scenes(scenes)
 		.size([width,height])
-		.pathSpace(10)
+		.pathSpace(30)
 		.groupMargin(10)
 		.labelSize([250,15])
 		.scenePadding([5,sceneWidth/2,5,sceneWidth/2])
@@ -141,9 +141,7 @@ function wrangle(data) {
 	var charactersMap = {};
 
 	return data.scenes.map(function(scene){
-		return {characters: scene.map(function(id){
-			return characterById(id);
-		}).filter(function(d) { return (d); })};
+		return {characters: scene.character_ids.map(characterById), start:scene.start};
 	});
 
 	// Helper to get characters by ID from the raw data

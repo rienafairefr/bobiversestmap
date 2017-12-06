@@ -36,5 +36,11 @@
     "id": "Landers",
     "name": "Landers",
     "other_names" : ["Dr. Landers"]
+  },
+  {
+    "affiliation": "FAITH",
+    "id": "Doucette",
+    "name": "Dr. Doucette",
+    "other_names" : ["Dr. Doucette"]
   }
 ]

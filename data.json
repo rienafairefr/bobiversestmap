@@ -1,2350 +1,2903 @@
 {
-  "scenes_locations": [
+  "scenes": [
     {
-      "id": "Sol_Earth",
-      "planet": "Earth",
-      "star": "Sol"
+      "character_ids": [
+        "Bob"
+      ]
     },
     {
-      "id": "Sol_Earth",
-      "planet": "Earth",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "id": "Sol_Earth",
-      "planet": "Earth",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "id": "Sol_Earth",
-      "planet": "Earth",
-      "star": "Sol"
+      "character_ids": [
+        "Bob"
+      ]
     },
     {
-      "id": "Sol_Earth",
-      "planet": "Earth",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "id": "Sol_Earth",
-      "planet": "Earth",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "id": "Sol_Earth",
-      "planet": "Earth",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "id": "Sol_Earth",
-      "planet": "Earth",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "id": "Sol_Earth",
-      "planet": "Earth",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "id": "Sol_Earth",
-      "planet": "Earth",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "id": "Sol_Earth",
-      "planet": "Earth",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "id": "Sol_Earth",
-      "planet": "Earth",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
-    [
-      {
-        "id": "Sol_Earth",
-        "planet": "Earth",
-        "star": "Sol"
-      },
-      {
-        "id": "Epsilon Eridani",
-        "star": "Epsilon Eridani"
-      }
-    ],
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bob"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bob"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bob"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bill",
+        "Milo",
+        "Bob",
+        "Riker",
+        "Mario"
+      ]
     },
     {
-      "id": "Omicron2 Eridani",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Riker",
+        "Mario",
+        "Bill",
+        "Milo",
+        "Bob"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bob",
+        "Bill",
+        "Riker",
+        "Milo"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Riker",
+        "Garfield",
+        "Homer",
+        "Bill",
+        "Bob"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bob",
+        "Homer",
+        "Riker",
+        "Bill"
+      ]
     },
     {
-      "id": "Omicron2 Eridani",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Goku",
+        "Calvin",
+        "Bill",
+        "Homer",
+        "Riker",
+        "Linus"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Bill",
+        "Milo"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bob",
+        "Homer",
+        "Riker",
+        "Bill"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Garfield",
+        "Bill"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Butterworth",
+        "Homer",
+        "Riker",
+        "Bill"
+      ]
     },
     {
-      "id": "Alpha Centauri",
-      "star": "Alpha Centauri"
+      "character_ids": [
+        "Bob",
+        "Bill"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Calvin",
+        "Goku"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Bob",
+        "Butterworth",
+        "Homer",
+        "Riker"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Bender",
+        "Luke",
+        "Archimedes",
+        "Marvin"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Butterworth",
+        "Homer",
+        "Arthur",
+        "Riker",
+        "Charles"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Riker",
+        "Garfield",
+        "Bill",
+        "Milo",
+        "Bob"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Homer",
+        "Arthur",
+        "Riker"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Bob",
+        "Homer",
+        "Riker"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Luke",
+        "Bender",
+        "Archimedes",
+        "Marvin"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Butterworth",
+        "Riker"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Luke",
+        "Bender",
+        "Archimedes",
+        "Marvin"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Bob",
+        "Butterworth",
+        "Riker"
+      ]
     },
     {
-      "id": "Epsilon Indi",
-      "star": "Epsilon Indi"
+      "character_ids": [
+        "Bill",
+        "Milo",
+        "Bender",
+        "Archimedes",
+        "Marvin",
+        "Bob",
+        "Luke"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Calvin",
+        "Bob",
+        "Bill",
+        "Linus"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Butterworth",
+        "Homer",
+        "Riker",
+        "Bill"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Riker",
+        "Garfield",
+        "Homer",
+        "Bill",
+        "Bob"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Butterworth",
+        "Homer",
+        "Arthur",
+        "Riker",
+        "Charles"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
     },
     {
-      "id": "82 Eridani",
-      "star": "82 Eridani"
+      "character_ids": [
+        "Bob",
+        "Calvin",
+        "Goku",
+        "Bill",
+        "Bart"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Milo"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Bill",
+        "Butterworth",
+        "Homer",
+        "Riker",
+        "Charles"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Luke",
+        "Archimedes",
+        "Marvin"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Bob",
+        "Butterworth",
+        "Homer",
+        "Riker",
+        "Charles"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Bill"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Homer",
+        "Riker"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Riker",
+        "Marvin"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Butterworth",
+        "Riker"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Garfield",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Mario"
+      ]
     },
     {
-      "id": "Beta Hydri",
-      "star": "Beta Hydri"
+      "character_ids": [
+        "Bob",
+        "Howard",
+        "Homer",
+        "Riker",
+        "Bill"
+      ]
     },
-    {
-      "id": "Sol",
-      "star": "Sol"
-    },
-    {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
-    },
-    {
-      "id": "82 Eridani",
-      "star": "82 Eridani"
-    },
-    {
-      "id": "Omicron2 Eridani",
-      "star": "Omicron2 Eridani"
-    },
-    {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
-    },
-    {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
-    },
-    {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
-    },
-    {
-      "id": "Eta Cassiopeiae",
-      "star": "Eta Cassiopeiae"
-    },
-    {
-      "id": "Omicron2 Eridani",
-      "star": "Omicron2 Eridani"
-    },
-    {
-      "id": "Eta Cassiopeiae_Poseidon",
-      "planet": "Poseidon",
-      "star": "Eta Cassiopeiae"
-    },
-    {
-      "id": "Sol",
-      "star": "Sol"
-    },
-    {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
-    },
-    {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
-    },
-    {
-      "id": "Zeta Tucanae",
-      "star": "Zeta Tucanae"
-    },
-    {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+    {
+      "character_ids": [
+        "Garfield",
+        "Homer",
+        "Bill",
+        "Bart"
+      ]
     },
-    {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
-    },
-    {
-      "id": "Gliese 54",
-      "star": "Gliese 54"
-    },
-    {
-      "id": "Sol",
-      "star": "Sol"
-    },
-    {
-      "id": "Gliese 54",
-      "star": "Gliese 54"
-    },
-    {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
-    },
-    {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
-    },
-    {
-      "id": "Sol",
-      "star": "Sol"
-    },
-    {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+    {
+      "character_ids": [
+        "Barney",
+        "Ned",
+        "Hannibal",
+        "Bill",
+        "Fred",
+        "Khan",
+        "Elmer",
+        "Bob",
+        "Tom",
+        "Kyle"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Bert",
+        "Bill",
+        "Ernie",
+        "Milo",
+        "Howard",
+        "Bob",
+        "Butterworth",
+        "Riker"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Bill",
+        "Marvin",
+        "Fred"
+      ]
+    },
+    {
+      "character_ids": [
+        "Butterworth",
+        "Howard",
+        "Bert",
+        "Riker",
+        "Ernie"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Jonny",
+        "Skinner",
+        "Mulder",
+        "Bill",
+        "Milo",
+        "Homer",
+        "Riker",
+        "Mario"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Bert",
+        "Ernie",
+        "Milo",
+        "Howard",
+        "Butterworth",
+        "Riker"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Mulder",
+        "Bill"
+      ]
     },
+    {
+      "character_ids": [
+        "Bob",
+        "Homer",
+        "Mulder",
+        "Riker",
+        "Charles"
+      ]
+    },
+    {
+      "character_ids": [
+        "Butterworth",
+        "Howard",
+        "Homer",
+        "Riker",
+        "Milo"
+      ]
+    },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Bob",
+        "Marvin"
+      ]
     },
-    {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
-    },
-    {
-      "id": "Sol",
-      "star": "Sol"
-    },
-    {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
-    },
-    {
-      "id": "Sol",
-      "star": "Sol"
+    {
+      "character_ids": [
+        "Bob",
+        "Bill",
+        "Mario"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
     },
     {
-      "id": "Gliese 877",
-      "star": "Gliese 877"
+      "character_ids": [
+        "Garfield",
+        "Bill",
+        "Milo",
+        "Marvin",
+        "Bob",
+        "Riker"
+      ]
     },
-    {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
-    },
-    {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
-    },
-    {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
-    },
-    {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+    {
+      "character_ids": [
+        "Sleepy",
+        "Bob",
+        "Dopey",
+        "Hungry",
+        "Mario"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Homer",
+        "Riker"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bob",
+        "Bill",
+        "Mario"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Riker",
+        "Howard",
+        "Butterworth",
+        "Bill",
+        "Bob"
+      ]
     },
     {
-      "id": "Gliese 877",
-      "star": "Gliese 877"
+      "character_ids": [
+        "Bob",
+        "Luke",
+        "Bender",
+        "Bill",
+        "Marvin"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bob",
+        "Homer",
+        "Riker"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Riker",
+        "Marvin"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Riker",
+        "Howard",
+        "Butterworth",
+        "Bob"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Homer",
+        "Riker",
+        "Charles"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Bender",
+        "Luke",
+        "Archimedes",
+        "Marvin"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Homer",
+        "Riker"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Victor",
+        "Milo",
+        "Archimedes",
+        "Marvin",
+        "Bob",
+        "Luke"
+      ]
     },
     {
-      "id": "Epsilon Indi",
-      "star": "Epsilon Indi"
+      "character_ids": [
+        "Howard",
+        "Butterworth"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Homer",
+        "Riker"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Bob",
+        "Luke",
+        "Archimedes",
+        "Bill"
+      ]
     },
     {
-      "id": "Eta Cassiopeiae_Poseidon",
-      "planet": "Poseidon",
-      "star": "Eta Cassiopeiae"
+      "character_ids": [
+        "Ralph",
+        "Bill",
+        "Charles",
+        "Bob",
+        "Homer",
+        "Riker"
+      ]
     },
     {
-      "id": "82 Eridani",
-      "star": "82 Eridani"
+      "character_ids": [
+        "Butterworth",
+        "Howard",
+        "Bill",
+        "Bridget"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Bob",
+        "Bashful",
+        "Mario"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Riker"
+      ]
     },
     {
-      "id": "GL 877",
-      "star": "GL 877"
+      "character_ids": [
+        "Bob",
+        "Bill",
+        "Linus"
+      ]
     },
-    [
-      {
-        "id": "GL 877",
-        "star": "GL 877"
-      },
-      {
-        "id": "GL 54",
-        "star": "GL 54"
-      }
-    ],
     {
-      "id": "GL 54",
-      "star": "GL 54"
+      "character_ids": [
+        "Bob",
+        "Howard",
+        "Archimedes",
+        "Marvin"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Garfield",
+        "Loki",
+        "Bill",
+        "Milo",
+        "Khan",
+        "Bob",
+        "Tom",
+        "Thor",
+        "Linus"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Butterworth"
+      ]
     },
-    [
-      {
-        "id": "Omicron2 Eridani_Vulcan",
-        "planet": "Vulcan",
-        "star": "Omicron2 Eridani"
-      },
-      {
-        "id": "HIP 14101",
-        "star": "HIP 14101"
-      }
-    ],
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Garfield",
+        "Bill"
+      ]
     },
     {
-      "id": "Gamma Pavonis",
-      "star": "Gamma Pavonis"
+      "character_ids": [
+        "Homer",
+        "Riker",
+        "Charles"
+      ]
     },
     {
-      "id": "Alpha Centauri",
-      "star": "Alpha Centauri"
+      "character_ids": [
+        "Hal",
+        "Bashful",
+        "Mario"
+      ]
     },
     {
-      "id": "Eta Cassiopeiae_Poseidon",
-      "planet": "Poseidon",
-      "star": "Eta Cassiopeiae"
+      "character_ids": [
+        "Garfield",
+        "Bob",
+        "Hungry",
+        "Bill",
+        "Hal",
+        "Thor",
+        "Mario"
+      ]
     },
     {
-      "id": "Delta Pavonis",
-      "star": "Delta Pavonis"
+      "character_ids": [
+        "Riker"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Charles",
+        "Bob"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bill",
+        "Riker",
+        "Charles"
+      ]
     },
-    {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+    {
+      "character_ids": [
+        "Garfield",
+        "Loki",
+        "Bill",
+        "Dopey",
+        "Howard",
+        "Marvin",
+        "Bob",
+        "Riker",
+        "Mario"
+      ]
+    },
+    {
+      "character_ids": [
+        "Howard",
+        "Riker"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Rudy",
+        "Edwin",
+        "Riker",
+        "Linus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Butterworth",
+        "Mulder",
+        "Marcus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Verne",
+        "Loki",
+        "Calvin",
+        "Bill",
+        "Milo",
+        "Khan",
+        "Elmer"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Dexter",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Garfield",
+        "Loki",
+        "Bill",
+        "Howard",
+        "Bender",
+        "Marvin",
+        "Bob",
+        "Luke",
+        "Riker",
+        "Mario"
+      ]
+    },
+    {
+      "character_ids": [
+        "Hal",
+        "Garfield",
+        "Thor",
+        "Bill",
+        "Mario"
+      ]
+    },
+    {
+      "character_ids": [
+        "Hal",
+        "Bill",
+        "Mario"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bill",
+        "Bashful",
+        "Mario"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Loki",
+        "Archimedes",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Garfield",
+        "Bob",
+        "Calvin",
+        "Bill",
+        "Hal",
+        "Mario"
+      ]
+    },
+    {
+      "character_ids": [
+        "Howard",
+        "Dexter",
+        "Butterworth"
+      ]
+    },
+    {
+      "character_ids": [
+        "Garfield",
+        "Bill",
+        "Jacques",
+        "Claude",
+        "Bob",
+        "Mario"
+      ]
+    },
+    {
+      "character_ids": [
+        "Claude",
+        "Bill",
+        "Mario"
+      ]
+    },
+    {
+      "character_ids": [
+        "Howard",
+        "Bart",
+        "Bill",
+        "Oliver"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Mulder",
+        "Bill",
+        "Marcus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Claude",
+        "Bill",
+        "Jacques"
+      ]
+    },
+    {
+      "character_ids": [
+        "Garfield",
+        "Claude",
+        "Bill",
+        "Jacques",
+        "Mario"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Garfield",
+        "Oliver",
+        "Claude",
+        "Bill",
+        "Jacques"
+      ]
+    },
+    {
+      "character_ids": [
+        "Garfield",
+        "Dexter",
+        "Bill",
+        "Bridget",
+        "Howard",
+        "Bob"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Bill",
+        "Jacques"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Garfield",
+        "Dexter",
+        "Bill",
+        "Bridget",
+        "Howard",
+        "Bob",
+        "Butterworth"
+      ]
     },
     {
-      "id": "HIP 14101",
-      "star": "HIP 14101"
+      "character_ids": [
+        "Bill",
+        "Bridget",
+        "Howard",
+        "Bob",
+        "Butterworth",
+        "Riker"
+      ]
     },
     {
-      "id": "Delta Pavonis",
-      "star": "Delta Pavonis"
+      "character_ids": [
+        "Bob",
+        "Archimedes"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Bob",
+        "Butterworth",
+        "Bill",
+        "Jacques"
+      ]
     },
     {
-      "id": "HIP 14101",
-      "star": "HIP 14101"
+      "character_ids": [
+        "Phineas",
+        "Ferb",
+        "Jacques"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Garfield",
+        "Howard",
+        "Bill",
+        "Jacques",
+        "Thor"
+      ]
     },
     {
-      "id": "Delta Pavonis",
-      "star": "Delta Pavonis"
+      "character_ids": [
+        "Bridget",
+        "Howard"
+      ]
     },
     {
-      "id": "Delta Pavonis",
-      "star": "Delta Pavonis"
+      "character_ids": [
+        "Bob",
+        "Archimedes"
+      ]
     },
     {
-      "id": "Delta Pavonis",
-      "star": "Delta Pavonis"
+      "character_ids": [
+        "Bill",
+        "Jacques",
+        "Archimedes",
+        "Oliver",
+        "Bob",
+        "Riker"
+      ]
     },
     {
-      "id": "HIP 14101",
-      "star": "HIP 14101"
+      "character_ids": [
+        "Bob",
+        "Fred"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Dexter",
+        "Butterworth"
+      ]
     },
     {
-      "id": "Delta Pavonis",
-      "star": "Delta Pavonis"
+      "character_ids": [
+        "Marcus"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Bob",
+        "Howard",
+        "Bridget"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Bob",
+        "Fred"
+      ]
     },
     {
-      "id": "Eta Cassiopeiae_Poseidon",
-      "planet": "Poseidon",
-      "star": "Eta Cassiopeiae"
+      "character_ids": [
+        "Garfield",
+        "Bill",
+        "Icarus",
+        "Daedalus"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Butterworth"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Bob",
+        "Howard",
+        "Riker",
+        "Bill",
+        "Marcus"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bridget",
+        "Howard"
+      ]
     },
     {
-      "id": "Omicron2 Eridani",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Bob",
+        "Fred",
+        "Archimedes",
+        "Marvin"
+      ]
     },
     {
-      "id": "Eta Cassiopeiae_Poseidon",
-      "planet": "Poseidon",
-      "star": "Eta Cassiopeiae"
+      "character_ids": [
+        "Claude",
+        "Daedalus",
+        "Bill",
+        "Mario"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Dexter",
+        "Riker"
+      ]
     },
     {
-      "planet": "Eden",
-      "id": "Delta Pavonis_Eden_Camelot",
-      "city": "Camelot",
-      "star": "Delta Pavonis"
+      "character_ids": [
+        "Marcus"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Bob"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Bob",
+        "Homer",
+        "Oliver",
+        "Riker",
+        "Charles"
+      ]
     },
     {
-      "id": "Eta Cassiopeiae_Poseidon",
-      "planet": "Poseidon",
-      "star": "Eta Cassiopeiae"
+      "character_ids": [
+        "Howard",
+        "Riker",
+        "Bill",
+        "Marcus"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Mario",
+        "Icarus",
+        "Daedalus"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Mack",
+        "Bill",
+        "Verne"
+      ]
     },
     {
-      "id": "Eta Cassiopeiae_Poseidon",
-      "planet": "Poseidon",
-      "star": "Eta Cassiopeiae"
+      "character_ids": [
+        "Marcus"
+      ]
     },
-    [
-      {
-        "id": "Epsilon Eridani",
-        "star": "Epsilon Eridani"
-      },
-      null
-    ],
     {
-      "id": "82 Eridani",
-      "star": "82 Eridani"
+      "character_ids": [
+        "Bridget",
+        "Howard"
+      ]
     },
     {
-      "id": "Eta Cassiopeiae_Poseidon",
-      "planet": "Poseidon",
-      "star": "Eta Cassiopeiae"
+      "character_ids": [
+        "Goku",
+        "Verne",
+        "Loki",
+        "Calvin",
+        "Bill",
+        "Oliver",
+        "Bob",
+        "Homer",
+        "Mack",
+        "Thor"
+      ]
     },
     {
-      "id": "HIP 14101",
-      "star": "HIP 14101"
+      "character_ids": [
+        "Herschel",
+        "Neil"
+      ]
     },
     {
-      "id": "82 Eridani",
-      "star": "82 Eridani"
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Riker"
+      ]
     },
     {
-      "id": "Delta Pavonis",
-      "star": "Delta Pavonis"
+      "character_ids": [
+        "Herschel",
+        "Bill",
+        "Neil"
+      ]
     },
     {
-      "id": "Omicron2 Eridani",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Bridget",
+        "Garfield",
+        "Mack",
+        "Bill"
+      ]
     },
     {
-      "id": "Delta Pavonis",
-      "star": "Delta Pavonis"
+      "character_ids": [
+        "Marcus"
+      ]
     },
     {
-      "id": "82 Eridani",
-      "star": "82 Eridani"
+      "character_ids": [
+        "Herschel",
+        "Bill",
+        "Neil"
+      ]
     },
     {
-      "id": "Eta Cassiopeiae_Poseidon",
-      "planet": "Poseidon",
-      "star": "Eta Cassiopeiae"
+      "character_ids": [
+        "Bob",
+        "Fred",
+        "Archimedes",
+        "Marvin"
+      ]
     },
     {
-      "id": "Delta Pavonis",
-      "star": "Delta Pavonis"
+      "character_ids": [
+        "Howard"
+      ]
     },
     {
-      "id": "Delta Pavonis_Eden",
-      "planet": "Eden",
-      "star": "Delta Pavonis"
+      "character_ids": [
+        "Bob",
+        "Garfield",
+        "Mack",
+        "Bill"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Vulcan",
-      "planet": "Vulcan",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Marcus"
+      ]
     },
     {
-      "id": "82 Eridani",
-      "star": "82 Eridani"
+      "character_ids": [
+        "Garfield",
+        "Bill"
+      ]
     },
     {
-      "id": "Eta Cassiopeiae_Poseidon",
-      "planet": "Poseidon",
-      "star": "Eta Cassiopeiae"
+      "character_ids": [
+        "Neil",
+        "Riker",
+        "Herschel",
+        "Bill",
+        "Bob",
+        "Thor",
+        "Mario"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Fred"
+      ]
     },
     {
-      "id": "Delta Pavonis",
-      "star": "Delta Pavonis"
+      "character_ids": [
+        "Marcus"
+      ]
     },
     {
-      "id": "Delta Pavonis_Eden",
-      "planet": "Eden",
-      "star": "Delta Pavonis"
+      "character_ids": [
+        "Herschel",
+        "Riker"
+      ]
     },
     {
-      "id": "Eta Cassiopeiae_Poseidon",
-      "planet": "Poseidon",
-      "star": "Eta Cassiopeiae"
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Bill"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Herschel",
+        "Neil"
+      ]
     },
     {
-      "id": "Omicron2 Eridani",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Bob",
+        "Howard",
+        "Bill",
+        "Marcus"
+      ]
     },
-    [
-      {
-        "id": "Delta Pavonis",
-        "star": "Delta Pavonis"
-      },
-      {
-        "id": "Sol",
-        "star": "Sol"
-      }
-    ],
     {
-      "id": "Eta Cassiopeiae_Poseidon",
-      "planet": "Poseidon",
-      "star": "Eta Cassiopeiae"
+      "character_ids": [
+        "Bob",
+        "Archimedes"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Bob"
+      ]
     },
     {
-      "id": "HIP 14101",
-      "star": "HIP 14101"
+      "character_ids": [
+        "Mack",
+        "Bill"
+      ]
     },
     {
-      "id": "82 Eridani",
-      "star": "82 Eridani"
+      "character_ids": [
+        "Icarus"
+      ]
     },
-    [
-      {
-        "id": "Epsilon Indi",
-        "star": "Epsilon Indi"
-      },
-      null
-    ],
     {
-      "id": "HIP 14101_Odin",
-      "planet": "Odin",
-      "star": "HIP 14101"
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Bill",
+        "Linus"
+      ]
     },
     {
-      "id": "HIP 84051",
-      "star": "HIP 84051"
+      "character_ids": [
+        "Phineas",
+        "Bill",
+        "Ferb",
+        "Jacques",
+        "Bob"
+      ]
     },
     {
-      "id": "HIP 14101_Odin",
-      "planet": "Odin",
-      "star": "HIP 14101"
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Marcus"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Bill",
+        "Mario"
+      ]
     },
     {
-      "id": "HIP 84051",
-      "star": "HIP 84051"
+      "character_ids": [
+        "Phineas",
+        "Bill",
+        "Ferb",
+        "Jacques"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Riker",
+        "Mario"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Garfield",
+        "Neil",
+        "Calvin",
+        "Herschel",
+        "Dexter",
+        "Bill",
+        "Bob",
+        "Mario"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Riker",
+        "Charles"
+      ]
     },
     {
-      "id": "Gamma Pavonis",
-      "star": "Gamma Pavonis"
+      "character_ids": [
+        "Claude",
+        "Bill",
+        "Jacques",
+        "Neil"
+      ]
     },
     {
-      "id": "Omicron2 Eridani_Romulus",
-      "planet": "Romulus",
-      "star": "Omicron2 Eridani"
+      "character_ids": [
+        "Riker"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bob",
+        "Garfield",
+        "Bill",
+        "Oliver"
+      ]
     },
     {
-      "id": "HIP 14101_Odin",
-      "planet": "Odin",
-      "star": "HIP 14101"
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Marcus"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Garfield",
+        "Neil",
+        "Riker",
+        "Herschel",
+        "Bill",
+        "Jacques",
+        "Claude",
+        "Butterworth",
+        "Thor"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Herschel",
+        "Riker",
+        "Neil"
+      ]
     },
     {
-      "id": "HIP 14101_Odin",
-      "planet": "Odin",
-      "star": "HIP 14101"
+      "character_ids": [
+        "Bridget",
+        "Howard"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Bill",
+        "Thor"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Bob",
+        "Archimedes"
+      ]
     },
     {
-      "id": "Epsilon Eridani",
-      "star": "Epsilon Eridani"
+      "character_ids": [
+        "Bridget",
+        "Howard"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Herschel",
+        "Bill",
+        "Neil"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Garfield",
+        "Hannibal",
+        "Riker",
+        "Bill",
+        "Thor"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Herschel",
+        "Neil"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Thor",
+        "Herschel",
+        "Bill",
+        "Neil"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Herschel",
+        "Neil"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Neil",
+        "Riker",
+        "Bill",
+        "Thor"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Bob",
+        "Archimedes"
+      ]
     },
     {
-      "id": "GL 877",
-      "star": "GL 877"
+      "character_ids": [
+        "Mario",
+        "Icarus",
+        "Daedalus"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Herschel",
+        "Daedalus",
+        "Bill",
+        "Icarus",
+        "Neil"
+      ]
     },
     {
-      "id": "Delta Eridani",
-      "star": "Delta Eridani"
+      "character_ids": [
+        "Bob",
+        "Howard",
+        "Archimedes",
+        "Marvin"
+      ]
     },
     {
-      "id": "BobNet",
-      "star": "BobNet"
+      "character_ids": [
+        "Garfield",
+        "Icarus",
+        "Marcus",
+        "Bill",
+        "Bridget",
+        "Howard",
+        "Marvin",
+        "Bob",
+        "Luke",
+        "Thor",
+        "Daedalus"
+      ]
     },
     {
-      "id": "HIP 84051",
-      "star": "HIP 84051"
+      "character_ids": [
+        "Ferb",
+        "Jacques"
+      ]
     },
     {
-      "id": "Sol",
-      "star": "Sol"
+      "character_ids": [
+        "Herschel",
+        "Mack",
+        "Neil"
+      ]
     },
     {
-      "id": "Sol_Earth",
-      "planet": "Earth",
-      "star": "Sol"
+      "character_ids": [
+        "Bob",
+        "Bill"
+      ]
     }
   ],
-  "scenes": [
-    [
-      "Bob"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob"
-    ],
-    [
-      "Mario",
-      "Riker",
-      "Landers",
-      "Bill",
-      "Milo",
-      "Bob"
-    ],
-    [
-      "Mario",
-      "Bill",
-      "Bob",
-      "Milo",
-      "Riker"
-    ],
-    [
-      "Bob",
-      "Bill",
-      "Milo",
-      "Riker"
-    ],
-    [
-      "Bill",
-      "Homer",
-      "Garfield",
-      "Bob",
-      "Riker"
-    ],
-    [
-      "Bob",
-      "Homer",
-      "Bill",
-      "Riker"
-    ],
-    [
-      "Riker",
-      "Homer",
-      "Calvin",
-      "Linus",
-      "Bill",
-      "Goku"
-    ],
-    [
-      "Bill",
-      "Milo"
-    ],
-    [
-      "Bob",
-      "Homer",
-      "Bill",
-      "Riker"
-    ],
-    [
-      "Bill",
-      "Garfield"
-    ],
-    [
-      "Butterworth",
-      "Bill",
-      "Homer",
-      "Riker"
-    ],
-    [
-      "Bob",
-      "Bill"
-    ],
-    [
-      "Calvin",
-      "Goku"
-    ],
-    [
-      "Butterworth",
-      "Bob",
-      "Homer",
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob",
-      "Bender",
-      "Luke"
-    ],
-    [
-      "Butterworth",
-      "Arthur",
-      "Homer",
-      "Charles",
-      "Riker"
-    ],
-    [
-      "Bill",
-      "Bob",
-      "Milo",
-      "Garfield",
-      "Riker"
-    ],
-    [
-      "Arthur",
-      "Homer",
-      "Riker"
-    ],
-    [
-      "Bob",
-      "Homer",
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob",
-      "Bender",
-      "Luke"
-    ],
-    [
-      "Butterworth",
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob",
-      "Bender",
-      "Luke"
-    ],
-    [
-      "Butterworth",
-      "Bob",
-      "Riker"
-    ],
-    [
-      "Bender",
-      "Bill",
-      "Milo",
-      "Archimedes",
-      "Bob",
-      "Luke"
-    ],
-    [
-      "Bill",
-      "Bob",
-      "Calvin",
-      "Linus",
-      "Landers"
-    ],
-    [
-      "Butterworth",
-      "Bill",
-      "Homer",
-      "Riker"
-    ],
-    [
-      "Bill",
-      "Homer",
-      "Garfield",
-      "Bob",
-      "Riker"
-    ],
-    [
-      "Butterworth",
-      "Arthur",
-      "Homer",
-      "Charles",
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob"
-    ],
-    [
-      "Calvin",
-      "Bill",
-      "Bob",
-      "Bart",
-      "Goku"
-    ],
-    [
-      "Milo"
-    ],
-    [
-      "Butterworth",
-      "Bill",
-      "Homer",
-      "Charles",
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob",
-      "Luke"
-    ],
-    [
-      "Butterworth",
-      "Bob",
-      "Homer",
-      "Charles",
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob"
-    ],
-    [
-      "Bill"
-    ],
-    [
-      "Homer",
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob",
-      "Riker"
-    ],
-    [
-      "Butterworth",
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob"
-    ],
-    [
-      "Bill",
-      "Garfield"
-    ],
-    [
-      "Mario",
-      "Bob"
-    ],
-    [
-      "Bill",
-      "Homer",
-      "Bob",
-      "Howard",
-      "Riker"
-    ],
-    [
-      "Bill",
-      "Homer",
-      "Garfield",
-      "Bart"
-    ],
-    [
-      "Fred",
-      "Kyle",
-      "Barney",
-      "Tom",
-      "Elmer",
-      "Bob",
-      "Khan",
-      "Ned",
-      "Bill",
-      "Hannibal"
-    ],
-    [
-      "Riker",
-      "Howard",
-      "Bill",
-      "Milo",
-      "Bert",
-      "Ernie",
-      "Butterworth",
-      "Bob"
-    ],
-    [
-      "Archimedes",
-      "Fred",
-      "Bob",
-      "Bill"
-    ],
-    [
-      "Butterworth",
-      "Bert",
-      "Riker",
-      "Howard",
-      "Ernie"
-    ],
-    [
-      "Archimedes",
-      "Bob"
-    ],
-    [
-      "Mario",
-      "Riker",
-      "Jonny",
-      "Homer",
-      "Milo",
-      "Mulder",
-      "Bill",
-      "Skinner"
-    ],
-    [
-      "Riker",
-      "Howard",
-      "Milo",
-      "Bert",
-      "Ernie",
-      "Butterworth"
-    ],
-    [
-      "Mulder",
-      "Bill",
-      "Riker"
-    ],
-    [
-      "Bob",
-      "Homer",
-      "Charles",
-      "Mulder",
-      "Riker"
-    ],
-    [
-      "Butterworth",
-      "Homer",
-      "Milo",
-      "Riker",
-      "Howard"
-    ],
-    [
-      "Bob"
-    ],
-    [
-      "Mario",
-      "Bill",
-      "Bob"
-    ],
-    [
-      "Archimedes",
-      "Bob"
-    ],
-    [
-      "Bill",
-      "Bob",
-      "Garfield",
-      "Riker",
-      "Milo"
-    ],
-    [
-      "Dopey",
-      "Mario",
-      "Hungry",
-      "Bob",
-      "Sleepy"
-    ],
-    [
-      "Homer",
-      "Riker"
-    ],
-    [
-      "Mario",
-      "Bill",
-      "Bob"
-    ],
-    [
-      "Butterworth",
-      "Bob",
-      "Bill",
-      "Riker",
-      "Howard"
-    ],
-    [
-      "Bender",
-      "Bob",
-      "Bill",
-      "Luke"
-    ],
-    [
-      "Bob",
-      "Homer",
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob",
-      "Riker",
-      "Landers"
-    ],
-    [
-      "Butterworth",
-      "Bob",
-      "Riker",
-      "Howard"
-    ],
-    [
-      "Homer",
-      "Charles",
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob",
-      "Bender",
-      "Luke"
-    ],
-    [
-      "Homer",
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob",
-      "Milo",
-      "Luke",
-      "Victor"
-    ],
-    [
-      "Butterworth",
-      "Howard"
-    ],
-    [
-      "Homer",
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob",
-      "Bill",
-      "Luke"
-    ],
-    [
-      "Charles",
-      "Riker",
-      "Ralph",
-      "Homer",
-      "Bob",
-      "Bill"
-    ],
-    [
-      "Butterworth",
-      "Bridget",
-      "Bill",
-      "Howard"
-    ],
-    [
-      "Mario",
-      "Bob",
-      "Bashful"
-    ],
-    [
-      "Bridget",
-      "Riker",
-      "Howard"
-    ],
-    [
-      "Bill",
-      "Bob",
-      "Linus"
-    ],
-    [
-      "Archimedes",
-      "Bob",
-      "Howard"
-    ],
-    [
-      "Thor",
-      "Garfield",
-      "Tom",
-      "Milo",
-      "Bob",
-      "Khan",
-      "Linus",
-      "Bill"
-    ],
-    [
-      "Butterworth",
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Bill",
-      "Garfield"
-    ],
-    [
-      "Homer",
-      "Charles",
-      "Riker"
-    ],
-    [
-      "Mario",
-      "Hal",
-      "Bashful"
-    ],
-    [
-      "Mario",
-      "Thor",
-      "Garfield",
-      "Hungry",
-      "Hal",
-      "Bob",
-      "Bill"
-    ],
-    [
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob"
-    ],
-    [
-      "Bridget",
-      "Bob",
-      "Charles",
-      "Howard"
-    ],
-    [
-      "Bill",
-      "Charles",
-      "Riker"
-    ],
-    [
-      "Mario",
-      "Garfield",
-      "Riker",
-      "Howard",
-      "Bob",
-      "Dopey",
-      "Bill"
-    ],
-    [
-      "Riker",
-      "Howard"
-    ],
-    [
-      "Linus",
-      "Bob",
-      "Edwin",
-      "Riker",
-      "Rudy"
-    ],
-    [
-      "Archimedes",
-      "Bob"
-    ],
-    [
-      "Bridget",
-      "Bill",
-      "Howard"
-    ],
-    [
-      "Butterworth",
-      "Mulder"
-    ],
-    [
-      "Loki",
-      "Elmer",
-      "Milo",
-      "Calvin",
-      "Khan",
-      "Bill"
-    ],
-    [
-      "Dexter",
-      "Bill",
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Mario",
-      "Bender",
-      "Garfield",
-      "Riker",
-      "Howard",
-      "Bob",
-      "Bill",
-      "Luke"
-    ],
-    [
-      "Mario",
-      "Bill",
-      "Hal",
-      "Garfield",
-      "Thor"
-    ],
-    [
-      "Mario",
-      "Bill",
-      "Hal"
-    ],
-    [
-      "Mario",
-      "Bill",
-      "Bashful"
-    ],
-    [
-      "Archimedes",
-      "Bob"
-    ],
-    [
-      "Mario",
-      "Garfield",
-      "Hal",
-      "Bob",
-      "Calvin",
-      "Bill"
-    ],
-    [
-      "Butterworth",
-      "Dexter",
-      "Howard"
-    ],
-    [
-      "Mario",
-      "Garfield",
-      "Claude",
-      "Jacques",
-      "Bob",
-      "Bill"
-    ],
-    [
-      "Mario",
-      "Bill",
-      "Claude"
-    ],
-    [
-      "Howard",
-      "Bill",
-      "Bart",
-      "Oliver"
-    ],
-    [
-      "Mulder",
-      "Bill",
-      "Riker"
-    ],
-    [
-      "Jacques",
-      "Bill",
-      "Claude",
-      "Bob"
-    ],
-    [
-      "Mario",
-      "Bill",
-      "Jacques",
-      "Garfield",
-      "Claude"
-    ],
-    [
-      "Archimedes",
-      "Bob",
-      "Bill"
-    ],
-    [
-      "Jacques",
-      "Bill",
-      "Garfield",
-      "Claude",
-      "Oliver"
-    ],
-    [
-      "Garfield",
-      "Howard",
-      "Bill",
-      "Bridget",
-      "Dexter",
-      "Bob"
-    ],
-    [
-      "Jacques",
-      "Bill"
-    ],
-    [
-      "Garfield",
-      "Howard",
-      "Bridget",
-      "Dexter",
-      "Bob",
-      "Butterworth",
-      "Bill"
-    ],
-    [
-      "Riker",
-      "Howard",
-      "Bill",
-      "Bridget",
-      "Butterworth",
-      "Bob"
-    ],
-    [
-      "Archimedes",
-      "Bob"
-    ],
-    [
-      "Butterworth",
-      "Jacques",
-      "Bill",
-      "Bob"
-    ],
-    [
-      "Ferb",
-      "Jacques",
-      "Phineas"
-    ],
-    [
-      "Jacques",
-      "Bill",
-      "Thor",
-      "Garfield",
-      "Howard"
-    ],
-    [
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Archimedes",
-      "Bob"
-    ],
-    [
-      "Riker",
-      "Oliver",
-      "Archimedes",
-      "Jacques",
-      "Bob",
-      "Bill"
-    ],
-    [
-      "Fred",
-      "Bob"
-    ],
-    [
-      "Butterworth",
-      "Bridget",
-      "Dexter",
-      "Howard"
-    ],
-    [
-      "Marcus"
-    ],
-    [
-      "Bridget",
-      "Bob",
-      "Howard"
-    ],
-    [
-      "Fred",
-      "Bob"
-    ],
-    [
-      "Bill",
-      "Garfield"
-    ],
-    [
-      "Butterworth",
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Bob",
-      "Bill",
-      "Marcus",
-      "Riker",
-      "Howard"
-    ],
-    [
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Archimedes",
-      "Fred",
-      "Bob"
-    ],
-    [
-      "Mario",
-      "Bill",
-      "Claude"
-    ],
-    [
-      "Dexter",
-      "Bridget",
-      "Howard",
-      "Riker"
-    ],
-    [
-      "Marcus"
-    ],
-    [
-      "Bridget",
-      "Bob",
-      "Howard"
-    ],
-    [
-      "Bob",
-      "Homer",
-      "Charles",
-      "Riker",
-      "Oliver"
-    ],
-    [
-      "Bill",
-      "Marcus",
-      "Howard",
-      "Riker"
-    ],
-    [
-      "Mario",
-      "Icarus"
-    ],
-    [
-      "Bill",
-      "Bob",
-      "Mack"
-    ],
-    [
-      "Marcus"
-    ],
-    [
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Thor",
-      "Homer",
-      "Oliver",
-      "Bob",
-      "Calvin",
-      "Bill",
-      "Goku"
-    ],
-    [
-      "Herschel"
-    ],
-    [
-      "Bridget",
-      "Riker",
-      "Howard"
-    ],
-    [
-      "Bill",
-      "Herschel"
-    ],
-    [
-      "Bill",
-      "Garfield",
-      "Bridget"
-    ],
-    [
-      "Marcus"
-    ],
-    [
-      "Bill",
-      "Herschel"
-    ],
-    [
-      "Archimedes",
-      "Fred",
-      "Bob"
-    ],
-    [
-      "Howard"
-    ],
-    [
-      "Bill",
-      "Bob",
-      "Garfield"
-    ],
-    [
-      "Marcus"
-    ],
-    [
-      "Bill",
-      "Garfield"
-    ],
-    [
-      "Mario",
-      "Thor",
-      "Riker",
-      "Bill",
-      "Herschel",
-      "Bob"
-    ],
-    [
-      "Archimedes",
-      "Fred",
-      "Bob"
-    ],
-    [
-      "Marcus"
-    ],
-    [
-      "Riker"
-    ],
-    [
-      "Bridget",
-      "Bill",
-      "Howard"
-    ],
-    [
-      "Herschel"
-    ],
-    [
-      "Bob",
-      "Bill",
-      "Marcus",
-      "Howard"
-    ],
-    [
-      "Archimedes",
-      "Bob"
-    ],
-    [
-      "Bridget",
-      "Bob",
-      "Howard"
-    ],
-    [
-      "Bill"
-    ],
-    [
-      "Icarus"
-    ],
-    [
-      "Linus",
-      "Bridget",
-      "Bill",
-      "Howard"
-    ],
-    [
-      "Ferb",
-      "Jacques",
-      "Phineas",
-      "Bill",
-      "Bob"
-    ],
-    [
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Mario",
-      "Bill",
-      "Bob",
-      "Riker"
-    ],
-    [
-      "Ferb",
-      "Jacques",
-      "Phineas",
-      "Bill"
-    ],
-    [
-      "Mario",
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob"
-    ],
-    [
-      "Mario",
-      "Garfield",
-      "Dexter",
-      "Bob",
-      "Calvin",
-      "Bill"
-    ],
-    [
-      "Charles",
-      "Riker"
-    ],
-    [
-      "Jacques",
-      "Bill",
-      "Claude"
-    ],
-    [
-      "Riker"
-    ],
-    [
-      "Bill",
-      "Bob",
-      "Garfield",
-      "Oliver"
-    ],
-    [
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Garfield",
-      "Thor",
-      "Riker",
-      "Claude",
-      "Jacques",
-      "Butterworth",
-      "Bill"
-    ],
-    [
-      "Riker",
-      "Herschel"
-    ],
-    [
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Bill",
-      "Bob",
-      "Thor",
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob"
-    ],
-    [
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Bill",
-      "Herschel"
-    ],
-    [
-      "Bill",
-      "Hannibal",
-      "Thor",
-      "Garfield",
-      "Riker"
-    ],
-    [
-      "Herschel"
-    ],
-    [
-      "Bill",
-      "Thor"
-    ],
-    [
-      "Herschel"
-    ],
-    [
-      "Bill",
-      "Thor",
-      "Riker"
-    ],
-    [
-      "Archimedes",
-      "Bob"
-    ],
-    [
-      "Mario",
-      "Icarus"
-    ],
-    [
-      "Bill",
-      "Herschel"
-    ],
-    [
-      "Archimedes",
-      "Bob",
-      "Howard"
-    ],
-    [
-      "Thor",
-      "Garfield",
-      "Howard",
-      "Bridget",
-      "Bob",
-      "Bill",
-      "Luke"
-    ],
-    [
-      "Ferb",
-      "Jacques"
-    ],
-    [
-      "Herschel"
-    ],
-    [
-      "Bob",
-      "Bill"
-    ]
+  "scenes_locations": [
+    {
+      "planet": "Earth",
+      "star": "Sol",
+      "id": "Sol_Earth"
+    },
+    {
+      "planet": "Earth",
+      "star": "Sol",
+      "id": "Sol_Earth"
+    },
+    {
+      "planet": "Earth",
+      "star": "Sol",
+      "id": "Sol_Earth"
+    },
+    {
+      "planet": "Earth",
+      "star": "Sol",
+      "id": "Sol_Earth"
+    },
+    {
+      "planet": "Earth",
+      "star": "Sol",
+      "id": "Sol_Earth"
+    },
+    {
+      "planet": "Earth",
+      "star": "Sol",
+      "id": "Sol_Earth"
+    },
+    {
+      "planet": "Earth",
+      "star": "Sol",
+      "id": "Sol_Earth"
+    },
+    {
+      "planet": "Earth",
+      "star": "Sol",
+      "id": "Sol_Earth"
+    },
+    {
+      "planet": "Earth",
+      "star": "Sol",
+      "id": "Sol_Earth"
+    },
+    {
+      "planet": "Earth",
+      "star": "Sol",
+      "id": "Sol_Earth"
+    },
+    {
+      "planet": "Earth",
+      "star": "Sol",
+      "id": "Sol_Earth"
+    },
+    {
+      "planet": "Earth",
+      "star": "Sol",
+      "id": "Sol_Earth"
+    },
+    [
+      {
+        "planet": "Earth",
+        "star": "Sol",
+        "id": "Sol_Earth"
+      },
+      {
+        "star": "Epsilon Eridani",
+        "id": "Epsilon Eridani"
+      }
+    ],
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Alpha Centauri",
+      "id": "Alpha Centauri"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Epsilon Indi",
+      "id": "Epsilon Indi"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "82 Eridani",
+      "id": "82 Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Beta Hydri",
+      "id": "Beta Hydri"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "82 Eridani",
+      "id": "82 Eridani"
+    },
+    {
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Eta Cassiopeiae",
+      "id": "Eta Cassiopeiae"
+    },
+    {
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani"
+    },
+    {
+      "planet": "Poseidon",
+      "star": "Eta Cassiopeiae",
+      "id": "Eta Cassiopeiae_Poseidon"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Zeta Tucanae",
+      "id": "Zeta Tucanae"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Gliese 54",
+      "id": "Gliese 54"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Gliese 54",
+      "id": "Gliese 54"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "Gliese 877",
+      "id": "Gliese 877"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Gliese 877",
+      "id": "Gliese 877"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "Epsilon Indi",
+      "id": "Epsilon Indi"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "planet": "Poseidon",
+      "star": "Eta Cassiopeiae",
+      "id": "Eta Cassiopeiae_Poseidon"
+    },
+    {
+      "star": "82 Eridani",
+      "id": "82 Eridani"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "GL 877",
+      "id": "GL 877"
+    },
+    [
+      {
+        "star": "GL 877",
+        "id": "GL 877"
+      },
+      {
+        "star": "GL 54",
+        "id": "GL 54"
+      }
+    ],
+    {
+      "star": "GL 54",
+      "id": "GL 54"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    [
+      {
+        "planet": "Vulcan",
+        "star": "Omicron2 Eridani",
+        "id": "Omicron2 Eridani_Vulcan"
+      },
+      {
+        "star": "HIP 14101",
+        "id": "HIP 14101"
+      }
+    ],
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Gamma Pavonis",
+      "id": "Gamma Pavonis"
+    },
+    {
+      "star": "Alpha Centauri",
+      "id": "Alpha Centauri"
+    },
+    {
+      "planet": "Poseidon",
+      "star": "Eta Cassiopeiae",
+      "id": "Eta Cassiopeiae_Poseidon"
+    },
+    {
+      "star": "Delta Pavonis",
+      "id": "Delta Pavonis"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "HIP 14101",
+      "id": "HIP 14101"
+    },
+    {
+      "star": "Delta Pavonis",
+      "id": "Delta Pavonis"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "HIP 14101",
+      "id": "HIP 14101"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Delta Pavonis",
+      "id": "Delta Pavonis"
+    },
+    {
+      "star": "Delta Pavonis",
+      "id": "Delta Pavonis"
+    },
+    {
+      "star": "Delta Pavonis",
+      "id": "Delta Pavonis"
+    },
+    {
+      "star": "HIP 14101",
+      "id": "HIP 14101"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Delta Pavonis",
+      "id": "Delta Pavonis"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "planet": "Poseidon",
+      "star": "Eta Cassiopeiae",
+      "id": "Eta Cassiopeiae_Poseidon"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani"
+    },
+    {
+      "planet": "Poseidon",
+      "star": "Eta Cassiopeiae",
+      "id": "Eta Cassiopeiae_Poseidon"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "planet": "Eden",
+      "city": "Camelot",
+      "id": "Delta Pavonis_Eden_Camelot",
+      "star": "Delta Pavonis"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "planet": "Poseidon",
+      "star": "Eta Cassiopeiae",
+      "id": "Eta Cassiopeiae_Poseidon"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "planet": "Poseidon",
+      "star": "Eta Cassiopeiae",
+      "id": "Eta Cassiopeiae_Poseidon"
+    },
+    [
+      {
+        "star": "Epsilon Eridani",
+        "id": "Epsilon Eridani"
+      },
+      null
+    ],
+    {
+      "star": "82 Eridani",
+      "id": "82 Eridani"
+    },
+    {
+      "planet": "Poseidon",
+      "star": "Eta Cassiopeiae",
+      "id": "Eta Cassiopeiae_Poseidon"
+    },
+    {
+      "star": "HIP 14101",
+      "id": "HIP 14101"
+    },
+    {
+      "star": "82 Eridani",
+      "id": "82 Eridani"
+    },
+    {
+      "star": "Delta Pavonis",
+      "id": "Delta Pavonis"
+    },
+    {
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani"
+    },
+    {
+      "star": "Delta Pavonis",
+      "id": "Delta Pavonis"
+    },
+    {
+      "star": "82 Eridani",
+      "id": "82 Eridani"
+    },
+    {
+      "planet": "Poseidon",
+      "star": "Eta Cassiopeiae",
+      "id": "Eta Cassiopeiae_Poseidon"
+    },
+    {
+      "star": "Delta Pavonis",
+      "id": "Delta Pavonis"
+    },
+    {
+      "planet": "Eden",
+      "star": "Delta Pavonis",
+      "id": "Delta Pavonis_Eden"
+    },
+    {
+      "planet": "Vulcan",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Vulcan"
+    },
+    {
+      "star": "82 Eridani",
+      "id": "82 Eridani"
+    },
+    {
+      "planet": "Poseidon",
+      "star": "Eta Cassiopeiae",
+      "id": "Eta Cassiopeiae_Poseidon"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Delta Pavonis",
+      "id": "Delta Pavonis"
+    },
+    {
+      "planet": "Eden",
+      "star": "Delta Pavonis",
+      "id": "Delta Pavonis_Eden"
+    },
+    {
+      "planet": "Poseidon",
+      "star": "Eta Cassiopeiae",
+      "id": "Eta Cassiopeiae_Poseidon"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani"
+    },
+    [
+      {
+        "star": "Delta Pavonis",
+        "id": "Delta Pavonis"
+      },
+      {
+        "star": "Sol",
+        "id": "Sol"
+      }
+    ],
+    {
+      "planet": "Poseidon",
+      "star": "Eta Cassiopeiae",
+      "id": "Eta Cassiopeiae_Poseidon"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "HIP 14101",
+      "id": "HIP 14101"
+    },
+    {
+      "star": "82 Eridani",
+      "id": "82 Eridani"
+    },
+    [
+      {
+        "star": "Epsilon Indi",
+        "id": "Epsilon Indi"
+      },
+      null
+    ],
+    {
+      "planet": "Odin",
+      "star": "HIP 14101",
+      "id": "HIP 14101_Odin"
+    },
+    {
+      "star": "HIP 84051",
+      "id": "HIP 84051"
+    },
+    {
+      "planet": "Odin",
+      "star": "HIP 14101",
+      "id": "HIP 14101_Odin"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "HIP 84051",
+      "id": "HIP 84051"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Gamma Pavonis",
+      "id": "Gamma Pavonis"
+    },
+    {
+      "planet": "Romulus",
+      "star": "Omicron2 Eridani",
+      "id": "Omicron2 Eridani_Romulus"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "planet": "Odin",
+      "star": "HIP 14101",
+      "id": "HIP 14101_Odin"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "planet": "Odin",
+      "star": "HIP 14101",
+      "id": "HIP 14101_Odin"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "Epsilon Eridani",
+      "id": "Epsilon Eridani"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "GL 877",
+      "id": "GL 877"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "star": "Delta Eridani",
+      "id": "Delta Eridani"
+    },
+    {
+      "star": "BobNet",
+      "id": "BobNet"
+    },
+    {
+      "star": "HIP 84051",
+      "id": "HIP 84051"
+    },
+    {
+      "star": "Sol",
+      "id": "Sol"
+    },
+    {
+      "planet": "Earth",
+      "star": "Sol",
+      "id": "Sol_Earth"
+    }
   ],
   "characters": [
     {
+      "affiliation": "Bob",
       "name": "Bob",
-      "id": "Bob",
-      "affiliation": "Bob"
+      "id": "Bob"
     },
     {
+      "affiliation": "Bob",
       "name": "Bill",
-      "id": "Bill",
-      "affiliation": "Bob"
+      "id": "Bill"
     },
     {
+      "affiliation": "Bill",
       "name": "Garfield",
-      "id": "Garfield",
-      "affiliation": "Bill"
+      "id": "Garfield"
     },
     {
+      "affiliation": "Bill",
       "name": "Calvin",
-      "id": "Calvin",
-      "affiliation": "Bill"
+      "id": "Calvin"
     },
     {
+      "affiliation": "Calvin",
       "name": "Bart",
-      "id": "Bart",
-      "affiliation": "Calvin"
+      "id": "Bart"
     },
     {
+      "affiliation": "Calvin",
       "name": "Thor",
-      "id": "Thor",
-      "affiliation": "Calvin"
+      "id": "Thor"
     },
     {
+      "affiliation": "Bill",
       "name": "Goku",
-      "id": "Goku",
-      "affiliation": "Bill"
+      "id": "Goku"
     },
     {
+      "affiliation": "Bill",
       "name": "Linus",
-      "id": "Linus",
-      "affiliation": "Bill"
+      "id": "Linus"
     },
     {
+      "affiliation": "Bill",
       "name": "Mulder",
-      "id": "Mulder",
-      "affiliation": "Bill"
+      "id": "Mulder"
     },
     {
+      "affiliation": "Mulder",
       "name": "Jonny",
-      "id": "Jonny",
-      "affiliation": "Mulder"
+      "id": "Jonny"
     },
     {
+      "affiliation": "Mulder",
       "name": "Skinner",
-      "id": "Skinner",
-      "affiliation": "Mulder"
+      "id": "Skinner"
     },
     {
+      "affiliation": "Bill",
       "name": "Oliver",
-      "id": "Oliver",
-      "affiliation": "Bill"
+      "id": "Oliver"
     },
     {
+      "affiliation": "Bill",
       "name": "Khan",
-      "id": "Khan",
-      "affiliation": "Bill"
+      "id": "Khan"
     },
     {
+      "affiliation": "Bill",
       "name": "Elmer",
-      "id": "Elmer",
-      "affiliation": "Bill"
+      "id": "Elmer"
     },
     {
+      "affiliation": "Bill",
       "name": "Hannibal",
-      "id": "Hannibal",
-      "affiliation": "Bill"
+      "id": "Hannibal"
     },
     {
+      "affiliation": "Bill",
       "name": "Tom",
-      "id": "Tom",
-      "affiliation": "Bill"
+      "id": "Tom"
     },
     {
+      "affiliation": "Bill",
       "name": "Barney",
-      "id": "Barney",
-      "affiliation": "Bill"
+      "id": "Barney"
     },
     {
+      "affiliation": "Bill",
       "name": "Fred",
-      "id": "Fred",
-      "affiliation": "Bill"
+      "id": "Fred"
     },
     {
+      "affiliation": "Bill",
       "name": "Kyle",
-      "id": "Kyle",
-      "affiliation": "Bill"
+      "id": "Kyle"
     },
     {
+      "affiliation": "Bill",
       "name": "Ned",
-      "id": "Ned",
-      "affiliation": "Bill"
+      "id": "Ned"
     },
     {
+      "affiliation": "Bob",
       "name": "Mario",
-      "id": "Mario",
-      "affiliation": "Bob"
+      "id": "Mario"
     },
     {
+      "affiliation": "Mario",
       "name": "Bashful",
-      "id": "Bashful",
-      "affiliation": "Mario"
+      "id": "Bashful"
     },
     {
+      "affiliation": "Mario",
       "name": "Dopey",
-      "id": "Dopey",
-      "affiliation": "Mario"
+      "id": "Dopey"
     },
     {
+      "affiliation": "Mario",
       "name": "Sleepy",
-      "id": "Sleepy",
-      "affiliation": "Mario"
+      "id": "Sleepy"
     },
     {
+      "affiliation": "Mario",
       "name": "Hungry",
-      "id": "Hungry",
-      "affiliation": "Mario"
+      "id": "Hungry"
     },
     {
+      "affiliation": "Mario",
       "name": "Hal",
-      "id": "Hal",
-      "affiliation": "Mario"
+      "id": "Hal"
     },
     {
+      "affiliation": "Mario",
       "name": "Claude",
-      "id": "Claude",
-      "affiliation": "Mario"
+      "id": "Claude"
     },
     {
+      "affiliation": "Mario",
       "name": "Jacques",
-      "id": "Jacques",
-      "affiliation": "Mario"
+      "id": "Jacques"
     },
     {
+      "affiliation": "Jacques",
       "name": "Phineas",
-      "id": "Phineas",
-      "affiliation": "Jacques"
+      "id": "Phineas"
     },
     {
+      "affiliation": "Jacques",
       "name": "Ferb",
-      "id": "Ferb",
-      "affiliation": "Jacques"
+      "id": "Ferb"
     },
     {
+      "affiliation": "Bob",
       "name": "Riker",
-      "id": "Riker",
-      "affiliation": "Bob"
+      "id": "Riker"
     },
     {
+      "affiliation": "Riker",
       "name": "Homer",
-      "id": "Homer",
-      "affiliation": "Riker"
+      "id": "Homer"
     },
     {
+      "affiliation": "Riker",
       "name": "Ralph",
-      "id": "Ralph",
-      "affiliation": "Riker"
+      "id": "Ralph"
     },
     {
+      "affiliation": "Riker",
       "name": "Charles",
-      "id": "Charles",
-      "affiliation": "Riker"
+      "id": "Charles"
     },
     {
+      "affiliation": "Charles",
       "name": "Howard",
-      "id": "Howard",
-      "affiliation": "Charles"
+      "id": "Howard"
     },
     {
+      "affiliation": "Charles",
       "name": "Dexter",
-      "id": "Dexter",
-      "affiliation": "Charles"
+      "id": "Dexter"
     },
     {
+      "affiliation": "Riker",
       "name": "Rudy",
-      "id": "Rudy",
-      "affiliation": "Riker"
+      "id": "Rudy"
     },
     {
+      "affiliation": "Riker",
       "name": "Edwin",
-      "id": "Edwin",
-      "affiliation": "Riker"
+      "id": "Edwin"
     },
     {
+      "affiliation": "Riker",
       "name": "Arthur",
-      "id": "Arthur",
-      "affiliation": "Riker"
+      "id": "Arthur"
     },
     {
+      "affiliation": "Riker",
       "name": "Bert",
-      "id": "Bert",
-      "affiliation": "Riker"
+      "id": "Bert"
     },
     {
+      "affiliation": "Riker",
       "name": "Ernie",
-      "id": "Ernie",
-      "affiliation": "Riker"
+      "id": "Ernie"
     },
     {
+      "affiliation": "Bob",
       "name": "Milo",
-      "id": "Milo",
-      "affiliation": "Bob"
+      "id": "Milo"
     },
     {
+      "affiliation": "Bob",
+      "name": "Marvin",
+      "id": "Marvin"
+    },
+    {
+      "affiliation": "Bob",
       "name": "Luke",
-      "id": "Luke",
-      "affiliation": "Bob"
+      "id": "Luke"
     },
     {
+      "affiliation": "Bob",
       "name": "Bender",
-      "id": "Bender",
-      "affiliation": "Bob"
+      "id": "Bender"
     },
     {
+      "affiliation": "Bob",
       "name": "Victor",
-      "id": "Victor",
-      "affiliation": "Bob"
+      "id": "Victor"
     },
     {
+      "affiliation": "Bill",
+      "name": "Icarus",
+      "id": "Icarus"
+    },
+    {
+      "affiliation": "Bill",
+      "name": "Daedalus",
+      "id": "Daedalus"
+    },
+    {
+      "affiliation": "Riker",
+      "name": "Mack",
+      "id": "Mack"
+    },
+    {
+      "affiliation": "Riker",
+      "name": "Verne",
+      "id": "Verne"
+    },
+    {
+      "affiliation": "Mulder",
+      "name": "Marcus",
+      "id": "Marcus"
+    },
+    {
+      "affiliation": "Khan",
+      "name": "Loki",
+      "id": "Loki"
+    },
+    {
+      "affiliation": "Jacques",
+      "name": "Herschel",
+      "id": "Herschel"
+    },
+    {
+      "affiliation": "Jacques",
+      "name": "Neil",
+      "id": "Neil"
+    },
+    {
+      "affiliation": "Howard",
       "name": "Bridget",
-      "id": "Bridget",
-      "affiliation": "Howard"
+      "id": "Bridget"
     },
     {
+      "affiliation": "USE",
       "name": "Colonel Butterworth",
-      "id": "Butterworth",
       "other_names": [
         "Butterworth"
       ],
-      "affiliation": "USE"
+      "id": "Butterworth"
     },
     {
+      "affiliation": "USE",
       "name": "St\u00e9phane Brodeur",
-      "id": "St\u00e9phane",
       "other_names": [
         "Chief Brodeur"
       ],
-      "affiliation": "USE"
+      "id": "St\u00e9phane"
     },
     {
+      "affiliation": "Family",
       "name": "Julia Hendricks",
-      "id": "Julia",
-      "affiliation": "Family"
+      "id": "Julia"
     },
     {
+      "affiliation": "Family",
       "name": "Justin Hendricks",
-      "id": "Justin",
-      "affiliation": "Family"
+      "id": "Justin"
     },
     {
+      "affiliation": "Deltans",
       "name": "Archimedes",
-      "id": "Archimedes",
-      "affiliation": "Deltans"
+      "id": "Archimedes"
     },
     {
+      "affiliation": "FAITH",
       "name": "Landers",
-      "id": "Landers",
       "other_names": [
         "Dr. Landers"
       ],
-      "affiliation": "FAITH"
+      "id": "Landers"
+    },
+    {
+      "affiliation": "FAITH",
+      "name": "Dr. Doucette",
+      "other_names": [
+        "Dr. Doucette"
+      ],
+      "id": "Doucette"
     }
   ]
 }

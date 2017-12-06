@@ -18,22 +18,24 @@ You can get this from the epub of the books
 
 Book 1 deviates a bit from that convention so you'll need to edit a bit manually
 
+Install requirements with `pip3 install -r requirements.txt'
+
 Then,
 
+
     python3 readcombined.py
-
-Will generate a Combined.json
-
+    python3 read_dates.py
     python3 genealogy.py
-
-Will generate a bob_characters.json
-
     python3 relationships.py
 
 Will generate the scenes.json, containing which characters are found in which chapters
-You then combine all these in the data.json
 
     python3 write_data.json.py
+
+Will combine all these in the data.json that is used in index.html (chart.js)
+
+
+
 
 All characters and stories belong to Dennis E. Taylor and are &copy; Dennis E. Taylor
 
