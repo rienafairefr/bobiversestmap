@@ -22,19 +22,10 @@ Install requirements with `pip3 install -r requirements.txt'
 
 Then,
 
+    python3 prepare_data.py
 
-    python3 readcombined.py
-    python3 read_dates.py
-    python3 genealogy.py
-    python3 relationships.py
-
-Will generate the scenes.json, containing which characters are found in which chapters
-
-    python3 write_data.json.py
-
-Will combine all these in the data.json that is used in index.html (chart.js)
-
-
+Will generate the data.json, containing which characters are found in which chapters, the scenes,
+the characters, etc. That data.json is used in index.html (chart.js)
 
 
 All characters and stories belong to Dennis E. Taylor and are &copy; Dennis E. Taylor

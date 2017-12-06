@@ -1,1702 +1,395 @@
 {
-  "scenes": [
+  "characters": [
     {
-      "character_ids": [
-        "Bob"
-      ]
+      "name": "Bob",
+      "id": "Bob",
+      "affiliation": "Bob"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Landers"
-      ]
+      "name": "Bill",
+      "id": "Bill",
+      "affiliation": "Bob"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Landers"
-      ]
+      "name": "Garfield",
+      "id": "Garfield",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Bob"
-      ]
+      "name": "Calvin",
+      "id": "Calvin",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Landers"
-      ]
+      "name": "Bart",
+      "id": "Bart",
+      "affiliation": "Calvin"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Landers"
-      ]
+      "name": "Thor",
+      "id": "Thor",
+      "affiliation": "Calvin"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Landers"
-      ]
+      "name": "Goku",
+      "id": "Goku",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Landers"
-      ]
+      "name": "Linus",
+      "id": "Linus",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Landers"
-      ]
+      "name": "Mulder",
+      "id": "Mulder",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Landers"
-      ]
+      "name": "Jonny",
+      "id": "Jonny",
+      "affiliation": "Mulder"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Landers"
-      ]
+      "name": "Skinner",
+      "id": "Skinner",
+      "affiliation": "Mulder"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Landers"
-      ]
+      "name": "Oliver",
+      "id": "Oliver",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Landers"
-      ]
+      "name": "Khan",
+      "id": "Khan",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Bob"
-      ]
+      "name": "Elmer",
+      "id": "Elmer",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Bob"
-      ]
+      "name": "Hannibal",
+      "id": "Hannibal",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Bob"
-      ]
+      "name": "Tom",
+      "id": "Tom",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Bill",
-        "Milo",
-        "Bob",
-        "Riker",
-        "Mario"
-      ]
+      "name": "Barney",
+      "id": "Barney",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Riker",
-        "Mario",
-        "Bill",
-        "Milo",
-        "Bob"
-      ]
+      "name": "Fred",
+      "id": "Fred",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Bill",
-        "Riker",
-        "Milo"
-      ]
+      "name": "Kyle",
+      "id": "Kyle",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Riker",
-        "Garfield",
-        "Homer",
-        "Bill",
-        "Bob"
-      ]
+      "name": "Ned",
+      "id": "Ned",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Homer",
-        "Riker",
-        "Bill"
-      ]
+      "name": "Mario",
+      "id": "Mario",
+      "affiliation": "Bob"
     },
     {
-      "character_ids": [
-        "Goku",
-        "Calvin",
-        "Bill",
-        "Homer",
-        "Riker",
-        "Linus"
-      ]
+      "name": "Bashful",
+      "id": "Bashful",
+      "affiliation": "Mario"
     },
     {
-      "character_ids": [
-        "Bill",
-        "Milo"
-      ]
+      "name": "Dopey",
+      "id": "Dopey",
+      "affiliation": "Mario"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Homer",
-        "Riker",
-        "Bill"
-      ]
+      "name": "Sleepy",
+      "id": "Sleepy",
+      "affiliation": "Mario"
     },
     {
-      "character_ids": [
-        "Garfield",
-        "Bill"
-      ]
+      "name": "Hungry",
+      "id": "Hungry",
+      "affiliation": "Mario"
     },
     {
-      "character_ids": [
-        "Butterworth",
-        "Homer",
-        "Riker",
-        "Bill"
-      ]
+      "name": "Hal",
+      "id": "Hal",
+      "affiliation": "Mario"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Bill"
-      ]
+      "name": "Claude",
+      "id": "Claude",
+      "affiliation": "Mario"
     },
     {
-      "character_ids": [
-        "Calvin",
-        "Goku"
-      ]
+      "name": "Jacques",
+      "id": "Jacques",
+      "affiliation": "Mario"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Butterworth",
-        "Homer",
-        "Riker"
-      ]
+      "name": "Phineas",
+      "id": "Phineas",
+      "affiliation": "Jacques"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Bender",
-        "Luke",
-        "Archimedes",
-        "Marvin"
-      ]
+      "name": "Ferb",
+      "id": "Ferb",
+      "affiliation": "Jacques"
     },
     {
-      "character_ids": [
-        "Butterworth",
-        "Homer",
-        "Arthur",
-        "Riker",
-        "Charles"
-      ]
+      "name": "Riker",
+      "id": "Riker",
+      "affiliation": "Bob"
     },
     {
-      "character_ids": [
-        "Riker",
-        "Garfield",
-        "Bill",
-        "Milo",
-        "Bob"
-      ]
+      "name": "Homer",
+      "id": "Homer",
+      "affiliation": "Riker"
     },
     {
-      "character_ids": [
-        "Homer",
-        "Arthur",
-        "Riker"
-      ]
+      "name": "Ralph",
+      "id": "Ralph",
+      "affiliation": "Riker"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Homer",
-        "Riker"
-      ]
+      "name": "Charles",
+      "id": "Charles",
+      "affiliation": "Riker"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Luke",
-        "Bender",
-        "Archimedes",
-        "Marvin"
-      ]
+      "name": "Howard",
+      "id": "Howard",
+      "affiliation": "Charles"
     },
     {
-      "character_ids": [
-        "Butterworth",
-        "Riker"
-      ]
+      "name": "Dexter",
+      "id": "Dexter",
+      "affiliation": "Charles"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Luke",
-        "Bender",
-        "Archimedes",
-        "Marvin"
-      ]
+      "name": "Rudy",
+      "id": "Rudy",
+      "affiliation": "Riker"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Butterworth",
-        "Riker"
-      ]
+      "name": "Edwin",
+      "id": "Edwin",
+      "affiliation": "Riker"
     },
     {
-      "character_ids": [
-        "Bill",
-        "Milo",
-        "Bender",
-        "Archimedes",
-        "Marvin",
-        "Bob",
-        "Luke"
-      ]
+      "name": "Arthur",
+      "id": "Arthur",
+      "affiliation": "Riker"
     },
     {
-      "character_ids": [
-        "Calvin",
-        "Bob",
-        "Bill",
-        "Linus"
-      ]
+      "name": "Bert",
+      "id": "Bert",
+      "affiliation": "Riker"
     },
     {
-      "character_ids": [
-        "Butterworth",
-        "Homer",
-        "Riker",
-        "Bill"
-      ]
+      "name": "Ernie",
+      "id": "Ernie",
+      "affiliation": "Riker"
     },
     {
-      "character_ids": [
-        "Riker",
-        "Garfield",
-        "Homer",
-        "Bill",
-        "Bob"
-      ]
+      "name": "Milo",
+      "id": "Milo",
+      "affiliation": "Bob"
     },
     {
-      "character_ids": [
-        "Butterworth",
-        "Homer",
-        "Arthur",
-        "Riker",
-        "Charles"
-      ]
+      "name": "Marvin",
+      "id": "Marvin",
+      "affiliation": "Bob"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Archimedes",
-        "Marvin"
-      ]
+      "name": "Luke",
+      "id": "Luke",
+      "affiliation": "Bob"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Calvin",
-        "Goku",
-        "Bill",
-        "Bart"
-      ]
+      "name": "Bender",
+      "id": "Bender",
+      "affiliation": "Bob"
     },
     {
-      "character_ids": [
-        "Milo"
-      ]
+      "name": "Victor",
+      "id": "Victor",
+      "affiliation": "Bob"
     },
     {
-      "character_ids": [
-        "Bill",
-        "Butterworth",
-        "Homer",
-        "Riker",
-        "Charles"
-      ]
+      "name": "Icarus",
+      "id": "Icarus",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Luke",
-        "Archimedes",
-        "Marvin"
-      ]
+      "name": "Daedalus",
+      "id": "Daedalus",
+      "affiliation": "Bill"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Butterworth",
-        "Homer",
-        "Riker",
-        "Charles"
-      ]
+      "name": "Mack",
+      "id": "Mack",
+      "affiliation": "Riker"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Archimedes",
-        "Marvin"
-      ]
+      "name": "Verne",
+      "id": "Verne",
+      "affiliation": "Riker"
     },
     {
-      "character_ids": [
-        "Bill"
-      ]
+      "name": "Marcus",
+      "id": "Marcus",
+      "affiliation": "Mulder"
     },
     {
-      "character_ids": [
-        "Homer",
-        "Riker"
-      ]
+      "name": "Loki",
+      "id": "Loki",
+      "affiliation": "Khan"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Archimedes",
-        "Riker",
-        "Marvin"
-      ]
+      "name": "Herschel",
+      "id": "Herschel",
+      "affiliation": "Jacques"
     },
     {
-      "character_ids": [
-        "Butterworth",
-        "Riker"
-      ]
+      "name": "Neil",
+      "id": "Neil",
+      "affiliation": "Jacques"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Archimedes",
-        "Marvin"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Bill"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Mario"
-      ]
+      "name": "Bridget",
+      "id": "Bridget",
+      "affiliation": "Howard"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Howard",
-        "Homer",
-        "Riker",
-        "Bill"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Homer",
-        "Bill",
-        "Bart"
-      ]
-    },
-    {
-      "character_ids": [
-        "Barney",
-        "Ned",
-        "Hannibal",
-        "Bill",
-        "Fred",
-        "Khan",
-        "Elmer",
-        "Bob",
-        "Tom",
-        "Kyle"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bert",
-        "Bill",
-        "Ernie",
-        "Milo",
-        "Howard",
-        "Bob",
-        "Butterworth",
-        "Riker"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Archimedes",
-        "Bill",
-        "Marvin",
-        "Fred"
-      ]
-    },
-    {
-      "character_ids": [
-        "Butterworth",
-        "Howard",
-        "Bert",
-        "Riker",
-        "Ernie"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Archimedes",
-        "Marvin"
-      ]
-    },
-    {
-      "character_ids": [
-        "Jonny",
-        "Skinner",
-        "Mulder",
-        "Bill",
-        "Milo",
-        "Homer",
-        "Riker",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bert",
-        "Ernie",
-        "Milo",
-        "Howard",
-        "Butterworth",
-        "Riker"
-      ]
-    },
-    {
-      "character_ids": [
-        "Riker",
-        "Mulder",
-        "Bill"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Homer",
-        "Mulder",
-        "Riker",
-        "Charles"
-      ]
-    },
-    {
-      "character_ids": [
-        "Butterworth",
-        "Howard",
-        "Homer",
-        "Riker",
-        "Milo"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Marvin"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Bill",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Archimedes",
-        "Marvin"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Bill",
-        "Milo",
-        "Marvin",
-        "Bob",
-        "Riker"
-      ]
-    },
-    {
-      "character_ids": [
-        "Sleepy",
-        "Bob",
-        "Dopey",
-        "Hungry",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Homer",
-        "Riker"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Bill",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Riker",
-        "Howard",
-        "Butterworth",
-        "Bill",
-        "Bob"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Luke",
-        "Bender",
-        "Bill",
-        "Marvin"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Homer",
-        "Riker"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Archimedes",
-        "Riker",
-        "Marvin"
-      ]
-    },
-    {
-      "character_ids": [
-        "Riker",
-        "Howard",
-        "Butterworth",
-        "Bob"
-      ]
-    },
-    {
-      "character_ids": [
-        "Homer",
-        "Riker",
-        "Charles"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Bender",
-        "Luke",
-        "Archimedes",
-        "Marvin"
-      ]
-    },
-    {
-      "character_ids": [
-        "Homer",
-        "Riker"
-      ]
-    },
-    {
-      "character_ids": [
-        "Victor",
-        "Milo",
-        "Archimedes",
-        "Marvin",
-        "Bob",
-        "Luke"
-      ]
-    },
-    {
-      "character_ids": [
-        "Howard",
+      "name": "Colonel Butterworth",
+      "other_names": [
         "Butterworth"
-      ]
+      ],
+      "id": "Butterworth",
+      "affiliation": "USE"
     },
     {
-      "character_ids": [
-        "Homer",
-        "Riker"
-      ]
+      "name": "St\u00e9phane Brodeur",
+      "other_names": [
+        "Chief Brodeur"
+      ],
+      "id": "St\u00e9phane",
+      "affiliation": "USE"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Luke",
-        "Archimedes",
-        "Bill"
-      ]
+      "name": "Julia Hendricks",
+      "id": "Julia",
+      "affiliation": "Family"
     },
     {
-      "character_ids": [
-        "Ralph",
-        "Bill",
-        "Charles",
-        "Bob",
-        "Homer",
-        "Riker"
-      ]
+      "name": "Justin Hendricks",
+      "id": "Justin",
+      "affiliation": "Family"
     },
     {
-      "character_ids": [
-        "Butterworth",
-        "Howard",
-        "Bill",
-        "Bridget"
-      ]
+      "name": "Archimedes",
+      "id": "Archimedes",
+      "affiliation": "Deltans"
     },
     {
-      "character_ids": [
-        "Bob",
-        "Bashful",
-        "Mario"
-      ]
+      "name": "Dr. Landers",
+      "other_names": [
+        "Dr. Landers",
+        "Landers"
+      ],
+      "id": "Landers",
+      "affiliation": "FAITH"
     },
     {
-      "character_ids": [
-        "Bridget",
-        "Howard",
-        "Riker"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Bill",
-        "Linus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Howard",
-        "Archimedes",
-        "Marvin"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Loki",
-        "Bill",
-        "Milo",
-        "Khan",
-        "Bob",
-        "Tom",
-        "Thor",
-        "Linus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard",
-        "Butterworth"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Bill"
-      ]
-    },
-    {
-      "character_ids": [
-        "Homer",
-        "Riker",
-        "Charles"
-      ]
-    },
-    {
-      "character_ids": [
-        "Hal",
-        "Bashful",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Bob",
-        "Hungry",
-        "Bill",
-        "Hal",
-        "Thor",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Riker"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Archimedes",
-        "Marvin"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard",
-        "Charles",
-        "Bob"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bill",
-        "Riker",
-        "Charles"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Loki",
-        "Bill",
-        "Dopey",
-        "Howard",
-        "Marvin",
-        "Bob",
-        "Riker",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Howard",
-        "Riker"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Rudy",
-        "Edwin",
-        "Riker",
-        "Linus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Archimedes",
-        "Marvin"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard",
-        "Bill"
-      ]
-    },
-    {
-      "character_ids": [
-        "Butterworth",
-        "Mulder",
-        "Marcus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Verne",
-        "Loki",
-        "Calvin",
-        "Bill",
-        "Milo",
-        "Khan",
-        "Elmer"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard",
-        "Dexter",
-        "Bill"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Loki",
-        "Bill",
-        "Howard",
-        "Bender",
-        "Marvin",
-        "Bob",
-        "Luke",
-        "Riker",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Hal",
-        "Garfield",
-        "Thor",
-        "Bill",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Hal",
-        "Bill",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bill",
-        "Bashful",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Loki",
-        "Archimedes",
-        "Marvin"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Bob",
-        "Calvin",
-        "Bill",
-        "Hal",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Howard",
-        "Dexter",
-        "Butterworth"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Bill",
-        "Jacques",
-        "Claude",
-        "Bob",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Claude",
-        "Bill",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Howard",
-        "Bart",
-        "Bill",
-        "Oliver"
-      ]
-    },
-    {
-      "character_ids": [
-        "Riker",
-        "Mulder",
-        "Bill",
-        "Marcus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Claude",
-        "Bill",
-        "Jacques"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Claude",
-        "Bill",
-        "Jacques",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Archimedes",
-        "Bill"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Oliver",
-        "Claude",
-        "Bill",
-        "Jacques"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Dexter",
-        "Bill",
-        "Bridget",
-        "Howard",
-        "Bob"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bill",
-        "Jacques"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Dexter",
-        "Bill",
-        "Bridget",
-        "Howard",
-        "Bob",
-        "Butterworth"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bill",
-        "Bridget",
-        "Howard",
-        "Bob",
-        "Butterworth",
-        "Riker"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Archimedes"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Butterworth",
-        "Bill",
-        "Jacques"
-      ]
-    },
-    {
-      "character_ids": [
-        "Phineas",
-        "Ferb",
-        "Jacques"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Howard",
-        "Bill",
-        "Jacques",
-        "Thor"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Archimedes"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bill",
-        "Jacques",
-        "Archimedes",
-        "Oliver",
-        "Bob",
-        "Riker"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Fred"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard",
-        "Dexter",
-        "Butterworth"
-      ]
-    },
-    {
-      "character_ids": [
-        "Marcus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Howard",
-        "Bridget"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Fred"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Bill",
-        "Icarus",
-        "Daedalus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard",
-        "Butterworth"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Howard",
-        "Riker",
-        "Bill",
-        "Marcus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Fred",
-        "Archimedes",
-        "Marvin"
-      ]
-    },
-    {
-      "character_ids": [
-        "Claude",
-        "Daedalus",
-        "Bill",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard",
-        "Dexter",
-        "Riker"
-      ]
-    },
-    {
-      "character_ids": [
-        "Marcus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard",
-        "Bob"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Homer",
-        "Oliver",
-        "Riker",
-        "Charles"
-      ]
-    },
-    {
-      "character_ids": [
-        "Howard",
-        "Riker",
-        "Bill",
-        "Marcus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Mario",
-        "Icarus",
-        "Daedalus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Mack",
-        "Bill",
-        "Verne"
-      ]
-    },
-    {
-      "character_ids": [
-        "Marcus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard"
-      ]
-    },
-    {
-      "character_ids": [
-        "Goku",
-        "Verne",
-        "Loki",
-        "Calvin",
-        "Bill",
-        "Oliver",
-        "Bob",
-        "Homer",
-        "Mack",
-        "Thor"
-      ]
-    },
-    {
-      "character_ids": [
-        "Herschel",
-        "Neil"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard",
-        "Riker"
-      ]
-    },
-    {
-      "character_ids": [
-        "Herschel",
-        "Bill",
-        "Neil"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Garfield",
-        "Mack",
-        "Bill"
-      ]
-    },
-    {
-      "character_ids": [
-        "Marcus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Herschel",
-        "Bill",
-        "Neil"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Fred",
-        "Archimedes",
-        "Marvin"
-      ]
-    },
-    {
-      "character_ids": [
-        "Howard"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Garfield",
-        "Mack",
-        "Bill"
-      ]
-    },
-    {
-      "character_ids": [
-        "Marcus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Bill"
-      ]
-    },
-    {
-      "character_ids": [
-        "Neil",
-        "Riker",
-        "Herschel",
-        "Bill",
-        "Bob",
-        "Thor",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Archimedes",
-        "Fred"
-      ]
-    },
-    {
-      "character_ids": [
-        "Marcus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Herschel",
-        "Riker"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard",
-        "Bill"
-      ]
-    },
-    {
-      "character_ids": [
-        "Herschel",
-        "Neil"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Howard",
-        "Bill",
-        "Marcus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Archimedes"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard",
-        "Bob"
-      ]
-    },
-    {
-      "character_ids": [
-        "Mack",
-        "Bill"
-      ]
-    },
-    {
-      "character_ids": [
-        "Icarus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard",
-        "Bill",
-        "Linus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Phineas",
-        "Bill",
-        "Ferb",
-        "Jacques",
-        "Bob"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard",
-        "Marcus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Riker",
-        "Bill",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Phineas",
-        "Bill",
-        "Ferb",
-        "Jacques"
-      ]
-    },
-    {
-      "character_ids": [
-        "Riker",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Archimedes",
-        "Marvin"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Neil",
-        "Calvin",
-        "Herschel",
-        "Dexter",
-        "Bill",
-        "Bob",
-        "Mario"
-      ]
-    },
-    {
-      "character_ids": [
-        "Riker",
-        "Charles"
-      ]
-    },
-    {
-      "character_ids": [
-        "Claude",
-        "Bill",
-        "Jacques",
-        "Neil"
-      ]
-    },
-    {
-      "character_ids": [
-        "Riker"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Garfield",
-        "Bill",
-        "Oliver"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard",
-        "Marcus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Neil",
-        "Riker",
-        "Herschel",
-        "Bill",
-        "Jacques",
-        "Claude",
-        "Butterworth",
-        "Thor"
-      ]
-    },
-    {
-      "character_ids": [
-        "Herschel",
-        "Riker",
-        "Neil"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Riker",
-        "Bill",
-        "Thor"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Archimedes"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bridget",
-        "Howard"
-      ]
-    },
-    {
-      "character_ids": [
-        "Herschel",
-        "Bill",
-        "Neil"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Hannibal",
-        "Riker",
-        "Bill",
-        "Thor"
-      ]
-    },
-    {
-      "character_ids": [
-        "Herschel",
-        "Neil"
-      ]
-    },
-    {
-      "character_ids": [
-        "Thor",
-        "Herschel",
-        "Bill",
-        "Neil"
-      ]
-    },
-    {
-      "character_ids": [
-        "Herschel",
-        "Neil"
-      ]
-    },
-    {
-      "character_ids": [
-        "Neil",
-        "Riker",
-        "Bill",
-        "Thor"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Archimedes"
-      ]
-    },
-    {
-      "character_ids": [
-        "Mario",
-        "Icarus",
-        "Daedalus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Herschel",
-        "Daedalus",
-        "Bill",
-        "Icarus",
-        "Neil"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Howard",
-        "Archimedes",
-        "Marvin"
-      ]
-    },
-    {
-      "character_ids": [
-        "Garfield",
-        "Icarus",
-        "Marcus",
-        "Bill",
-        "Bridget",
-        "Howard",
-        "Marvin",
-        "Bob",
-        "Luke",
-        "Thor",
-        "Daedalus"
-      ]
-    },
-    {
-      "character_ids": [
-        "Ferb",
-        "Jacques"
-      ]
-    },
-    {
-      "character_ids": [
-        "Herschel",
-        "Mack",
-        "Neil"
-      ]
-    },
-    {
-      "character_ids": [
-        "Bob",
-        "Bill"
-      ]
+      "name": "Dr. Doucette",
+      "other_names": [
+        "Dr. Doucette",
+        "Doucette"
+      ],
+      "id": "Doucette",
+      "affiliation": "FAITH"
     }
   ],
   "scenes_locations": [
     {
-      "planet": "Earth",
       "star": "Sol",
+      "planet": "Earth",
       "id": "Sol_Earth"
     },
     {
-      "planet": "Earth",
       "star": "Sol",
+      "planet": "Earth",
       "id": "Sol_Earth"
     },
     {
-      "planet": "Earth",
       "star": "Sol",
+      "planet": "Earth",
       "id": "Sol_Earth"
     },
     {
-      "planet": "Earth",
       "star": "Sol",
+      "planet": "Earth",
       "id": "Sol_Earth"
     },
     {
-      "planet": "Earth",
       "star": "Sol",
+      "planet": "Earth",
       "id": "Sol_Earth"
     },
     {
-      "planet": "Earth",
       "star": "Sol",
+      "planet": "Earth",
       "id": "Sol_Earth"
     },
     {
-      "planet": "Earth",
       "star": "Sol",
+      "planet": "Earth",
       "id": "Sol_Earth"
     },
     {
-      "planet": "Earth",
       "star": "Sol",
+      "planet": "Earth",
       "id": "Sol_Earth"
     },
     {
-      "planet": "Earth",
       "star": "Sol",
+      "planet": "Earth",
       "id": "Sol_Earth"
     },
     {
-      "planet": "Earth",
       "star": "Sol",
+      "planet": "Earth",
       "id": "Sol_Earth"
     },
     {
-      "planet": "Earth",
       "star": "Sol",
+      "planet": "Earth",
       "id": "Sol_Earth"
     },
     {
-      "planet": "Earth",
       "star": "Sol",
+      "planet": "Earth",
       "id": "Sol_Earth"
     },
     [
       {
-        "planet": "Earth",
         "star": "Sol",
+        "planet": "Earth",
         "id": "Sol_Earth"
       },
       {
@@ -1901,8 +594,8 @@
       "id": "Delta Eridani"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -1918,8 +611,8 @@
       "id": "Omicron2 Eridani"
     },
     {
-      "planet": "Poseidon",
       "star": "Eta Cassiopeiae",
+      "planet": "Poseidon",
       "id": "Eta Cassiopeiae_Poseidon"
     },
     {
@@ -1927,8 +620,8 @@
       "id": "Sol"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -1960,8 +653,8 @@
       "id": "Gliese 54"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -1977,8 +670,8 @@
       "id": "Delta Eridani"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -1998,8 +691,8 @@
       "id": "Delta Eridani"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -2015,8 +708,8 @@
       "id": "Sol"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -2024,8 +717,8 @@
       "id": "Gliese 877"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -2041,8 +734,8 @@
       "id": "Epsilon Eridani"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -2062,8 +755,8 @@
       "id": "Epsilon Eridani"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -2071,8 +764,8 @@
       "id": "Delta Eridani"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -2084,8 +777,8 @@
       "id": "Epsilon Eridani"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -2097,13 +790,13 @@
       "id": "Delta Eridani"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
-      "planet": "Poseidon",
       "star": "Eta Cassiopeiae",
+      "planet": "Poseidon",
       "id": "Eta Cassiopeiae_Poseidon"
     },
     {
@@ -2111,8 +804,8 @@
       "id": "82 Eridani"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -2147,8 +840,8 @@
     },
     [
       {
-        "planet": "Vulcan",
         "star": "Omicron2 Eridani",
+        "planet": "Vulcan",
         "id": "Omicron2 Eridani_Vulcan"
       },
       {
@@ -2169,8 +862,8 @@
       "id": "Alpha Centauri"
     },
     {
-      "planet": "Poseidon",
       "star": "Eta Cassiopeiae",
+      "planet": "Poseidon",
       "id": "Eta Cassiopeiae_Poseidon"
     },
     {
@@ -2198,8 +891,8 @@
       "id": "Delta Pavonis"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -2239,18 +932,18 @@
       "id": "Delta Eridani"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
-      "planet": "Poseidon",
       "star": "Eta Cassiopeiae",
+      "planet": "Poseidon",
       "id": "Eta Cassiopeiae_Poseidon"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -2266,38 +959,38 @@
       "id": "Omicron2 Eridani"
     },
     {
-      "planet": "Poseidon",
       "star": "Eta Cassiopeiae",
+      "planet": "Poseidon",
       "id": "Eta Cassiopeiae_Poseidon"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
-      "planet": "Eden",
       "city": "Camelot",
-      "id": "Delta Pavonis_Eden_Camelot",
-      "star": "Delta Pavonis"
+      "star": "Delta Pavonis",
+      "planet": "Eden",
+      "id": "Delta Pavonis_Eden_Camelot"
     },
     {
       "star": "Epsilon Eridani",
       "id": "Epsilon Eridani"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
-      "planet": "Poseidon",
       "star": "Eta Cassiopeiae",
+      "planet": "Poseidon",
       "id": "Eta Cassiopeiae_Poseidon"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -2305,8 +998,8 @@
       "id": "Sol"
     },
     {
-      "planet": "Poseidon",
       "star": "Eta Cassiopeiae",
+      "planet": "Poseidon",
       "id": "Eta Cassiopeiae_Poseidon"
     },
     [
@@ -2321,8 +1014,8 @@
       "id": "82 Eridani"
     },
     {
-      "planet": "Poseidon",
       "star": "Eta Cassiopeiae",
+      "planet": "Poseidon",
       "id": "Eta Cassiopeiae_Poseidon"
     },
     {
@@ -2350,8 +1043,8 @@
       "id": "82 Eridani"
     },
     {
-      "planet": "Poseidon",
       "star": "Eta Cassiopeiae",
+      "planet": "Poseidon",
       "id": "Eta Cassiopeiae_Poseidon"
     },
     {
@@ -2359,13 +1052,13 @@
       "id": "Delta Pavonis"
     },
     {
-      "planet": "Eden",
       "star": "Delta Pavonis",
+      "planet": "Eden",
       "id": "Delta Pavonis_Eden"
     },
     {
-      "planet": "Vulcan",
       "star": "Omicron2 Eridani",
+      "planet": "Vulcan",
       "id": "Omicron2 Eridani_Vulcan"
     },
     {
@@ -2373,8 +1066,8 @@
       "id": "82 Eridani"
     },
     {
-      "planet": "Poseidon",
       "star": "Eta Cassiopeiae",
+      "planet": "Poseidon",
       "id": "Eta Cassiopeiae_Poseidon"
     },
     {
@@ -2386,13 +1079,13 @@
       "id": "Delta Pavonis"
     },
     {
-      "planet": "Eden",
       "star": "Delta Pavonis",
+      "planet": "Eden",
       "id": "Delta Pavonis_Eden"
     },
     {
-      "planet": "Poseidon",
       "star": "Eta Cassiopeiae",
+      "planet": "Poseidon",
       "id": "Eta Cassiopeiae_Poseidon"
     },
     {
@@ -2414,8 +1107,8 @@
       }
     ],
     {
-      "planet": "Poseidon",
       "star": "Eta Cassiopeiae",
+      "planet": "Poseidon",
       "id": "Eta Cassiopeiae_Poseidon"
     },
     {
@@ -2438,8 +1131,8 @@
       null
     ],
     {
-      "planet": "Odin",
       "star": "HIP 14101",
+      "planet": "Odin",
       "id": "HIP 14101_Odin"
     },
     {
@@ -2447,8 +1140,8 @@
       "id": "HIP 84051"
     },
     {
-      "planet": "Odin",
       "star": "HIP 14101",
+      "planet": "Odin",
       "id": "HIP 14101_Odin"
     },
     {
@@ -2480,8 +1173,8 @@
       "id": "Gamma Pavonis"
     },
     {
-      "planet": "Romulus",
       "star": "Omicron2 Eridani",
+      "planet": "Romulus",
       "id": "Omicron2 Eridani_Romulus"
     },
     {
@@ -2489,8 +1182,8 @@
       "id": "Epsilon Eridani"
     },
     {
-      "planet": "Odin",
       "star": "HIP 14101",
+      "planet": "Odin",
       "id": "HIP 14101_Odin"
     },
     {
@@ -2502,8 +1195,8 @@
       "id": "Sol"
     },
     {
-      "planet": "Odin",
       "star": "HIP 14101",
+      "planet": "Odin",
       "id": "HIP 14101_Odin"
     },
     {
@@ -2571,333 +1264,1641 @@
       "id": "Sol"
     },
     {
-      "planet": "Earth",
       "star": "Sol",
+      "planet": "Earth",
       "id": "Sol_Earth"
     }
   ],
-  "characters": [
+  "scenes": [
     {
-      "affiliation": "Bob",
-      "name": "Bob",
-      "id": "Bob"
+      "character_ids": [
+        "Bob"
+      ]
     },
     {
-      "affiliation": "Bob",
-      "name": "Bill",
-      "id": "Bill"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "affiliation": "Bill",
-      "name": "Garfield",
-      "id": "Garfield"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "affiliation": "Bill",
-      "name": "Calvin",
-      "id": "Calvin"
+      "character_ids": [
+        "Bob"
+      ]
     },
     {
-      "affiliation": "Calvin",
-      "name": "Bart",
-      "id": "Bart"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "affiliation": "Calvin",
-      "name": "Thor",
-      "id": "Thor"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "affiliation": "Bill",
-      "name": "Goku",
-      "id": "Goku"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "affiliation": "Bill",
-      "name": "Linus",
-      "id": "Linus"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "affiliation": "Bill",
-      "name": "Mulder",
-      "id": "Mulder"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "affiliation": "Mulder",
-      "name": "Jonny",
-      "id": "Jonny"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "affiliation": "Mulder",
-      "name": "Skinner",
-      "id": "Skinner"
+      "character_ids": [
+        "Bob",
+        "Doucette",
+        "Landers"
+      ]
     },
     {
-      "affiliation": "Bill",
-      "name": "Oliver",
-      "id": "Oliver"
+      "character_ids": [
+        "Bob",
+        "Landers"
+      ]
     },
     {
-      "affiliation": "Bill",
-      "name": "Khan",
-      "id": "Khan"
+      "character_ids": [
+        "Bob",
+        "Doucette",
+        "Landers"
+      ]
     },
     {
-      "affiliation": "Bill",
-      "name": "Elmer",
-      "id": "Elmer"
+      "character_ids": [
+        "Bob"
+      ]
     },
     {
-      "affiliation": "Bill",
-      "name": "Hannibal",
-      "id": "Hannibal"
+      "character_ids": [
+        "Bob"
+      ]
     },
     {
-      "affiliation": "Bill",
-      "name": "Tom",
-      "id": "Tom"
+      "character_ids": [
+        "Bob"
+      ]
     },
     {
-      "affiliation": "Bill",
-      "name": "Barney",
-      "id": "Barney"
+      "character_ids": [
+        "Mario",
+        "Milo",
+        "Bob",
+        "Riker",
+        "Bill"
+      ]
     },
     {
-      "affiliation": "Bill",
-      "name": "Fred",
-      "id": "Fred"
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Milo",
+        "Bill",
+        "Mario"
+      ]
     },
     {
-      "affiliation": "Bill",
-      "name": "Kyle",
-      "id": "Kyle"
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Milo",
+        "Bill"
+      ]
     },
     {
-      "affiliation": "Bill",
-      "name": "Ned",
-      "id": "Ned"
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Garfield",
+        "Homer",
+        "Bill"
+      ]
     },
     {
-      "affiliation": "Bob",
-      "name": "Mario",
-      "id": "Mario"
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Bill",
+        "Homer"
+      ]
     },
     {
-      "affiliation": "Mario",
-      "name": "Bashful",
-      "id": "Bashful"
+      "character_ids": [
+        "Linus",
+        "Calvin",
+        "Goku",
+        "Homer",
+        "Riker",
+        "Bill"
+      ]
     },
     {
-      "affiliation": "Mario",
-      "name": "Dopey",
-      "id": "Dopey"
+      "character_ids": [
+        "Milo",
+        "Bill"
+      ]
     },
     {
-      "affiliation": "Mario",
-      "name": "Sleepy",
-      "id": "Sleepy"
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Bill",
+        "Homer"
+      ]
     },
     {
-      "affiliation": "Mario",
-      "name": "Hungry",
-      "id": "Hungry"
+      "character_ids": [
+        "Garfield",
+        "Bill"
+      ]
     },
     {
-      "affiliation": "Mario",
-      "name": "Hal",
-      "id": "Hal"
+      "character_ids": [
+        "Bill",
+        "Riker",
+        "Butterworth",
+        "Homer"
+      ]
     },
     {
-      "affiliation": "Mario",
-      "name": "Claude",
-      "id": "Claude"
+      "character_ids": [
+        "Bob",
+        "Bill"
+      ]
     },
     {
-      "affiliation": "Mario",
-      "name": "Jacques",
-      "id": "Jacques"
+      "character_ids": [
+        "Goku",
+        "Calvin"
+      ]
     },
     {
-      "affiliation": "Jacques",
-      "name": "Phineas",
-      "id": "Phineas"
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Butterworth",
+        "Homer"
+      ]
     },
     {
-      "affiliation": "Jacques",
-      "name": "Ferb",
-      "id": "Ferb"
+      "character_ids": [
+        "Bob",
+        "Luke",
+        "Archimedes",
+        "Marvin",
+        "Bender"
+      ]
     },
     {
-      "affiliation": "Bob",
-      "name": "Riker",
-      "id": "Riker"
+      "character_ids": [
+        "Riker",
+        "Butterworth",
+        "Homer",
+        "Charles",
+        "Arthur"
+      ]
     },
     {
-      "affiliation": "Riker",
-      "name": "Homer",
-      "id": "Homer"
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Milo",
+        "Garfield",
+        "Bill"
+      ]
     },
     {
-      "affiliation": "Riker",
-      "name": "Ralph",
-      "id": "Ralph"
+      "character_ids": [
+        "Riker",
+        "Homer",
+        "Arthur"
+      ]
     },
     {
-      "affiliation": "Riker",
-      "name": "Charles",
-      "id": "Charles"
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Homer"
+      ]
     },
     {
-      "affiliation": "Charles",
-      "name": "Howard",
-      "id": "Howard"
+      "character_ids": [
+        "Bob",
+        "Luke",
+        "Archimedes",
+        "Marvin",
+        "Bender"
+      ]
     },
     {
-      "affiliation": "Charles",
-      "name": "Dexter",
-      "id": "Dexter"
-    },
-    {
-      "affiliation": "Riker",
-      "name": "Rudy",
-      "id": "Rudy"
-    },
-    {
-      "affiliation": "Riker",
-      "name": "Edwin",
-      "id": "Edwin"
-    },
-    {
-      "affiliation": "Riker",
-      "name": "Arthur",
-      "id": "Arthur"
-    },
-    {
-      "affiliation": "Riker",
-      "name": "Bert",
-      "id": "Bert"
-    },
-    {
-      "affiliation": "Riker",
-      "name": "Ernie",
-      "id": "Ernie"
-    },
-    {
-      "affiliation": "Bob",
-      "name": "Milo",
-      "id": "Milo"
-    },
-    {
-      "affiliation": "Bob",
-      "name": "Marvin",
-      "id": "Marvin"
-    },
-    {
-      "affiliation": "Bob",
-      "name": "Luke",
-      "id": "Luke"
-    },
-    {
-      "affiliation": "Bob",
-      "name": "Bender",
-      "id": "Bender"
-    },
-    {
-      "affiliation": "Bob",
-      "name": "Victor",
-      "id": "Victor"
-    },
-    {
-      "affiliation": "Bill",
-      "name": "Icarus",
-      "id": "Icarus"
-    },
-    {
-      "affiliation": "Bill",
-      "name": "Daedalus",
-      "id": "Daedalus"
-    },
-    {
-      "affiliation": "Riker",
-      "name": "Mack",
-      "id": "Mack"
-    },
-    {
-      "affiliation": "Riker",
-      "name": "Verne",
-      "id": "Verne"
-    },
-    {
-      "affiliation": "Mulder",
-      "name": "Marcus",
-      "id": "Marcus"
-    },
-    {
-      "affiliation": "Khan",
-      "name": "Loki",
-      "id": "Loki"
-    },
-    {
-      "affiliation": "Jacques",
-      "name": "Herschel",
-      "id": "Herschel"
-    },
-    {
-      "affiliation": "Jacques",
-      "name": "Neil",
-      "id": "Neil"
-    },
-    {
-      "affiliation": "Howard",
-      "name": "Bridget",
-      "id": "Bridget"
-    },
-    {
-      "affiliation": "USE",
-      "name": "Colonel Butterworth",
-      "other_names": [
+      "character_ids": [
+        "Riker",
         "Butterworth"
-      ],
-      "id": "Butterworth"
+      ]
     },
     {
-      "affiliation": "USE",
-      "name": "St\u00e9phane Brodeur",
-      "other_names": [
-        "Chief Brodeur"
-      ],
-      "id": "St\u00e9phane"
+      "character_ids": [
+        "Bob",
+        "Luke",
+        "Archimedes",
+        "Bender",
+        "Marvin"
+      ]
     },
     {
-      "affiliation": "Family",
-      "name": "Julia Hendricks",
-      "id": "Julia"
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Butterworth"
+      ]
     },
     {
-      "affiliation": "Family",
-      "name": "Justin Hendricks",
-      "id": "Justin"
+      "character_ids": [
+        "Archimedes",
+        "Milo",
+        "Bob",
+        "Bender",
+        "Luke",
+        "Marvin",
+        "Bill"
+      ]
     },
     {
-      "affiliation": "Deltans",
-      "name": "Archimedes",
-      "id": "Archimedes"
+      "character_ids": [
+        "Bill",
+        "Linus",
+        "Bob",
+        "Calvin"
+      ]
     },
     {
-      "affiliation": "FAITH",
-      "name": "Landers",
-      "other_names": [
-        "Dr. Landers"
-      ],
-      "id": "Landers"
+      "character_ids": [
+        "Bill",
+        "Riker",
+        "Butterworth",
+        "Homer"
+      ]
     },
     {
-      "affiliation": "FAITH",
-      "name": "Dr. Doucette",
-      "other_names": [
-        "Dr. Doucette"
-      ],
-      "id": "Doucette"
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Garfield",
+        "Homer",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Butterworth",
+        "Charles",
+        "Homer",
+        "Arthur"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Calvin",
+        "Bart",
+        "Goku",
+        "Bob",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Milo"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bill",
+        "Riker",
+        "Butterworth",
+        "Charles",
+        "Homer"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Luke",
+        "Archimedes",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Butterworth",
+        "Charles",
+        "Homer"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Homer"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Archimedes",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Butterworth"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Garfield",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Bob"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bill",
+        "Riker",
+        "Bob",
+        "Howard",
+        "Homer"
+      ]
+    },
+    {
+      "character_ids": [
+        "Garfield",
+        "Bart",
+        "Homer",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Fred",
+        "Tom",
+        "Bob",
+        "Elmer",
+        "Kyle",
+        "Ned",
+        "Hannibal",
+        "Barney",
+        "Khan",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bill",
+        "Bert",
+        "Milo",
+        "Bob",
+        "Butterworth",
+        "Riker",
+        "Howard",
+        "Ernie"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin",
+        "Fred",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Butterworth",
+        "Bert",
+        "Howard",
+        "Ernie"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Milo",
+        "Skinner",
+        "Homer",
+        "Riker",
+        "Mulder",
+        "Jonny",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bert",
+        "Milo",
+        "Butterworth",
+        "Riker",
+        "Howard",
+        "Ernie"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mulder",
+        "Riker",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Mulder",
+        "Homer",
+        "Charles"
+      ]
+    },
+    {
+      "character_ids": [
+        "Butterworth",
+        "Riker",
+        "Milo",
+        "Howard",
+        "Homer"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Bob",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Milo",
+        "Bob",
+        "Riker",
+        "Garfield",
+        "Marvin",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Dopey",
+        "Sleepy",
+        "Bob",
+        "Hungry"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Homer"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Bob",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Butterworth",
+        "Howard",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Luke",
+        "Bender",
+        "Marvin",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Homer"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Archimedes",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Butterworth",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Homer",
+        "Charles"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Luke",
+        "Archimedes",
+        "Marvin",
+        "Bender"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Homer"
+      ]
+    },
+    {
+      "character_ids": [
+        "Archimedes",
+        "Milo",
+        "Bob",
+        "Luke",
+        "Victor",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Butterworth",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Homer"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Luke",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Homer",
+        "Riker",
+        "Charles",
+        "Ralph",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Butterworth",
+        "Howard",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Bashful",
+        "Bob"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Bridget",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Linus",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Milo",
+        "Tom",
+        "Loki",
+        "Bob",
+        "Linus",
+        "Thor",
+        "Garfield",
+        "Khan",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Butterworth",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Garfield",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Charles"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Bashful",
+        "Hal"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Bob",
+        "Hal",
+        "Thor",
+        "Garfield",
+        "Bill",
+        "Hungry"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Bridget",
+        "Howard",
+        "Charles"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bill",
+        "Riker",
+        "Charles"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Loki",
+        "Bob",
+        "Riker",
+        "Dopey",
+        "Howard",
+        "Garfield",
+        "Marvin",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Linus",
+        "Edwin",
+        "Rudy"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mulder",
+        "Butterworth",
+        "Marcus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Milo",
+        "Loki",
+        "Elmer",
+        "Calvin",
+        "Verne",
+        "Khan",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Dexter",
+        "Bridget",
+        "Howard",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Loki",
+        "Bob",
+        "Bender",
+        "Riker",
+        "Howard",
+        "Luke",
+        "Garfield",
+        "Marvin",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Garfield",
+        "Hal",
+        "Thor",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Hal",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Bashful",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin",
+        "Loki"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Bob",
+        "Calvin",
+        "Hal",
+        "Garfield",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Dexter",
+        "Butterworth",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Claude",
+        "Bob",
+        "Jacques",
+        "Garfield",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Claude",
+        "Mario",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bart",
+        "Oliver",
+        "Howard",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mulder",
+        "Riker",
+        "Bill",
+        "Marcus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Jacques",
+        "Bob",
+        "Claude",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Garfield",
+        "Jacques",
+        "Claude",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Claude",
+        "Garfield",
+        "Jacques",
+        "Oliver",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Dexter",
+        "Bob",
+        "Bridget",
+        "Howard",
+        "Garfield",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Jacques",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Dexter",
+        "Bob",
+        "Butterworth",
+        "Bridget",
+        "Howard",
+        "Garfield",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Butterworth",
+        "Bridget",
+        "Riker",
+        "Howard",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes"
+      ]
+    },
+    {
+      "character_ids": [
+        "Jacques",
+        "Butterworth",
+        "Bob",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Jacques",
+        "Ferb",
+        "Phineas"
+      ]
+    },
+    {
+      "character_ids": [
+        "Jacques",
+        "Garfield",
+        "Thor",
+        "Howard",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes"
+      ]
+    },
+    {
+      "character_ids": [
+        "Oliver",
+        "Bob",
+        "Jacques",
+        "Riker",
+        "Archimedes",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Fred"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Butterworth",
+        "Dexter",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Marcus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Bridget",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Fred"
+      ]
+    },
+    {
+      "character_ids": [
+        "Daedalus",
+        "Garfield",
+        "Icarus",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Butterworth",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Bill",
+        "Howard",
+        "Marcus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin",
+        "Fred"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Daedalus",
+        "Claude",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Bridget",
+        "Dexter",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Marcus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Bridget",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Oliver",
+        "Charles"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bill",
+        "Riker",
+        "Howard",
+        "Marcus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Daedalus",
+        "Mario",
+        "Icarus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Verne",
+        "Bill",
+        "Mack"
+      ]
+    },
+    {
+      "character_ids": [
+        "Marcus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Oliver",
+        "Loki",
+        "Bob",
+        "Calvin",
+        "Goku",
+        "Verne",
+        "Thor",
+        "Mack",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Neil",
+        "Herschel"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Riker",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Neil",
+        "Bill",
+        "Herschel"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Garfield",
+        "Bill",
+        "Mack"
+      ]
+    },
+    {
+      "character_ids": [
+        "Marcus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Neil",
+        "Bill",
+        "Herschel"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin",
+        "Fred"
+      ]
+    },
+    {
+      "character_ids": [
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Garfield",
+        "Bill",
+        "Mack"
+      ]
+    },
+    {
+      "character_ids": [
+        "Marcus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Garfield",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Bob",
+        "Riker",
+        "Thor",
+        "Neil",
+        "Bill",
+        "Herschel"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Fred"
+      ]
+    },
+    {
+      "character_ids": [
+        "Marcus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Herschel"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Neil",
+        "Herschel"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Bill",
+        "Howard",
+        "Marcus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Bridget",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bill",
+        "Mack"
+      ]
+    },
+    {
+      "character_ids": [
+        "Icarus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Linus",
+        "Howard",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Jacques",
+        "Ferb",
+        "Phineas",
+        "Bill",
+        "Bob"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Marcus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Mario",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Jacques",
+        "Ferb",
+        "Phineas",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Riker"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin"
+      ]
+    },
+    {
+      "character_ids": [
+        "Mario",
+        "Dexter",
+        "Bob",
+        "Calvin",
+        "Neil",
+        "Garfield",
+        "Bill",
+        "Herschel"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Charles"
+      ]
+    },
+    {
+      "character_ids": [
+        "Claude",
+        "Jacques",
+        "Bill",
+        "Neil"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Garfield",
+        "Oliver",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Howard",
+        "Marcus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Claude",
+        "Butterworth",
+        "Jacques",
+        "Riker",
+        "Thor",
+        "Neil",
+        "Garfield",
+        "Bill",
+        "Herschel"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Neil",
+        "Herschel"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Riker",
+        "Thor",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bridget",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Neil",
+        "Bill",
+        "Herschel"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Hannibal",
+        "Thor",
+        "Garfield",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Neil",
+        "Herschel"
+      ]
+    },
+    {
+      "character_ids": [
+        "Herschel",
+        "Thor",
+        "Bill",
+        "Neil"
+      ]
+    },
+    {
+      "character_ids": [
+        "Neil",
+        "Herschel"
+      ]
+    },
+    {
+      "character_ids": [
+        "Riker",
+        "Thor",
+        "Bill",
+        "Neil"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes"
+      ]
+    },
+    {
+      "character_ids": [
+        "Daedalus",
+        "Mario",
+        "Icarus"
+      ]
+    },
+    {
+      "character_ids": [
+        "Daedalus",
+        "Icarus",
+        "Neil",
+        "Bill",
+        "Herschel"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Archimedes",
+        "Marvin",
+        "Howard"
+      ]
+    },
+    {
+      "character_ids": [
+        "Daedalus",
+        "Bob",
+        "Icarus",
+        "Bridget",
+        "Thor",
+        "Howard",
+        "Marcus",
+        "Luke",
+        "Garfield",
+        "Marvin",
+        "Bill"
+      ]
+    },
+    {
+      "character_ids": [
+        "Jacques",
+        "Ferb"
+      ]
+    },
+    {
+      "character_ids": [
+        "Neil",
+        "Mack",
+        "Herschel"
+      ]
+    },
+    {
+      "character_ids": [
+        "Bob",
+        "Bill"
+      ]
     }
   ]
 }

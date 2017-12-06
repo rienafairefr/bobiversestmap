@@ -34,13 +34,13 @@
   {
     "affiliation": "FAITH",
     "id": "Landers",
-    "name": "Landers",
-    "other_names" : ["Dr. Landers"]
+    "name": "Dr. Landers",
+    "other_names" : ["Dr. Landers", "Landers"]
   },
   {
     "affiliation": "FAITH",
     "id": "Doucette",
     "name": "Dr. Doucette",
-    "other_names" : ["Dr. Doucette"]
+    "other_names" : ["Dr. Doucette", "Doucette"]
   }
 ]

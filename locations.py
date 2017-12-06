@@ -1,21 +1,27 @@
 import json
 import os
 
-with open(os.path.join('public_data', 'locations.txt')) as location:
-    lines = location.readlines()
 
-places = []
-for line in lines:
-    place = line.strip().split(':')
+def read_locations():
+    with open(os.path.join('public_data', 'locations.txt')) as location:
+        lines = location.readlines()
 
-    place_dict = {'star': place[0]}
-    if len(place)>=2:
-        place_dict['planet'] = place[1]
-    if len(place)>=3:
-        place_dict['city'] = place[2]
+    places = []
+    for line in lines:
+        place = line.strip().split(':')
 
-    place_dict['id'] = '_'.join(place)
+        place_dict = {'star': place[0]}
+        if len(place) >= 2:
+            place_dict['planet'] = place[1]
+        if len(place) >= 3:
+            place_dict['city'] = place[2]
 
-    places.append(place_dict)
+        place_dict['id'] = '_'.join(place)
 
-json.dump(places, open(os.path.join('generated', 'locations.json'), 'w'), indent=2)
+        places.append(place_dict)
+
+    json.dump(places, open(os.path.join('generated', 'locations.json'), 'w'), indent=2)
+
+
+if __name__ == '__main__':
+    read_locations()
