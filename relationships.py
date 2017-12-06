@@ -6,8 +6,10 @@ characters.extend(json.load(open(os.path.join('public_data', 'nonbob_characters.
 
 chapters_books = json.load(open(os.path.join('generated', 'Combined.json')))
 
+locations = json.load(open(os.path.join('generated', 'locations.json')))
+
 scenes = []
-locations = []
+scenes_locations = []
 for nb, book_chapters in enumerate(chapters_books):
     for nc, book_chapter in enumerate(book_chapters):
         lines = book_chapter['content']
@@ -23,47 +25,69 @@ for nb, book_chapters in enumerate(chapters_books):
                             link.add(character['id'])
 
         scenes.append(list(link))
-        locations.append(book_chapter['location'])
+        scenes_locations.append(book_chapter['location'])
 
 # Removing, false positive matches:
 
 # Tom Hanks in chapter 13
 scenes[12].remove('Tom')
 
+# Bob on Earth
+for i in range(0, 12):
+    scenes_locations[i] = 'Earth'
 
-def treat_location(location):
-    if location == '---':
-        # first chapters in book 1
-        return 'Earth'
-    if 'Poseidon' in location:
-        return 'Poseidon'
-    if location == 'En Route':
-        return 'Earth -> Epsilon Eridani'
-    if location == 'En Route to GL 54':
-        return 'GL 877 -> GL 54'
-    return location
+# Bob first voyage
+scenes_locations[12] = 'Earth -> Epsilon Eridani'
 
-locations = list(map(treat_location, locations))
+# Mulder in Poseidon
+scenes_locations[109] = 'Poseidon'
+
+# Hal going to GL 54
+scenes_locations[114] = 'GL 877 -> GL 54'
 
 # Howard moving on
-locations[118] = 'Vulcan -> HIP 14101'
+scenes_locations[118] = 'Vulcan -> HIP 14101'
+
+# Mulder Leaving Poseidon
+scenes_locations[122] = 'Poseidon'
+
 # Icarus & Deadalus
-locations[154] = 'Epsilon Eridani -> '
+scenes_locations[154] = 'Epsilon Eridani -> '
 # Neil & Herschel
-locations[159] = 'Delta Pavonis'
-locations[161] = 'Delta Pavonis'
+scenes_locations[159] = 'Delta Pavonis'
+scenes_locations[161] = 'Delta Pavonis'
 # Bob on Eden
-locations[171] = 'Eden'
+scenes_locations[171] = 'Eden'
 
 # Neil & Herschel moving the Bellerophon
-locations[175] = 'Delta Pavonis -> Sol'
+scenes_locations[175] = 'Delta Pavonis -> Sol'
 
 # Icarus & Deadalus
-locations[180] = 'Epsilon Indi -> '
+scenes_locations[180] = 'Epsilon Indi -> '
 
 # Icarus & Deadalus destroying GL877
-locations[207] = 'GL 877'
+scenes_locations[207] = 'GL 877'
 
 json.dump(scenes, open(os.path.join('generated', 'scenes.json'), 'w'), indent=2)
-json.dump(locations, open(os.path.join('generated', 'locations.json'), 'w'), indent=2)
 
+
+def treat_one_scene_location(scene_location):
+    for location in locations:
+        if ('city' in location and location['city'] == scene_location) \
+                or ('planet' in location and location['planet'] == scene_location) \
+                or ('star' in location and location['star'] == scene_location):
+            return location
+
+
+def treat_scene_location(scene_location):
+    treat_one = treat_one_scene_location(scene_location)
+    if treat_one:
+        return treat_one
+
+    places = [el.strip() for el in scene_location.split('->')]
+    return list(map(treat_one_scene_location, places))
+
+
+scenes_locations = list(map(treat_scene_location, scenes_locations))
+
+json.dump(scenes_locations, open(os.path.join('generated', 'scenes_locations.json'), 'w'), indent=2)

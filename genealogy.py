@@ -4,14 +4,10 @@ import os
 with open(os.path.join('public_data', 'genealogy.txt')) as genealogy:
     lines = genealogy.readlines()
 
-bobs = []
-for line in lines:
-    bobs.append(line.strip().split(':'))
-
-json.dump(bobs, open(os.path.join('generated', 'genealogy.json'), 'w'), indent=2)
-
 bob_characters = []
-for bob in bobs:
+for line in lines:
+    bob = line.strip().split(':')
+
     char = {'id': bob[-1], 'name': bob[-1]}
     if len(bob) != 1:
         char['affiliation'] = bob[-2]
