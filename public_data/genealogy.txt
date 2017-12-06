@@ -1,3 +1,4 @@
+; dennisetaylor.org genealogy
 Bob
 Bob:Bill
 Bob:Bill:Garfield
@@ -40,6 +41,17 @@ Bob:Riker:Arthur
 Bob:Riker:Bert
 Bob:Riker:Ernie
 Bob:Milo
+Bob:Marvin
 Bob:Luke
 Bob:Bender
 Bob:Victor
+
+; additions
+Bob:Bill:Icarus
+Bob:Bill:Daedalus
+Bob:Riker:Mack
+Bob:Riker:Verne
+Bob:Bill:Mulder:Marcus
+Bob:Bill:Khan:Loki
+Bob:Mario:Jacques:Herschel
+Bob:Mario:Jacques:Neil

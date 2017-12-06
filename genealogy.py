@@ -6,7 +6,11 @@ with open(os.path.join('public_data', 'genealogy.txt')) as genealogy:
 
 bob_characters = []
 for line in lines:
-    bob = line.strip().split(':')
+    stripped = line.strip().split(';')[0]
+    if len(stripped)==0:
+        continue
+
+    bob = stripped.split(':')
 
     char = {'id': bob[-1], 'name': bob[-1]}
     if len(bob) != 1:
