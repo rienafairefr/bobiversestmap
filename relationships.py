@@ -13,9 +13,14 @@ for nb, book_chapters in enumerate(chapters_books):
         lines = book_chapter['content']
         link = {book_chapter['bob']}
         for line in lines:
+            words = line.split()
             for character in characters:
-                if character['name'] in line.split():
+                if character['name'] in words:
                     link.add(character['id'])
+                if 'other_names' in character:
+                    for name in character['other_names']:
+                        if name in words:
+                            link.add(character['id'])
 
         scenes.append(list(link))
         locations.append(book_chapter['location'])

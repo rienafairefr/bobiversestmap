@@ -7,7 +7,14 @@
   {
     "affiliation": "USE",
     "id": "Butterworth",
-    "name": "Colonel Butterworth"
+    "name": "Colonel Butterworth",
+    "other_names" : ["Butterworth"]
+  },
+  {
+    "affiliation": "USE",
+    "id": "Stéphane",
+    "name": "Stéphane Brodeur",
+    "other_names": ["Chief Brodeur"]
   },
   {
     "affiliation": "Family",
@@ -27,6 +34,7 @@
   {
     "affiliation": "FAITH",
     "id": "Landers",
-    "name": "Landers"
+    "name": "Landers",
+    "other_names" : ["Dr. Landers"]
   }
 ]
