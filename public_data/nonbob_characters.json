@@ -42,5 +42,15 @@
     "id": "Doucette",
     "name": "Dr. Doucette",
     "other_names" : ["Dr. Doucette", "Doucette"]
+  },
+  {
+    "affiliation": "Deltans",
+    "id": "Moses",
+    "name": "Moses"
+  },
+  {
+    "affiliation": "Deltans",
+    "id": "Fred_Deltan",
+    "name": "Fred"
   }
 ]
