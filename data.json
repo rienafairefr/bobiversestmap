@@ -2,258 +2,258 @@
   "characters": [
     {
       "name": "Bob",
-      "affiliation": "Bob",
-      "id": "Bob"
+      "id": "Bob",
+      "affiliation": "Bob"
     },
     {
       "name": "Bill",
-      "affiliation": "Bob",
-      "id": "Bill"
+      "id": "Bill",
+      "affiliation": "Bob"
     },
     {
       "name": "Garfield",
-      "affiliation": "Bill",
-      "id": "Garfield"
+      "id": "Garfield",
+      "affiliation": "Bill"
     },
     {
       "name": "Calvin",
-      "affiliation": "Bill",
-      "id": "Calvin"
+      "id": "Calvin",
+      "affiliation": "Bill"
     },
     {
       "name": "Bart",
-      "affiliation": "Calvin",
-      "id": "Bart"
+      "id": "Bart",
+      "affiliation": "Calvin"
     },
     {
       "name": "Thor",
-      "affiliation": "Calvin",
-      "id": "Thor"
+      "id": "Thor",
+      "affiliation": "Calvin"
     },
     {
       "name": "Goku",
-      "affiliation": "Bill",
-      "id": "Goku"
+      "id": "Goku",
+      "affiliation": "Bill"
     },
     {
       "name": "Linus",
-      "affiliation": "Bill",
-      "id": "Linus"
+      "id": "Linus",
+      "affiliation": "Bill"
     },
     {
       "name": "Mulder",
-      "affiliation": "Bill",
-      "id": "Mulder"
+      "id": "Mulder",
+      "affiliation": "Bill"
     },
     {
       "name": "Jonny",
-      "affiliation": "Mulder",
-      "id": "Jonny"
+      "id": "Jonny",
+      "affiliation": "Mulder"
     },
     {
       "name": "Skinner",
-      "affiliation": "Mulder",
-      "id": "Skinner"
+      "id": "Skinner",
+      "affiliation": "Mulder"
     },
     {
       "name": "Oliver",
-      "affiliation": "Bill",
-      "id": "Oliver"
+      "id": "Oliver",
+      "affiliation": "Bill"
     },
     {
       "name": "Khan",
-      "affiliation": "Bill",
-      "id": "Khan"
+      "id": "Khan",
+      "affiliation": "Bill"
     },
     {
       "name": "Elmer",
-      "affiliation": "Bill",
-      "id": "Elmer"
+      "id": "Elmer",
+      "affiliation": "Bill"
     },
     {
       "name": "Hannibal",
-      "affiliation": "Bill",
-      "id": "Hannibal"
+      "id": "Hannibal",
+      "affiliation": "Bill"
     },
     {
       "name": "Tom",
-      "affiliation": "Bill",
-      "id": "Tom"
+      "id": "Tom",
+      "affiliation": "Bill"
     },
     {
       "name": "Barney",
-      "affiliation": "Bill",
-      "id": "Barney"
+      "id": "Barney",
+      "affiliation": "Bill"
     },
     {
       "name": "Fred",
-      "affiliation": "Bill",
-      "id": "Fred"
+      "id": "Fred",
+      "affiliation": "Bill"
     },
     {
       "name": "Kyle",
-      "affiliation": "Bill",
-      "id": "Kyle"
+      "id": "Kyle",
+      "affiliation": "Bill"
     },
     {
       "name": "Ned",
-      "affiliation": "Bill",
-      "id": "Ned"
+      "id": "Ned",
+      "affiliation": "Bill"
     },
     {
       "name": "Mario",
-      "affiliation": "Bob",
-      "id": "Mario"
+      "id": "Mario",
+      "affiliation": "Bob"
     },
     {
       "name": "Bashful",
-      "affiliation": "Mario",
-      "id": "Bashful"
+      "id": "Bashful",
+      "affiliation": "Mario"
     },
     {
       "name": "Dopey",
-      "affiliation": "Mario",
-      "id": "Dopey"
+      "id": "Dopey",
+      "affiliation": "Mario"
     },
     {
       "name": "Sleepy",
-      "affiliation": "Mario",
-      "id": "Sleepy"
+      "id": "Sleepy",
+      "affiliation": "Mario"
     },
     {
       "name": "Hungry",
-      "affiliation": "Mario",
-      "id": "Hungry"
+      "id": "Hungry",
+      "affiliation": "Mario"
     },
     {
       "name": "Hal",
-      "affiliation": "Mario",
-      "id": "Hal"
+      "id": "Hal",
+      "affiliation": "Mario"
     },
     {
       "name": "Claude",
-      "affiliation": "Mario",
-      "id": "Claude"
+      "id": "Claude",
+      "affiliation": "Mario"
     },
     {
       "name": "Jacques",
-      "affiliation": "Mario",
-      "id": "Jacques"
+      "id": "Jacques",
+      "affiliation": "Mario"
     },
     {
       "name": "Phineas",
-      "affiliation": "Jacques",
-      "id": "Phineas"
+      "id": "Phineas",
+      "affiliation": "Jacques"
     },
     {
       "name": "Ferb",
-      "affiliation": "Jacques",
-      "id": "Ferb"
+      "id": "Ferb",
+      "affiliation": "Jacques"
     },
     {
       "name": "Riker",
-      "affiliation": "Bob",
-      "id": "Riker"
+      "id": "Riker",
+      "affiliation": "Bob"
     },
     {
       "name": "Homer",
-      "affiliation": "Riker",
-      "id": "Homer"
+      "id": "Homer",
+      "affiliation": "Riker"
     },
     {
       "name": "Ralph",
-      "affiliation": "Riker",
-      "id": "Ralph"
+      "id": "Ralph",
+      "affiliation": "Riker"
     },
     {
       "name": "Charles",
-      "affiliation": "Riker",
-      "id": "Charles"
+      "id": "Charles",
+      "affiliation": "Riker"
     },
     {
       "name": "Howard",
-      "affiliation": "Charles",
-      "id": "Howard"
+      "id": "Howard",
+      "affiliation": "Charles"
     },
     {
       "name": "Dexter",
-      "affiliation": "Charles",
-      "id": "Dexter"
+      "id": "Dexter",
+      "affiliation": "Charles"
     },
     {
       "name": "Rudy",
-      "affiliation": "Riker",
-      "id": "Rudy"
+      "id": "Rudy",
+      "affiliation": "Riker"
     },
     {
       "name": "Edwin",
-      "affiliation": "Riker",
-      "id": "Edwin"
+      "id": "Edwin",
+      "affiliation": "Riker"
     },
     {
       "name": "Arthur",
-      "affiliation": "Riker",
-      "id": "Arthur"
+      "id": "Arthur",
+      "affiliation": "Riker"
     },
     {
       "name": "Bert",
-      "affiliation": "Riker",
-      "id": "Bert"
+      "id": "Bert",
+      "affiliation": "Riker"
     },
     {
       "name": "Ernie",
-      "affiliation": "Riker",
-      "id": "Ernie"
+      "id": "Ernie",
+      "affiliation": "Riker"
     },
     {
       "name": "Milo",
-      "affiliation": "Bob",
-      "id": "Milo"
+      "id": "Milo",
+      "affiliation": "Bob"
     },
     {
       "name": "Luke",
-      "affiliation": "Bob",
-      "id": "Luke"
+      "id": "Luke",
+      "affiliation": "Bob"
     },
     {
       "name": "Bender",
-      "affiliation": "Bob",
-      "id": "Bender"
+      "id": "Bender",
+      "affiliation": "Bob"
     },
     {
       "name": "Victor",
-      "affiliation": "Bob",
-      "id": "Victor"
+      "id": "Victor",
+      "affiliation": "Bob"
     },
     {
       "name": "Bridget",
-      "affiliation": "Howard",
-      "id": "Bridget"
+      "id": "Bridget",
+      "affiliation": "Howard"
     },
     {
       "name": "Colonel Butterworth",
-      "affiliation": "USE",
-      "id": "Butterworth"
+      "id": "Butterworth",
+      "affiliation": "USE"
     },
     {
       "name": "Julia Hendricks",
-      "affiliation": "Family",
-      "id": "Julia"
+      "id": "Julia",
+      "affiliation": "Family"
     },
     {
       "name": "Justin Hendricks",
-      "affiliation": "Family",
-      "id": "Justin"
+      "id": "Justin",
+      "affiliation": "Family"
     },
     {
       "name": "Archimedes",
-      "affiliation": "Deltans",
-      "id": "Archimedes"
+      "id": "Archimedes",
+      "affiliation": "Deltans"
     },
     {
       "name": "Landers",
-      "affiliation": "FAITH",
-      "id": "Landers"
+      "id": "Landers",
+      "affiliation": "FAITH"
     }
   ],
   "scenes": [
@@ -261,127 +261,126 @@
       "Bob"
     ],
     [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob",
-      "Tom",
-      "Landers"
-    ],
-    [
-      "Bob"
-    ],
-    [
-      "Bob",
-      "Landers"
-    ],
-    [
-      "Bob"
-    ],
-    [
-      "Mario",
-      "Milo",
       "Landers",
+      "Bob"
+    ],
+    [
+      "Landers",
+      "Bob"
+    ],
+    [
+      "Bob"
+    ],
+    [
+      "Landers",
+      "Bob"
+    ],
+    [
+      "Landers",
+      "Bob"
+    ],
+    [
+      "Landers",
+      "Bob"
+    ],
+    [
+      "Landers",
+      "Bob"
+    ],
+    [
+      "Landers",
+      "Bob"
+    ],
+    [
+      "Landers",
+      "Bob"
+    ],
+    [
+      "Landers",
+      "Bob"
+    ],
+    [
+      "Landers",
+      "Bob"
+    ],
+    [
+      "Landers",
+      "Bob"
+    ],
+    [
+      "Bob"
+    ],
+    [
+      "Landers",
+      "Bob"
+    ],
+    [
+      "Bob"
+    ],
+    [
       "Bill",
+      "Riker",
+      "Landers",
+      "Milo",
+      "Mario",
+      "Bob"
+    ],
+    [
+      "Bill",
+      "Milo",
+      "Riker",
+      "Mario",
+      "Bob"
+    ],
+    [
+      "Bill",
+      "Milo",
       "Riker",
       "Bob"
     ],
     [
-      "Mario",
-      "Milo",
-      "Bob",
       "Bill",
-      "Riker"
-    ],
-    [
-      "Milo",
-      "Bob",
-      "Bill",
-      "Riker"
-    ],
-    [
-      "Garfield",
+      "Homer",
       "Riker",
       "Bob",
-      "Bill",
-      "Homer"
+      "Garfield"
     ],
     [
       "Riker",
-      "Bob",
+      "Homer",
       "Bill",
-      "Homer"
+      "Bob"
     ],
     [
-      "Goku",
+      "Bill",
       "Calvin",
+      "Riker",
       "Linus",
+      "Homer",
+      "Goku"
+    ],
+    [
       "Bill",
-      "Riker",
-      "Homer"
-    ],
-    [
-      "Milo",
-      "Bill"
-    ],
-    [
-      "Riker",
-      "Bob",
-      "Bill",
-      "Homer"
-    ],
-    [
-      "Garfield",
-      "Bill"
+      "Milo"
     ],
     [
       "Riker",
+      "Homer",
       "Bill",
-      "Homer"
+      "Bob"
     ],
     [
-      "Bob",
+      "Bill",
+      "Garfield"
+    ],
+    [
+      "Riker",
+      "Homer",
       "Bill"
+    ],
+    [
+      "Bill",
+      "Bob"
     ],
     [
       "Calvin",
@@ -389,14 +388,14 @@
     ],
     [
       "Riker",
-      "Bob",
-      "Homer"
+      "Homer",
+      "Bob"
     ],
     [
-      "Bob",
       "Archimedes",
+      "Luke",
       "Bender",
-      "Luke"
+      "Bob"
     ],
     [
       "Riker",
@@ -405,10 +404,10 @@
       "Arthur"
     ],
     [
-      "Garfield",
-      "Riker",
-      "Milo",
       "Bill",
+      "Garfield",
+      "Milo",
+      "Riker",
       "Bob"
     ],
     [
@@ -418,54 +417,54 @@
     ],
     [
       "Riker",
-      "Bob",
-      "Homer"
+      "Homer",
+      "Bob"
     ],
     [
-      "Bob",
       "Archimedes",
+      "Luke",
       "Bender",
-      "Luke"
+      "Bob"
     ],
     [
       "Riker"
     ],
     [
-      "Bob",
       "Archimedes",
+      "Luke",
       "Bender",
-      "Luke"
+      "Bob"
     ],
     [
       "Riker",
       "Bob"
     ],
     [
-      "Archimedes",
-      "Milo",
       "Bill",
+      "Archimedes",
       "Bob",
+      "Milo",
       "Bender",
       "Luke"
     ],
     [
-      "Linus",
-      "Bob",
+      "Bill",
+      "Landers",
       "Calvin",
-      "Bill",
-      "Landers"
+      "Linus",
+      "Bob"
     ],
     [
       "Riker",
-      "Bill",
-      "Homer"
+      "Homer",
+      "Bill"
     ],
     [
-      "Garfield",
+      "Bill",
+      "Homer",
       "Riker",
       "Bob",
-      "Bill",
-      "Homer"
+      "Garfield"
     ],
     [
       "Riker",
@@ -474,39 +473,39 @@
       "Arthur"
     ],
     [
-      "Bob",
-      "Archimedes"
+      "Archimedes",
+      "Bob"
     ],
     [
-      "Calvin",
-      "Bob",
-      "Goku",
       "Bill",
-      "Bart"
+      "Calvin",
+      "Bart",
+      "Goku",
+      "Bob"
     ],
     [
       "Milo"
     ],
     [
       "Riker",
-      "Bill",
       "Homer",
-      "Charles"
+      "Charles",
+      "Bill"
     ],
     [
-      "Bob",
       "Archimedes",
-      "Luke"
+      "Luke",
+      "Bob"
     ],
     [
       "Riker",
-      "Bob",
       "Homer",
-      "Charles"
+      "Charles",
+      "Bob"
     ],
     [
-      "Bob",
-      "Archimedes"
+      "Archimedes",
+      "Bob"
     ],
     [
       "Bill"
@@ -517,19 +516,19 @@
     ],
     [
       "Riker",
-      "Bob",
-      "Archimedes"
+      "Archimedes",
+      "Bob"
     ],
     [
       "Riker"
     ],
     [
-      "Bob",
-      "Archimedes"
+      "Archimedes",
+      "Bob"
     ],
     [
-      "Garfield",
-      "Bill"
+      "Bill",
+      "Garfield"
     ],
     [
       "Mario",
@@ -537,151 +536,151 @@
     ],
     [
       "Riker",
-      "Bob",
+      "Homer",
+      "Howard",
+      "Bill",
+      "Bob"
+    ],
+    [
       "Bill",
       "Homer",
-      "Howard"
-    ],
-    [
       "Garfield",
-      "Bill",
-      "Bart",
-      "Homer"
+      "Bart"
     ],
     [
-      "Hannibal",
-      "Barney",
-      "Kyle",
-      "Khan",
-      "Fred",
       "Bill",
-      "Elmer",
-      "Bob",
       "Tom",
+      "Fred",
+      "Khan",
+      "Hannibal",
+      "Kyle",
+      "Elmer",
+      "Barney",
+      "Bob",
       "Ned"
     ],
     [
+      "Bill",
+      "Riker",
+      "Milo",
       "Bert",
       "Ernie",
-      "Milo",
-      "Bill",
-      "Riker",
       "Bob",
       "Howard"
     ],
     [
-      "Bob",
-      "Archimedes",
       "Bill",
-      "Fred"
+      "Archimedes",
+      "Fred",
+      "Bob"
     ],
     [
       "Riker",
-      "Howard",
       "Bert",
+      "Howard",
       "Ernie"
     ],
     [
-      "Bob",
-      "Archimedes"
+      "Archimedes",
+      "Bob"
     ],
     [
+      "Bill",
       "Mulder",
       "Skinner",
-      "Mario",
       "Jonny",
-      "Milo",
-      "Bill",
       "Riker",
+      "Milo",
+      "Mario",
       "Homer"
     ],
     [
       "Riker",
+      "Bert",
       "Milo",
       "Howard",
-      "Bert",
       "Ernie"
     ],
     [
-      "Mulder",
+      "Bill",
       "Riker",
-      "Bill"
+      "Mulder"
     ],
     [
-      "Mulder",
       "Riker",
-      "Bob",
       "Homer",
-      "Charles"
+      "Charles",
+      "Mulder",
+      "Bob"
     ],
     [
       "Riker",
       "Milo",
-      "Howard",
-      "Homer"
+      "Homer",
+      "Howard"
     ],
     [
       "Bob"
     ],
     [
-      "Mario",
-      "Bob",
-      "Bill"
-    ],
-    [
-      "Bob",
-      "Archimedes"
-    ],
-    [
-      "Garfield",
-      "Milo",
-      "Bob",
       "Bill",
-      "Riker"
-    ],
-    [
       "Mario",
-      "Bob",
-      "Sleepy",
-      "Hungry",
-      "Dopey"
+      "Bob"
     ],
     [
-      "Riker",
-      "Homer"
-    ],
-    [
-      "Mario",
-      "Bob",
-      "Bill"
-    ],
-    [
-      "Riker",
-      "Bob",
-      "Howard",
-      "Bill"
-    ],
-    [
-      "Bob",
-      "Bill",
-      "Bender",
-      "Luke"
-    ],
-    [
-      "Riker",
-      "Bob",
-      "Homer"
-    ],
-    [
-      "Riker",
-      "Bob",
       "Archimedes",
-      "Landers"
+      "Bob"
+    ],
+    [
+      "Bill",
+      "Milo",
+      "Garfield",
+      "Riker",
+      "Bob"
+    ],
+    [
+      "Dopey",
+      "Sleepy",
+      "Bob",
+      "Mario",
+      "Hungry"
     ],
     [
       "Riker",
-      "Bob",
-      "Howard"
+      "Homer"
+    ],
+    [
+      "Bill",
+      "Mario",
+      "Bob"
+    ],
+    [
+      "Riker",
+      "Howard",
+      "Bill",
+      "Bob"
+    ],
+    [
+      "Bill",
+      "Luke",
+      "Bender",
+      "Bob"
+    ],
+    [
+      "Riker",
+      "Homer",
+      "Bob"
+    ],
+    [
+      "Riker",
+      "Archimedes",
+      "Landers",
+      "Bob"
+    ],
+    [
+      "Riker",
+      "Howard",
+      "Bob"
     ],
     [
       "Riker",
@@ -689,21 +688,21 @@
       "Charles"
     ],
     [
-      "Bob",
       "Archimedes",
+      "Luke",
       "Bender",
-      "Luke"
+      "Bob"
     ],
     [
       "Riker",
       "Homer"
     ],
     [
-      "Milo",
-      "Bob",
       "Archimedes",
+      "Luke",
       "Victor",
-      "Luke"
+      "Milo",
+      "Bob"
     ],
     [
       "Howard"
@@ -713,61 +712,61 @@
       "Homer"
     ],
     [
-      "Bob",
-      "Archimedes",
       "Bill",
-      "Luke"
+      "Archimedes",
+      "Luke",
+      "Bob"
     ],
     [
-      "Ralph",
       "Bill",
       "Charles",
+      "Ralph",
       "Riker",
       "Bob",
       "Homer"
     ],
     [
-      "Bridget",
+      "Bill",
       "Howard",
-      "Bill"
+      "Bridget"
     ],
     [
-      "Mario",
       "Bashful",
+      "Mario",
       "Bob"
     ],
     [
       "Riker",
-      "Bridget",
-      "Howard"
+      "Howard",
+      "Bridget"
     ],
     [
+      "Bill",
       "Linus",
-      "Bob",
-      "Bill"
+      "Bob"
     ],
     [
-      "Bob",
       "Archimedes",
-      "Howard"
+      "Howard",
+      "Bob"
     ],
     [
+      "Bill",
+      "Tom",
       "Thor",
       "Khan",
       "Garfield",
       "Milo",
       "Linus",
+      "Bob"
+    ],
+    [
+      "Howard",
+      "Bridget"
+    ],
+    [
       "Bill",
-      "Bob",
-      "Tom"
-    ],
-    [
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Garfield",
-      "Bill"
+      "Garfield"
     ],
     [
       "Riker",
@@ -775,397 +774,397 @@
       "Charles"
     ],
     [
-      "Mario",
+      "Hal",
       "Bashful",
-      "Hal"
+      "Mario"
     ],
     [
-      "Mario",
-      "Thor",
+      "Bill",
       "Hal",
+      "Thor",
       "Hungry",
       "Garfield",
-      "Bill",
+      "Mario",
       "Bob"
     ],
     [
       "Riker"
     ],
     [
-      "Bob",
-      "Archimedes"
+      "Archimedes",
+      "Bob"
     ],
     [
-      "Bridget",
-      "Bob",
+      "Charles",
       "Howard",
-      "Charles"
+      "Bob",
+      "Bridget"
     ],
     [
       "Riker",
-      "Bill",
-      "Charles"
+      "Charles",
+      "Bill"
     ],
     [
-      "Mario",
+      "Bill",
+      "Dopey",
+      "Riker",
       "Garfield",
-      "Bill",
-      "Riker",
+      "Mario",
       "Bob",
-      "Howard",
-      "Dopey"
+      "Howard"
     ],
     [
       "Riker",
       "Howard"
     ],
     [
-      "Linus",
       "Riker",
-      "Bob",
+      "Rudy",
+      "Linus",
       "Edwin",
-      "Rudy"
+      "Bob"
     ],
     [
-      "Bob",
-      "Archimedes"
+      "Archimedes",
+      "Bob"
     ],
     [
-      "Bridget",
+      "Bill",
       "Howard",
-      "Bill"
+      "Bridget"
     ],
     [
       "Mulder"
     ],
     [
+      "Bill",
       "Khan",
-      "Calvin",
-      "Milo",
-      "Bill",
       "Loki",
-      "Elmer"
-    ],
-    [
-      "Dexter",
-      "Howard",
-      "Bill",
-      "Bridget"
-    ],
-    [
-      "Mario",
-      "Garfield",
-      "Bill",
-      "Riker",
-      "Bob",
-      "Howard",
-      "Bender",
-      "Luke"
-    ],
-    [
-      "Mario",
-      "Garfield",
-      "Thor",
-      "Hal",
-      "Bill"
-    ],
-    [
-      "Mario",
-      "Hal",
-      "Bill"
-    ],
-    [
-      "Mario",
-      "Bashful",
-      "Bill"
-    ],
-    [
-      "Bob",
-      "Archimedes"
-    ],
-    [
-      "Mario",
-      "Hal",
       "Calvin",
+      "Elmer",
+      "Milo"
+    ],
+    [
+      "Bill",
+      "Howard",
+      "Bridget",
+      "Dexter"
+    ],
+    [
+      "Bill",
+      "Garfield",
+      "Riker",
+      "Bender",
+      "Mario",
+      "Bob",
+      "Luke",
+      "Howard"
+    ],
+    [
+      "Hal",
+      "Thor",
       "Garfield",
       "Bill",
+      "Mario"
+    ],
+    [
+      "Hal",
+      "Bill",
+      "Mario"
+    ],
+    [
+      "Bill",
+      "Bashful",
+      "Mario"
+    ],
+    [
+      "Archimedes",
       "Bob"
     ],
     [
-      "Dexter",
-      "Howard"
-    ],
-    [
-      "Mario",
-      "Garfield",
-      "Jacques",
       "Bill",
-      "Bob",
-      "Claude"
+      "Hal",
+      "Calvin",
+      "Garfield",
+      "Mario",
+      "Bob"
     ],
     [
-      "Mario",
+      "Howard",
+      "Dexter"
+    ],
+    [
+      "Bill",
+      "Jacques",
       "Claude",
-      "Bill"
+      "Garfield",
+      "Mario",
+      "Bob"
+    ],
+    [
+      "Bill",
+      "Claude",
+      "Mario"
     ],
     [
       "Oliver",
-      "Bill",
       "Bart",
+      "Bill",
       "Howard"
     ],
     [
-      "Mulder",
+      "Bill",
       "Riker",
-      "Bill"
+      "Mulder"
     ],
     [
-      "Bob",
+      "Bill",
       "Jacques",
-      "Bill",
-      "Claude"
-    ],
-    [
-      "Mario",
-      "Garfield",
       "Claude",
-      "Bill",
-      "Jacques"
+      "Bob"
     ],
     [
-      "Bob",
+      "Bill",
+      "Claude",
+      "Garfield",
+      "Jacques",
+      "Mario"
+    ],
+    [
+      "Bill",
       "Archimedes",
-      "Bill"
+      "Bob"
     ],
     [
-      "Garfield",
+      "Bill",
       "Oliver",
-      "Claude",
-      "Bill",
-      "Jacques"
-    ],
-    [
-      "Bridget",
-      "Dexter",
-      "Garfield",
-      "Bill",
-      "Bob",
-      "Howard"
-    ],
-    [
       "Jacques",
-      "Bill"
+      "Claude",
+      "Garfield"
     ],
     [
-      "Bridget",
-      "Dexter",
-      "Garfield",
       "Bill",
-      "Bob",
-      "Howard"
-    ],
-    [
-      "Riker",
+      "Bridget",
+      "Garfield",
       "Bob",
       "Howard",
+      "Dexter"
+    ],
+    [
       "Bill",
-      "Bridget"
+      "Jacques"
     ],
     [
+      "Bill",
+      "Bridget",
+      "Garfield",
       "Bob",
-      "Archimedes"
+      "Howard",
+      "Dexter"
     ],
     [
-      "Bob",
+      "Bill",
+      "Riker",
+      "Howard",
+      "Bridget",
+      "Bob"
+    ],
+    [
+      "Archimedes",
+      "Bob"
+    ],
+    [
+      "Bill",
       "Jacques",
-      "Bill"
+      "Bob"
     ],
     [
+      "Jacques",
       "Ferb",
-      "Jacques",
       "Phineas"
     ],
     [
-      "Garfield",
+      "Bill",
       "Thor",
-      "Jacques",
-      "Bill",
-      "Howard"
+      "Garfield",
+      "Howard",
+      "Jacques"
     ],
     [
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Bob",
-      "Archimedes"
-    ],
-    [
-      "Archimedes",
-      "Oliver",
-      "Jacques",
-      "Bill",
-      "Riker",
-      "Bob"
-    ],
-    [
-      "Bob",
-      "Fred"
-    ],
-    [
-      "Dexter",
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Marcus"
-    ],
-    [
-      "Bob",
       "Howard",
       "Bridget"
     ],
     [
-      "Bob",
-      "Fred"
+      "Archimedes",
+      "Bob"
     ],
     [
-      "Garfield",
-      "Bill"
+      "Bill",
+      "Archimedes",
+      "Oliver",
+      "Jacques",
+      "Riker",
+      "Bob"
     ],
     [
+      "Fred",
+      "Bob"
+    ],
+    [
+      "Dexter",
+      "Howard",
+      "Bridget"
+    ],
+    [
+      "Marcus"
+    ],
+    [
+      "Howard",
       "Bridget",
-      "Howard"
+      "Bob"
+    ],
+    [
+      "Fred",
+      "Bob"
+    ],
+    [
+      "Bill",
+      "Garfield"
+    ],
+    [
+      "Howard",
+      "Bridget"
     ],
     [
       "Riker",
+      "Howard",
+      "Bill",
+      "Marcus",
+      "Bob"
+    ],
+    [
+      "Howard",
+      "Bridget"
+    ],
+    [
+      "Archimedes",
+      "Fred",
+      "Bob"
+    ],
+    [
+      "Bill",
+      "Claude",
+      "Mario"
+    ],
+    [
+      "Riker",
+      "Howard",
+      "Bridget",
+      "Dexter"
+    ],
+    [
+      "Marcus"
+    ],
+    [
+      "Howard",
       "Bob",
+      "Bridget"
+    ],
+    [
+      "Riker",
+      "Homer",
+      "Oliver",
+      "Charles",
+      "Bob"
+    ],
+    [
+      "Riker",
       "Howard",
       "Bill",
       "Marcus"
     ],
     [
-      "Bridget",
-      "Howard"
+      "Icarus",
+      "Mario"
     ],
     [
-      "Bob",
-      "Archimedes",
-      "Fred"
-    ],
-    [
-      "Mario",
-      "Claude",
-      "Bill"
-    ],
-    [
-      "Riker",
-      "Bridget",
-      "Dexter",
-      "Howard"
+      "Bill",
+      "Mack",
+      "Bob"
     ],
     [
       "Marcus"
     ],
     [
-      "Bridget",
       "Howard",
-      "Bob"
+      "Bridget"
     ],
     [
+      "Bill",
       "Oliver",
-      "Riker",
+      "Thor",
+      "Calvin",
       "Bob",
       "Homer",
-      "Charles"
-    ],
-    [
-      "Riker",
-      "Bill",
-      "Howard",
-      "Marcus"
-    ],
-    [
-      "Mario",
-      "Icarus"
-    ],
-    [
-      "Mack",
-      "Bob",
-      "Bill"
-    ],
-    [
-      "Marcus"
-    ],
-    [
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Thor",
-      "Goku",
-      "Calvin",
-      "Oliver",
-      "Bill",
-      "Bob",
-      "Homer"
+      "Goku"
     ],
     [
       "Herschel"
     ],
     [
       "Riker",
-      "Bridget",
-      "Howard"
+      "Howard",
+      "Bridget"
     ],
     [
-      "Herschel",
-      "Bill"
-    ],
-    [
-      "Garfield",
-      "Bridget",
-      "Bill"
-    ],
-    [
-      "Marcus"
-    ],
-    [
-      "Herschel",
-      "Bill"
-    ],
-    [
-      "Bob",
-      "Archimedes",
-      "Fred"
-    ],
-    [
-      "Howard"
-    ],
-    [
-      "Garfield",
-      "Bob",
-      "Bill"
-    ],
-    [
-      "Marcus"
-    ],
-    [
-      "Garfield",
-      "Bill"
-    ],
-    [
-      "Mario",
-      "Thor",
-      "Herschel",
       "Bill",
-      "Riker",
+      "Herschel"
+    ],
+    [
+      "Bill",
+      "Garfield",
+      "Bridget"
+    ],
+    [
+      "Marcus"
+    ],
+    [
+      "Bill",
+      "Herschel"
+    ],
+    [
+      "Archimedes",
+      "Fred",
       "Bob"
     ],
     [
-      "Bob",
+      "Howard"
+    ],
+    [
+      "Bill",
+      "Garfield",
+      "Bob"
+    ],
+    [
+      "Marcus"
+    ],
+    [
+      "Bill",
+      "Garfield"
+    ],
+    [
+      "Bill",
+      "Herschel",
+      "Thor",
+      "Riker",
+      "Mario",
+      "Bob"
+    ],
+    [
       "Archimedes",
-      "Fred"
+      "Fred",
+      "Bob"
     ],
     [
       "Marcus"
@@ -1174,27 +1173,27 @@
       "Riker"
     ],
     [
-      "Bridget",
+      "Bill",
       "Howard",
-      "Bill"
+      "Bridget"
     ],
     [
       "Herschel"
     ],
     [
-      "Bob",
-      "Howard",
       "Bill",
-      "Marcus"
-    ],
-    [
-      "Bob",
-      "Archimedes"
-    ],
-    [
-      "Bridget",
       "Howard",
+      "Marcus",
       "Bob"
+    ],
+    [
+      "Archimedes",
+      "Bob"
+    ],
+    [
+      "Howard",
+      "Bob",
+      "Bridget"
     ],
     [
       "Bill"
@@ -1203,153 +1202,153 @@
       "Icarus"
     ],
     [
-      "Linus",
-      "Bridget",
+      "Bill",
       "Howard",
-      "Bill"
+      "Linus",
+      "Bridget"
     ],
     [
+      "Bill",
       "Ferb",
       "Jacques",
-      "Bill",
-      "Phineas",
-      "Bob"
-    ],
-    [
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Mario",
-      "Riker",
       "Bob",
-      "Bill"
-    ],
-    [
-      "Ferb",
-      "Jacques",
-      "Bill",
       "Phineas"
     ],
     [
-      "Mario",
-      "Riker"
+      "Howard",
+      "Bridget"
     ],
     [
-      "Bob",
-      "Archimedes"
-    ],
-    [
+      "Riker",
       "Mario",
-      "Dexter",
-      "Calvin",
-      "Garfield",
       "Bill",
       "Bob"
+    ],
+    [
+      "Bill",
+      "Ferb",
+      "Jacques",
+      "Phineas"
+    ],
+    [
+      "Riker",
+      "Mario"
+    ],
+    [
+      "Archimedes",
+      "Bob"
+    ],
+    [
+      "Bill",
+      "Garfield",
+      "Calvin",
+      "Mario",
+      "Bob",
+      "Dexter"
     ],
     [
       "Riker",
       "Charles"
     ],
     [
-      "Claude",
       "Bill",
-      "Jacques"
+      "Jacques",
+      "Claude"
     ],
     [
       "Riker"
     ],
     [
+      "Bill",
       "Garfield",
-      "Bob",
-      "Bill",
-      "Oliver"
+      "Oliver",
+      "Bob"
     ],
     [
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Thor",
-      "Garfield",
-      "Jacques",
-      "Bill",
-      "Riker",
-      "Claude"
-    ],
-    [
-      "Riker",
-      "Herschel"
-    ],
-    [
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Riker",
-      "Bob",
-      "Bill",
-      "Thor"
-    ],
-    [
-      "Bob",
-      "Archimedes"
-    ],
-    [
-      "Bridget",
-      "Howard"
-    ],
-    [
-      "Herschel",
-      "Bill"
-    ],
-    [
-      "Garfield",
-      "Riker",
-      "Bill",
-      "Thor",
-      "Hannibal"
-    ],
-    [
-      "Herschel"
-    ],
-    [
-      "Thor",
-      "Bill"
-    ],
-    [
-      "Herschel"
-    ],
-    [
-      "Riker",
-      "Bill",
-      "Thor"
-    ],
-    [
-      "Bob",
-      "Archimedes"
-    ],
-    [
-      "Mario",
-      "Icarus"
-    ],
-    [
-      "Herschel",
-      "Bill"
-    ],
-    [
-      "Bob",
-      "Archimedes",
-      "Howard"
-    ],
-    [
-      "Thor",
-      "Bridget",
-      "Garfield",
-      "Bill",
-      "Bob",
       "Howard",
-      "Luke"
+      "Bridget"
+    ],
+    [
+      "Bill",
+      "Thor",
+      "Claude",
+      "Jacques",
+      "Riker",
+      "Garfield"
+    ],
+    [
+      "Riker",
+      "Herschel"
+    ],
+    [
+      "Howard",
+      "Bridget"
+    ],
+    [
+      "Riker",
+      "Thor",
+      "Bill",
+      "Bob"
+    ],
+    [
+      "Archimedes",
+      "Bob"
+    ],
+    [
+      "Howard",
+      "Bridget"
+    ],
+    [
+      "Bill",
+      "Herschel"
+    ],
+    [
+      "Riker",
+      "Hannibal",
+      "Garfield",
+      "Thor",
+      "Bill"
+    ],
+    [
+      "Herschel"
+    ],
+    [
+      "Bill",
+      "Thor"
+    ],
+    [
+      "Herschel"
+    ],
+    [
+      "Riker",
+      "Thor",
+      "Bill"
+    ],
+    [
+      "Archimedes",
+      "Bob"
+    ],
+    [
+      "Icarus",
+      "Mario"
+    ],
+    [
+      "Bill",
+      "Herschel"
+    ],
+    [
+      "Archimedes",
+      "Howard",
+      "Bob"
+    ],
+    [
+      "Bill",
+      "Thor",
+      "Bridget",
+      "Garfield",
+      "Bob",
+      "Luke",
+      "Howard"
     ],
     [
       "Ferb",
@@ -1359,8 +1358,224 @@
       "Herschel"
     ],
     [
-      "Bob",
-      "Bill"
+      "Bill",
+      "Bob"
     ]
+  ],
+  "locations": [
+    "Earth",
+    "June 24 2133",
+    "Earth",
+    "Earth",
+    "Earth",
+    "Earth",
+    "Earth",
+    "Earth",
+    "Earth",
+    "Earth",
+    "Earth",
+    "Earth",
+    "Earth -> Epsilon Eridani",
+    "Epsilon Eridani",
+    "Epsilon Eridani",
+    "Epsilon Eridani",
+    "Epsilon Eridani",
+    "Epsilon Eridani",
+    "Omicron2 Eridani",
+    "Epsilon Eridani",
+    "Sol",
+    "Epsilon Eridani",
+    "Omicron2 Eridani",
+    "Sol",
+    "Epsilon Eridani",
+    "Sol",
+    "Delta Eridani",
+    "Alpha Centauri",
+    "Sol",
+    "Delta Eridani",
+    "Sol",
+    "Epsilon Eridani",
+    "Sol",
+    "Sol",
+    "Delta Eridani",
+    "Sol",
+    "Delta Eridani",
+    "Sol",
+    "Delta Eridani",
+    "Epsilon Indi",
+    "Sol",
+    "Epsilon Eridani",
+    "Sol",
+    "Delta Eridani",
+    "Epsilon Eridani",
+    "82 Eridani",
+    "Sol",
+    "Delta Eridani",
+    "Sol",
+    "Delta Eridani",
+    "Epsilon Eridani",
+    "Sol",
+    "Delta Eridani",
+    "Sol",
+    "Delta Eridani",
+    "Epsilon Eridani",
+    "Beta Hydri",
+    "Sol",
+    "Epsilon Eridani",
+    "82 Eridani",
+    "Omicron2 Eridani",
+    "Delta Eridani",
+    "Vulcan",
+    "Delta Eridani",
+    "Eta Cassiopeiae",
+    "Omicron2 Eridani",
+    "Poseidon",
+    "Sol",
+    "Vulcan",
+    "Delta Eridani",
+    "Zeta Tucanae",
+    "Delta Eridani",
+    "Epsilon Eridani",
+    "Gliese 54",
+    "Sol",
+    "Gliese 54",
+    "Vulcan",
+    "Delta Eridani",
+    "Sol",
+    "Delta Eridani",
+    "Vulcan",
+    "Sol",
+    "Delta Eridani",
+    "Sol",
+    "Delta Eridani",
+    "Vulcan",
+    "Sol",
+    "Delta Eridani",
+    "Sol",
+    "Vulcan",
+    "Gliese 877",
+    "Vulcan",
+    "Epsilon Eridani",
+    "Delta Eridani",
+    "Epsilon Eridani",
+    "Vulcan",
+    "Epsilon Eridani",
+    "Sol",
+    "Gliese 877",
+    "Epsilon Eridani",
+    "Vulcan",
+    "Delta Eridani",
+    "Vulcan",
+    "Sol",
+    "Epsilon Eridani",
+    "Vulcan",
+    "Epsilon Indi",
+    "Delta Eridani",
+    "Vulcan",
+    "Poseidon",
+    "82 Eridani",
+    "Vulcan",
+    "Epsilon Eridani",
+    "GL 877",
+    "GL 877 -> GL 54",
+    "GL 54",
+    "Delta Eridani",
+    "Epsilon Eridani",
+    "Vulcan -> HIP 14101",
+    "Epsilon Eridani",
+    "Gamma Pavonis",
+    "Alpha Centauri",
+    "Departure",
+    "Delta Pavonis",
+    "Epsilon Eridani",
+    "Delta Eridani",
+    "Epsilon Eridani",
+    "HIP 14101",
+    "Delta Pavonis",
+    "Vulcan",
+    "HIP 14101",
+    "Delta Eridani",
+    "Delta Pavonis",
+    "Delta Pavonis",
+    "Delta Pavonis",
+    "HIP 14101",
+    "Delta Eridani",
+    "Delta Pavonis",
+    "Delta Eridani",
+    "Vulcan",
+    "Poseidon",
+    "Vulcan",
+    "Delta Eridani",
+    "Epsilon Eridani",
+    "Omicron2 Eridani",
+    "Poseidon",
+    "Vulcan",
+    "Camelot",
+    "Epsilon Eridani",
+    "Vulcan",
+    "Poseidon",
+    "Vulcan",
+    "Sol",
+    "Poseidon",
+    "Epsilon Eridani -> ",
+    "82 Eridani",
+    "Poseidon",
+    "HIP 14101",
+    "82 Eridani",
+    "Delta Pavonis",
+    "Omicron2 Eridani",
+    "Delta Pavonis",
+    "82 Eridani",
+    "Poseidon",
+    "Delta Pavonis",
+    "Eden",
+    "Vulcan",
+    "82 Eridani",
+    "Poseidon",
+    "Epsilon Eridani",
+    "Delta Pavonis",
+    "Eden",
+    "Poseidon",
+    "Sol",
+    "Omicron2 Eridani",
+    "Delta Pavonis -> Sol",
+    "Poseidon",
+    "Delta Eridani",
+    "HIP 14101",
+    "82 Eridani",
+    "Epsilon Indi -> ",
+    "Odin",
+    "HIP 84051",
+    "Odin",
+    "Sol",
+    "HIP 84051",
+    "Sol",
+    "Delta Eridani",
+    "Epsilon Eridani",
+    "Sol",
+    "Gamma Pavonis",
+    "Romulus",
+    "Epsilon Eridani",
+    "Odin",
+    "Sol",
+    "Sol",
+    "Odin",
+    "Sol",
+    "Delta Eridani",
+    "Epsilon Eridani",
+    "Sol",
+    "Sol",
+    "Sol",
+    "Sol",
+    "Sol",
+    "Sol",
+    "Delta Eridani",
+    "GL 877",
+    "Sol",
+    "Delta Eridani",
+    "BobNet",
+    "HIP 84051",
+    "Sol",
+    "Earth"
   ]
 }
