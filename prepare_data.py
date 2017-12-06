@@ -10,4 +10,8 @@ read_dates()
 read_genealogy()
 read_locations()
 read_relationships()
+
 write_data_json()
+write_data_json(1)
+write_data_json(2)
+write_data_json(3)

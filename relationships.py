@@ -12,9 +12,13 @@ def read_relationships():
 
     locations = json.load(open(os.path.join('generated', 'locations.json')))
 
-    scenes = []
-    scenes_locations = []
     index = []
+    for nb, book_chapters in enumerate(chapters_books):
+        for nc, book_chapter in enumerate(book_chapters):
+            index.append((nb + 1, nc + 1))
+
+
+    scenes = []
     for nb, book_chapters in enumerate(chapters_books):
         for nc, book_chapter in enumerate(book_chapters):
             lines = book_chapter['content']
@@ -33,9 +37,7 @@ def read_relationships():
             # scenes.append(list(link))
 
             scenes.append({'character_ids': list(link)})
-            index.append((nb+1,nc+1))
             # {'characters': scene_characters, 'start': book_chapter['date']})
-            scenes_locations.append(book_chapter['location'])
 
     # Removing, false positive matches:
 
@@ -52,6 +54,29 @@ def read_relationships():
         if index[i] > (2, 28) and 'Homer' in s['character_ids']:
             scenes[i]['character_ids'].remove('Homer')
 
+    # scenes_dates = json.load(open(os.path.join('generated', 'scenes_dates.json')))
+
+    # for i,s in enumerate(scenes):
+    #    scenes[i].update(scenes_dates[i])
+
+    def write_scenes(nb=None):
+        if nb is None:
+            nb = ''
+            data_scenes = scenes
+        else:
+            data_scenes = [scenes[i] for i, idx in enumerate(index) if idx[0] == nb]
+        json.dump(data_scenes, open(os.path.join('generated', 'scenes%s.json'%nb), 'w'), indent=2)
+
+    write_scenes()
+    write_scenes(1)
+    write_scenes(2)
+    write_scenes(3)
+
+
+    scenes_locations = []
+    for nb, book_chapters in enumerate(chapters_books):
+        for nc, book_chapter in enumerate(book_chapters):
+            scenes_locations.append(book_chapter['location'])
 
     # Bob on Earth
     for i in range(0, 12):
@@ -89,21 +114,12 @@ def read_relationships():
     # Icarus & Deadalus destroying GL877
     scenes_locations[207] = 'GL 877'
 
-    # scenes_dates = json.load(open(os.path.join('generated', 'scenes_dates.json')))
-
-    # for i,s in enumerate(scenes):
-    #    scenes[i].update(scenes_dates[i])
-
-    json.dump(scenes, open(os.path.join('generated', 'scenes.json'), 'w'), indent=2)
-
-
     def treat_one_scene_location(scene_location):
         for location in locations:
             if ('city' in location and location['city'] == scene_location) \
                     or ('planet' in location and location['planet'] == scene_location) \
                     or ('star' in location and location['star'] == scene_location):
                 return location
-
 
     def treat_scene_location(scene_location):
         treat_one = treat_one_scene_location(scene_location)
@@ -113,10 +129,20 @@ def read_relationships():
         places = [el.strip() for el in scene_location.split('->')]
         return list(map(treat_one_scene_location, places))
 
-
     scenes_locations = list(map(treat_scene_location, scenes_locations))
 
-    json.dump(scenes_locations, open(os.path.join('generated', 'scenes_locations.json'), 'w'), indent=2)
+    def write_scenes_locations(nb=None):
+        if nb is None:
+            nb = ''
+            data_scenes_locations = scenes_locations
+        else:
+            data_scenes_locations = [scenes_locations[i] for i, idx in enumerate(index) if idx[0] == nb]
+        json.dump(data_scenes_locations, open(os.path.join('generated', 'scenes_locations%s.json'%nb), 'w'), indent=2)
+
+    write_scenes_locations()
+    write_scenes_locations(1)
+    write_scenes_locations(2)
+    write_scenes_locations(3)
 
 
 if __name__ == '__main__':
