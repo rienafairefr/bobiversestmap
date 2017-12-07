@@ -55,3 +55,11 @@ Bob:Bill:Mulder:Marcus
 Bob:Bill:Khan:Loki
 Bob:Mario:Jacques:Herschel
 Bob:Mario:Jacques:Neil
+Bob:Marvin:Pete
+Bob:Marvin:Victor
+
+Zeke
+Jeffrey
+Milton
+Yoshi
+Tony
