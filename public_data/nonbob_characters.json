@@ -51,6 +51,43 @@
   {
     "affiliation": "Deltans",
     "id": "Fred_Deltan",
-    "name": "Fred"
+    "name": "Fred (Deltan)",
+    "other_names": ["Fred"]
+  },
+  {
+    "affiliation": "Deltans",
+    "id": "Fred_Carleon",
+    "name": "Fred (Carleon)",
+    "other_names":["Fred"]
+  },
+
+  {
+    "affiliation": "Poseidon Revolution",
+    "id": "Denu",
+    "name": "Denu"
+  },
+  {
+    "affiliation": "Poseidon Revolution",
+    "id": "Gina",
+    "name": "Gina"
+  },
+  {
+    "affiliation": "Poseidon Revolution",
+    "id": "Vinnie",
+    "name": "Vinnie"
+  },
+
+  {
+    "affiliation": "VEHEMENT",
+    "id": "Vickers",
+    "name": "Vickers"
+  },
+
+
+  {
+    "affiliation": "Spitsbergans",
+    "id": "Valter",
+    "name": "Valter"
   }
+
 ]

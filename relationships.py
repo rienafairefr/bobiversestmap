@@ -54,6 +54,26 @@ def read_relationships():
         if index[i] > (2, 28) and 'Homer' in s['character_ids']:
             scenes[i]['character_ids'].remove('Homer')
 
+    # Fred represents 3 different characters
+    for i,s in enumerate(scenes):
+        ids = scenes[i]['character_ids']
+
+        if 'Fred' in ids:
+            # the Bob clone
+            if index[i][0] == 1:
+                ids.remove('Fred_Deltan')
+                ids.remove('Fred_Carleon')
+            # the deltan hunter
+            if index[i][0] == 2:
+                ids.remove('Fred')
+                ids.remove('Fred_Carleon')
+            # the foe from Carleon
+            if index[i][0] == 3:
+                ids.remove('Fred')
+                ids.remove('Fred_Deltan')
+
+        scenes[i]['character_ids'] = ids
+
     # scenes_dates = json.load(open(os.path.join('generated', 'scenes_dates.json')))
 
     # for i,s in enumerate(scenes):
