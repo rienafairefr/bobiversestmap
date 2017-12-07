@@ -23,4 +23,5 @@ Omicron2 Eridani:Vulcan
 Omicron2 Eridani:Romulus
 HIP 14101:Odin
 Eta Cassiopeiae:Poseidon
+Epsilon Indi:KKP
 BobNet
