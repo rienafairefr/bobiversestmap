@@ -2,7 +2,7 @@ import os
 import json
 
 
-def read_relationships():
+def read_scenes():
     characters = json.load(open(os.path.join('generated', 'bob_characters.json')))
     characters.extend(json.load(open(os.path.join('public_data', 'nonbob_characters.json'))))
 
@@ -11,14 +11,17 @@ def read_relationships():
     chapters_books = json.load(open(os.path.join('generated', 'Combined.json')))
 
     locations = json.load(open(os.path.join('generated', 'locations.json')))
+    scenes_locations = json.load(open(os.path.join('generated', 'scenes_locations.json')))
+
+    sorted_locations = sorted(locations, key=scenes_locations.index)
 
     index = []
     for nb, book_chapters in enumerate(chapters_books):
         for nc, book_chapter in enumerate(book_chapters):
             index.append((nb + 1, nc + 1))
 
-
     scenes = []
+    i=0
     for nb, book_chapters in enumerate(chapters_books):
         for nc, book_chapter in enumerate(book_chapters):
             lines = book_chapter['content']
@@ -36,8 +39,14 @@ def read_relationships():
             # scene_characters = list(characters[character_id] for character_id in link)
             # scenes.append(list(link))
 
+            if type(scenes_locations[i])==list:
+                y = (sorted_locations.index(scenes_locations[i][0])+sorted_locations.index(scenes_locations[i][1]))/2
+            else:
+                y = sorted_locations.index(scenes_locations[i])
+
             scenes.append({'character_ids': list(link)})
             # {'characters': scene_characters, 'start': book_chapter['date']})
+            i = i +1
 
     # Removing, false positive matches:
 
@@ -93,77 +102,5 @@ def read_relationships():
     write_scenes(3)
 
 
-    scenes_locations = []
-    for nb, book_chapters in enumerate(chapters_books):
-        for nc, book_chapter in enumerate(book_chapters):
-            scenes_locations.append(book_chapter['location'])
-
-    # Bob on Earth
-    for i in range(0, 12):
-        scenes_locations[i] = 'Earth'
-
-    # Bob first voyage
-    scenes_locations[12] = 'Earth -> Epsilon Eridani'
-
-    # Mulder in Poseidon
-    scenes_locations[109] = 'Poseidon'
-
-    # Hal going to GL 54
-    scenes_locations[114] = 'GL 877 -> GL 54'
-
-    # Howard moving on
-    scenes_locations[118] = 'Vulcan -> HIP 14101'
-
-    # Mulder Leaving Poseidon
-    scenes_locations[122] = 'Poseidon'
-
-    # Icarus & Deadalus
-    scenes_locations[154] = 'Epsilon Eridani -> '
-    # Neil & Herschel
-    scenes_locations[159] = 'Delta Pavonis'
-    scenes_locations[161] = 'Delta Pavonis'
-    # Bob on Eden
-    scenes_locations[171] = 'Eden'
-
-    # Neil & Herschel moving the Bellerophon
-    scenes_locations[175] = 'Delta Pavonis -> Sol'
-
-    # Icarus & Deadalus
-    scenes_locations[180] = 'Epsilon Indi -> '
-
-    # Icarus & Deadalus destroying GL877
-    scenes_locations[207] = 'GL 877'
-
-    def treat_one_scene_location(scene_location):
-        for location in locations:
-            if ('city' in location and location['city'] == scene_location) \
-                    or ('planet' in location and location['planet'] == scene_location) \
-                    or ('star' in location and location['star'] == scene_location):
-                return location
-
-    def treat_scene_location(scene_location):
-        treat_one = treat_one_scene_location(scene_location)
-        if treat_one:
-            return treat_one
-
-        places = [el.strip() for el in scene_location.split('->')]
-        return list(map(treat_one_scene_location, places))
-
-    scenes_locations = list(map(treat_scene_location, scenes_locations))
-
-    def write_scenes_locations(nb=None):
-        if nb is None:
-            nb = ''
-            data_scenes_locations = scenes_locations
-        else:
-            data_scenes_locations = [scenes_locations[i] for i, idx in enumerate(index) if idx[0] == nb]
-        json.dump(data_scenes_locations, open(os.path.join('generated', 'scenes_locations%s.json'%nb), 'w'), indent=2)
-
-    write_scenes_locations()
-    write_scenes_locations(1)
-    write_scenes_locations(2)
-    write_scenes_locations(3)
-
-
 if __name__ == '__main__':
-    read_relationships()
+    read_scenes()

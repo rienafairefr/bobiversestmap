@@ -6,7 +6,6 @@ function get_data(datafile, parent) {
 
         var svg, scenes, width, height, sceneWidth;
 
-
         // Get the data in the format we need to feed to d3.layout.narrative().scenes
         scenes = wrangle(response);
 
@@ -142,10 +141,10 @@ function get_data(datafile, parent) {
     });
 }
 
-get_data("data.json",'#all_books');
-get_data("data1.json",'#book1');
-get_data("data2.json",'#book2');
-get_data("data3.json",'#book3');
+get_data("travels.json",'#all_books');
+get_data("travels1.json",'#book1');
+get_data("travels2.json",'#book2');
+get_data("travels3.json",'#book3');
 
 function wrangle(data) {
 	return data.scenes.map(function(scene){
