@@ -22,6 +22,8 @@ def read_genealogy():
         else:
             char['affiliation'] = bob[-1]
         char['level'] = len(bob)
+        if char['id'] == 'Riker':
+            char['other_names'] = ['Will', 'William']
         bob_characters.append(char)
 
     json.dump(bob_characters, open(os.path.join('generated', 'bob_characters.json'), 'w'), indent=2)
