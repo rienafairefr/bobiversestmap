@@ -1,9 +1,12 @@
+import os
 from genealogy import read_genealogy
 from locations import read_locations
 from read_dates import read_dates
 from readcombined import read_combined
 from relationships import read_relationships
 from write_data_json import write_data_json
+
+os.makedirs('generated')
 
 read_combined()
 read_dates()
