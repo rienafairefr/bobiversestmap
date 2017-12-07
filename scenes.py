@@ -1,5 +1,6 @@
 import os
 import json
+import string
 
 
 def read_scenes():
@@ -16,9 +17,13 @@ def read_scenes():
     sorted_locations = sorted(locations, key=scenes_locations.index)
 
     index = []
+    reverse_index = {}
+    i=0
     for nb, book_chapters in enumerate(chapters_books):
         for nc, book_chapter in enumerate(book_chapters):
             index.append((nb + 1, nc + 1))
+            reverse_index[nb+1,nc+1] = i
+            i = i+1
 
     scenes = []
     i=0
@@ -28,6 +33,7 @@ def read_scenes():
             link = {book_chapter['bob']}
             for line in lines:
                 words = line.split()
+                words = ["".join(l for l in word if l not in string.punctuation) for word in words]
                 for character_id, character in characters.items():
                     if character['name'] in words:
                         link.add(character['id'])
@@ -62,6 +68,16 @@ def read_scenes():
     for i, s in enumerate(scenes):
         if index[i] > (2, 28) and 'Homer' in s['character_ids']:
             scenes[i]['character_ids'].remove('Homer')
+
+    # Moses mentioned after his death
+    for i, s in enumerate(scenes):
+        if index[i] > (2, 55) and 'Moses' in s['character_ids']:
+            scenes[i]['character_ids'].remove('Moses')
+
+    # 1-39 Bob talking about others
+    scenes[reverse_index[1, 39]]['character_ids'].remove('Milo')
+    scenes[reverse_index[1, 39]]['character_ids'].remove('Bill')
+    scenes[reverse_index[1, 39]]['character_ids'].remove('Mario')
 
     # Fred represents 3 different characters
     for i,s in enumerate(scenes):
