@@ -1,6 +1,7 @@
 import os
 import json
 import string
+from collections import OrderedDict
 
 from genealogy import get_characters, get_characters_map
 from locations import get_locations
@@ -65,7 +66,7 @@ def get_scenes():
             else:
                 y = sorted_locations.index(scenes_locations[i])
 
-            scenes.append({'character_ids': list(link), 'character_line': character_line})
+            scenes.append(OrderedDict({'character_ids': list(link), 'character_line': character_line}))
 
             # {'characters': scene_characters, 'start': book_chapter['date']})
             i = i + 1

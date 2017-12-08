@@ -7,6 +7,7 @@ from utils import json_dump, memoize
 def strip(li):
     return [l.strip() for l in li]
 
+
 @memoize()
 def read_timeline():
     lines = open(os.path.join('public_data','timeline_books_1-3.txt'),encoding='utf-8').readlines()

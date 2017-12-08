@@ -1,5 +1,6 @@
 import json
 import os
+from collections import OrderedDict
 
 import colorcet as cc
 
@@ -41,7 +42,7 @@ def get_characters():
 
 @memoize()
 def get_characters_map():
-    return {character['id']: character for character in get_characters()}
+    return OrderedDict({character['id']:character for character in get_characters()})
 
 
 @memoize()

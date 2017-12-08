@@ -1,5 +1,6 @@
 import os
 import json
+from collections import OrderedDict
 
 from readcombined import get_index, get_book_chapters
 from scenes_locations import get_scenes_locations
@@ -16,7 +17,7 @@ def get_travels():
     i = 0
     for nb, book_chapters in enumerate(chapters_books):
         for nc, book_chapter in enumerate(book_chapters):
-            travels.append({'bob': book_chapter['bob'], 'location': scenes_locations[i]})
+            travels.append(OrderedDict({'bob': book_chapter['bob'], 'location': scenes_locations[i]}))
             i=i+1
 
     return travels
@@ -34,7 +35,7 @@ def write_travels():
 
         bobs = list(set(el['bob'] for el in data_travels))
 
-        data_travels_dict = {}
+        data_travels_dict = OrderedDict()
         for bob in bobs:
             data_travels_dict[bob] = []
             current_location = None

@@ -15,9 +15,7 @@ def get_dates():
     parsed_dates = []
     for book_chapters in chapters_books:
         for book_chapter in book_chapters:
-            nb = book_chapter['nb']
-            nc = book_chapter['nc']
-            default_datetime = default=datetime.datetime(year=1, month=1, day=1)
+            default_datetime = datetime.datetime(year=1, month=1, day=1)
             parsed_datetime = parser.parse(book_chapter['date'],default=default_datetime)
             parsed_date = dict(raw=book_chapter['date'],
                                nb = book_chapter['nb'],

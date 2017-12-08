@@ -1,5 +1,6 @@
 import re
 import os
+from collections import OrderedDict
 
 from utils import json_dump, memoize
 
@@ -39,7 +40,7 @@ def get_book_chapters():
         new_chapters = []
         for index_chapter, chap in enumerate(chapters):
             matched = re.match('^(\d*)\.(.*)$', chap[0])
-            new_chapters.append({
+            new_chapters.append(OrderedDict({
                 'nb': index_book + 1,
                 'nc': index_chapter + 1,
                 'n': index + 1,
@@ -48,7 +49,7 @@ def get_book_chapters():
                 'date': chap[2],
                 'location': chap[3],
                 'content': chap[4:]
-            })
+            }))
             index = index +1
 
         book_chapters.append(new_chapters)

@@ -68,7 +68,7 @@ def get_capitalized():
 
     content = new_content
     content = [el for el in content if len(el) > 2]
-    content = {el for el in content if el[0].upper() == el[0]}
+    content = set(el for el in content if el[0].upper() == el[0])
 
     for character_id, character in characters_map.items():
         if character['name'] in content:
