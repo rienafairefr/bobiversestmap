@@ -512,8 +512,8 @@
     }, 
     {
       "character_ids": [
-        "Landers", 
-        "Bob"
+        "Bob", 
+        "Landers"
       ], 
       "character_line": {
         "Bob": [
@@ -552,8 +552,8 @@
     }, 
     {
       "character_ids": [
-        "Landers", 
-        "Bob"
+        "Bob", 
+        "Landers"
       ], 
       "character_line": {
         "Bob": [
@@ -582,8 +582,8 @@
     }, 
     {
       "character_ids": [
-        "Landers", 
-        "Bob"
+        "Bob", 
+        "Landers"
       ], 
       "character_line": {
         "Bob": [
@@ -599,8 +599,8 @@
     }, 
     {
       "character_ids": [
-        "Landers", 
-        "Bob"
+        "Bob", 
+        "Landers"
       ], 
       "character_line": {
         "Bob": [
@@ -627,8 +627,8 @@
     }, 
     {
       "character_ids": [
-        "Landers", 
-        "Bob"
+        "Bob", 
+        "Landers"
       ], 
       "character_line": {
         "Bob": [
@@ -650,8 +650,8 @@
     }, 
     {
       "character_ids": [
-        "Landers", 
-        "Bob"
+        "Bob", 
+        "Landers"
       ], 
       "character_line": {
         "Bob": [
@@ -677,8 +677,8 @@
     }, 
     {
       "character_ids": [
-        "Landers", 
-        "Bob"
+        "Bob", 
+        "Landers"
       ], 
       "character_line": {
         "Bob": [
@@ -703,8 +703,8 @@
     }, 
     {
       "character_ids": [
-        "Landers", 
-        "Bob"
+        "Bob", 
+        "Landers"
       ], 
       "character_line": {
         "Bob": [
@@ -725,8 +725,8 @@
     }, 
     {
       "character_ids": [
-        "Landers", 
-        "Bob"
+        "Bob", 
+        "Landers"
       ], 
       "character_line": {
         "Bob": [
@@ -752,9 +752,9 @@
     }, 
     {
       "character_ids": [
-        "Landers", 
         "Bob", 
-        "Doucette"
+        "Doucette", 
+        "Landers"
       ], 
       "character_line": {
         "Bob": [
@@ -780,8 +780,8 @@
     }, 
     {
       "character_ids": [
-        "Landers", 
-        "Bob"
+        "Bob", 
+        "Landers"
       ], 
       "character_line": {
         "Bob": [
@@ -803,9 +803,9 @@
     }, 
     {
       "character_ids": [
-        "Landers", 
         "Bob", 
-        "Doucette"
+        "Doucette", 
+        "Landers"
       ], 
       "character_line": {
         "Bob": [
@@ -875,11 +875,11 @@
     }, 
     {
       "character_ids": [
-        "Milo", 
         "Mario", 
-        "Bob", 
+        "Bill", 
         "Riker", 
-        "Bill"
+        "Milo", 
+        "Bob"
       ], 
       "character_line": {
         "Bill": [
@@ -973,11 +973,11 @@
     }, 
     {
       "character_ids": [
+        "Mario", 
         "Milo", 
         "Bob", 
-        "Mario", 
-        "Riker", 
-        "Bill"
+        "Bill", 
+        "Riker"
       ], 
       "character_line": {
         "Bill": [
@@ -1009,9 +1009,9 @@
     {
       "character_ids": [
         "Milo", 
+        "Bob", 
         "Bill", 
-        "Riker", 
-        "Bob"
+        "Riker"
       ], 
       "character_line": {
         "Bill": [
@@ -1039,11 +1039,11 @@
     }, 
     {
       "character_ids": [
-        "Garfield", 
+        "Homer", 
         "Bob", 
-        "Riker", 
+        "Garfield", 
         "Bill", 
-        "Homer"
+        "Riker"
       ], 
       "character_line": {
         "Bill": [
@@ -1078,10 +1078,10 @@
     }, 
     {
       "character_ids": [
-        "Bill", 
-        "Riker", 
+        "Homer", 
         "Bob", 
-        "Homer"
+        "Bill", 
+        "Riker"
       ], 
       "character_line": {
         "Bill": [
@@ -1113,13 +1113,13 @@
     }, 
     {
       "character_ids": [
-        "Linus", 
         "Garfield", 
-        "Homer", 
-        "Goku", 
-        "Calvin", 
+        "Bill", 
         "Riker", 
-        "Bill"
+        "Linus", 
+        "Calvin", 
+        "Homer", 
+        "Goku"
       ], 
       "character_line": {
         "Bill": [
@@ -1165,10 +1165,10 @@
     }, 
     {
       "character_ids": [
-        "Bill", 
-        "Riker", 
+        "Homer", 
         "Bob", 
-        "Homer"
+        "Bill", 
+        "Riker"
       ], 
       "character_line": {
         "Bill": [
@@ -1226,8 +1226,8 @@
     }, 
     {
       "character_ids": [
-        "Garfield", 
         "Bob", 
+        "Garfield", 
         "Bill"
       ], 
       "character_line": {
@@ -1250,10 +1250,10 @@
     }, 
     {
       "character_ids": [
-        "Bill", 
-        "Riker", 
+        "Homer", 
         "Butterworth", 
-        "Homer"
+        "Bill", 
+        "Riker"
       ], 
       "character_line": {
         "Bill": [
@@ -1282,8 +1282,8 @@
     {
       "character_ids": [
         "Mario", 
-        "Bill", 
-        "Bob"
+        "Bob", 
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -1334,10 +1334,10 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Riker", 
+        "Homer", 
         "Butterworth", 
-        "Homer"
+        "Bob", 
+        "Riker"
       ], 
       "character_line": {
         "Bob": [
@@ -1365,11 +1365,11 @@
     }, 
     {
       "character_ids": [
+        "Archimedes", 
         "Luke", 
-        "Marvin", 
-        "Bender", 
         "Bob", 
-        "Archimedes"
+        "Marvin", 
+        "Bender"
       ], 
       "character_line": {
         "Archimedes": [
@@ -1405,11 +1405,11 @@
     }, 
     {
       "character_ids": [
-        "Charles", 
-        "Arthur", 
-        "Riker", 
+        "Homer", 
         "Butterworth", 
-        "Homer"
+        "Charles", 
+        "Riker", 
+        "Arthur"
       ], 
       "character_line": {
         "Arthur": [
@@ -1453,10 +1453,10 @@
     {
       "character_ids": [
         "Milo", 
-        "Garfield", 
         "Bob", 
-        "Riker", 
-        "Bill"
+        "Garfield", 
+        "Bill", 
+        "Riker"
       ], 
       "character_line": {
         "Bill": [
@@ -1482,11 +1482,11 @@
     }, 
     {
       "character_ids": [
-        "Valter", 
-        "Butterworth", 
-        "Riker", 
         "Homer", 
-        "Arthur"
+        "Butterworth", 
+        "Arthur", 
+        "Valter", 
+        "Riker"
       ], 
       "character_line": {
         "Arthur": [
@@ -1533,11 +1533,11 @@
     }, 
     {
       "character_ids": [
-        "Valter", 
         "Butterworth", 
-        "Riker", 
         "Bob", 
-        "Homer"
+        "Valter", 
+        "Homer", 
+        "Riker"
       ], 
       "character_line": {
         "Bob": [
@@ -1562,12 +1562,12 @@
     }, 
     {
       "character_ids": [
+        "Moses", 
+        "Marvin", 
+        "Archimedes", 
         "Luke", 
         "Bender", 
-        "Bob", 
-        "Archimedes", 
-        "Moses", 
-        "Marvin"
+        "Bob"
       ], 
       "character_line": {
         "Archimedes": [
@@ -1647,9 +1647,9 @@
     }, 
     {
       "character_ids": [
+        "Butterworth", 
         "Valter", 
-        "Riker", 
-        "Butterworth"
+        "Riker"
       ], 
       "character_line": {
         "Butterworth": [
@@ -1679,12 +1679,12 @@
     }, 
     {
       "character_ids": [
+        "Moses", 
+        "Marvin", 
+        "Archimedes", 
         "Luke", 
         "Bender", 
-        "Bob", 
-        "Archimedes", 
-        "Moses", 
-        "Marvin"
+        "Bob"
       ], 
       "character_line": {
         "Archimedes": [
@@ -1739,9 +1739,9 @@
     }, 
     {
       "character_ids": [
+        "Butterworth", 
         "Bob", 
-        "Riker", 
-        "Butterworth"
+        "Riker"
       ], 
       "character_line": {
         "Bob": [
@@ -1763,10 +1763,10 @@
     }, 
     {
       "character_ids": [
-        "Luke", 
-        "Bob", 
+        "Marvin", 
         "Archimedes", 
-        "Marvin"
+        "Luke", 
+        "Bob"
       ], 
       "character_line": {
         "Archimedes": [
@@ -1804,12 +1804,12 @@
     }, 
     {
       "character_ids": [
-        "Linus", 
-        "Bob", 
-        "Goku", 
         "Henry", 
+        "Bill", 
+        "Linus", 
         "Calvin", 
-        "Bill"
+        "Goku", 
+        "Bob"
       ], 
       "character_line": {
         "Bill": [
@@ -1856,11 +1856,11 @@
     }, 
     {
       "character_ids": [
+        "Homer", 
         "Butterworth", 
-        "Valter", 
-        "Riker", 
         "Bill", 
-        "Homer"
+        "Riker", 
+        "Valter"
       ], 
       "character_line": {
         "Bill": [
@@ -1895,11 +1895,11 @@
     }, 
     {
       "character_ids": [
-        "Garfield", 
+        "Homer", 
         "Bob", 
-        "Riker", 
+        "Garfield", 
         "Bill", 
-        "Homer"
+        "Riker"
       ], 
       "character_line": {
         "Bill": [
@@ -1933,11 +1933,11 @@
     }, 
     {
       "character_ids": [
-        "Charles", 
-        "Arthur", 
-        "Riker", 
+        "Homer", 
         "Butterworth", 
-        "Homer"
+        "Charles", 
+        "Riker", 
+        "Arthur"
       ], 
       "character_line": {
         "Arthur": [
@@ -1975,9 +1975,9 @@
     {
       "character_ids": [
         "Moses", 
-        "Marvin", 
+        "Archimedes", 
         "Bob", 
-        "Archimedes"
+        "Marvin"
       ], 
       "character_line": {
         "Archimedes": [
@@ -2020,8 +2020,8 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Goku", 
+        "Bob", 
         "Bart", 
         "Bill"
       ], 
@@ -2075,12 +2075,12 @@
     }, 
     {
       "character_ids": [
+        "Bill", 
+        "Riker", 
         "Charles", 
-        "Bob", 
         "Homer", 
         "Butterworth", 
-        "Riker", 
-        "Bill"
+        "Bob"
       ], 
       "character_line": {
         "Arthur": [
@@ -2124,11 +2124,11 @@
     }, 
     {
       "character_ids": [
-        "Luke", 
-        "Bob", 
-        "Archimedes", 
         "Moses", 
-        "Marvin"
+        "Marvin", 
+        "Archimedes", 
+        "Luke", 
+        "Bob"
       ], 
       "character_line": {
         "Archimedes": [
@@ -2167,11 +2167,11 @@
     }, 
     {
       "character_ids": [
+        "Homer", 
         "Butterworth", 
-        "Charles", 
-        "Riker", 
         "Bob", 
-        "Homer"
+        "Charles", 
+        "Riker"
       ], 
       "character_line": {
         "Bob": [
@@ -2207,9 +2207,9 @@
     }, 
     {
       "character_ids": [
-        "Marvin", 
+        "Archimedes", 
         "Bob", 
-        "Archimedes"
+        "Marvin"
       ], 
       "character_line": {
         "Archimedes": [
@@ -2252,8 +2252,8 @@
     }, 
     {
       "character_ids": [
-        "Riker", 
-        "Homer"
+        "Homer", 
+        "Riker"
       ], 
       "character_line": {
         "Homer": [
@@ -2272,10 +2272,10 @@
     }, 
     {
       "character_ids": [
-        "Marvin", 
-        "Riker", 
+        "Archimedes", 
         "Bob", 
-        "Archimedes"
+        "Marvin", 
+        "Riker"
       ], 
       "character_line": {
         "Archimedes": [
@@ -2299,12 +2299,12 @@
     }, 
     {
       "character_ids": [
-        "Charles", 
-        "Bob", 
+        "Riker", 
         "Ralph", 
+        "Charles", 
         "Homer", 
         "Butterworth", 
-        "Riker"
+        "Bob"
       ], 
       "character_line": {
         "Bob": [
@@ -2331,10 +2331,10 @@
     }, 
     {
       "character_ids": [
+        "Archimedes", 
         "Moses", 
-        "Marvin", 
         "Bob", 
-        "Archimedes"
+        "Marvin"
       ], 
       "character_line": {
         "Archimedes": [
@@ -2376,8 +2376,8 @@
     {
       "character_ids": [
         "Mario", 
-        "Bill", 
-        "Bob"
+        "Bob", 
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -2395,12 +2395,12 @@
     }, 
     {
       "character_ids": [
-        "Howard", 
-        "Bob", 
-        "Homer", 
-        "Valter", 
+        "Bill", 
         "Riker", 
-        "Bill"
+        "Homer", 
+        "Bob", 
+        "Valter", 
+        "Howard"
       ], 
       "character_line": {
         "Bill": [
@@ -2430,11 +2430,11 @@
     }, 
     {
       "character_ids": [
+        "Homer", 
         "Garfield", 
         "Bart", 
-        "Riker", 
         "Bill", 
-        "Homer"
+        "Riker"
       ], 
       "character_line": {
         "Bart": [
@@ -2459,18 +2459,18 @@
     }, 
     {
       "character_ids": [
-        "Milo", 
-        "Hannibal", 
-        "Kyle", 
-        "Barney", 
-        "Khan", 
-        "Tom", 
         "Ned", 
-        "Bob", 
-        "Elmer", 
+        "Bill", 
+        "Khan", 
         "Fred", 
+        "Kyle", 
         "Riker", 
-        "Bill"
+        "Hannibal", 
+        "Tom", 
+        "Elmer", 
+        "Milo", 
+        "Bob", 
+        "Barney"
       ], 
       "character_line": {
         "Barney": [
@@ -2568,14 +2568,14 @@
     }, 
     {
       "character_ids": [
+        "Bill", 
+        "Riker", 
+        "Ernie", 
         "Bert", 
         "Milo", 
-        "Howard", 
-        "Ernie", 
-        "Bob", 
         "Butterworth", 
-        "Riker", 
-        "Bill"
+        "Bob", 
+        "Howard"
       ], 
       "character_line": {
         "Bert": [
