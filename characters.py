@@ -3,6 +3,10 @@ import os
 import string
 import nltk
 
+from genealogy import get_genealogy, get_characters, get_characters_map
+from readcombined import get_book_chapters
+
+
 def extract_named_entities():
     chapters_books = json.load(open(os.path.join('generated', 'Combined.json')))
 
@@ -34,7 +38,7 @@ def extract_named_entities():
     entity_names = []
 
     for tree in chunked_sentences:
-    # Print results per sentence
+        # Print results per sentence
         print(extract_entity_names(tree))
 
         entity_names.extend(extract_entity_names(tree))
@@ -42,15 +46,10 @@ def extract_named_entities():
     print(set(entity_names))
 
 
-
-
 def get_capitalized():
-    characters = json.load(open(os.path.join('generated', 'bob_characters.json')))
-    characters.extend(json.load(open(os.path.join('public_data', 'nonbob_characters.json'))))
+    characters_map = get_characters_map()
 
-    characters = {character['id']: character for character in characters}
-
-    chapters_books = json.load(open(os.path.join('generated', 'Combined.json')))
+    chapters_books = get_book_chapters()
 
     content = []
     for nb, book_chapters in enumerate(chapters_books):
@@ -59,21 +58,19 @@ def get_capitalized():
 
     content = ' '.join(content)
     content = content.split()
-    for i,w in enumerate(content):
+    for i, w in enumerate(content):
         if w.strip() == '.':
-            content[i+1] = content[i+1].lower()
-    content = [el for el in content if el.strip()!='']
+            content[i + 1] = content[i + 1].lower()
+    content = [el for el in content if el.strip() != '']
     new_content = []
     for el in content:
         new_content.append("".join(l for l in el if l not in string.punctuation))
 
     content = new_content
-    content = [el for el in content if len(el)>2]
+    content = [el for el in content if len(el) > 2]
     content = {el for el in content if el[0].upper() == el[0]}
 
-
-
-    for character_id, character in characters.items():
+    for character_id, character in characters_map.items():
         if character['name'] in content:
             content.remove(character['name'])
         if 'other_names' in character:
@@ -83,7 +80,8 @@ def get_capitalized():
 
     content = list(set(content))
 
-    open(os.path.join('generated','capitalized'),'w', encoding='utf-8').writelines([el+'\n' for el in sorted(content)])
+    open(os.path.join('generated', 'capitalized'), 'w', encoding='utf-8').writelines(
+        [el + '\n' for el in sorted(content)])
     pass
 
 

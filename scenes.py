@@ -2,18 +2,21 @@ import os
 import json
 import string
 
+from genealogy import get_characters, get_characters_map
+from locations import get_locations
+from readcombined import get_index, get_book_chapters
+from scenes_locations import get_scenes_locations
+from utils import json_dump, memoize
 
-def read_scenes():
-    bob_characters = json.load(open(os.path.join('generated', 'bob_characters.json')))
-    characters = bob_characters
-    characters.extend(json.load(open(os.path.join('public_data', 'nonbob_characters.json'))))
 
-    characters = {character['id']: character for character in characters}
+@memoize()
+def get_scenes():
+    characters_map = get_characters_map()
 
-    chapters_books = json.load(open(os.path.join('generated', 'Combined.json')))
+    chapters_books = get_book_chapters()
 
-    locations = json.load(open(os.path.join('generated', 'locations.json')))
-    scenes_locations = json.load(open(os.path.join('generated', 'scenes_locations.json')))
+    locations = get_locations()
+    scenes_locations = get_scenes_locations()
 
     def get_index(element):
         try:
@@ -43,7 +46,7 @@ def read_scenes():
             for line in lines:
                 words = line.split()
                 words = ["".join(l for l in word if l not in string.punctuation) for word in words]
-                for character_id, character in characters.items():
+                for character_id, character in characters_map.items():
                     names = [character['name']]
                     names.extend(character.get('other_names', []))
 
@@ -68,7 +71,7 @@ def read_scenes():
             i = i + 1
 
     os.makedirs(os.path.join('generated', 'character_lines'), exist_ok=True)
-    for character in characters.values():
+    for character in characters_map.values():
         filtereds = []
         for i, s in enumerate(scenes):
             if character['id'] not in s['character_ids']:
@@ -142,25 +145,28 @@ def read_scenes():
                 ids.remove('Fred_Deltan')
 
         scenes[i]['character_ids'] = ids
+    return scenes
 
-    # scenes_dates = json.load(open(os.path.join('generated', 'scenes_dates.json')))
 
-    # for i,s in enumerate(scenes):
-    #    scenes[i].update(scenes_dates[i])
+def get_scenes_books(nb=None):
+    scenes = get_scenes()
+    index = get_index()
+    if nb is None:
+        data_scenes = get_scenes()
+    else:
+        data_scenes = [scenes[i] for i, idx in enumerate(index) if idx[0] == nb]
+    return data_scenes
 
-    def write_scenes(nb=None):
-        if nb is None:
-            nb = ''
-            data_scenes = scenes
-        else:
-            data_scenes = [scenes[i] for i, idx in enumerate(index) if idx[0] == nb]
-        json.dump(data_scenes, open(os.path.join('generated', 'scenes%s.json' % nb), 'w'), indent=2)
 
-    write_scenes()
-    write_scenes(1)
-    write_scenes(2)
-    write_scenes(3)
+def write_scenes():
+    def write_scenes_(nb=None):
+        json_dump(get_scenes_books(nb), open(os.path.join('generated', 'scenes%s.json' % nb), 'w'))
+
+    write_scenes_()
+    write_scenes_(1)
+    write_scenes_(2)
+    write_scenes_(3)
 
 
 if __name__ == '__main__':
-    read_scenes()
+    write_scenes()

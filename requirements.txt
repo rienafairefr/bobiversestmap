@@ -1,2 +1,4 @@
 python-dateutil
 colorcet
+Flask
+Frozen-Flask

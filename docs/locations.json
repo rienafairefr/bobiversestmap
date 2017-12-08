@@ -1,0 +1,119 @@
+[
+  {
+    "id": "Eta Cassiopeiae", 
+    "star": "Eta Cassiopeiae"
+  }, 
+  {
+    "id": "HIP 84051", 
+    "star": "HIP 84051"
+  }, 
+  {
+    "id": "Sol", 
+    "star": "Sol"
+  }, 
+  {
+    "id": "Epsilon Indi", 
+    "star": "Epsilon Indi"
+  }, 
+  {
+    "id": "82 Eridani", 
+    "star": "82 Eridani"
+  }, 
+  {
+    "id": "Delta Pavonis", 
+    "star": "Delta Pavonis"
+  }, 
+  {
+    "id": "Gliese 877", 
+    "star": "Gliese 877"
+  }, 
+  {
+    "id": "Zeta Tucanae", 
+    "star": "Zeta Tucanae"
+  }, 
+  {
+    "id": "Gliese 54", 
+    "star": "Gliese 54"
+  }, 
+  {
+    "id": "Gamma Pavonis", 
+    "star": "Gamma Pavonis"
+  }, 
+  {
+    "id": "HIP 14101", 
+    "star": "HIP 14101"
+  }, 
+  {
+    "id": "Beta Hydri", 
+    "star": "Beta Hydri"
+  }, 
+  {
+    "id": "Omicron2 Eridani", 
+    "star": "Omicron2 Eridani"
+  }, 
+  {
+    "id": "GL 877", 
+    "star": "GL 877"
+  }, 
+  {
+    "id": "Delta Eridani", 
+    "star": "Delta Eridani"
+  }, 
+  {
+    "id": "Epsilon Eridani", 
+    "star": "Epsilon Eridani"
+  }, 
+  {
+    "id": "GL 54", 
+    "star": "GL 54"
+  }, 
+  {
+    "id": "Alpha Centauri", 
+    "star": "Alpha Centauri"
+  }, 
+  {
+    "id": "Delta Pavonis_Eden", 
+    "planet": "Eden", 
+    "star": "Delta Pavonis"
+  }, 
+  {
+    "city": "Camelot", 
+    "id": "Delta Pavonis_Eden_Camelot", 
+    "planet": "Eden", 
+    "star": "Delta Pavonis"
+  }, 
+  {
+    "id": "Sol_Earth", 
+    "planet": "Earth", 
+    "star": "Sol"
+  }, 
+  {
+    "id": "Omicron2 Eridani_Vulcan", 
+    "planet": "Vulcan", 
+    "star": "Omicron2 Eridani"
+  }, 
+  {
+    "id": "Omicron2 Eridani_Romulus", 
+    "planet": "Romulus", 
+    "star": "Omicron2 Eridani"
+  }, 
+  {
+    "id": "HIP 14101_Odin", 
+    "planet": "Odin", 
+    "star": "HIP 14101"
+  }, 
+  {
+    "id": "Eta Cassiopeiae_Poseidon", 
+    "planet": "Poseidon", 
+    "star": "Eta Cassiopeiae"
+  }, 
+  {
+    "id": "Epsilon Indi_KKP", 
+    "planet": "KKP", 
+    "star": "Epsilon Indi"
+  }, 
+  {
+    "id": "BobNet", 
+    "star": "BobNet"
+  }
+]

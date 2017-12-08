@@ -1,12 +1,15 @@
 import os
-import json
 
 import datetime
 from dateutil import parser
 
+from readcombined import get_book_chapters
+from utils import json_dump, memoize
 
-def read_dates():
-    chapters_books = json.load(open(os.path.join('generated', 'Combined.json')))
+
+@memoize()
+def get_dates():
+    chapters_books = get_book_chapters()
     month = 30.4375
 
     parsed_dates = []
@@ -17,6 +20,8 @@ def read_dates():
             default_datetime = default=datetime.datetime(year=1, month=1, day=1)
             parsed_datetime = parser.parse(book_chapter['date'],default=default_datetime)
             parsed_date = dict(raw=book_chapter['date'],
+                               nb = book_chapter['nb'],
+                               nc = book_chapter['nc'],
                                start=parsed_datetime.timestamp()/(24*3600),
                                duration=month)
             parsed_dates.append(parsed_date)
@@ -32,8 +37,11 @@ def read_dates():
     for i,d in enumerate(parsed_dates):
         parsed_dates[i]['start']=parsed_dates[i]['start']-parsed_dates[1]['start']
 
-    json.dump(parsed_dates, open(os.path.join('generated', 'scenes_dates.json'), 'w'), indent=2)
+
+def write_dates():
+    parsed_dates = get_dates()
+    json_dump(parsed_dates, open(os.path.join('generated', 'scenes_dates.json'), 'w'))
 
 
 if __name__ == '__main__':
-    read_dates()
+    write_dates()

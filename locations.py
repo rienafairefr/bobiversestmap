@@ -1,8 +1,11 @@
 import json
 import os
 
+from utils import json_dump, memoize
 
-def read_locations():
+
+@memoize()
+def get_locations():
     with open(os.path.join('public_data', 'locations.txt')) as location:
         lines = location.readlines()
 
@@ -19,9 +22,13 @@ def read_locations():
         place_dict['id'] = '_'.join(place)
 
         places.append(place_dict)
+    return places
 
-    json.dump(places, open(os.path.join('generated', 'locations.json'), 'w'), indent=2)
+
+def write_locations():
+    places = get_locations()
+    json_dump(places, open(os.path.join('generated', 'locations.json'), 'w'))
 
 
 if __name__ == '__main__':
-    read_locations()
+    write_locations()

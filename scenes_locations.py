@@ -1,11 +1,16 @@
 import os
 import json
 
+from locations import get_locations
+from readcombined import get_index, get_book_chapters
+from utils import json_dump, memoize
 
-def read_scenes_locations():
-    chapters_books = json.load(open(os.path.join('generated', 'Combined.json')))
 
-    locations = json.load(open(os.path.join('generated', 'locations.json')))
+@memoize()
+def get_scenes_locations():
+    chapters_books = get_book_chapters()
+
+    locations = get_locations()
 
     index = []
     for nb, book_chapters in enumerate(chapters_books):
@@ -70,19 +75,28 @@ def read_scenes_locations():
 
     scenes_locations = list(map(treat_scene_location, scenes_locations))
 
-    def write_scenes_locations(nb=None):
-        if nb is None:
-            nb = ''
-            data_scenes_locations = scenes_locations
-        else:
-            data_scenes_locations = [scenes_locations[i] for i, idx in enumerate(index) if idx[0] == nb]
-        json.dump(data_scenes_locations, open(os.path.join('generated', 'scenes_locations%s.json'%nb), 'w'), indent=2)
+    return scenes_locations
 
-    write_scenes_locations()
-    write_scenes_locations(1)
-    write_scenes_locations(2)
-    write_scenes_locations(3)
+
+def get_scenes_locations_book(nb=None):
+    index = get_index()
+    scenes_locations = get_scenes_locations()
+    if nb is None:
+        data_scenes_locations = scenes_locations
+    else:
+        data_scenes_locations = [scenes_locations[i] for i, idx in enumerate(index) if idx[0] == nb]
+    return data_scenes_locations
+
+
+def write_scenes_locations():
+    def write_scenes_locations_(nb=None):
+        json_dump(get_scenes_locations_book(nb), open(os.path.join('generated', 'scenes_locations%s.json'%nb), 'w'))
+
+    write_scenes_locations_()
+    write_scenes_locations_(1)
+    write_scenes_locations_(2)
+    write_scenes_locations_(3)
 
 
 if __name__ == '__main__':
-    read_scenes_locations()
+    write_scenes_locations()

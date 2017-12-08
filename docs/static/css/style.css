@@ -1,0 +1,25 @@
+text {
+    font-family: "ProximaNova",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+}
+
+rect {
+    fill: none;
+    stroke: #000;
+}
+
+path {
+    fill: none;
+    stroke-width: 4;
+    stroke: #333;
+}
+
+.intro text:first-child {
+    fill: #fff;
+    stroke: #f9f9f9;
+    stroke-width: 3;
+}
+
+.intro text+text {
+    fill: #333;
+}

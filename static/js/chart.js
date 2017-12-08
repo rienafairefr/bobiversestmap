@@ -143,9 +143,9 @@ function get_data(datafile, parent) {
 }
 
 get_data("data.json",'#all_books');
-get_data("data1.json",'#book1');
-get_data("data2.json",'#book2');
-get_data("data3.json",'#book3');
+get_data("book/1/data.json",'#book1');
+get_data("book/2/data.json",'#book2');
+get_data("book/3/data.json",'#book3');
 
 function wrangle(data) {
 	return data.scenes.map(function(scene){

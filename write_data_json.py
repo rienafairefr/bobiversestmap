@@ -1,22 +1,26 @@
-import os
-import json
+from genealogy import get_characters
+from scenes import get_scenes_books
+from scenes_locations import get_scenes_locations_book
+from utils import json_dump
 
 
-def write_data_json(nb=None):
-    if nb is None:
-        nb=''
+def get_data_json(nb=None):
+    characters = get_characters()
 
-    characters = json.load(open(os.path.join('generated', 'bob_characters.json')))
-    characters.extend(json.load(open(os.path.join('public_data', 'nonbob_characters.json'))))
-
-    scenes = json.load(open(os.path.join('generated', 'scenes%s.json'%nb)))
-    scenes_locations = json.load(open(os.path.join('generated', 'scenes_locations%s.json'%nb)))
+    scenes = get_scenes_books(nb)
+    scenes_locations = get_scenes_locations_book(nb)
 
     data = dict(characters=characters,
                 scenes=scenes,
                 scenes_locations=scenes_locations)
 
-    json.dump(data, open('data%s.json' % nb, 'w'), indent=2)
+    return data
+
+
+def write_data_json(nb=None):
+    if nb is None:
+        nb = ''
+    json_dump(get_data_json(nb), open('data%s.json' % nb, 'w'))
 
 
 if __name__ == '__main__':

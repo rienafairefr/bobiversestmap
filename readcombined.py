@@ -1,9 +1,11 @@
 import re
 import os
-import json
+
+from utils import json_dump, memoize
 
 
-def read_combined():
+@memoize()
+def get_book_chapters():
     with open(os.path.join('data', 'Combined.txt'), encoding='utf-8') as combined:
         content = combined.readlines()
 
@@ -51,8 +53,21 @@ def read_combined():
 
         book_chapters.append(new_chapters)
 
-    json.dump(book_chapters, open(os.path.join('generated', 'Combined.json'), 'w'), indent=2)
+    return book_chapters
+
+@memoize()
+def get_index():
+    index = []
+    for nb, book_chapters in enumerate(get_book_chapters()):
+        for nc, book_chapter in enumerate(book_chapters):
+            index.append((nb + 1, nc + 1))
+    return index
+
+
+def write_book_chapters():
+    book_chapters = get_book_chapters()
+    json_dump(book_chapters, open(os.path.join('generated', 'Combined.json'), 'w'))
 
 
 if __name__ == '__main__':
-    read_combined()
+    write_book_chapters()
