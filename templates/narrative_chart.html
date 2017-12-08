@@ -1,15 +1,33 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
+{% extends "bootstrap/base.html" %}
+
+{% block navbar %}
+{{nav.navbar.render()}}
+{% endblock %}
+
+{% block styles %}
+{{super()}}
 <link rel="stylesheet" type="text/css" href="static/css/style.css" media="all"/>
 <link rel="stylesheet" type="text/css" href="css/bob_styles.css" media="all"/>
-<body>
+{% endblock %}
+
+{% block scripts %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.0/es6-shim.js"></script>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://cdn.rawgit.com/google/palette.js/master/palette.js"></script>
 <script src="static/js/narrative.js"></script>
 <script src="static/js/chart.js"></script>
+{% endblock %}
 
+{% block content %}
+<p>
+Some data visualisation based on the books of the Bobiverse by Dennis E. taylor
+
+Narrative charts in the style of xkcd, courtesy of D3 narrative-layout from ABC News Simon Elvery and others, inspired from https://xkcd.com/657/large/
+
+All characters and stories belong to Dennis E. Taylor and are &copy; Dennis E. Taylor
+
+</p>
 <div>All books</div>
 <div id="all_books"></div>
 <div>Book 1</div>
@@ -18,4 +36,4 @@
 <div id="book2"></div>
 <div>Book 3</div>
 <div id="book3"></div>
-</body>
+{% endblock %}

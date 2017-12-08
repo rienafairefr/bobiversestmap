@@ -2,3 +2,5 @@ python-dateutil
 colorcet
 Flask
 Frozen-Flask
+Flask-Bootstrap
+Flask-Nav

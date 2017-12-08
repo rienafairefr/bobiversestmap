@@ -1,4 +1,7 @@
-from flask import Flask, jsonify, request, render_template, send_from_directory, Response
+from flask import Flask, jsonify, render_template, Response
+from flask_nav import Nav
+from flask_nav.elements import Navbar, View
+from flask_bootstrap import Bootstrap
 
 from genealogy import get_genealogy, get_bob_styles
 from locations import get_locations
@@ -6,6 +9,9 @@ from write_data_json import get_data_json
 
 app = Flask('Bobiverse visualisations')
 app.config['FREEZER_DESTINATION'] = 'docs'
+
+nav = Nav()
+bootstrap = Bootstrap(app)
 
 
 @app.route('/locations.json')
@@ -35,7 +41,17 @@ def data_json():
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('narrative_chart.html')
+
+@nav.navigation()
+def navbar():
+    return Navbar(
+        'Bobiverse',
+        View('Narrative Chart', 'index'),
+    )
+
+
+nav.init_app(app)
 
 
 if __name__ == '__main__':
