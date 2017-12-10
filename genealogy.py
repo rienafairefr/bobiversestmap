@@ -28,6 +28,8 @@ def get_genealogy():
         char['level'] = len(bob)
         if char['id'] == 'Riker':
             char['other_names'] = ['Will', 'William']
+        if char['id'] == 'Arthur':
+            char['other_names'] = ['Eeyore']
         bob_characters.append(char)
 
     return bob_characters
