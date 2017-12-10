@@ -2,186 +2,281 @@
   "characters": [
     {
       "affiliation": "Bob", 
+      "all_names": [
+        "Bob"
+      ], 
       "id": "Bob", 
       "level": 1, 
       "name": "Bob"
     }, 
     {
       "affiliation": "Bob", 
+      "all_names": [
+        "Bill"
+      ], 
       "id": "Bill", 
       "level": 2, 
       "name": "Bill"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Garfield"
+      ], 
       "id": "Garfield", 
       "level": 3, 
       "name": "Garfield"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Calvin"
+      ], 
       "id": "Calvin", 
       "level": 3, 
       "name": "Calvin"
     }, 
     {
       "affiliation": "Calvin", 
+      "all_names": [
+        "Bart"
+      ], 
       "id": "Bart", 
       "level": 4, 
       "name": "Bart"
     }, 
     {
       "affiliation": "Calvin", 
+      "all_names": [
+        "Thor"
+      ], 
       "id": "Thor", 
       "level": 4, 
       "name": "Thor"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Goku"
+      ], 
       "id": "Goku", 
       "level": 3, 
       "name": "Goku"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Linus"
+      ], 
       "id": "Linus", 
       "level": 3, 
       "name": "Linus"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Mulder"
+      ], 
       "id": "Mulder", 
       "level": 3, 
       "name": "Mulder"
     }, 
     {
       "affiliation": "Mulder", 
+      "all_names": [
+        "Jonny"
+      ], 
       "id": "Jonny", 
       "level": 4, 
       "name": "Jonny"
     }, 
     {
       "affiliation": "Mulder", 
+      "all_names": [
+        "Skinner"
+      ], 
       "id": "Skinner", 
       "level": 4, 
       "name": "Skinner"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Oliver"
+      ], 
       "id": "Oliver", 
       "level": 3, 
       "name": "Oliver"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Khan"
+      ], 
       "id": "Khan", 
       "level": 3, 
       "name": "Khan"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Elmer"
+      ], 
       "id": "Elmer", 
       "level": 3, 
       "name": "Elmer"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Hannibal"
+      ], 
       "id": "Hannibal", 
       "level": 3, 
       "name": "Hannibal"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Tom"
+      ], 
       "id": "Tom", 
       "level": 3, 
       "name": "Tom"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Barney"
+      ], 
       "id": "Barney", 
       "level": 3, 
       "name": "Barney"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Fred"
+      ], 
       "id": "Fred", 
       "level": 3, 
       "name": "Fred"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Kyle"
+      ], 
       "id": "Kyle", 
       "level": 3, 
       "name": "Kyle"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Ned"
+      ], 
       "id": "Ned", 
       "level": 3, 
       "name": "Ned"
     }, 
     {
       "affiliation": "Bob", 
+      "all_names": [
+        "Mario"
+      ], 
       "id": "Mario", 
       "level": 2, 
       "name": "Mario"
     }, 
     {
       "affiliation": "Mario", 
+      "all_names": [
+        "Bashful"
+      ], 
       "id": "Bashful", 
       "level": 3, 
       "name": "Bashful"
     }, 
     {
       "affiliation": "Mario", 
+      "all_names": [
+        "Dopey"
+      ], 
       "id": "Dopey", 
       "level": 3, 
       "name": "Dopey"
     }, 
     {
       "affiliation": "Mario", 
+      "all_names": [
+        "Sleepy"
+      ], 
       "id": "Sleepy", 
       "level": 3, 
       "name": "Sleepy"
     }, 
     {
       "affiliation": "Mario", 
+      "all_names": [
+        "Hungry"
+      ], 
       "id": "Hungry", 
       "level": 3, 
       "name": "Hungry"
     }, 
     {
       "affiliation": "Mario", 
+      "all_names": [
+        "Hal"
+      ], 
       "id": "Hal", 
       "level": 3, 
       "name": "Hal"
     }, 
     {
       "affiliation": "Mario", 
+      "all_names": [
+        "Claude"
+      ], 
       "id": "Claude", 
       "level": 3, 
       "name": "Claude"
     }, 
     {
       "affiliation": "Mario", 
+      "all_names": [
+        "Jacques"
+      ], 
       "id": "Jacques", 
       "level": 3, 
       "name": "Jacques"
     }, 
     {
       "affiliation": "Jacques", 
+      "all_names": [
+        "Phineas"
+      ], 
       "id": "Phineas", 
       "level": 4, 
       "name": "Phineas"
     }, 
     {
       "affiliation": "Jacques", 
+      "all_names": [
+        "Ferb"
+      ], 
       "id": "Ferb", 
       "level": 4, 
       "name": "Ferb"
     }, 
     {
       "affiliation": "Bob", 
+      "all_names": [
+        "Riker", 
+        "Will", 
+        "William"
+      ], 
       "id": "Riker", 
       "level": 2, 
       "name": "Riker", 
@@ -192,198 +287,298 @@
     }, 
     {
       "affiliation": "Riker", 
+      "all_names": [
+        "Homer"
+      ], 
       "id": "Homer", 
       "level": 3, 
       "name": "Homer"
     }, 
     {
       "affiliation": "Riker", 
+      "all_names": [
+        "Ralph"
+      ], 
       "id": "Ralph", 
       "level": 3, 
       "name": "Ralph"
     }, 
     {
       "affiliation": "Riker", 
+      "all_names": [
+        "Charles"
+      ], 
       "id": "Charles", 
       "level": 3, 
       "name": "Charles"
     }, 
     {
       "affiliation": "Charles", 
+      "all_names": [
+        "Howard"
+      ], 
       "id": "Howard", 
       "level": 4, 
       "name": "Howard"
     }, 
     {
       "affiliation": "Charles", 
+      "all_names": [
+        "Dexter"
+      ], 
       "id": "Dexter", 
       "level": 4, 
       "name": "Dexter"
     }, 
     {
       "affiliation": "Riker", 
+      "all_names": [
+        "Rudy"
+      ], 
       "id": "Rudy", 
       "level": 3, 
       "name": "Rudy"
     }, 
     {
       "affiliation": "Riker", 
+      "all_names": [
+        "Edwin"
+      ], 
       "id": "Edwin", 
       "level": 3, 
       "name": "Edwin"
     }, 
     {
       "affiliation": "Riker", 
+      "all_names": [
+        "Arthur"
+      ], 
       "id": "Arthur", 
       "level": 3, 
       "name": "Arthur"
     }, 
     {
       "affiliation": "Riker", 
+      "all_names": [
+        "Bert"
+      ], 
       "id": "Bert", 
       "level": 3, 
       "name": "Bert"
     }, 
     {
       "affiliation": "Riker", 
+      "all_names": [
+        "Ernie"
+      ], 
       "id": "Ernie", 
       "level": 3, 
       "name": "Ernie"
     }, 
     {
       "affiliation": "Bob", 
+      "all_names": [
+        "Milo"
+      ], 
       "id": "Milo", 
       "level": 2, 
       "name": "Milo"
     }, 
     {
       "affiliation": "Bob", 
+      "all_names": [
+        "Marvin"
+      ], 
       "id": "Marvin", 
       "level": 2, 
       "name": "Marvin"
     }, 
     {
       "affiliation": "Bob", 
+      "all_names": [
+        "Luke"
+      ], 
       "id": "Luke", 
       "level": 2, 
       "name": "Luke"
     }, 
     {
       "affiliation": "Bob", 
+      "all_names": [
+        "Bender"
+      ], 
       "id": "Bender", 
       "level": 2, 
       "name": "Bender"
     }, 
     {
       "affiliation": "Bob", 
+      "all_names": [
+        "Victor"
+      ], 
       "id": "Victor", 
       "level": 2, 
       "name": "Victor"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Icarus"
+      ], 
       "id": "Icarus", 
       "level": 3, 
       "name": "Icarus"
     }, 
     {
       "affiliation": "Bill", 
+      "all_names": [
+        "Daedalus"
+      ], 
       "id": "Daedalus", 
       "level": 3, 
       "name": "Daedalus"
     }, 
     {
       "affiliation": "Riker", 
+      "all_names": [
+        "Mack"
+      ], 
       "id": "Mack", 
       "level": 3, 
       "name": "Mack"
     }, 
     {
       "affiliation": "Riker", 
+      "all_names": [
+        "Verne"
+      ], 
       "id": "Verne", 
       "level": 3, 
       "name": "Verne"
     }, 
     {
       "affiliation": "Mulder", 
+      "all_names": [
+        "Marcus"
+      ], 
       "id": "Marcus", 
       "level": 4, 
       "name": "Marcus"
     }, 
     {
       "affiliation": "Khan", 
+      "all_names": [
+        "Loki"
+      ], 
       "id": "Loki", 
       "level": 4, 
       "name": "Loki"
     }, 
     {
       "affiliation": "Jacques", 
+      "all_names": [
+        "Herschel"
+      ], 
       "id": "Herschel", 
       "level": 4, 
       "name": "Herschel"
     }, 
     {
       "affiliation": "Jacques", 
+      "all_names": [
+        "Neil"
+      ], 
       "id": "Neil", 
       "level": 4, 
       "name": "Neil"
     }, 
     {
       "affiliation": "Marvin", 
+      "all_names": [
+        "Pete"
+      ], 
       "id": "Pete", 
       "level": 3, 
       "name": "Pete"
     }, 
     {
       "affiliation": "Marvin", 
+      "all_names": [
+        "Victor"
+      ], 
       "id": "Victor", 
       "level": 3, 
       "name": "Victor"
     }, 
     {
       "affiliation": "Bart", 
+      "all_names": [
+        "Isaac"
+      ], 
       "id": "Isaac", 
       "level": 5, 
       "name": "Isaac"
     }, 
     {
       "affiliation": "Calvin", 
+      "all_names": [
+        "Bruce"
+      ], 
       "id": "Bruce", 
       "level": 4, 
       "name": "Bruce"
     }, 
     {
       "affiliation": "Zeke", 
+      "all_names": [
+        "Zeke"
+      ], 
       "id": "Zeke", 
       "level": 1, 
       "name": "Zeke"
     }, 
     {
       "affiliation": "Jeffrey", 
+      "all_names": [
+        "Jeffrey"
+      ], 
       "id": "Jeffrey", 
       "level": 1, 
       "name": "Jeffrey"
     }, 
     {
       "affiliation": "Milton", 
+      "all_names": [
+        "Milton"
+      ], 
       "id": "Milton", 
       "level": 1, 
       "name": "Milton"
     }, 
     {
       "affiliation": "Yoshi", 
+      "all_names": [
+        "Yoshi"
+      ], 
       "id": "Yoshi", 
       "level": 1, 
       "name": "Yoshi"
     }, 
     {
       "affiliation": "Tony", 
+      "all_names": [
+        "Tony"
+      ], 
       "id": "Tony", 
       "level": 1, 
       "name": "Tony"
     }, 
     {
       "affiliation": "Howard", 
+      "all_names": [
+        "Bridget", 
+        "Sheehy"
+      ], 
       "id": "Bridget", 
       "name": "Bridget", 
       "other_names": [
@@ -392,6 +587,10 @@
     }, 
     {
       "affiliation": "USE", 
+      "all_names": [
+        "Colonel Butterworth", 
+        "Butterworth"
+      ], 
       "id": "Butterworth", 
       "name": "Colonel Butterworth", 
       "other_names": [
@@ -400,6 +599,11 @@
     }, 
     {
       "affiliation": "USE", 
+      "all_names": [
+        "St\u00e9phane Brodeur", 
+        "Chief Brodeur", 
+        "St\u00e9phane"
+      ], 
       "id": "St\u00e9phane", 
       "name": "St\u00e9phane Brodeur", 
       "other_names": [
@@ -409,21 +613,35 @@
     }, 
     {
       "affiliation": "Family", 
+      "all_names": [
+        "Julia Hendricks"
+      ], 
       "id": "Julia", 
       "name": "Julia Hendricks"
     }, 
     {
       "affiliation": "Family", 
+      "all_names": [
+        "Justin Hendricks"
+      ], 
       "id": "Justin", 
       "name": "Justin Hendricks"
     }, 
     {
       "affiliation": "Deltans", 
+      "all_names": [
+        "Archimedes"
+      ], 
       "id": "Archimedes", 
       "name": "Archimedes"
     }, 
     {
       "affiliation": "FAITH", 
+      "all_names": [
+        "Dr. Landers", 
+        "Dr. Landers", 
+        "Landers"
+      ], 
       "id": "Landers", 
       "name": "Dr. Landers", 
       "other_names": [
@@ -433,6 +651,11 @@
     }, 
     {
       "affiliation": "FAITH", 
+      "all_names": [
+        "Dr. Doucette", 
+        "Dr. Doucette", 
+        "Doucette"
+      ], 
       "id": "Doucette", 
       "name": "Dr. Doucette", 
       "other_names": [
@@ -442,11 +665,18 @@
     }, 
     {
       "affiliation": "Deltans", 
+      "all_names": [
+        "Moses"
+      ], 
       "id": "Moses", 
       "name": "Moses"
     }, 
     {
       "affiliation": "Deltans", 
+      "all_names": [
+        "Fred (Deltan)", 
+        "Fred"
+      ], 
       "id": "Fred_Deltan", 
       "name": "Fred (Deltan)", 
       "other_names": [
@@ -455,6 +685,10 @@
     }, 
     {
       "affiliation": "Deltans", 
+      "all_names": [
+        "Fred (Carleon)", 
+        "Fred"
+      ], 
       "id": "Fred_Carleon", 
       "name": "Fred (Carleon)", 
       "other_names": [
@@ -463,26 +697,42 @@
     }, 
     {
       "affiliation": "Poseidon Revolution", 
+      "all_names": [
+        "Denu"
+      ], 
       "id": "Denu", 
       "name": "Denu"
     }, 
     {
       "affiliation": "Poseidon Revolution", 
+      "all_names": [
+        "Gina"
+      ], 
       "id": "Gina", 
       "name": "Gina"
     }, 
     {
       "affiliation": "Poseidon Revolution", 
+      "all_names": [
+        "Vinnie"
+      ], 
       "id": "Vinnie", 
       "name": "Vinnie"
     }, 
     {
       "affiliation": "VEHEMENT", 
+      "all_names": [
+        "Vickers"
+      ], 
       "id": "Vickers", 
       "name": "Vickers"
     }, 
     {
       "affiliation": "Australian Replicant", 
+      "all_names": [
+        "Henry Roberts", 
+        "Henry"
+      ], 
       "id": "Henry", 
       "name": "Henry Roberts", 
       "other_names": [
@@ -491,6 +741,9 @@
     }, 
     {
       "affiliation": "Spitsbergans", 
+      "all_names": [
+        "Valter"
+      ], 
       "id": "Valter", 
       "name": "Valter"
     }
@@ -500,8 +753,8 @@
       "character_ids": [
         "Archimedes", 
         "Bob", 
-        "Fred_Carleon", 
-        "Jeffrey"
+        "Jeffrey", 
+        "Fred_Carleon"
       ], 
       "character_line": {
         "Archimedes": [
@@ -558,11 +811,11 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Riker", 
+        "Butterworth", 
         "Dexter", 
         "Jacques", 
-        "Butterworth", 
+        "Bridget", 
+        "Riker", 
         "Howard"
       ], 
       "character_line": {
@@ -595,9 +848,9 @@
     }, 
     {
       "character_ids": [
+        "Howard", 
         "Gina", 
-        "Marcus", 
-        "Howard"
+        "Marcus"
       ], 
       "character_line": {
         "Gina": [
@@ -621,9 +874,9 @@
     }, 
     {
       "character_ids": [
+        "Howard", 
         "Bridget", 
-        "Bob", 
-        "Howard"
+        "Bob"
       ], 
       "character_line": {
         "Bob": [
@@ -659,8 +912,8 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Fred_Carleon"
+        "Fred_Carleon", 
+        "Bob"
       ], 
       "character_line": {
         "Bob": [
@@ -703,9 +956,9 @@
     }, 
     {
       "character_ids": [
+        "Garfield", 
         "Daedalus", 
         "Icarus", 
-        "Garfield", 
         "Bill"
       ], 
       "character_line": {
@@ -730,9 +983,9 @@
     }, 
     {
       "character_ids": [
+        "Howard", 
         "Butterworth", 
-        "Bridget", 
-        "Howard"
+        "Bridget"
       ], 
       "character_line": {
         "Bridget": [
@@ -765,13 +1018,13 @@
     }, 
     {
       "character_ids": [
-        "Gina", 
-        "Bill", 
-        "Riker", 
         "Denu", 
-        "Marcus", 
         "Vinnie", 
+        "Marcus", 
         "Bob", 
+        "Bill", 
+        "Gina", 
+        "Riker", 
         "Howard"
       ], 
       "character_line": {
@@ -837,8 +1090,8 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "character_line": {
         "Bridget": [
@@ -863,8 +1116,8 @@
     }, 
     {
       "character_ids": [
-        "Marvin", 
         "Archimedes", 
+        "Marvin", 
         "Bob", 
         "Fred_Carleon"
       ], 
@@ -930,9 +1183,9 @@
     }, 
     {
       "character_ids": [
+        "Daedalus", 
         "Mario", 
-        "Bill", 
-        "Daedalus"
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -962,11 +1215,11 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Charles", 
         "Howard", 
+        "Charles", 
+        "Dexter", 
         "Riker", 
-        "Dexter"
+        "Bridget"
       ], 
       "character_line": {
         "Bridget": [
@@ -1006,11 +1259,11 @@
     }, 
     {
       "character_ids": [
-        "Vinnie", 
-        "Gina", 
         "Yoshi", 
+        "Vinnie", 
+        "Marcus", 
         "Bob", 
-        "Marcus"
+        "Gina"
       ], 
       "character_line": {
         "Bob": [
@@ -1058,9 +1311,9 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
+        "Howard", 
         "Bob", 
-        "Howard"
+        "Bridget"
       ], 
       "character_line": {
         "Bob": [
@@ -1091,11 +1344,11 @@
     }, 
     {
       "character_ids": [
-        "Riker", 
-        "Oliver", 
-        "Charles", 
         "Butterworth", 
-        "Bob"
+        "Oliver", 
+        "Bob", 
+        "Charles", 
+        "Riker"
       ], 
       "character_line": {
         "Bob": [
@@ -1133,10 +1386,10 @@
     }, 
     {
       "character_ids": [
-        "Howard", 
-        "Bill", 
+        "Riker", 
         "Marcus", 
-        "Riker"
+        "Howard", 
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -1164,9 +1417,9 @@
     }, 
     {
       "character_ids": [
-        "Icarus", 
+        "Daedalus", 
         "Mario", 
-        "Daedalus"
+        "Icarus"
       ], 
       "character_line": {
         "Daedalus": [
@@ -1183,12 +1436,12 @@
     }, 
     {
       "character_ids": [
+        "Verne", 
         "Mack", 
+        "Bob", 
         "Bill", 
         "Riker", 
-        "Isaac", 
-        "Bob", 
-        "Verne"
+        "Isaac"
       ], 
       "character_line": {
         "Bill": [
@@ -1218,8 +1471,8 @@
     }, 
     {
       "character_ids": [
-        "Vinnie", 
         "Denu", 
+        "Vinnie", 
         "Marcus"
       ], 
       "character_line": {
@@ -1238,8 +1491,8 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "character_line": {
         "Bridget": [
@@ -1269,17 +1522,17 @@
     }, 
     {
       "character_ids": [
+        "Loki", 
         "Thor", 
         "Mack", 
+        "Jacques", 
+        "Oliver", 
+        "Bob", 
         "Bill", 
         "Riker", 
-        "Loki", 
-        "Oliver", 
-        "Jacques", 
-        "Goku", 
         "Isaac", 
-        "Bob", 
-        "Verne"
+        "Verne", 
+        "Goku"
       ], 
       "character_line": {
         "Bill": [
@@ -1376,9 +1629,9 @@
     }, 
     {
       "character_ids": [
+        "Neil", 
         "Herschel", 
-        "Bill", 
-        "Neil"
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -1404,9 +1657,9 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
+        "Howard", 
         "Riker", 
-        "Howard"
+        "Bridget"
       ], 
       "character_line": {
         "Bridget": [
@@ -1425,9 +1678,9 @@
     }, 
     {
       "character_ids": [
+        "Neil", 
         "Herschel", 
-        "Bill", 
-        "Neil"
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -1462,8 +1715,8 @@
       "character_ids": [
         "Bridget", 
         "Garfield", 
-        "Bill", 
         "Riker", 
+        "Bill", 
         "Mack"
       ], 
       "character_line": {
@@ -1500,10 +1753,10 @@
     }, 
     {
       "character_ids": [
+        "Riker", 
         "Gina", 
-        "Bill", 
         "Marcus", 
-        "Riker"
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -1532,9 +1785,9 @@
     }, 
     {
       "character_ids": [
+        "Neil", 
         "Herschel", 
-        "Bill", 
-        "Neil"
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -1566,8 +1819,8 @@
     }, 
     {
       "character_ids": [
-        "Marvin", 
         "Archimedes", 
+        "Marvin", 
         "Bob", 
         "Fred_Carleon"
       ], 
@@ -1617,8 +1870,8 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "character_line": {
         "Bridget": [
@@ -1631,8 +1884,8 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Garfield", 
+        "Bob", 
         "Bill", 
         "Mack"
       ], 
@@ -1669,10 +1922,10 @@
     }, 
     {
       "character_ids": [
-        "Gina", 
         "Denu", 
-        "Bill", 
-        "Marcus"
+        "Gina", 
+        "Marcus", 
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -1712,8 +1965,8 @@
     {
       "character_ids": [
         "Garfield", 
-        "Bill", 
-        "Riker"
+        "Riker", 
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -1734,13 +1987,13 @@
     }, 
     {
       "character_ids": [
-        "Mario", 
         "Thor", 
-        "Bill", 
-        "Riker", 
-        "Neil", 
         "Herschel", 
-        "Bob"
+        "Mario", 
+        "Bill", 
+        "Bob", 
+        "Neil", 
+        "Riker"
       ], 
       "character_line": {
         "Bill": [
@@ -1800,8 +2053,8 @@
     {
       "character_ids": [
         "Archimedes", 
-        "Bob", 
-        "Fred_Carleon"
+        "Fred_Carleon", 
+        "Bob"
       ], 
       "character_line": {
         "Archimedes": [
@@ -1847,10 +2100,10 @@
     }, 
     {
       "character_ids": [
-        "Vinnie", 
-        "Gina", 
         "Denu", 
-        "Marcus"
+        "Gina", 
+        "Marcus", 
+        "Vinnie"
       ], 
       "character_line": {
         "Denu": [
@@ -1874,9 +2127,9 @@
     }, 
     {
       "character_ids": [
+        "Neil", 
         "Herschel", 
-        "Riker", 
-        "Neil"
+        "Riker"
       ], 
       "character_line": {
         "Herschel": [
@@ -1892,11 +2145,11 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Bridget", 
+        "Howard", 
         "Bill", 
+        "Bob", 
         "Riker", 
-        "Howard"
+        "Bridget"
       ], 
       "character_line": {
         "Bill": [
@@ -1922,8 +2175,8 @@
     }, 
     {
       "character_ids": [
-        "Herschel", 
-        "Neil"
+        "Neil", 
+        "Herschel"
       ], 
       "character_line": {
         "Herschel": [
@@ -1952,11 +2205,11 @@
     }, 
     {
       "character_ids": [
+        "Howard", 
         "Gina", 
-        "Bob", 
         "Bill", 
         "Marcus", 
-        "Howard"
+        "Bob"
       ], 
       "character_line": {
         "Bill": [
@@ -2003,10 +2256,10 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
+        "Howard", 
         "Bridget", 
-        "Bill", 
-        "Howard"
+        "Bob", 
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -2069,8 +2322,8 @@
     }, 
     {
       "character_ids": [
-        "Icarus", 
-        "Daedalus"
+        "Daedalus", 
+        "Icarus"
       ], 
       "character_line": {
         "Daedalus": [
@@ -2083,11 +2336,11 @@
     }, 
     {
       "character_ids": [
-        "Henry", 
-        "Bridget", 
-        "Bill", 
         "Marcus", 
-        "Howard"
+        "Bill", 
+        "Bridget", 
+        "Howard", 
+        "Henry"
       ], 
       "character_line": {
         "Bill": [
@@ -2143,11 +2396,11 @@
     }, 
     {
       "character_ids": [
-        "Phineas", 
-        "Bob", 
         "Jacques", 
-        "Bill", 
-        "Ferb"
+        "Bob", 
+        "Phineas", 
+        "Ferb", 
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -2176,9 +2429,9 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
+        "Howard", 
         "Marcus", 
-        "Howard"
+        "Bridget"
       ], 
       "character_line": {
         "Bridget": [
@@ -2201,10 +2454,10 @@
     }, 
     {
       "character_ids": [
-        "Mario", 
         "Bob", 
-        "Bill", 
-        "Riker"
+        "Riker", 
+        "Mario", 
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -2231,11 +2484,11 @@
     }, 
     {
       "character_ids": [
-        "Phineas", 
         "Jacques", 
-        "Bill", 
+        "Phineas", 
         "Riker", 
-        "Ferb"
+        "Ferb", 
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -2294,8 +2547,8 @@
     {
       "character_ids": [
         "Archimedes", 
-        "Bob", 
-        "Marvin"
+        "Marvin", 
+        "Bob"
       ], 
       "character_line": {
         "Archimedes": [
@@ -2323,16 +2576,16 @@
     }, 
     {
       "character_ids": [
-        "Mario", 
-        "Garfield", 
-        "Bill", 
-        "Riker", 
-        "Neil", 
         "Herschel", 
         "Dexter", 
         "Oliver", 
+        "Mario", 
+        "Bill", 
+        "Bob", 
+        "Neil", 
+        "Riker", 
         "Goku", 
-        "Bob"
+        "Garfield"
       ], 
       "character_line": {
         "Bill": [
@@ -2415,11 +2668,11 @@
     }, 
     {
       "character_ids": [
-        "Riker", 
-        "Jacques", 
-        "Bill", 
+        "Neil", 
         "Claude", 
-        "Neil"
+        "Riker", 
+        "Bill", 
+        "Jacques"
       ], 
       "character_line": {
         "Bill": [
@@ -2473,11 +2726,11 @@
     }, 
     {
       "character_ids": [
-        "Oliver", 
-        "Bob", 
+        "Riker", 
         "Garfield", 
-        "Bill", 
-        "Riker"
+        "Bob", 
+        "Oliver", 
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -2505,9 +2758,9 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
+        "Howard", 
         "Marcus", 
-        "Howard"
+        "Bridget"
       ], 
       "character_line": {
         "Bridget": [
@@ -2532,17 +2785,17 @@
     }, 
     {
       "character_ids": [
+        "Butterworth", 
         "Thor", 
-        "Garfield", 
-        "Bill", 
-        "Riker", 
-        "Neil", 
+        "Claude", 
         "Herschel", 
         "Oliver", 
-        "Jacques", 
-        "Butterworth", 
+        "Bill", 
         "Bob", 
-        "Claude"
+        "Neil", 
+        "Riker", 
+        "Jacques", 
+        "Garfield"
       ], 
       "character_line": {
         "Bill": [
@@ -2613,9 +2866,9 @@
     }, 
     {
       "character_ids": [
+        "Neil", 
         "Herschel", 
-        "Riker", 
-        "Neil"
+        "Riker"
       ], 
       "character_line": {
         "Herschel": [
@@ -2655,8 +2908,8 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "character_line": {
         "Bridget": [
@@ -2686,12 +2939,12 @@
     }, 
     {
       "character_ids": [
+        "Butterworth", 
         "Thor", 
-        "Garfield", 
+        "Bob", 
         "Bill", 
         "Riker", 
-        "Butterworth", 
-        "Bob"
+        "Garfield"
       ], 
       "character_line": {
         "Bill": [
@@ -2743,8 +2996,8 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "character_line": {
         "Bridget": [
@@ -2768,10 +3021,10 @@
     }, 
     {
       "character_ids": [
+        "Neil", 
         "Herschel", 
-        "Bill", 
         "Riker", 
-        "Neil"
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -2822,11 +3075,11 @@
     }, 
     {
       "character_ids": [
-        "Thor", 
-        "Hannibal", 
         "Garfield", 
+        "Riker", 
+        "Thor", 
         "Bill", 
-        "Riker"
+        "Hannibal"
       ], 
       "character_line": {
         "Bill": [
@@ -2869,10 +3122,10 @@
     }, 
     {
       "character_ids": [
+        "Neil", 
         "Herschel", 
-        "Bill", 
         "Riker", 
-        "Neil"
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -2895,11 +3148,11 @@
     }, 
     {
       "character_ids": [
+        "Neil", 
         "Herschel", 
-        "Thor", 
-        "Bill", 
         "Riker", 
-        "Neil"
+        "Thor", 
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -2934,10 +3187,10 @@
     }, 
     {
       "character_ids": [
+        "Neil", 
         "Herschel", 
-        "Bill", 
         "Riker", 
-        "Neil"
+        "Bill"
       ], 
       "character_line": {
         "Bill": [
@@ -2967,11 +3220,11 @@
     {
       "character_ids": [
         "Thor", 
-        "Bill", 
-        "Riker", 
-        "Neil", 
+        "Hannibal", 
         "Herschel", 
-        "Hannibal"
+        "Bill", 
+        "Neil", 
+        "Riker"
       ], 
       "character_line": {
         "Bill": [
@@ -3016,8 +3269,8 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Riker"
+        "Riker", 
+        "Bob"
       ], 
       "character_line": {
         "Archimedes": [
@@ -3039,9 +3292,9 @@
     }, 
     {
       "character_ids": [
-        "Icarus", 
+        "Daedalus", 
         "Mario", 
-        "Daedalus"
+        "Icarus"
       ], 
       "character_line": {
         "Daedalus": [
@@ -3061,13 +3314,13 @@
     }, 
     {
       "character_ids": [
-        "Mario", 
-        "Bill", 
-        "Riker", 
-        "Neil", 
         "Herschel", 
-        "Daedalus", 
-        "Icarus"
+        "Mario", 
+        "Icarus", 
+        "Bill", 
+        "Neil", 
+        "Riker", 
+        "Daedalus"
       ], 
       "character_line": {
         "Bill": [
@@ -3118,9 +3371,9 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
+        "Howard", 
         "Marvin", 
-        "Howard"
+        "Bob"
       ], 
       "character_line": {
         "Archimedes": [
@@ -3153,21 +3406,21 @@
     }, 
     {
       "character_ids": [
-        "Mario", 
         "Thor", 
-        "Garfield", 
-        "Bill", 
-        "Riker", 
-        "Bridget", 
-        "Marvin", 
-        "Henry", 
-        "Luke", 
-        "Daedalus", 
-        "Icarus", 
+        "Mario", 
         "Marcus", 
-        "Milo", 
+        "Marvin", 
         "Bob", 
-        "Howard"
+        "Bill", 
+        "Milo", 
+        "Bridget", 
+        "Icarus", 
+        "Riker", 
+        "Luke", 
+        "Howard", 
+        "Garfield", 
+        "Daedalus", 
+        "Henry"
       ], 
       "character_line": {
         "Bender": [
@@ -3261,8 +3514,8 @@
     }, 
     {
       "character_ids": [
-        "Herschel", 
         "Neil", 
+        "Herschel", 
         "Mack"
       ], 
       "character_line": {
@@ -3280,9 +3533,9 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Bill", 
-        "Riker"
+        "Riker", 
+        "Bob"
       ], 
       "character_line": {
         "Bill": [

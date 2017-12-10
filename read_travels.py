@@ -44,7 +44,7 @@ def write_travels():
                     current_location = data_travel['location']
                 data_travels_dict[bob].append(current_location)
 
-        json_dump(data_travels_dict, open(os.path.join('generated', 'travels%s.json' % nb), 'w'))
+        json_dump(data_travels_dict, os.path.join('generated', 'travels%s.json' % nb))
 
     write_travels_()
     write_travels_(1)

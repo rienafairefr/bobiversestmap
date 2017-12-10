@@ -4,3 +4,6 @@ Flask
 Frozen-Flask
 Flask-Bootstrap
 Flask-Nav
+nltk
+dogpile.cache
+numpy

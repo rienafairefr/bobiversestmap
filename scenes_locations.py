@@ -90,7 +90,7 @@ def get_scenes_locations_book(nb=None):
 
 def write_scenes_locations():
     def write_scenes_locations_(nb=None):
-        json_dump(get_scenes_locations_book(nb), open(os.path.join('generated', 'scenes_locations%s.json'%nb), 'w'))
+        json_dump(get_scenes_locations_book(nb), os.path.join('generated', 'scenes_locations%s.json'%nb))
 
     write_scenes_locations_()
     write_scenes_locations_(1)

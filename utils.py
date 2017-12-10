@@ -1,4 +1,5 @@
 import copy
+import os
 
 import json
 from inspect import ismethod
@@ -6,11 +7,13 @@ from inspect import ismethod
 from dogpile.cache import make_region
 
 # Define basic in memory caches
-memory = make_region().configure('dogpile.cache.memory', expiration_time=300)
+file = make_region().configure('dogpile.cache.dbm', expiration_time=3600, arguments={
+    "filename": os.path.join("generated", "cache.dbm")
+})
 
 
-def json_dump(obj,fp):
-    return json.dump(obj,fp,indent=2,sort_keys=True)
+def json_dump(obj, filename):
+    return json.dump(obj, open(filename, 'w', encoding='utf-8'), indent=2, sort_keys=True)
 
 
 def make_hash(obj):
@@ -31,7 +34,13 @@ def make_hash(obj):
     return hash(tuple(frozenset(new_obj.items())))
 
 
-def memoize(cache_region=memory, ttl=300, ttl_ignore=False):
+def fun(t):
+    def fun1():
+        def fun2():
+            return t
+
+
+def memoize(cache_region=file, ttl=300, ttl_ignore=False):
     """ Memoized value cache decorator with expiration TTL support.
 
     :param cache_region:
@@ -41,6 +50,7 @@ def memoize(cache_region=memory, ttl=300, ttl_ignore=False):
     :param ttl_ignore: Return the stored object regardless of TTL
     :type ttl_ignore: bool
     """
+
     def real_decorator(function):
         def wrap(*args, **kwargs):
 
@@ -53,16 +63,19 @@ def memoize(cache_region=memory, ttl=300, ttl_ignore=False):
 
             function_name = function.__name__
             tup_key = (module_name, class_name, function_name, args, kwargs)
-            cache_key = make_hash(tup_key)
+
+            cache_key = str(tup_key)
 
             value = cache_region.get(cache_key, expiration_time=ttl, ignore_expiration=ttl_ignore)
             if not value:
-                #print('Stale result %s ' % str(tup_key))
+                # print('Stale result %s ' % str(tup_key))
                 value = function(*args, **kwargs)
                 if value:
                     cache_region.set(cache_key, value)
-            #else:
+            # else:
             #   print('Cached result %s ' % str(tup_key))
             return value
+
         return wrap
+
     return real_decorator

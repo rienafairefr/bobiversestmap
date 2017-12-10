@@ -18,9 +18,7 @@ def get_data_json(nb=None):
 
 
 def write_data_json(nb=None):
-    if nb is None:
-        nb = ''
-    json_dump(get_data_json(nb), open('data%s.json' % nb, 'w'))
+    json_dump(get_data_json(nb), 'data%s.json' % ('' if nb is None else nb))
 
 
 if __name__ == '__main__':

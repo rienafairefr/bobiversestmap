@@ -38,7 +38,7 @@ def get_dates():
 
 def write_dates():
     parsed_dates = get_dates()
-    json_dump(parsed_dates, open(os.path.join('generated', 'scenes_dates.json'), 'w'))
+    json_dump(parsed_dates, os.path.join('generated', 'scenes_dates.json'))
 
 
 if __name__ == '__main__':

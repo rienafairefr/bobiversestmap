@@ -25,7 +25,7 @@ def read_timeline():
 
     timeline = sorted(timeline, key = lambda el: (el[0], el[1]))
 
-    json_dump([t[2] for t in timeline], open(os.path.join('generated','timeline.json'),'w', encoding='utf-8'))
+    json_dump([t[2] for t in timeline], os.path.join('generated','timeline.json'))
 
 
 

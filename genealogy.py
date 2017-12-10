@@ -37,6 +37,9 @@ def get_genealogy():
 def get_characters():
     characters = get_genealogy()
     characters.extend(json.load(open(os.path.join('public_data', 'nonbob_characters.json'))))
+    for char in characters:
+        char['all_names'] = [char['name']]
+        char['all_names'].extend(char.get('other_names', []))
     return characters
 
 
@@ -58,7 +61,7 @@ def get_bob_styles():
 
 def write_genealogy():
     bob_characters = get_genealogy()
-    json_dump(bob_characters, open(os.path.join('generated', 'bob_characters.json'), 'w'))
+    json_dump(bob_characters, os.path.join('generated', 'bob_characters.json'))
 
 
 def write_bob_styles():

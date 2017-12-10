@@ -27,7 +27,7 @@ def get_locations():
 
 def write_locations():
     places = get_locations()
-    json_dump(places, open(os.path.join('generated', 'locations.json'), 'w'))
+    json_dump(places, os.path.join('generated', 'locations.json'))
 
 
 if __name__ == '__main__':

@@ -2,6 +2,7 @@ import re
 import os
 from collections import OrderedDict
 
+from nl import tokenize
 from utils import json_dump, memoize
 
 
@@ -39,16 +40,16 @@ def get_book_chapters():
 
         new_chapters = []
         for index_chapter, chap in enumerate(chapters):
-            matched = re.match('^(\d*)\.(.*)$', chap[0])
             new_chapters.append(OrderedDict({
                 'nb': index_book + 1,
                 'nc': index_chapter + 1,
                 'n': index + 1,
-                'title': matched.groups()[1].strip(),
+                'title': re.match('^(\d*)\.(.*)$', chap[0]).groups()[1].strip(),
                 'bob': chap[1],
                 'date': chap[2],
                 'location': chap[3],
-                'content': chap[4:]
+                'content': chap[4:],
+                'tokenized_content': tokenize(chap[4:])
             }))
             index = index +1
 
@@ -67,7 +68,7 @@ def get_index():
 
 def write_book_chapters():
     book_chapters = get_book_chapters()
-    json_dump(book_chapters, open(os.path.join('generated', 'Combined.json'), 'w'))
+    json_dump(book_chapters, os.path.join('generated', 'Combined.json'))
 
 
 if __name__ == '__main__':

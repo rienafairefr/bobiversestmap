@@ -1,89 +1,108 @@
-import json
 import os
-import string
-import nltk
 
-from genealogy import get_genealogy, get_characters, get_characters_map
+import itertools
+import nltk
+import tempfile
+
+from genealogy import get_characters_map
+from nl import tokenize
 from readcombined import get_book_chapters
+from utils import memoize, json_dump
+
+tmpnltk_data = os.path.join(tempfile.gettempdir(), 'bob_nltk_data')
+os.makedirs(tmpnltk_data, exist_ok=True)
+required= ['maxent_ne_chunker',
+           'words',
+           'averaged_perceptron_tagger',
+           'punkt']
+for req in required:
+    nltk.download(info_or_id=req, download_dir=tmpnltk_data)
+nltk.data.path.append(tmpnltk_data)
+
+
+@memoize()
+def get_chapters_tokenized_sentences():
+    chapters_books = get_book_chapters()
+
+    chapters_tokenized_sentences = []
+
+    for book_chapters in chapters_books:
+        one_book = []
+        for book_chapter in book_chapters:
+            one_book.append(tokenize(book_chapter['content']))
+        chapters_tokenized_sentences.append(one_book)
+    return chapters_tokenized_sentences
+
+
+@memoize()
+def get_chapters_tagged_sentences():
+    chapters_tokenized_sentences = get_chapters_tokenized_sentences()
+
+    chapters_tagged_sentences=[]
+    for one_book in chapters_tokenized_sentences:
+        one_book_tagged = []
+        for tokenized_sentences in one_book:
+            chapters_tagged_sentences.append(nltk.pos_tag_sents(tokenized_sentences))
+
+        chapters_tagged_sentences.append(one_book_tagged)
+
+    return chapters_tagged_sentences
+
+
+def get_characters_relationships(nb):
+    chapters_tokenized_sentences = get_chapters_tokenized_sentences()
+    characters = get_characters_map()
+
+    book_characters_relationships = []
+
+    for idxb, one_book in enumerate(chapters_tokenized_sentences):
+        if nb is not None and (idxb+1!=nb):
+            continue
+        for one_chapter in one_book:
+            link = []
+            for tokenized_sentence in one_chapter:
+
+                for character_pair in itertools.combinations(characters, 2):
+                    if character_pair[0] in tokenized_sentence and character_pair[1] in tokenized_sentence:
+                        link.extend(character_pair)
+                        pass
+            book_characters_relationships.append({'character_ids': list(set(link))})
+    return book_characters_relationships
 
 
 def extract_named_entities():
-    chapters_books = json.load(open(os.path.join('generated', 'Combined.json')))
+    chapters_sentences = get_chapters_tagged_sentences()
+    for one_book in chapters_sentences:
+        for one_chapter in one_book:
+            def extract_entity_names(t):
+                entity_names = []
 
-    content = []
-    for nb, book_chapters in enumerate(chapters_books):
-        for nc, book_chapter in enumerate(book_chapters):
-            content.extend(book_chapter['content'])
+                if hasattr(t, 'label') and t.label():
+                    if t.label() == 'NE':
+                        entity_names.append(' '.join([child[0] for child in t]))
+                    else:
+                        for child in t:
+                            entity_names.extend(extract_entity_names(child))
 
-    content = '\n'.join(content)
+                return entity_names
 
-    sentences = nltk.sent_tokenize(content)
+            entity_names = []
 
-    tokenized_sentences = [nltk.word_tokenize(sentence) for sentence in sentences]
-    tagged_sentences = [nltk.pos_tag(sentence) for sentence in tokenized_sentences]
-    chunked_sentences = nltk.ne_chunk_sents(tagged_sentences, binary=True)
+            chunked_sentences = nltk.ne_chunk_sents(one_chapter, binary=True)
 
-    def extract_entity_names(t):
-        entity_names = []
+            for tree in chunked_sentences:
+                # Print results per sentence
+                print(extract_entity_names(tree))
 
-        if hasattr(t, 'label') and t.label():
-            if t.label() == 'NE':
-                entity_names.append(' '.join([child[0] for child in t]))
-            else:
-                for child in t:
-                    entity_names.extend(extract_entity_names(child))
+                entity_names.extend(extract_entity_names(tree))
 
-        return entity_names
-
-    entity_names = []
-
-    for tree in chunked_sentences:
-        # Print results per sentence
-        print(extract_entity_names(tree))
-
-        entity_names.extend(extract_entity_names(tree))
-
-    print(set(entity_names))
+            print(set(entity_names))
 
 
-def get_capitalized():
-    characters_map = get_characters_map()
-
-    chapters_books = get_book_chapters()
-
-    content = []
-    for nb, book_chapters in enumerate(chapters_books):
-        for nc, book_chapter in enumerate(book_chapters):
-            content.extend(book_chapter['content'])
-
-    content = ' '.join(content)
-    content = content.split()
-    for i, w in enumerate(content):
-        if w.strip() == '.':
-            content[i + 1] = content[i + 1].lower()
-    content = [el for el in content if el.strip() != '']
-    new_content = []
-    for el in content:
-        new_content.append("".join(l for l in el if l not in string.punctuation))
-
-    content = new_content
-    content = [el for el in content if len(el) > 2]
-    content = set(el for el in content if el[0].upper() == el[0])
-
-    for character_id, character in characters_map.items():
-        if character['name'] in content:
-            content.remove(character['name'])
-        if 'other_names' in character:
-            for name in character['other_names']:
-                if name in content:
-                    content.remove(name)
-
-    content = list(set(content))
-
-    open(os.path.join('generated', 'capitalized'), 'w', encoding='utf-8').writelines(
-        [el + '\n' for el in sorted(content)])
-    pass
+def write_characters_relationships():
+    characters_relationships = get_characters_relationships()
+    json_dump(characters_relationships, os.path.join('generated',"characters_relationships.json"))
 
 
 if __name__ == '__main__':
-    extract_named_entities()
+    write_characters_relationships()

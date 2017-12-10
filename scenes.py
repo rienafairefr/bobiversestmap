@@ -1,7 +1,8 @@
 import os
-import json
 import string
 from collections import OrderedDict
+
+import itertools
 
 from genealogy import get_characters, get_characters_map
 from locations import get_locations
@@ -13,6 +14,7 @@ from utils import json_dump, memoize
 @memoize()
 def get_scenes():
     characters_map = get_characters_map()
+    characters = get_characters()
 
     chapters_books = get_book_chapters()
 
@@ -38,18 +40,26 @@ def get_scenes():
 
     scenes = []
     i = 0
-    character_lines = []
     for book_chapters in chapters_books:
         for book_chapter in book_chapters:
             lines = book_chapter['content']
+
             link = {book_chapter['bob']}
+            if False:
+                for tokenized_sentence in book_chapter['tokenized_content']:
+                    for character_pair in itertools.combinations([char for char in characters if char in tokenized_sentence], 2):
+                        for name0 in character_pair[0]['all_names']:
+                            for name1 in character_pair[1]['all_names']:
+                                if name0 in tokenized_sentence and name1 in tokenized_sentence:
+                                    link.update(character_pair)
+
+
             character_line = {book_chapter['bob']: ['**NAMED CHAPTER**']}
             for line in lines:
                 words = line.split()
                 words = ["".join(l for l in word if l not in string.punctuation) for word in words]
                 for character_id, character in characters_map.items():
-                    names = [character['name']]
-                    names.extend(character.get('other_names', []))
+                    names = character['all_names']
 
                     for name in names:
                         if name in words:
@@ -87,7 +97,11 @@ def get_scenes():
 
     # False positive/ negative matches:
     def remove(i, id):
-        scenes[i]['character_ids'].remove(id)
+        try:
+            scenes[i]['character_ids'].remove(id)
+        except ValueError:
+            # already removed
+            pass
 
     # Tom Hanks in chapter 13
     remove(12,'Tom')
@@ -134,18 +148,17 @@ def get_scenes():
         if 'Fred' in ids:
             # the Bob clone
             if index[i][0] == 1:
-                ids.remove('Fred_Deltan')
-                ids.remove('Fred_Carleon')
+                remove(i, 'Fred_Deltan')
+                remove(i, 'Fred_Carleon')
             # the deltan hunter
             if index[i][0] == 2:
-                ids.remove('Fred')
-                ids.remove('Fred_Carleon')
+                remove(i, 'Fred')
+                remove(i, 'Fred_Carleon')
             # the foe from Carleon
             if index[i][0] == 3:
-                ids.remove('Fred')
-                ids.remove('Fred_Deltan')
+                remove(i, 'Fred')
+                remove(i, 'Fred_Deltan')
 
-        scenes[i]['character_ids'] = ids
     return scenes
 
 
@@ -161,7 +174,7 @@ def get_scenes_books(nb=None):
 
 def write_scenes():
     def write_scenes_(nb=None):
-        json_dump(get_scenes_books(nb), open(os.path.join('generated', 'scenes%s.json' % nb), 'w'))
+        json_dump(get_scenes_books(nb), os.path.join('generated', 'scenes%s.json' % ('' if nb is None else nb)))
 
     write_scenes_()
     write_scenes_(1)
