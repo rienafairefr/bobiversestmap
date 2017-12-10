@@ -2,17 +2,24 @@ import os
 import string
 from collections import OrderedDict
 
+from enum import Enum
 import itertools
 
 from genealogy import get_characters, get_characters_map
 from locations import get_locations
+from nl import word_tokenize
 from readcombined import get_index, get_book_chapters
 from scenes_locations import get_scenes_locations
 from utils import json_dump, memoize
 
 
+class RelationShipParsingType(Enum):
+    TOKENIZED_SAME_SENTENCE = 1
+    NAME_IN_WORDS = 2
+
+
 @memoize()
-def get_scenes():
+def get_scenes(parsingtype=RelationShipParsingType.TOKENIZED_SAME_SENTENCE):
     characters_map = get_characters_map()
     characters = get_characters()
 
@@ -45,25 +52,40 @@ def get_scenes():
             lines = book_chapter['content']
 
             link = {book_chapter['bob']}
-            if False:
-                for tokenized_sentence in book_chapter['tokenized_content']:
-                    for character_pair in itertools.combinations([char for char in characters if char in tokenized_sentence], 2):
-                        for name0 in character_pair[0]['all_names']:
-                            for name1 in character_pair[1]['all_names']:
-                                if name0 in tokenized_sentence and name1 in tokenized_sentence:
-                                    link.update(character_pair)
 
+            chapter_characters = list(characters)
+            chapter_characters.append({'id': book_chapter['bob'], 'all_names': ['I']})
+
+            chapter_characters = [character for character in chapter_characters if
+                                  any(name in all_lines for name in character['all_names'])]
 
             character_line = {book_chapter['bob']: ['**NAMED CHAPTER**']}
-            for line in lines:
-                words = line.split()
-                words = ["".join(l for l in word if l not in string.punctuation) for word in words]
-                for character_id, character in characters_map.items():
-                    names = character['all_names']
+            if parsingtype == RelationShipParsingType.TOKENIZED_SAME_SENTENCE:
+                for tokenized_sentence in book_chapter['tokenized_content']:
+                    for character_pair in itertools.combinations(chapter_characters, 2):
+                        character0 = character_pair[0]
+                        character1 = character_pair[1]
+                        for name0 in character0['all_names']:
+                            for name1 in character1['all_names']:
+                                if name0 != name1 and name0 in tokenized_sentence and name1 in tokenized_sentence:
+                                    link.update([c['id'] for c in character_pair])
+                                    character_line_match = ' '.join(tokenized_sentence)
+                                    character_line.setdefault(character0['id'], []).append(character_line_match)
+                                    character_line.setdefault(character1['id'], []).append(character_line_match)
 
-                    for name in names:
-                        if name in words:
-                            character_line.setdefault(character['id'], []).append(line)
+            for cid in character_line:
+                character_line[cid] = list(set(character_line[cid]))
+
+            if parsingtype == RelationShipParsingType.NAME_IN_WORDS:
+                for line in lines:
+                    words = word_tokenize(line)
+
+                    for character_id, character in characters_map.items():
+                        names = character['all_names']
+
+                        for name in names:
+                            if name in words:
+                                character_line.setdefault(character['id'], []).append(line)
                             link.add(character_id)
 
             # scene_characters = list(characters[character_id] for character_id in link)
