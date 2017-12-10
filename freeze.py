@@ -1,3 +1,5 @@
+import argparse
+
 from flask_frozen import Freezer
 from app import app
 
@@ -11,4 +13,12 @@ def data_json_book():
 
 
 if __name__ == '__main__':
-    freezer.freeze()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('type',default='freeze')
+    args = parser.parse_args()
+    if args.type == 'serve':
+        freezer.serve()
+    if args.type == 'run':
+        freezer.run()
+    if args.type == 'freeze':
+        freezer.freeze()
