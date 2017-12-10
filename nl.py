@@ -14,10 +14,19 @@ for req in required:
 nltk.data.path.append(tmpnltk_data)
 
 
+def word_tokenize(sentence):
+    return nltk.word_tokenize(sentence)
+
+
+def word_tokenize_sentences(sentences):
+    return [word_tokenize(sentence) for sentence in sentences]
+
+
+def sent_tokenize(content):
+    return nltk.sent_tokenize(content)
+
+
 def tokenize(lines):
     content = '\n'.join(lines)
 
-    sentences = nltk.sent_tokenize(content)
-
-    tokenized_sentences = [nltk.word_tokenize(sentence) for sentence in sentences]
-    return tokenized_sentences
+    return word_tokenize_sentences(sent_tokenize(content))
