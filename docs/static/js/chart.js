@@ -107,6 +107,13 @@ function get_data(datafile, parent) {
                 .attr('width', 4)
                 .attr('height', 8);
 
+            g.on('click',function(d){
+                d.selected = true;
+
+                svg.selectAll('')
+
+            });
+
             text = g.append('g').attr('class', 'text');
 
             // Apppend two actual 'text' nodes to fake an 'outside' outline.

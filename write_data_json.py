@@ -7,8 +7,8 @@ from utils import json_dump
 def get_data_json(nb=None, relationships_parsing_type=RelationShipParsingType.NAME_IN_WORDS):
     characters = get_characters()
 
-    scenes = get_scenes_books(relationships_parsing_type, nb)
-    scenes_locations = get_scenes_locations_book(nb)
+    scenes = list(get_scenes_books(nb).values())
+    scenes_locations = list(get_scenes_locations_book(nb).values())
 
     data = dict(characters=characters,
                 scenes=scenes,

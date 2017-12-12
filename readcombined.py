@@ -23,7 +23,7 @@ def get_book_chapters():
             book.append(line.strip())
 
     books.append(book)
-    book_chapters = []
+    book_chapters = OrderedDict()
     index = 0
     for index_book, book in enumerate(books):
         chapter = []
@@ -38,9 +38,9 @@ def get_book_chapters():
             chapter.append(line)
         chapters.append(chapter)
 
-        new_chapters = []
         for index_chapter, chap in enumerate(chapters):
-            new_chapters.append(OrderedDict({
+            matched = re.match('^(\d*)\.(.*)$', chap[0])
+            new_chapter = OrderedDict({
                 'nb': index_book + 1,
                 'nc': index_chapter + 1,
                 'n': index + 1,
@@ -48,28 +48,10 @@ def get_book_chapters():
                 'bob': chap[1],
                 'date': chap[2],
                 'location': chap[3],
-                'content': chap[4:],
-                'tokenized_content': tokenize(chap[4:])
-            }))
+                'content': chap[4:]
+            })
             index = index +1
 
-        book_chapters.append(new_chapters)
+            book_chapters[index_book+1,index_chapter+1] = new_chapter
 
     return book_chapters
-
-@memoize()
-def get_index():
-    index = []
-    for nb, book_chapters in enumerate(get_book_chapters()):
-        for nc, book_chapter in enumerate(book_chapters):
-            index.append((nb + 1, nc + 1))
-    return index
-
-
-def write_book_chapters():
-    book_chapters = get_book_chapters()
-    json_dump(book_chapters, os.path.join('generated', 'Combined.json'))
-
-
-if __name__ == '__main__':
-    write_book_chapters()

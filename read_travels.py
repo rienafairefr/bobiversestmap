@@ -1,8 +1,7 @@
 import os
-import json
 from collections import OrderedDict
 
-from readcombined import get_index, get_book_chapters
+from readcombined import get_book_chapters
 from scenes_locations import get_scenes_locations
 from utils import json_dump, memoize
 
@@ -13,25 +12,24 @@ def get_travels():
 
     scenes_locations = get_scenes_locations()
 
-    travels = []
-    i = 0
-    for nb, book_chapters in enumerate(chapters_books):
-        for nc, book_chapter in enumerate(book_chapters):
-            travels.append(OrderedDict({'bob': book_chapter['bob'], 'location': scenes_locations[i]}))
-            i=i+1
+    combined = zip(chapters_books.keys(),
+                   zip(chapters_books.values(), scenes_locations.values()))
+
+    travels = OrderedDict()
+    for (nb,nc), book_chapter, scene_location in combined:
+        travels[nb,nc] = OrderedDict({'bob': book_chapter['bob'], 'location': scene_location})
 
     return travels
 
 
 def write_travels():
     travels = get_travels()
-    index = get_index()
     def write_travels_(nb=None):
         if nb is None:
             nb = ''
             data_travels = travels
         else:
-            data_travels = [travels[i] for i, idx in enumerate(index) if idx[0] == nb]
+            data_travels = OrderedDict({k:travel for k, travel in travels.items() if k[0] == nb})
 
         bobs = list(set(el['bob'] for el in data_travels))
 

@@ -1,5 +1,6 @@
 // Request the data
 var charactersMap={};
+var params = new URLSearchParams(location.href);
 
 function get_data(datafile, parent) {
     d3.json(datafile, function (err, response) {
@@ -80,7 +81,7 @@ function get_data(datafile, parent) {
                 return d.y;
             })
             .attr('r', function () {
-                return 5;
+                return 2;
             })
             .attr('class', function (d) {
                 return 'appearance ' + d.character.id;
@@ -106,13 +107,6 @@ function get_data(datafile, parent) {
                 .attr('x', -4)
                 .attr('width', 4)
                 .attr('height', 8);
-
-            g.on('click',function(d){
-                d.selected = true;
-
-                svg.selectAll('')
-
-            });
 
             text = g.append('g').attr('class', 'text');
 
@@ -150,9 +144,9 @@ function get_data(datafile, parent) {
 }
 
 get_data("data.json",'#all_books');
-get_data("book/1/data.json",'#book1');
-get_data("book/2/data.json",'#book2');
-get_data("book/3/data.json",'#book3');
+get_data("data1.json",'#book1');
+get_data("data2.json",'#book2');
+get_data("data3.json",'#book3');
 
 function wrangle(data) {
 	return data.scenes.map(function(scene){

@@ -70,12 +70,9 @@ def get_characters_relationships(nb):
     return book_characters_relationships
 
 
-def extract_named_entities():
-    chapters_sentences = get_chapters_tagged_sentences()
-    for one_book in chapters_sentences:
-        for one_chapter in one_book:
-            def extract_entity_names(t):
-                entity_names = []
+    content = []
+    for (nb, nc), book_chapter in chapters_books.items():
+        content.extend(book_chapter['content'])
 
                 if hasattr(t, 'label') and t.label():
                     if t.label() == 'NE':

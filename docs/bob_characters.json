@@ -235,7 +235,10 @@
     "affiliation": "Riker", 
     "id": "Arthur", 
     "level": 3, 
-    "name": "Arthur"
+    "name": "Arthur", 
+    "other_names": [
+      "Eeyore"
+    ]
   }, 
   {
     "affiliation": "Riker", 

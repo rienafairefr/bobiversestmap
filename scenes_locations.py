@@ -1,8 +1,8 @@
 import os
-import json
+from collections import OrderedDict
 
 from locations import get_locations
-from readcombined import get_index, get_book_chapters
+from readcombined import get_book_chapters
 from utils import json_dump, memoize
 
 
@@ -12,51 +12,45 @@ def get_scenes_locations():
 
     locations = get_locations()
 
-    index = []
-    for nb, book_chapters in enumerate(chapters_books):
-        for nc, book_chapter in enumerate(book_chapters):
-            index.append((nb + 1, nc + 1))
-
-    scenes_locations = []
-    for nb, book_chapters in enumerate(chapters_books):
-        for nc, book_chapter in enumerate(book_chapters):
-            scenes_locations.append(book_chapter['location'])
+    scenes_locations = OrderedDict()
+    for k, book_chapter in chapters_books.items():
+        scenes_locations[k] = book_chapter['location']
 
     # Bob on Earth
-    for i in range(0, 12):
-        scenes_locations[i] = 'Earth'
+    for i in range(1, 13):
+        scenes_locations[1, i] = 'Earth'
 
     # Bob first voyage
-    scenes_locations[12] = 'Earth -> Epsilon Eridani'
+    scenes_locations[1, 13] = 'Earth -> Epsilon Eridani'
 
     # Mulder in Poseidon
-    scenes_locations[109] = 'Poseidon'
+    scenes_locations[2, 49] = 'Poseidon'
 
     # Hal going to GL 54
-    scenes_locations[114] = 'GL 877 -> GL 54'
+    scenes_locations[2, 54] = 'GL 877 -> GL 54'
 
     # Howard moving on
-    scenes_locations[118] = 'Vulcan -> HIP 14101'
+    scenes_locations[2, 58] = 'Vulcan -> HIP 14101'
 
     # Mulder Leaving Poseidon
-    scenes_locations[122] = 'Poseidon'
+    scenes_locations[2, 62] = 'Poseidon'
 
     # Icarus & Deadalus
-    scenes_locations[154] = 'Epsilon Eridani -> Epsilon Indi'
+    scenes_locations[3, 17] = 'Epsilon Eridani -> Epsilon Indi'
     # Neil & Herschel
-    scenes_locations[159] = 'Delta Pavonis'
-    scenes_locations[161] = 'Delta Pavonis'
+    scenes_locations[3, 22] = 'Delta Pavonis'
+    scenes_locations[3, 24] = 'Delta Pavonis'
     # Bob on Eden
-    scenes_locations[171] = 'Eden'
+    scenes_locations[3, 34] = 'Eden'
 
     # Neil & Herschel moving the Bellerophon
-    scenes_locations[175] = 'Delta Pavonis -> Sol'
+    scenes_locations[3, 38] = 'Delta Pavonis -> Sol'
 
     # Icarus & Deadalus
-    scenes_locations[180] = 'Epsilon Indi -> GL 877'
+    scenes_locations[3, 43] = 'Epsilon Indi -> GL 877'
 
     # Icarus & Deadalus destroying GL877
-    scenes_locations[207] = 'GL 877'
+    scenes_locations[3, 70] = 'GL 877'
 
     def treat_one_scene_location(scene_location):
         for location in locations:
@@ -71,21 +65,32 @@ def get_scenes_locations():
             return treat_one
 
         places = [el.strip() for el in scene_location.split('->')]
-        return list(map(treat_one_scene_location, places))
+        return_value = list(map(treat_one_scene_location, places))
+        return return_value
 
-    scenes_locations = list(map(treat_scene_location, scenes_locations))
+    scenes_locations = OrderedDict({k: treat_scene_location(v) for k,v in scenes_locations.items()})
 
     return scenes_locations
 
 
 def get_scenes_locations_book(nb=None):
-    index = get_index()
+    return OrderedDict(
+        {k: scene_location for k, scene_location in get_scenes_locations().items() if nb is None or k[0] == nb})
+
+
+@memoize()
+def get_sorted_locations():
     scenes_locations = get_scenes_locations()
-    if nb is None:
-        data_scenes_locations = scenes_locations
-    else:
-        data_scenes_locations = [scenes_locations[i] for i, idx in enumerate(index) if idx[0] == nb]
-    return data_scenes_locations
+    list_scenes_locations = list(scenes_locations.values())
+    locations = get_locations()
+
+    def get_index(element):
+        try:
+            return list_scenes_locations.index(element)
+        except ValueError:
+            return len(scenes_locations)
+
+    return sorted(locations, key=get_index)
 
 
 def write_scenes_locations():
