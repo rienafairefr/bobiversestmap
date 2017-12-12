@@ -1,10 +1,9 @@
 import json
 import os
-from collections import OrderedDict
 
 import colorcet as cc
 
-from utils import json_dump, memoize
+from utils import json_dump, memoize, sorted_by_key
 
 
 @memoize()
@@ -18,7 +17,7 @@ def get_genealogy():
         if len(stripped) == 0:
             continue
 
-        bob = stripped.split(':')
+        bob = [el.strip() for el in stripped.split(':')]
 
         char = {'id': bob[-1], 'name': bob[-1]}
         if len(bob) != 1:
@@ -47,7 +46,7 @@ def get_characters():
 
 @memoize()
 def get_characters_map():
-    return OrderedDict({character['id']:character for character in get_characters()})
+    return sorted_by_key({character['id']:character for character in get_characters()})
 
 
 @memoize()

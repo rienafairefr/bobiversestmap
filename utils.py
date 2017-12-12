@@ -2,15 +2,16 @@ import copy
 import os
 
 import json
+from collections import OrderedDict
 from inspect import ismethod
 
 from dogpile.cache import make_region
 
 # Define basic in memory caches
-file = make_region().configure('dogpile.cache.dbm', expiration_time=3600, arguments={
+file = make_region().configure('dogpile.cache.dbm', expiration_time=30, arguments={
     "filename": os.path.join("generated", "cache.dbm")
 })
-
+memory = make_region().configure('dogpile.cache.memory')
 
 def json_dump(obj, filename):
     return json.dump(obj, open(filename, 'w', encoding='utf-8'), indent=2, sort_keys=True)
@@ -40,7 +41,7 @@ def fun(t):
             return t
 
 
-def memoize(cache_region=file, ttl=300, ttl_ignore=False):
+def memoize(cache_region=memory, ttl=300, ttl_ignore=False):
     """ Memoized value cache decorator with expiration TTL support.
 
     :param cache_region:
@@ -79,3 +80,11 @@ def memoize(cache_region=file, ttl=300, ttl_ignore=False):
         return wrap
 
     return real_decorator
+
+
+def sorted_by_key(dictionary):
+    return_value = OrderedDict()
+    for k in sorted(dictionary):
+        return_value[k] = dictionary[k]
+    return return_value
+

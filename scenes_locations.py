@@ -1,9 +1,8 @@
 import os
-from collections import OrderedDict
 
 from locations import get_locations
 from readcombined import get_book_chapters
-from utils import json_dump, memoize
+from utils import json_dump, memoize, sorted_by_key
 
 
 @memoize()
@@ -12,7 +11,7 @@ def get_scenes_locations():
 
     locations = get_locations()
 
-    scenes_locations = OrderedDict()
+    scenes_locations = {}
     for k, book_chapter in chapters_books.items():
         scenes_locations[k] = book_chapter['location']
 
@@ -68,14 +67,13 @@ def get_scenes_locations():
         return_value = list(map(treat_one_scene_location, places))
         return return_value
 
-    scenes_locations = OrderedDict({k: treat_scene_location(v) for k,v in scenes_locations.items()})
+    scenes_locations = sorted_by_key({k: treat_scene_location(v) for k, v in scenes_locations.items()})
 
     return scenes_locations
 
 
 def get_scenes_locations_book(nb=None):
-    return OrderedDict(
-        {k: scene_location for k, scene_location in get_scenes_locations().items() if nb is None or k[0] == nb})
+    return sorted_by_key({k: v for k, v in get_scenes_locations().items() if nb is None or k[0] == nb})
 
 
 @memoize()
@@ -95,7 +93,7 @@ def get_sorted_locations():
 
 def write_scenes_locations():
     def write_scenes_locations_(nb=None):
-        json_dump(get_scenes_locations_book(nb), os.path.join('generated', 'scenes_locations%s.json'%nb))
+        json_dump(get_scenes_locations_book(nb), os.path.join('generated', 'scenes_locations%s.json' % nb))
 
     write_scenes_locations_()
     write_scenes_locations_(1)

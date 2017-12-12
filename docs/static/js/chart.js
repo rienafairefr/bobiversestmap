@@ -165,6 +165,9 @@ function wrangle(data) {
 		charactersMap[id] = charactersMap[id] || data.characters.find(function(character){
 			return character.id === id;
 		});
+		if (charactersMap[id] === undefined){
+		    console.log("id  not found "+id);
+        }
 		return charactersMap[id];
 	}
 

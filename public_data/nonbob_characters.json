@@ -20,17 +20,31 @@
   {
     "affiliation": "Family",
     "id": "Julia",
-    "name": "Julia Hendricks"
+    "name": "Julia Hendricks",
+    "other_names": ["Julia"]
   },
   {
     "affiliation": "Family",
     "id": "Justin",
-    "name": "Justin Hendricks"
+    "name": "Justin Hendricks",
+    "other_names":["Justin", "Cadet"]
   },
   {
     "affiliation": "Deltans",
     "id": "Archimedes",
     "name": "Archimedes"
+  },
+  {
+    "affiliation":"FAITH",
+    "id":"Richards",
+    "name":"Captain Richards",
+    "other_names":["Richards"]
+  },
+  {
+    "affiliation": "Japanese colony",
+    "id": "Kiroshi",
+    "name": "General Kiroshi",
+    "other_names":["Kiroshi"]
   },
   {
     "affiliation": "FAITH",
@@ -62,6 +76,11 @@
     "other_names":["Fred"]
   },
 
+  {
+    "affiliation": "Poseidon Revolution",
+    "id": "Kal",
+    "name": "Kal"
+  },
   {
     "affiliation": "Poseidon Revolution",
     "id": "Denu",

@@ -7,7 +7,7 @@ Bob:Bill:Calvin:Bart
 Bob:Bill:Calvin:Thor
 Bob:Bill:Goku
 Bob:Bill:Linus
-Bob:Bill:Mulder
+Bob:Bill:Mulder; Bill's third cohort
 Bob:Bill:Mulder:Jonny
 Bob:Bill:Mulder:Skinner
 Bob:Bill:Oliver
@@ -65,3 +65,4 @@ Jeffrey
 Milton
 Yoshi
 Tony
+Jackson
