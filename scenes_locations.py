@@ -22,6 +22,12 @@ def get_scenes_locations():
     # Bob first voyage
     scenes_locations[1, 13] = 'Earth -> Epsilon Eridani'
 
+    for k,v in scenes_locations.items():
+        if v == 'Gliese 877':
+            scenes_locations[k] = 'GL 877'
+        if v == 'Gliese 54':
+            scenes_locations[k] = 'GL 54'
+
     # Mulder in Poseidon
     scenes_locations[2, 49] = 'Poseidon'
 

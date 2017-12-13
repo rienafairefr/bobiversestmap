@@ -1,163 +1,134 @@
-// Request the data
-var charactersMap={};
+var charactersMap = {}, datesMap = {}, locationsMap = {};
 
-function get_data(datafile, parent) {
-    d3.json(datafile, function (err, response) {
+// Set the dimensions of the canvas / graph
+var margin = {top: 30, right: 20, bottom: 30, left: 50},
+    width = 600 - margin.left - margin.right,
+    height = 270 - margin.top - margin.bottom;
 
-        var svg, scenes, width, height, sceneWidth;
 
-        // Get the data in the format we need to feed to d3.layout.narrative().scenes
-        scenes = wrangle(response);
+// Get the data
+d3.json("travels.json", function (error, all_data) {
 
-        // Some defaults
-        sceneWidth = 10;
-        width = scenes.length * sceneWidth * 4;
-        height = 600;
-        labelSize = [150, 15];
+    // Set the ranges
+    var x = d3.time.scale().range([0, width]);
+    var y = d3.scale.linear().range([0, height]);
 
-        // The container element (this is the HTML fragment);
-        svg = d3.select(parent).append('svg')
-            .attr('id', 'narrative-chart')
-            .attr('width', width)
-            .attr('height', height);
+    // Define the axes
+    var xAxis = d3.svg.axis().scale(x)
+        .orient("bottom").ticks(5);
 
-        // Calculate the actual width of every character label.
-        scenes.forEach(function (scene) {
-            scene.characters.forEach(function (character) {
-                character.width = svg.append('text')
-                    .attr('opacity', 0)
-                    .attr('class', 'temp')
-                    .text(character.name)
-                    .node().getComputedTextLength() + 10;
-            });
+    var yAxis = d3.svg.axis().scale(y)
+        .orient("left").ticks(5);
+
+    // Define the line
+    var valueline = d3.svg.line()
+        .x(function (d) {
+            return x(d.date.start);
+        })
+        .y(function (d) {
+            return y(d.location);
         });
 
-        // Remove all the temporary labels.
-        svg.selectAll('text.temp').remove();
+    // Adds the svg canvas
+    var svg = d3.select("#all_books")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
 
-        // Do the layout
-        narrative = d3.layout.narrative()
-            .scenes(scenes)
-            .size([width, height])
-            .pathSpace(30)
-            .groupMargin(10)
-            .labelSize([250, 15])
-            .scenePadding([5, sceneWidth / 2, 5, sceneWidth / 2])
-            .labelPosition('left')
-            .layout();
+    all_data = wrangle(all_data);
 
-        // Get the extent so we can re-size the SVG appropriately.
-        svg.attr('height', narrative.extent()[1]);
+    all_data.forEach(function (line_data) {
+        var data = line_data.travels;
+        // Scale the range of the data
+        x.domain([0, d3.max(data, function (d) {
+            return d.date.start;
+        })]);
+        y.domain([0, d3.max(data, function (d) {
+            return d.location.distance;
+        })]);
 
-        // Draw the scenes
-        svg.selectAll('.scene').data(narrative.scenes()).enter()
-            .append('g').attr('class', 'scene')
-            .attr('transform', function (d) {
-                var x, y;
-                x = Math.round(d.x) + 0.5;
-                y = Math.round(d.y) + 0.5;
-                return 'translate(' + [x, y] + ')';
-            })
-            .append('rect')
-            .attr('width', sceneWidth)
-            .attr('height', function (d) {
-                return d.height;
-            })
-            .attr('y', 0)
-            .attr('x', 0)
-            .attr('rx', 3)
-            .attr('ry', 3);
+        // Add the valueline path.
+        svg.append("path")
+            .attr("class", "line")
+            .attr("d", valueline(data));
 
-        // Draw appearances
-        svg.selectAll('.scene').selectAll('.appearance').data(function (d) {
-            return d.appearances;
-        }).enter().append('circle')
-            .attr('cx', function (d) {
-                return d.x;
+        // Add the scatterplot
+        svg.selectAll("dot")
+            .data(data)
+            .enter().append("circle")
+            .attr("r", 3.5)
+            .attr("cx", function (d) {
+                return x(d.date.start);
             })
-            .attr('cy', function (d) {
-                return d.y;
-            })
-            .attr('r', function () {
-                return 5;
-            })
-            .attr('class', function (d) {
-                return 'appearance ' + d.character.id;
+            .attr("cy", function (d) {
+                return y(d.location);
             });
-
-        // Draw links
-        svg.selectAll('.link').data(narrative.links()).enter()
-            .append('path')
-            .attr('class', function (d) {
-                return 'link ' + d.character.id;
-            })
-            .attr('d', narrative.link());
-
-        // Draw intro nodes
-        svg.selectAll('.intro').data(narrative.introductions())
-            .enter().call(function (s) {
-            var g, text;
-
-            g = s.append('g').attr('class', 'intro');
-
-            g.append('rect')
-                .attr('y', -4)
-                .attr('x', -4)
-                .attr('width', 4)
-                .attr('height', 8);
-
-            text = g.append('g').attr('class', 'text');
-
-            // Apppend two actual 'text' nodes to fake an 'outside' outline.
-            text.append('text');
-            text.append('text').attr('class', 'color');
-
-            g.attr('transform', function (d) {
-                var x, y;
-                x = Math.round(d.x);
-                y = Math.round(d.y);
-                return 'translate(' + [x, y] + ')';
-            });
-
-            g.selectAll('text')
-                .attr('text-anchor', 'end')
-                .attr('y', '4px')
-                .attr('x', '-8px')
-                .text(function (d) {
-                    return d.character.name;
-                });
-
-            g.select('.color')
-                .attr('class', function (d) {
-                    return 'color ' + d.character.affiliation;
-                });
-
-            g.select('rect')
-                .attr('class', function (d) {
-                    return d.character.affiliation;
-                });
-
-        });
     });
-}
+    // Add the X Axis
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
 
-get_data("travels.json",'#all_books');
-get_data("travels1.json",'#book1');
-get_data("travels2.json",'#book2');
-get_data("travels3.json",'#book3');
+    // Add the Y Axis
+    svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis);
+});
 
 function wrangle(data) {
-	return data.scenes.map(function(scene){
-		return {characters: scene.character_ids.map(characterById), start:scene.start};
-	});
+    return data.travels.map(function (travel_one_character) {
+        return {
+            character: characterById(travel_one_character.character_id),
+            travels: travel_one_character.travels.map(function (travel) {
+                var loc = locationById(travel.location_id);
+                return loc !== null ? {date: dateById(travel.date_id), location: loc} : null;
+            })
+        };
+    });
 
-	// Helper to get characters by ID from the raw data
-	function characterById(id) {
-		charactersMap = charactersMap || {};
-		charactersMap[id] = charactersMap[id] || data.characters.find(function(character){
-			return character.id === id;
-		});
-		return charactersMap[id];
-	}
+    // Helper to get characters by ID from the raw data
+    function characterById(id) {
+        charactersMap = charactersMap || {};
+        charactersMap[id] = charactersMap[id] || data.characters.find(function (character) {
+            return character.id === id;
+        });
+        if (charactersMap[id] === undefined) {
+            console.log("id  not found " + id);
+        }
+        return charactersMap[id];
+    }
+
+    // Helper to get date by ID from the raw data
+    function dateById(id) {
+        datesMap = datesMap || {};
+        datesMap[id] = datesMap[id] || data.dates.find(function (date) {
+            return date.id === id;
+        });
+        if (datesMap[id] === undefined) {
+            console.log("id  not found " + id);
+        }
+        return datesMap[id];
+    }
+
+    // Helper to get location by ID from the raw data
+    function locationById(id) {
+        locationsMap = locationsMap || {};
+        if (id === null) return null;
+        if (id instanceof Array) {
+            return [locationById(id[0]), locationById(id[1])]
+        } else {
+            locationsMap[id] = locationsMap[id] || data.locations.find(function (location) {
+                return location.id === id;
+            });
+            if (locationsMap[id] === undefined) {
+                console.log("id  not found " + id);
+            }
+            return locationsMap[id];
+        }
+    }
 
 }

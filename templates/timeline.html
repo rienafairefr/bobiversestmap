@@ -1,0 +1,23 @@
+{% extends "bootstrap/base.html" %}
+
+{% block navbar %}
+{{nav.navbar.render()}}
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" type="text/css" href="static/css/style.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/bob_styles.css" media="all"/>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.0/es6-shim.js"></script>
+<script src="https://d3js.org/d3.v3.js"></script>
+<script src="static/js/timeline.js"></script>
+{% endblock %}
+
+{% block content %}
+<div>All books</div>
+<div id="all_books"></div>
+{% endblock %}

@@ -7,7 +7,7 @@ from utils import json_dump, memoize, sorted_by_key
 
 
 @memoize()
-def get_genealogy():
+def get_bob_characters():
     with open(os.path.join('public_data', 'genealogy.txt')) as genealogy:
         lines = genealogy.readlines()
 
@@ -36,7 +36,7 @@ def get_genealogy():
 
 @memoize()
 def get_characters():
-    characters = get_genealogy()
+    characters = list(get_bob_characters()) # copy
     characters.extend(json.load(open(os.path.join('public_data', 'nonbob_characters.json'))))
     for char in characters:
         char['all_names'] = [char['name']]
@@ -51,7 +51,7 @@ def get_characters_map():
 
 @memoize()
 def get_bob_styles():
-    bob_characters = get_genealogy()
+    bob_characters = get_bob_characters()
     styles = ''
     for i, bob_character in enumerate(bob_characters):
         template = 'path.%s {stroke: %s;}\n'
@@ -61,7 +61,7 @@ def get_bob_styles():
 
 
 def write_genealogy():
-    bob_characters = get_genealogy()
+    bob_characters = get_bob_characters()
     json_dump(bob_characters, os.path.join('generated', 'bob_characters.json'))
 
 

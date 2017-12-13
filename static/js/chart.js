@@ -156,7 +156,8 @@ get_data("book/3/data.json",'#book3');
 
 function wrangle(data) {
 	return data.scenes.map(function(scene){
-		return {characters: scene.character_ids.map(characterById), start:scene.start};
+		return {characters: scene.character_ids.map(characterById), links:scene.links, y:scene.y_pos
+        };
 	});
 
 	// Helper to get characters by ID from the raw data

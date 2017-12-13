@@ -24,9 +24,11 @@ def get_scenes(parsingtype=RelationShipParsingType.NAME_IN_WORDS):
 
     scenes = {}
     for k, book_chapter in chapters_books.items():
+        scene_location = scenes_locations[k]
         lines = book_chapter['content']
         all_lines = '\n'.join(lines)
         link = {book_chapter['bob']}
+        links = []
         character_line = {book_chapter['bob']: ['**NAMED CHAPTER**']}
 
         chapter_characters = list(characters_map.values())
@@ -46,6 +48,7 @@ def get_scenes(parsingtype=RelationShipParsingType.NAME_IN_WORDS):
                             if name0 > name1 and name0 in tokenized_sentence and name1 in tokenized_sentence:
                                 link.add(character0['id'])
                                 link.add(character1['id'])
+                                links.append(character_pair)
                                 character_line.setdefault(character0['id'], []).append(line)
                                 character_line.setdefault(character1['id'], []).append(line)
 
@@ -59,18 +62,20 @@ def get_scenes(parsingtype=RelationShipParsingType.NAME_IN_WORDS):
         # scene_characters = list(characters[character_id] for character_id in link)
         # scenes.append(list(link))
 
-        if type(scenes_locations[k]) == list:
-            y0 = sorted_locations.index(scenes_locations[k][0])
-            y1 = sorted_locations.index(scenes_locations[k][1])
+        if type(scene_location) == list:
+            y0 = sorted_locations.index(scene_location[0])
+            y1 = sorted_locations.index(scene_location[1])
 
             y = (y0 + y1) / 2
         else:
-            y = sorted_locations.index(scenes_locations[k])
+            y = sorted_locations.index(scene_location)
 
-        scenes[k] = sorted_by_key({'character_ids': list(link),
-                                 'character_line': character_line,
-                                 'index':k,
-                                 'y_pos': y})
+        scenes[k] = sorted_by_key({'characters': list(map(lambda i: characters_map[i], link)),
+                                   'character_ids': list(link),
+                                   'links': links,
+                                   'character_line': character_line,
+                                   'index': k,
+                                   'y_pos': y})
 
         # {'characters': scene_characters, 'start': book_chapter['date']})
 
@@ -205,7 +210,7 @@ def postprocess(scenes):
     remove(2, 2, 'Bert')
     remove(2, 15, 'Bashful')
 
-    remove(1, range(1, 44), 'Archimedes') # remove instances before first contact with Archimedes
+    remove(1, range(1, 44), 'Archimedes')  # remove instances before first contact with Archimedes
 
     # Fred represents 3 different characters
     for (nb, nc), s in scenes.items():
@@ -244,7 +249,7 @@ def write_characters_lines(scenes):
 
 
 def get_scenes_books(nb=None):
-    return sorted_by_key({k:v for k,v in get_scenes().items() if nb is None or k[0] == nb})
+    return sorted_by_key({k: v for k, v in get_scenes().items() if nb is None or k[0] == nb})
 
 
 def write_scenes():

@@ -1,54 +1,67 @@
-import os
+from collections import OrderedDict
 
-from readcombined import get_book_chapters
-from scenes_locations import get_scenes_locations
-from utils import json_dump, memoize, sorted_by_key
+import dateutil
+
+from genealogy import get_characters_map, get_characters
+from locations import get_locations
+from read_dates import get_dates
+from scenes import get_scenes_books
+from scenes_locations import get_scenes_locations_book
+from utils import memoize, sorted_by_key
 
 
 @memoize()
-def get_travels():
-    chapters_books = get_book_chapters()
+def get_travels_book(nb=None):
+    scenes = get_scenes_books(nb)
+    scenes_locations = get_scenes_locations_book(nb)
+    characters_map = get_characters_map()
+    dates = get_dates()
 
-    scenes_locations = get_scenes_locations()
+    data_travels_dict = OrderedDict()
+    for character_id, character in sorted(characters_map.items()):
+        one_character = {}
+        current_location = {}
+        for k, scene in scenes.items():
+            if character_id in scene['character_ids']:
+                current_location = scenes_locations[k]
+            if isinstance(current_location, list):
+                current_location_id = [current_location[0].get('id'), current_location[1].get('id')]
+            else:
+                current_location_id = current_location.get('id')
+            one_character[k] = {'date_id': dates[k]['id'], 'location_id': current_location_id}
 
-    combined = zip(chapters_books.keys(),
-                   zip(chapters_books.values(), scenes_locations.values()))
+        one_character = postprocess(one_character, character)
+        one_character = {k: v for k, v in one_character.items() if nb is None or k[0] == nb}
+        data_travels_dict[character_id] = one_character
 
-    travels = {}
-    for (nb,nc), book_chapter, scene_location in combined:
-        travels[nb,nc] = sorted_by_key({'bob': book_chapter['bob'], 'location': scene_location})
-
-    return sorted_by_key(travels)
-
-
-def write_travels():
-    travels = get_travels()
-
-    def write_travels_(nb=None):
-        if nb is None:
-            nb = ''
-            data_travels = travels
-        else:
-            data_travels = sorted_by_key({k:travel for k, travel in travels.items() if k[0] == nb})
-
-        bobs = list(set(el['bob'] for el in data_travels))
-
-        data_travels_dict = {}
-        for bob in bobs:
-            data_travels_dict[bob] = []
-            current_location = None
-            for data_travel in data_travels:
-                if data_travel['bob'] == bob:
-                    current_location = data_travel['location']
-                data_travels_dict[bob].append(current_location)
-
-        json_dump(sorted_by_key(data_travels_dict), os.path.join('generated', 'travels%s.json' % nb))
-
-    write_travels_()
-    write_travels_(1)
-    write_travels_(2)
-    write_travels_(3)
+    return data_travels_dict
 
 
-if __name__ == '__main__':
-    write_travels()
+def postprocess(input, character):
+    if character['affiliation'] == 'Deltans':
+        for k, element in input.items():
+            if element['location_id'] is not None:
+                input[k]['location_id'] = 'Delta Eridani_Eden'
+    if character['affiliation'] == 'Poseidon Revolution':
+        for k, element in input.items():
+            if element['location_id'] is not None:
+                input[k]['location_id'] = 'Eta Cassiopeiae_Poseidon'
+
+    return input
+
+
+@memoize()
+def get_travels_book_json(nb=None):
+    characters = get_characters()
+    locations = get_locations()
+    dates = get_dates()
+
+    def _treatvalue(val):
+        return list(sorted_by_key(val).values())
+
+    travels = [{'character_id': character_id, 'travels': _treatvalue(value)} for character_id,value in get_travels_book(nb).items()]
+
+    return {'locations': locations,
+            'dates': _treatvalue(dates),
+            'characters':characters,
+            'travels': travels}
