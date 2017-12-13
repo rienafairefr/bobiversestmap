@@ -43,7 +43,7 @@ def get_scenes(parsingtype=RelationShipParsingType.NAME_IN_WORDS):
                     character1 = character_pair[1]
                     for name0 in character0['all_names']:
                         for name1 in character1['all_names']:
-                            if name0 != name1 and name0 in tokenized_sentence and name1 in tokenized_sentence:
+                            if name0 > name1 and name0 in tokenized_sentence and name1 in tokenized_sentence:
                                 link.add(character0['id'])
                                 link.add(character1['id'])
                                 character_line.setdefault(character0['id'], []).append(line)
