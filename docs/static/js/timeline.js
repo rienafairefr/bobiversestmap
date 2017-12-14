@@ -10,7 +10,7 @@ var margin = {top: 30, right: 20, bottom: 30, left: 50},
 d3.json("travels.json", function (error, all_data) {
 
     // Set the ranges
-    var x = d3.time.scale().range([0, width]);
+    var x = d3.scale.linear().range([0, width]);
     var y = d3.scale.linear().range([0, height]);
 
     // Define the axes
@@ -20,13 +20,20 @@ d3.json("travels.json", function (error, all_data) {
     var yAxis = d3.svg.axis().scale(y)
         .orient("left").ticks(5);
 
+    function get_x(d){
+        return d!==null ? d.date.start:null;
+    }
+    function get_y(d){
+        return d!==null ? d.location.distance:null;
+    }
+
     // Define the line
     var valueline = d3.svg.line()
         .x(function (d) {
-            return x(d.date.start);
+            return x(get_x(d));
         })
         .y(function (d) {
-            return y(d.location);
+            return y(get_y(d));
         });
 
     // Adds the svg canvas
@@ -43,12 +50,8 @@ d3.json("travels.json", function (error, all_data) {
     all_data.forEach(function (line_data) {
         var data = line_data.travels;
         // Scale the range of the data
-        x.domain([0, d3.max(data, function (d) {
-            return d.date.start;
-        })]);
-        y.domain([0, d3.max(data, function (d) {
-            return d.location.distance;
-        })]);
+        x.domain([0, d3.max(data, get_x)]);
+        y.domain([0, d3.max(data, get_y)]);
 
         // Add the valueline path.
         svg.append("path")
@@ -61,10 +64,10 @@ d3.json("travels.json", function (error, all_data) {
             .enter().append("circle")
             .attr("r", 3.5)
             .attr("cx", function (d) {
-                return x(d.date.start);
+                return x(get_x(d));
             })
             .attr("cy", function (d) {
-                return y(d.location);
+                return y(get_y(d));
             });
     });
     // Add the X Axis

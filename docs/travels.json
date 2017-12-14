@@ -587,6 +587,19 @@
       "name": "Jackson"
     }, 
     {
+      "affiliation": "Sam", 
+      "all_names": [
+        "Sam", 
+        "Exodus-3"
+      ], 
+      "id": "Sam", 
+      "level": 1, 
+      "name": "Sam", 
+      "other_names": [
+        "Exodus-3"
+      ]
+    }, 
+    {
       "affiliation": "Howard", 
       "all_names": [
         "Bridget", 
@@ -2189,6 +2202,11 @@
       "distance": 29.81, 
       "id": "Kappa Ceti", 
       "star": "Kappa Ceti"
+    }, 
+    {
+      "distance": 37.0, 
+      "id": "11 Leonis Minoris", 
+      "star": "11 Leonis Minoris"
     }, 
     {
       "distance": 29.49, 
@@ -4412,712 +4430,633 @@
         {
           "date_id": "date 1 39", 
           "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 40", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 41", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 42", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 43", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 44", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 45", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 46", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 47", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 48", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 49", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 50", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 51", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 52", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 53", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 54", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 55", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 56", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 57", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 58", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 59", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 60", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 1 61", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 1", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 2", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 3", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 4", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 5", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 6", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 7", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 8", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 9", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 10", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 11", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 12", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 13", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 14", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 15", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 16", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 17", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 18", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 19", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 20", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 21", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 22", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 23", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 24", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 25", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 26", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 27", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 28", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 29", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 30", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 31", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 32", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 33", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 34", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 35", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 36", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 37", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 38", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 39", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 40", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 41", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 42", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 43", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 44", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 45", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 46", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 47", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 48", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 49", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 50", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 51", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 52", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 53", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 54", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 55", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 56", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 57", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 58", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 59", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 60", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 61", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 62", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 63", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 64", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 65", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 66", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 67", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 68", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 69", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 70", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 71", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 72", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 73", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 74", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 75", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 76", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 2 77", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 1", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 2", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 3", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 4", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 5", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 6", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 7", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 8", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 9", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 10", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 11", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 12", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 13", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 14", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 15", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 16", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 17", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 18", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 19", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 20", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 21", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 22", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 23", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 24", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 25", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 26", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 27", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 28", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 29", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 30", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 31", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 32", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 33", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 34", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 35", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 36", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 37", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 38", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 39", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 40", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 41", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 42", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 43", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 44", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 45", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 46", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 47", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 48", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 49", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 50", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 51", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 52", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 53", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 54", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 55", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 56", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 57", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 58", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 59", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 60", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 61", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 62", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 63", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 64", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 65", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 66", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 67", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 68", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 69", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 70", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 71", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 72", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 73", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 74", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 75", 
-          "location_id": "Delta Eridani_Eden"
-        }, 
-        {
-          "date_id": "date 3 76", 
-          "location_id": "Delta Eridani_Eden"
         }
       ]
     }, 
     {
       "character_id": "Bert", 
-      "travels": []
+      "travels": [
+        {
+          "date_id": "date 1 60", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 1 61", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 1", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 2", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 3", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 4", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 5", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 6", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 7", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 8", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 9", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 10", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 11", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 12", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 13", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 14", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 15", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 16", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 17", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 18", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 19", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 20", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 21", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 22", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 23", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 24", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 25", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 26", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 27", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 28", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 29", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 30", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 31", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 32", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 33", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 34", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 35", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 36", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 37", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 38", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 39", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 40", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 41", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 42", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 43", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 44", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 45", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 46", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 47", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 48", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 49", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 50", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 51", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 52", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 53", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 54", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 55", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 56", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 57", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 58", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 59", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 60", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 61", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 62", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 63", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 64", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 65", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 66", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 67", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 68", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 69", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 70", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 71", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 72", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 73", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 74", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 75", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 76", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 77", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 1", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 2", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 3", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 4", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 5", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 6", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 7", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 8", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 9", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 10", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 11", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 12", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 13", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 14", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 15", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 16", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 17", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 18", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 19", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 20", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 21", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 22", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 23", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 24", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 25", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 26", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 27", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 28", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 29", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 30", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 31", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 32", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 33", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 34", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 35", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 36", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 37", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 38", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 39", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 40", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 41", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 42", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 43", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 44", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 45", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 46", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 47", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 48", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 49", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 50", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 51", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 52", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 53", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 54", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 55", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 56", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 57", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 58", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 59", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 60", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 61", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 62", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 63", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 64", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 65", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 66", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 67", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 68", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 69", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 70", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 71", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 72", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 73", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 74", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 75", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 76", 
+          "location_id": "Omicron2 Eridani"
+        }
+      ]
     }, 
     {
       "character_id": "Bill", 
@@ -6780,6 +6719,254 @@
       "character_id": "Bridget", 
       "travels": [
         {
+          "date_id": "date 1 1", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 2", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 3", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 4", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 5", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 6", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 7", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 8", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 9", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 10", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 11", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 12", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 13", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 14", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 15", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 16", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 17", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 18", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 19", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 20", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 21", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 22", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 23", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 24", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 25", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 26", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 27", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 28", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 29", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 30", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 31", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 32", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 33", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 34", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 35", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 36", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 37", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 38", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 39", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 40", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 41", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 42", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 43", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 44", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 45", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 46", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 47", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 48", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 49", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 50", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 51", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 52", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 53", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 54", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 55", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 56", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 57", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 58", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 59", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 60", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 1 61", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 1", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
           "date_id": "date 2 2", 
           "location_id": "Omicron2 Eridani_Vulcan"
         }, 
@@ -6793,83 +6980,83 @@
         }, 
         {
           "date_id": "date 2 5", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 6", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 7", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 8", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 9", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 10", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 11", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 12", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 13", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 14", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 15", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 16", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 17", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 18", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 19", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 20", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 21", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 22", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 23", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 24", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 25", 
@@ -7005,74 +7192,47 @@
         }, 
         {
           "date_id": "date 2 58", 
-          "location_id": [
-            "Omicron2 Eridani_Vulcan", 
-            "HIP 14101"
-          ]
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 59", 
-          "location_id": [
-            "Omicron2 Eridani_Vulcan", 
-            "HIP 14101"
-          ]
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 60", 
-          "location_id": [
-            "Omicron2 Eridani_Vulcan", 
-            "HIP 14101"
-          ]
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 61", 
-          "location_id": [
-            "Omicron2 Eridani_Vulcan", 
-            "HIP 14101"
-          ]
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 62", 
-          "location_id": [
-            "Omicron2 Eridani_Vulcan", 
-            "HIP 14101"
-          ]
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 63", 
-          "location_id": [
-            "Omicron2 Eridani_Vulcan", 
-            "HIP 14101"
-          ]
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 64", 
-          "location_id": [
-            "Omicron2 Eridani_Vulcan", 
-            "HIP 14101"
-          ]
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 65", 
-          "location_id": [
-            "Omicron2 Eridani_Vulcan", 
-            "HIP 14101"
-          ]
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 66", 
-          "location_id": [
-            "Omicron2 Eridani_Vulcan", 
-            "HIP 14101"
-          ]
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 67", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 68", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 69", 
@@ -7080,39 +7240,39 @@
         }, 
         {
           "date_id": "date 2 70", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 71", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 72", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 73", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 74", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 75", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 76", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 77", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 1", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 2", 
@@ -7136,11 +7296,11 @@
         }, 
         {
           "date_id": "date 3 7", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 8", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 9", 
@@ -7188,39 +7348,39 @@
         }, 
         {
           "date_id": "date 3 20", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 21", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 22", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 23", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 24", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 25", 
-          "location_id": "82 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 26", 
-          "location_id": "82 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 27", 
-          "location_id": "82 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 28", 
-          "location_id": "82 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 29", 
@@ -7256,19 +7416,19 @@
         }, 
         {
           "date_id": "date 3 37", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 38", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 39", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 40", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 41", 
@@ -7418,7 +7578,688 @@
     }, 
     {
       "character_id": "Bruce", 
-      "travels": []
+      "travels": [
+        {
+          "date_id": "date 1 45", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 46", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 47", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 48", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 49", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 50", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 51", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 52", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 53", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 54", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 55", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 56", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 57", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 58", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 59", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 60", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 1 61", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 1", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 2", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 3", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 4", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 5", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 6", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 7", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 8", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 9", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 10", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 11", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 12", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 13", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 14", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 15", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 16", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 17", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 18", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 19", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 20", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 21", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 22", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 23", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 24", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 25", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 26", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 27", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 28", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 29", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 30", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 31", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 32", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 33", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 34", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 35", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 36", 
+          "location_id": "Alpha Centauri"
+        }, 
+        {
+          "date_id": "date 2 37", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 38", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 39", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 40", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 41", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 42", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 43", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 44", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 45", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 46", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 47", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 48", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 49", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 50", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 51", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 52", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 53", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 54", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 55", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 56", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 57", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 58", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 59", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 60", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 61", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 62", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 63", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 64", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 65", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 66", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 67", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 68", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 69", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 70", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 71", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 72", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 73", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 74", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 75", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 76", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 2 77", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 1", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 2", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 3", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 4", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 5", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 6", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 7", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 8", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 9", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 10", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 11", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 12", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 13", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 14", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 15", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 16", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 17", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 18", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 19", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 20", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 21", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 22", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 23", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 24", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 25", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 26", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 27", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 28", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 29", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 30", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 31", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 32", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 33", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 34", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 35", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 36", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 37", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 38", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 39", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 40", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 41", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 42", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 43", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 44", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 45", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 46", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 47", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 48", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 49", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 50", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 51", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 52", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 53", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 54", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 55", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 56", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 57", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 58", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 59", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 60", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 61", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 62", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 63", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 64", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 65", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 66", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 67", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 68", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 69", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 70", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 71", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 72", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 73", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 74", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 75", 
+          "location_id": "11 Leonis Minoris"
+        }, 
+        {
+          "date_id": "date 3 76", 
+          "location_id": "11 Leonis Minoris"
+        }
+      ]
     }, 
     {
       "character_id": "Butterworth", 
@@ -7565,11 +8406,11 @@
         }, 
         {
           "date_id": "date 1 61", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 1", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 2", 
@@ -7585,15 +8426,15 @@
         }, 
         {
           "date_id": "date 2 5", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 6", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 7", 
-          "location_id": "Omicron2 Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 8", 
@@ -7761,92 +8602,83 @@
         }, 
         {
           "date_id": "date 2 49", 
-          "location_id": "Eta Cassiopeiae_Poseidon"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 50", 
-          "location_id": "Eta Cassiopeiae_Poseidon"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 51", 
-          "location_id": "Eta Cassiopeiae_Poseidon"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 52", 
-          "location_id": "Eta Cassiopeiae_Poseidon"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 53", 
-          "location_id": "Eta Cassiopeiae_Poseidon"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 54", 
-          "location_id": "Eta Cassiopeiae_Poseidon"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 55", 
-          "location_id": "Eta Cassiopeiae_Poseidon"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 56", 
-          "location_id": "Eta Cassiopeiae_Poseidon"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 57", 
-          "location_id": "Eta Cassiopeiae_Poseidon"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 58", 
-          "location_id": [
-            "Omicron2 Eridani_Vulcan", 
-            "HIP 14101"
-          ]
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 59", 
-          "location_id": [
-            "Omicron2 Eridani_Vulcan", 
-            "HIP 14101"
-          ]
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 60", 
-          "location_id": [
-            "Omicron2 Eridani_Vulcan", 
-            "HIP 14101"
-          ]
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 61", 
-          "location_id": "Alpha Centauri"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 62", 
-          "location_id": "Alpha Centauri"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 63", 
-          "location_id": "Alpha Centauri"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 64", 
-          "location_id": "Epsilon Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 65", 
-          "location_id": "Epsilon Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 66", 
-          "location_id": "Epsilon Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 67", 
-          "location_id": "Epsilon Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 68", 
-          "location_id": "Epsilon Eridani"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 69", 
@@ -7854,42 +8686,264 @@
         }, 
         {
           "date_id": "date 2 70", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 71", 
-          "location_id": "HIP 14101"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 72", 
-          "location_id": "Delta Pavonis"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 73", 
-          "location_id": "Delta Pavonis"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 74", 
-          "location_id": "Delta Pavonis"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 75", 
-          "location_id": "Delta Pavonis"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 76", 
-          "location_id": "Delta Pavonis"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 2 77", 
-          "location_id": "Delta Pavonis"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 1", 
-          "location_id": "Delta Pavonis"
+          "location_id": "Omicron2 Eridani_Vulcan"
         }, 
         {
           "date_id": "date 3 2", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
           "location_id": "Omicron2 Eridani_Vulcan"
         }
       ]
@@ -8649,7 +9703,768 @@
     }, 
     {
       "character_id": "Charles", 
-      "travels": []
+      "travels": [
+        {
+          "date_id": "date 1 25", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 26", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 27", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 28", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 29", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 30", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 31", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 32", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 33", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 34", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 35", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 36", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 37", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 38", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 39", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 40", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 41", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 42", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 43", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 44", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 45", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 46", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 47", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 48", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 49", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 50", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 51", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 52", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 53", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 54", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 55", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 56", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 57", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 58", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 59", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 60", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 1 61", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 1", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 2", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 3", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 4", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 5", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 6", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 7", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 8", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 9", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 10", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 11", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 12", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 13", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 14", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 15", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 16", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 17", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 18", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 19", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 20", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 21", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 22", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 23", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 24", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 25", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 26", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 27", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 28", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 29", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 30", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 31", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 32", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 33", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 34", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 35", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 36", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 37", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 38", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 39", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 40", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 41", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 42", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 43", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 44", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 45", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 46", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 47", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 48", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 49", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 50", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 51", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 52", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 53", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 54", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 55", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 56", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 57", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 58", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 59", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 60", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 61", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 62", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 63", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 64", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 65", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 66", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 67", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 68", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 69", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 70", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 71", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 72", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 73", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 74", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 75", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 76", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 2 77", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 1", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 2", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 3", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 4", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 5", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 6", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 7", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 8", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 9", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 10", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 11", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 12", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 13", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 14", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 15", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 16", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 17", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 18", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 19", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 20", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 21", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 22", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 23", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 24", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 25", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 26", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 27", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 28", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 29", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 30", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 31", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 32", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 33", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 34", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 35", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 36", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 37", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 38", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 39", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 40", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 41", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 42", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 43", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 44", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 45", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 46", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 47", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 48", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 49", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 50", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 51", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 52", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 53", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 54", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 55", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 56", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 57", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 58", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 59", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 60", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 61", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 62", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 63", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 64", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 65", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 66", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 67", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 68", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 69", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 70", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 71", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 72", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 73", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 74", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 75", 
+          "location_id": "Sol"
+        }, 
+        {
+          "date_id": "date 3 76", 
+          "location_id": "Sol"
+        }
+      ]
     }, 
     {
       "character_id": "Claude", 
@@ -9034,7 +10849,407 @@
     }, 
     {
       "character_id": "Daedalus", 
-      "travels": []
+      "travels": [
+        {
+          "date_id": "date 3 17", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 18", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 19", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 20", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 21", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 22", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 23", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 24", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 25", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 26", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 27", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 28", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 29", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 30", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 31", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 32", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 33", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 34", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 35", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 36", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 37", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 38", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 39", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 40", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 41", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 42", 
+          "location_id": [
+            "Epsilon Eridani", 
+            "Epsilon Indi"
+          ]
+        }, 
+        {
+          "date_id": "date 3 43", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 44", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 45", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 46", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 47", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 48", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 49", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 50", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 51", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 52", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 53", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 54", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 55", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 56", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 57", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 58", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 59", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 60", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 61", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 62", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 63", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 64", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 65", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 66", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 67", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 68", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 69", 
+          "location_id": [
+            "Epsilon Indi", 
+            "GL 877"
+          ]
+        }, 
+        {
+          "date_id": "date 3 70", 
+          "location_id": "GL 877"
+        }, 
+        {
+          "date_id": "date 3 71", 
+          "location_id": "GL 877"
+        }, 
+        {
+          "date_id": "date 3 72", 
+          "location_id": "GL 877"
+        }, 
+        {
+          "date_id": "date 3 73", 
+          "location_id": "GL 877"
+        }, 
+        {
+          "date_id": "date 3 74", 
+          "location_id": "GL 877"
+        }, 
+        {
+          "date_id": "date 3 75", 
+          "location_id": "GL 877"
+        }, 
+        {
+          "date_id": "date 3 76", 
+          "location_id": "GL 877"
+        }
+      ]
     }, 
     {
       "character_id": "Denu", 
@@ -9319,7 +11534,420 @@
     }, 
     {
       "character_id": "Dexter", 
-      "travels": []
+      "travels": [
+        {
+          "date_id": "date 2 51", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 52", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 53", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 54", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 55", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 56", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 57", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 58", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 59", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 60", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 61", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 62", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 63", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 64", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 65", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 66", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 67", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 68", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 69", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 70", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 71", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 72", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 73", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 74", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 75", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 76", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 2 77", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 1", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 2", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 3", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 4", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 5", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 6", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 7", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 8", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 9", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 10", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 11", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 12", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 13", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 14", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 15", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 16", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 17", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 18", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 19", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 20", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 21", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 22", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 23", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 24", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 25", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 26", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 27", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 28", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 29", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 30", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 31", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 32", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 33", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 34", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 35", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 36", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 37", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 38", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 39", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 40", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 41", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 42", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 43", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 44", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 45", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 46", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 47", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 48", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 49", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 50", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 51", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 52", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 53", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 54", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 55", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 56", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 57", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 58", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 59", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 60", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 61", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 62", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 63", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 64", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 65", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 66", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 67", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 68", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 69", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 70", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 71", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 72", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 73", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 74", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 75", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }, 
+        {
+          "date_id": "date 3 76", 
+          "location_id": "Omicron2 Eridani_Vulcan"
+        }
+      ]
     }, 
     {
       "character_id": "Dopey", 
@@ -10762,7 +13390,628 @@
     }, 
     {
       "character_id": "Ernie", 
-      "travels": []
+      "travels": [
+        {
+          "date_id": "date 1 60", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 1 61", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 1", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 2", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 3", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 4", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 5", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 6", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 7", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 8", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 9", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 10", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 11", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 12", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 13", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 14", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 15", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 16", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 17", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 18", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 19", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 20", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 21", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 22", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 23", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 24", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 25", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 26", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 27", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 28", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 29", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 30", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 31", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 32", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 33", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 34", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 35", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 36", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 37", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 38", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 39", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 40", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 41", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 42", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 43", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 44", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 45", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 46", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 47", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 48", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 49", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 50", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 51", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 52", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 53", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 54", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 55", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 56", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 57", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 58", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 59", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 60", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 61", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 62", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 63", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 64", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 65", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 66", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 67", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 68", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 69", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 70", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 71", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 72", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 73", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 74", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 75", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 76", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 2 77", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 1", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 2", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 3", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 4", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 5", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 6", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 7", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 8", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 9", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 10", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 11", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 12", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 13", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 14", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 15", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 16", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 17", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 18", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 19", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 20", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 21", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 22", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 23", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 24", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 25", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 26", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 27", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 28", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 29", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 30", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 31", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 32", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 33", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 34", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 35", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 36", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 37", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 38", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 39", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 40", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 41", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 42", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 43", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 44", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 45", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 46", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 47", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 48", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 49", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 50", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 51", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 52", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 53", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 54", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 55", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 56", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 57", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 58", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 59", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 60", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 61", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 62", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 63", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 64", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 65", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 66", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 67", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 68", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 69", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 70", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 71", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 72", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 73", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 74", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 75", 
+          "location_id": "Omicron2 Eridani"
+        }, 
+        {
+          "date_id": "date 3 76", 
+          "location_id": "Omicron2 Eridani"
+        }
+      ]
     }, 
     {
       "character_id": "Ferb", 
@@ -23540,6 +26789,10 @@
           "location_id": "Epsilon Indi"
         }
       ]
+    }, 
+    {
+      "character_id": "Sam", 
+      "travels": []
     }, 
     {
       "character_id": "Skinner", 

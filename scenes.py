@@ -128,6 +128,7 @@ def postprocess(scenes):
         'Goku': (1, 28),
         'Ernie': (1, 61),
         'Bridget': (3, 62),
+        'Sam': (2,8 )
     }
 
     thresholds.update(get_thresholds_deaths())
@@ -232,6 +233,11 @@ def postprocess(scenes):
             remove(nb, nc, 'Fred_Deltan')
 
     remove(3, 40, "Fred_Carleon")
+
+
+    remove(1,54,'Sam')
+    remove(2,2, 'Sam')
+    remove(2, 7, 'Sam')
 
     return scenes
 

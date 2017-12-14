@@ -81,7 +81,15 @@ def postprocess(data_travels_dict):
     fix('Calvin', 1, 28, 'Alpha Centauri B')
     fix('Goku', 1, 28, 'Alpha Centauri A')
 
+    fix('Bashful', 2, 13, 'GL 54')
+    fix('Dopey', 2, 13, 'GL 54')
+    fix('Sleepy', 2, 13, 'GL 54')
+    fix('Hungry', 2, 13, 'GL 54')
+
     fix('Bashful', 2, 15, 'GL 54')
+    fix('Dopey', 2, 15, 'GL 54')
+    fix('Sleepy', 2, 15, 'GL 54')
+    fix('Hungry', 2, 15, 'GL 54')
 
     fix('Bender', 1, 30, 'Delta Eridani_Eden')
 
@@ -123,6 +131,21 @@ def postprocess(data_travels_dict):
     fix('Daedalus', 3, 43, ['Epsilon Indi', 'GL 877'])
     fix('Daedalus', 3, 70, 'GL 877')
 
+
+    # Dexter from Sol to Vulcan
+    fix('Dexter', 2, 51, 'Omicron2 Eridani_Vulcan')
+
+    # Dr Doucette on Vulcan
+    for (nb, nc) in list(data_travels_dict['Bridget'].keys()):
+        if (nb, nc) > (2, 13):
+            remove('Doucette', nb, nc)
+        else:
+            fix('Doucette', nb, nc, 'Sol_Earth')
+
+    # Both coming from Sol (Exodus-6)
+    fix('Edwin', 2, 46, 'Epsilon Indi')
+    fix('Rudy', 2, 46, 'Epsilon Indi')
+
     # fill gaps with current known location
     for character_id, travel in data_travels_dict.items():
         current_location_id = None
@@ -160,7 +183,7 @@ def write_travels(data_travels_dict):
                 try:
                     locations_file.write('{:^10s} {:3d} {:3d} {:s}\n'.format(character_id, nb, nc, location_id))
                 except TypeError:
-                    locations_file.write('{:^10s} {:3d} {:3d} {:s} {:s}\n'.format(character_id, nb, nc, location_id[0], location_id[1]))
+                    locations_file.write('{:^10s} {:3d} {:3d} {:s} -> {:s}\n'.format(character_id, nb, nc, location_id[0], location_id[1]))
 
 
 @memoize()

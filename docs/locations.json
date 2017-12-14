@@ -100,6 +100,11 @@
     "star": "Kappa Ceti"
   }, 
   {
+    "distance": 37.0, 
+    "id": "11 Leonis Minoris", 
+    "star": "11 Leonis Minoris"
+  }, 
+  {
     "distance": 29.49, 
     "id": "Delta Eridani_Eden", 
     "planet": "Eden", 

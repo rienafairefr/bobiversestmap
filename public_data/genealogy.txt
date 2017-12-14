@@ -36,7 +36,7 @@ Bob:Riker:Charles
 Bob:Riker:Charles:Howard
 Bob:Riker:Charles:Dexter
 Bob:Riker:Rudy
-Bob:Riker:Edwin
+Bob:Riker:Edwin; Exodus-6
 Bob:Riker:Arthur
 Bob:Riker:Bert
 Bob:Riker:Ernie
@@ -66,3 +66,4 @@ Milton
 Yoshi
 Tony
 Jackson
+Sam; Exodus-3

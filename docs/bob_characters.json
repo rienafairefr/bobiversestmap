@@ -389,5 +389,14 @@
     "id": "Jackson", 
     "level": 1, 
     "name": "Jackson"
+  }, 
+  {
+    "affiliation": "Sam", 
+    "id": "Sam", 
+    "level": 1, 
+    "name": "Sam", 
+    "other_names": [
+      "Exodus-3"
+    ]
   }
 ]

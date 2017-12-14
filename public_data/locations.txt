@@ -27,4 +27,5 @@ Omicron2 Eridani:Romulus
 HIP 14101:Odin
 Eta Cassiopeiae:Poseidon
 Epsilon Indi:KKP
+Epsilon Indi:Big Top
 0;BobNet
