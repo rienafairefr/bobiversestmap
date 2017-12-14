@@ -14,6 +14,11 @@
 10.48;Epsilon Eridani
 26.6;GL 54
 4.37;Alpha Centauri
+4.37;Alpha Centauri A
+4.37;Alpha Centauri B
+29.12;Gamma Leporis A
+29.81;Kappa Ceti
+37;11 Leonis Minoris
 Delta Eridani:Eden
 Delta Eridani:Eden:Camelot
 Sol:Earth

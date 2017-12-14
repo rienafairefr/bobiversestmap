@@ -34,6 +34,10 @@ def get_bob_characters():
     return bob_characters
 
 
+def is_bob(character_id):
+    return character_id in [el['id'] for el in get_bob_characters()]
+
+
 @memoize()
 def get_characters():
     characters = list(get_bob_characters()) # copy

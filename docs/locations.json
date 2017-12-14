@@ -1,118 +1,155 @@
 [
   {
+    "distance": 19.42, 
     "id": "Eta Cassiopeiae", 
     "star": "Eta Cassiopeiae"
   }, 
   {
+    "distance": 41.04, 
     "id": "HIP 84051", 
     "star": "HIP 84051"
   }, 
   {
+    "distance": 0.0, 
     "id": "Sol", 
     "star": "Sol"
   }, 
   {
+    "distance": 11.81, 
     "id": "Epsilon Indi", 
     "star": "Epsilon Indi"
   }, 
   {
+    "distance": 19.71, 
     "id": "82 Eridani", 
     "star": "82 Eridani"
   }, 
   {
+    "distance": 19.92, 
     "id": "Delta Pavonis", 
     "star": "Delta Pavonis"
   }, 
   {
-    "id": "Gliese 877", 
-    "star": "Gliese 877"
-  }, 
-  {
+    "distance": 28.01, 
     "id": "Zeta Tucanae", 
     "star": "Zeta Tucanae"
   }, 
   {
-    "id": "Gliese 54", 
-    "star": "Gliese 54"
-  }, 
-  {
+    "distance": 30.21, 
     "id": "Gamma Pavonis", 
     "star": "Gamma Pavonis"
   }, 
   {
+    "distance": 30.72, 
     "id": "HIP 14101", 
     "star": "HIP 14101"
   }, 
   {
+    "distance": 24.33, 
     "id": "Beta Hydri", 
     "star": "Beta Hydri"
   }, 
   {
+    "distance": 16.39, 
     "id": "Omicron2 Eridani", 
     "star": "Omicron2 Eridani"
   }, 
   {
+    "distance": 28.1, 
     "id": "GL 877", 
     "star": "GL 877"
   }, 
   {
-    "id": "fdani",
+    "distance": 29.49, 
+    "id": "Delta Eridani", 
     "star": "Delta Eridani"
   }, 
   {
+    "distance": 10.48, 
     "id": "Epsilon Eridani", 
     "star": "Epsilon Eridani"
   }, 
   {
+    "distance": 26.6, 
     "id": "GL 54", 
     "star": "GL 54"
   }, 
   {
+    "distance": 4.37, 
     "id": "Alpha Centauri", 
     "star": "Alpha Centauri"
   }, 
   {
-    "id": "Delta Pavonis_Eden", 
+    "distance": 4.37, 
+    "id": "Alpha Centauri A", 
+    "star": "Alpha Centauri A"
+  }, 
+  {
+    "distance": 4.37, 
+    "id": "Alpha Centauri B", 
+    "star": "Alpha Centauri B"
+  }, 
+  {
+    "distance": 29.12, 
+    "id": "Gamma Leporis A", 
+    "star": "Gamma Leporis A"
+  }, 
+  {
+    "distance": 29.81, 
+    "id": "Kappa Ceti", 
+    "star": "Kappa Ceti"
+  }, 
+  {
+    "distance": 29.49, 
+    "id": "Delta Eridani_Eden", 
     "planet": "Eden", 
-    "star": "Delta Pavonis"
+    "star": "Delta Eridani"
   }, 
   {
     "city": "Camelot", 
-    "id": "Delta Pavonis_Eden_Camelot", 
+    "distance": 29.49, 
+    "id": "Delta Eridani_Eden_Camelot", 
     "planet": "Eden", 
-    "star": "Delta Pavonis"
+    "star": "Delta Eridani"
   }, 
   {
+    "distance": 0.0, 
     "id": "Sol_Earth", 
     "planet": "Earth", 
     "star": "Sol"
   }, 
   {
+    "distance": 16.39, 
     "id": "Omicron2 Eridani_Vulcan", 
     "planet": "Vulcan", 
     "star": "Omicron2 Eridani"
   }, 
   {
+    "distance": 16.39, 
     "id": "Omicron2 Eridani_Romulus", 
     "planet": "Romulus", 
     "star": "Omicron2 Eridani"
   }, 
   {
+    "distance": 30.72, 
     "id": "HIP 14101_Odin", 
     "planet": "Odin", 
     "star": "HIP 14101"
   }, 
   {
+    "distance": 19.42, 
     "id": "Eta Cassiopeiae_Poseidon", 
     "planet": "Poseidon", 
     "star": "Eta Cassiopeiae"
   }, 
   {
+    "distance": 11.81, 
     "id": "Epsilon Indi_KKP", 
     "planet": "KKP", 
     "star": "Epsilon Indi"
   }, 
   {
+    "distance": 0.0, 
     "id": "BobNet", 
     "star": "BobNet"
   }

@@ -7,6 +7,8 @@ from inspect import ismethod
 
 from dogpile.cache import make_region
 
+os.makedirs('generated', exist_ok=True)
+
 # Define basic in memory caches
 file = make_region().configure('dogpile.cache.dbm', expiration_time=30, arguments={
     "filename": os.path.join("generated", "cache.dbm")

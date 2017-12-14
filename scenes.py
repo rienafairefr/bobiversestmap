@@ -16,6 +16,16 @@ class RelationShipParsingType(Enum):
 
 
 @memoize()
+def get_thresholds_deaths():
+    thresholds = {}
+    thresholds_deaths = open(os.path.join('public_data', 'thresholds_deaths.txt'), encoding='utf-8').readlines()
+    for line in thresholds_deaths:
+        element = [el.strip() for el in line.split(',')]
+        thresholds[element[0]] = (int(element[1]), int(element[2]))
+    return thresholds
+
+
+@memoize()
 def get_scenes(parsingtype=RelationShipParsingType.NAME_IN_WORDS):
     characters_map = get_characters_map()
     chapters_books = get_book_chapters()
@@ -104,30 +114,23 @@ def postprocess(scenes):
     remove(1, 37, 'Riker')
 
     thresholds = {
-        'Landers': (1, 13),
-        'Homer': (2, 28),
-        'Moses': (2, 55),
-        'Archimedes': (3, 61),
-        'Arthur': (1, 43),
         'Bart': (1, 59),
         'Bender': (1, 37),
         'Calvin': (1, 40),
-        'Stéphane': (2, 67),
         'Verne': (2, 50),
         'Valter': (2, 29),
         'Tom': (1, 60),
         'Marcus': (3, 39),
-        'Linux': (2, 34),
+        'Linus': (2, 34),
         'Khan': (1, 60),
-        'Julia': (2, 31),
         'Jeffrey': (2, 50),  # ignore the deltan
         'Howard': (3, 62),
         'Goku': (1, 28),
         'Ernie': (1, 61),
-        'Butterworth': (3, 2),
         'Bridget': (3, 62),
-        'Bashful': (2, 30),
     }
+
+    thresholds.update(get_thresholds_deaths())
 
     for character_id, tup in thresholds.items():
         # mentioned after last mentions (deaths or otherwise)
@@ -239,7 +242,7 @@ def write_characters_lines(scenes):
     for character in characters_map.values():
         lines_path = os.path.join('generated', 'character_lines', '%s' % character['id'])
         with open(lines_path, 'w', encoding='utf-8') as lines_file:
-            for (nb, nc), s in scenes.items():
+            for (nb, nc), s in sorted_by_key(scenes).items():
                 if character['id'] not in s['character_ids']:
                     continue
                 if character['id'] not in s['character_line']:

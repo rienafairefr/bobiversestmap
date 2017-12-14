@@ -28,6 +28,9 @@ def get_scenes_locations():
         if v == 'Gliese 54':
             scenes_locations[k] = 'GL 54'
 
+    # Calvin in Alpha Centauri B
+    scenes_locations[1, 28] = 'Alpha Centauri B'
+
     # Mulder in Poseidon
     scenes_locations[2, 49] = 'Poseidon'
 
