@@ -1,10 +1,10 @@
 from genealogy import get_characters
-from scenes import get_scenes_books, RelationShipParsingType
+from scenes import get_scenes_books
 from scenes_locations import get_scenes_locations_book
 from utils import json_dump
 
 
-def get_data_json(nb=None, relationships_parsing_type=RelationShipParsingType.NAME_IN_WORDS):
+def get_data_json(nb=None):
     characters = get_characters()
 
     scenes = list(get_scenes_books(nb).values())

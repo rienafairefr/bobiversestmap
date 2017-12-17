@@ -12,6 +12,12 @@ def data_json_book():
         yield {'book_number':i}
 
 
+@freezer.register_generator
+def travels_csv_book():
+    for i in range(1,4):
+        yield {'book_number':i}
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('type',default='freeze')

@@ -1,6 +1,8 @@
 import os
 
 import datetime
+from collections import OrderedDict
+
 from dateutil import parser
 
 from readcombined import get_book_chapters
@@ -10,15 +12,17 @@ from utils import json_dump, memoize, sorted_by_key
 @memoize()
 def get_dates():
     chapters_books = get_book_chapters()
+    # unit is day
     month = 30.4375
 
-    parsed_dates = {}
+    parsed_dates = OrderedDict()
     for k, book_chapter in chapters_books.items():
         default_datetime = datetime.datetime(year=1, month=1, day=1)
         parsed_datetime = parser.parse(book_chapter['date'], default=default_datetime)
         parsed_date = dict(id='date %d %d' % k,
                            raw=book_chapter['date'],
-                           start=parsed_datetime.timestamp() / (24 * 3600),
+                           start=int(parsed_datetime.timestamp() / (24 * 3600)),
+                           datetime=parsed_datetime,
                            duration=month)
         parsed_dates[k] = parsed_date
 
@@ -36,7 +40,7 @@ def get_dates():
     for k in parsed_dates:
         parsed_dates[k]['start'] = parsed_dates[k]['start'] - first_date['start']
 
-    return sorted_by_key(parsed_dates)
+    return parsed_dates
 
 
 def write_dates():

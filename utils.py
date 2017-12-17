@@ -71,12 +71,12 @@ def memoize(cache_region=memory, ttl=300, ttl_ignore=False):
 
             value = cache_region.get(cache_key, expiration_time=ttl, ignore_expiration=ttl_ignore)
             if not value:
-                # print('Stale result %s ' % str(tup_key))
+                print('Stale result %s ' % str(tup_key))
                 value = function(*args, **kwargs)
                 if value:
                     cache_region.set(cache_key, value)
-            # else:
-            #   print('Cached result %s ' % str(tup_key))
+            else:
+                print('Cached result %s ' % str(tup_key))
             return value
 
         return wrap
@@ -90,3 +90,6 @@ def sorted_by_key(dictionary):
         return_value[k] = dictionary[k]
     return return_value
 
+
+def stripped(li):
+    return [el.strip() for el in li]

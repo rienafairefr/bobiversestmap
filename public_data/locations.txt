@@ -1,26 +1,27 @@
-19.42;Eta Cassiopeiae
-41.04;HIP 84051
-0;Sol
-11.81;Epsilon Indi
-19.71;82 Eridani
-19.92;Delta Pavonis
-28.01;Zeta Tucanae
-30.21;Gamma Pavonis
-30.72;HIP 14101
-24.33;Beta Hydri
-16.39;Omicron2 Eridani
-28.1;GL 877
-29.49;Delta Eridani
-10.48;Epsilon Eridani
-26.6;GL 54
-4.37;Alpha Centauri
-4.37;Alpha Centauri A
-4.37;Alpha Centauri B
-29.12;Gamma Leporis A
-29.81;Kappa Ceti
-37;11 Leonis Minoris
+Eta Cassiopeiae
+HIP 84051
+Sol
+Epsilon Indi
+82 Eridani
+Delta Pavonis
+Zeta Tucanae
+Gamma Pavonis
+HIP 14101
+Beta Hydri
+Omicron2 Eridani
+GL 877
+Delta Eridani
+Epsilon Eridani
+GL 54
+Alpha Centauri
+Alpha Centauri A
+Alpha Centauri B
+Gamma Leporis A
+Kappa Ceti
+Tau Ceti
+P Eridani
+11 Leonis Minoris
 Delta Eridani:Eden
-Delta Eridani:Eden:Camelot
 Sol:Earth
 Omicron2 Eridani:Vulcan
 Omicron2 Eridani:Romulus
@@ -28,4 +29,4 @@ HIP 14101:Odin
 Eta Cassiopeiae:Poseidon
 Epsilon Indi:KKP
 Epsilon Indi:Big Top
-0;BobNet
+BobNet

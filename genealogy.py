@@ -31,6 +31,10 @@ def get_bob_characters():
             char['other_names'] = ['Eeyore']
         if char['id'] == 'Sam':
             char['other_names'] = ['Exodus-3']
+        if char['id'] == 'Dexter':
+            char['other_names'] = ['Dex']
+        if char['id'] == 'Daedalus':
+            char['other_names'] = ['Dae']
         bob_characters.append(char)
 
     return bob_characters

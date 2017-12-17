@@ -6,93 +6,109 @@ import itertools
 
 from genealogy import get_characters_map
 from readcombined import get_book_chapters
-from scenes_locations import get_scenes_locations, get_sorted_locations
-from utils import json_dump, memoize, sorted_by_key
-
-
-class RelationShipParsingType(Enum):
-    TOKENIZED_SAME_SENTENCE = 1
-    NAME_IN_WORDS = 2
+from utils import json_dump, memoize, sorted_by_key, stripped
 
 
 @memoize()
 def get_thresholds_deaths():
+    return get_thresholds('thresholds_deaths.txt')
+
+
+@memoize()
+def get_thresholds_births():
+    return get_thresholds('thresholds_births.txt')
+
+
+@memoize()
+def get_thresholds(filename):
     thresholds = {}
-    thresholds_deaths = open(os.path.join('public_data', 'thresholds_deaths.txt'), encoding='utf-8').readlines()
+    thresholds_deaths = open(os.path.join('public_data', filename), encoding='utf-8').readlines()
     for line in thresholds_deaths:
-        element = [el.strip() for el in line.split(',')]
+        element = stripped(line.split(','))
         thresholds[element[0]] = (int(element[1]), int(element[2]))
     return thresholds
 
 
 @memoize()
-def get_scenes(parsingtype=RelationShipParsingType.NAME_IN_WORDS):
+def get_chapter_characters(book_chapter):
+    lines = book_chapter['content']
+    all_lines = '\n'.join(lines)
     characters_map = get_characters_map()
+    chapter_characters = list(characters_map.values())
+    chapter_characters.append({'id': book_chapter['bob'], 'all_names': ['I']})
+
+    chapter_characters = [character for character in chapter_characters if
+                          any(name in all_lines for name in character['all_names'])]
+    return chapter_characters
+
+
+@memoize()
+def get_links():
     chapters_books = get_book_chapters()
-    sorted_locations = get_sorted_locations()
-    scenes_locations = get_scenes_locations()
 
-    scenes = {}
+    links = {}
     for k, book_chapter in chapters_books.items():
-        scene_location = scenes_locations[k]
-        lines = book_chapter['content']
-        all_lines = '\n'.join(lines)
-        link = {book_chapter['bob']}
-        links = []
-        character_line = {book_chapter['bob']: ['**NAMED CHAPTER**']}
+        links[k] = []
+        chapter_characters = get_chapter_characters(book_chapter)
 
-        chapter_characters = list(characters_map.values())
-        chapter_characters.append({'id': book_chapter['bob'], 'all_names': ['I']})
+        for tokenized_sentence in book_chapter['tokenized_content']:
+            for character_pair in itertools.combinations(chapter_characters, 2):
+                character0 = character_pair[0]
+                character1 = character_pair[1]
+                for name0 in character0['all_names']:
+                    for name1 in character1['all_names']:
+                        if name0 > name1 and name0 in tokenized_sentence and name1 in tokenized_sentence:
+                            links[k].append(character_pair)
 
-        chapter_characters = [character for character in chapter_characters if
-                              any(name in all_lines for name in character['all_names'])]
+    return links
+
+
+@memoize()
+def get_character_lines():
+    chapters_books = get_book_chapters()
+    characters_map = get_characters_map()
+
+    character_lines = {}
+    for character in characters_map.values():
+        character_lines[character['id']] = {}
+
+    for k, book_chapter in chapters_books.items():
+        character_lines[book_chapter['bob']][k] = ['**NAMED CHAPTER**']
+        chapter_characters = get_chapter_characters(book_chapter)
 
         for tokenized_sentence in book_chapter['tokenized_content']:
             line = ' '.join(tokenized_sentence)
-            if parsingtype == RelationShipParsingType.TOKENIZED_SAME_SENTENCE:
-                for character_pair in itertools.combinations(chapter_characters, 2):
-                    character0 = character_pair[0]
-                    character1 = character_pair[1]
-                    for name0 in character0['all_names']:
-                        for name1 in character1['all_names']:
-                            if name0 > name1 and name0 in tokenized_sentence and name1 in tokenized_sentence:
-                                link.add(character0['id'])
-                                link.add(character1['id'])
-                                links.append(character_pair)
-                                character_line.setdefault(character0['id'], []).append(line)
-                                character_line.setdefault(character1['id'], []).append(line)
+            for character_pair in itertools.combinations(chapter_characters, 2):
+                character0 = character_pair[0]
+                character1 = character_pair[1]
+                for name0 in character0['all_names']:
+                    for name1 in character1['all_names']:
+                        if name0 > name1 and name0 in tokenized_sentence and name1 in tokenized_sentence:
+                            character_lines[character0['id']].setdefault(k, []).append(line)
+                            character_lines[character1['id']].setdefault(k, []).append(line)
 
-            if parsingtype == RelationShipParsingType.NAME_IN_WORDS:
-                for character_id, character in characters_map.items():
-                    for name in character['all_names']:
-                        if name in tokenized_sentence:
-                            character_line.setdefault(character['id'], []).append(line)
-                            link.add(character_id)
+    write_characters_lines(character_lines)
 
-        # scene_characters = list(characters[character_id] for character_id in link)
-        # scenes.append(list(link))
+    return character_lines
 
-        if type(scene_location) == list:
-            y0 = sorted_locations.index(scene_location[0])
-            y1 = sorted_locations.index(scene_location[1])
 
-            y = (y0 + y1) / 2
-        else:
-            y = sorted_locations.index(scene_location)
+@memoize()
+def get_scenes():
+    chapters_books = get_book_chapters()
+    links = get_links()
 
-        scenes[k] = sorted_by_key({'characters': list(map(lambda i: characters_map[i], link)),
-                                   'character_ids': list(link),
-                                   'links': links,
-                                   'character_line': character_line,
-                                   'index': k,
-                                   'y_pos': y})
+    scenes = {}
 
-        # {'characters': scene_characters, 'start': book_chapter['date']})
+    for k, book_chapter in chapters_books.items():
+        linkset = {book_chapter['bob']}
+        for pair in links[k]:
+            linkset.add(pair[0]['id'])
+            linkset.add(pair[1]['id'])
+        scenes[k]={'character_ids':list(linkset)}
 
     scenes = postprocess(scenes)
-    write_characters_lines(scenes)
 
-    return sorted_by_key(scenes)
+    return scenes
 
 
 def postprocess(scenes):
@@ -113,7 +129,7 @@ def postprocess(scenes):
     remove(1, 3, 'Riker')
     remove(1, 37, 'Riker')
 
-    thresholds = {
+    thresholds_last = {
         'Bart': (1, 59),
         'Bender': (1, 37),
         'Calvin': (1, 40),
@@ -128,12 +144,19 @@ def postprocess(scenes):
         'Goku': (1, 28),
         'Ernie': (1, 61),
         'Bridget': (3, 62),
-        'Sam': (2,8 )
+        'Sam': (2, 8),
+        'Doucette': (1, 13)
     }
 
-    thresholds.update(get_thresholds_deaths())
+    thresholds_first = {
+        'Archimedes': (1, 30),
+        'Bridget': (2, 2)
+    }
 
-    for character_id, tup in thresholds.items():
+    thresholds_last.update(get_thresholds_deaths())
+    thresholds_first.update(get_thresholds_births())
+
+    for character_id, tup in thresholds_last.items():
         # mentioned after last mentions (deaths or otherwise)
         for k, s in scenes.items():
             if k > tup and character_id in s['character_ids']:
@@ -234,9 +257,8 @@ def postprocess(scenes):
 
     remove(3, 40, "Fred_Carleon")
 
-
-    remove(1,54,'Sam')
-    remove(2,2, 'Sam')
+    remove(1, 54, 'Sam')
+    remove(2, 2, 'Sam')
     remove(2, 7, 'Sam')
 
     return scenes
@@ -244,10 +266,10 @@ def postprocess(scenes):
 
 def write_characters_lines(scenes):
     characters_map = get_characters_map()
-    os.makedirs(os.path.join('generated', 'character_lines'), exist_ok=True)
+
     for character in characters_map.values():
-        lines_path = os.path.join('generated', 'character_lines', '%s' % character['id'])
-        with open(lines_path, 'w', encoding='utf-8') as lines_file:
+        os.makedirs(os.path.join('generated', character['id']), exist_ok=True)
+        with open(os.path.join('generated', character['id'], 'lines'), 'w', encoding='utf-8') as lines_file:
             for (nb, nc), s in sorted_by_key(scenes).items():
                 if character['id'] not in s['character_ids']:
                     continue

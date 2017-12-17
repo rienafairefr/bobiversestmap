@@ -1,86 +1,84 @@
 var charactersMap = {}, datesMap = {}, locationsMap = {};
 
-// Set the dimensions of the canvas / graph
-var margin = {top: 30, right: 20, bottom: 30, left: 50},
-    width = 600 - margin.left - margin.right,
-    height = 270 - margin.top - margin.bottom;
+
+var svg = d3.select("#all_books"),
+    margin = {top: 20, right: 80, bottom: 30, left: 50},
+    width = svg.attr("width") - margin.left - margin.right,
+    height = svg.attr("height") - margin.top - margin.bottom,
+    g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var parseTime = d3.timeParse("%Y%m%d");
+
+var x = d3.scaleTime().range([0, width]),
+    y = d3.scaleLinear().range([height, 0]);
+
+var line = d3.line()
+    .curve(d3.curveBasis)
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.location); });
 
 
-// Get the data
-d3.json("travels.json", function (error, all_data) {
+d3.csv('travels.csv', function(error, data){
+  if (error) throw error;
 
-    // Set the ranges
-    var x = d3.scale.linear().range([0, width]);
-    var y = d3.scale.linear().range([0, height]);
+  var characters = data.columns.slice(1).map(function(id) {
+    return {
+      id: id,
+      values: data.map(function(d) {
+        return {date: d.date, location: d[id]};
+      })
+    };
+  });
 
-    // Define the axes
-    var xAxis = d3.svg.axis().scale(x)
-        .orient("bottom").ticks(5);
+  x.domain(d3.extent(data, function(d) { return d.date; }));
 
-    var yAxis = d3.svg.axis().scale(y)
-        .orient("left").ticks(5);
+  y.domain([
+    d3.min(characters, function(c) { return d3.min(c.values, function(d) { return d.location; }); }),
+    d3.max(characters, function(c) { return d3.max(c.values, function(d) { return d.location; }); })
+  ]);
 
-    function get_x(d){
-        return d!==null ? d.date.start:null;
-    }
-    function get_y(d){
-        return d!==null ? d.location.distance:null;
-    }
+  //z.domain(characters.map(function(c) { return c.id; }));
 
-    // Define the line
-    var valueline = d3.svg.line()
-        .x(function (d) {
-            return x(get_x(d));
-        })
-        .y(function (d) {
-            return y(get_y(d));
-        });
+  g.append("g")
+      .attr("class", "axis axis--x")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
 
-    // Adds the svg canvas
-    var svg = d3.select("#all_books")
-        .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform",
-            "translate(" + margin.left + "," + margin.top + ")");
+  g.append("g")
+      .attr("class", "axis axis--y")
+      .call(d3.axisLeft(y))
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", "0.71em")
+      .attr("fill", "#000")
+      .text("Temperature, ºF");
 
-    all_data = wrangle(all_data);
+  var character = g.selectAll(".character")
+    .data(characters)
+    .enter().append("g")
+      .attr("class", "character");
 
-    all_data.forEach(function (line_data) {
-        var data = line_data.travels;
-        // Scale the range of the data
-        x.domain([0, d3.max(data, get_x)]);
-        y.domain([0, d3.max(data, get_y)]);
+  character.append("path")
+      .attr("class", "line")
+      .attr("d", function(d) { return line(d.values); });
+      //.style("stroke", function(d) { return z(d.id); });
 
-        // Add the valueline path.
-        svg.append("path")
-            .attr("class", "line")
-            .attr("d", valueline(data));
-
-        // Add the scatterplot
-        svg.selectAll("dot")
-            .data(data)
-            .enter().append("circle")
-            .attr("r", 3.5)
-            .attr("cx", function (d) {
-                return x(get_x(d));
-            })
-            .attr("cy", function (d) {
-                return y(get_y(d));
-            });
-    });
-    // Add the X Axis
-    svg.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(xAxis);
-
-    // Add the Y Axis
-    svg.append("g")
-        .attr("class", "y axis")
-        .call(yAxis);
+  character.append("text")
+      .datum(function(d) { return {id: d.id, value: d.values[d.values.length - 1]}; })
+      .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.location) + ")"; })
+      .attr("x", 3)
+      .attr("dy", "0.35em")
+      .style("font", "10px sans-serif")
+      .text(function(d) { return d.id; });
 });
+
+function type(d, _, columns) {
+  d.date = parseTime(d.date);
+  for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
+  return d;
+}
+
 
 function wrangle(data) {
     return data.travels.map(function (travel_one_character) {

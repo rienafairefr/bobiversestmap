@@ -43,6 +43,9 @@ def get_scenes_locations():
     # Mulder Leaving Poseidon
     scenes_locations[2, 62] = 'Poseidon'
 
+    # Bob in Camelot
+    scenes_locations[3, 10] = 'Eden'
+
     # Icarus & Deadalus
     scenes_locations[3, 17] = 'Epsilon Eridani -> Epsilon Indi'
     # Neil & Herschel
@@ -62,10 +65,10 @@ def get_scenes_locations():
 
     def treat_one_scene_location(scene_location):
         for location in locations:
-            if ('city' in location and location['city'] == scene_location) \
-                    or ('planet' in location and location['planet'] == scene_location) \
-                    or ('star' in location and location['star'] == scene_location):
+            if location['name'] == scene_location\
+                    or scene_location in location['other_names']:
                 return location
+        return None
 
     def treat_scene_location(scene_location):
         treat_one = treat_one_scene_location(scene_location)
@@ -74,9 +77,11 @@ def get_scenes_locations():
 
         places = [el.strip() for el in scene_location.split('->')]
         return_value = list(map(treat_one_scene_location, places))
+        if return_value[0] is None or return_value[1] is None:
+            pass
         return return_value
 
-    scenes_locations = sorted_by_key({k: treat_scene_location(v) for k, v in scenes_locations.items()})
+    scenes_locations = sorted_by_key({k: treat_scene_location(v.strip()) for k, v in scenes_locations.items()})
 
     return scenes_locations
 

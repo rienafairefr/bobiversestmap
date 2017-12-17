@@ -217,7 +217,10 @@
     "affiliation": "Charles", 
     "id": "Dexter", 
     "level": 4, 
-    "name": "Dexter"
+    "name": "Dexter", 
+    "other_names": [
+      "Dex"
+    ]
   }, 
   {
     "affiliation": "Riker", 
@@ -292,7 +295,10 @@
     "affiliation": "Bill", 
     "id": "Daedalus", 
     "level": 3, 
-    "name": "Daedalus"
+    "name": "Daedalus", 
+    "other_names": [
+      "Dae"
+    ]
   }, 
   {
     "affiliation": "Riker", 
@@ -398,5 +404,11 @@
     "other_names": [
       "Exodus-3"
     ]
+  }, 
+  {
+    "affiliation": "Hank", 
+    "id": "Hank", 
+    "level": 1, 
+    "name": "Hank"
   }
 ]

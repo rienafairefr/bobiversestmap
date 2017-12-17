@@ -5,7 +5,7 @@ from flask_bootstrap import Bootstrap
 
 from genealogy import get_bob_characters, get_bob_styles
 from locations import get_locations
-from read_travels import get_travels_book, get_travels_book_json
+from read_travels import get_travels_book, get_travels_book_json, get_travels_book_csv
 from write_data_json import get_data_json
 
 app = Flask('Bobiverse visualisations')
@@ -50,11 +50,23 @@ def travels_json():
     return jsonify(get_travels_book_json())
 
 
-@app.route('/')
+@app.route('/book/<int:book_number>/travels.csv')
+def travels_csv_book(book_number):
+    return Response(get_travels_book_csv(book_number), mimetype='test/csv')
+
+
+@app.route('/travels.csv')
+def travels_csv():
+    return Response(get_travels_book_csv(), mimetype='test/csv')
+
+
+@app.route('/index.html')
+@app.route('/narrative_chart.html')
 def index_view():
     return render_template('narrative_chart.html')
 
-@app.route('/timeline')
+
+@app.route('/timeline.html')
 def timeline_view():
     return render_template('timeline.html')
 
@@ -75,4 +87,5 @@ if __name__ == '__main__':
     # cache warmup
     cached = get_data_json()
     cached2 = get_travels_book_json()
+    cached3 = get_travels_book_csv()
     app.run(host='0.0.0.0', port=8000, debug=True)
