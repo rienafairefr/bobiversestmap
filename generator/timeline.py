@@ -1,7 +1,7 @@
 import os
 import re
 
-from utils import json_dump, memoize
+from generator.utils import json_dump, memoize
 
 
 def strip(li):

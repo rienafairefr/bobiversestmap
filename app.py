@@ -1,12 +1,11 @@
 from flask import Flask, jsonify, render_template, Response
+from flask_bootstrap import Bootstrap
 from flask_nav import Nav
 from flask_nav.elements import Navbar, View
-from flask_bootstrap import Bootstrap
-
-from genealogy import get_bob_characters, get_bob_styles
-from locations import get_locations
-from read_travels import get_travels_book, get_travels_book_json, get_travels_book_csv
-from write_data_json import get_data_json
+from generator.characters import get_bob_characters, get_bob_styles
+from generator.travels_out import get_travels_book_json, get_travels_book_csv
+from generator.locations import get_locations
+from generator.data import data_json as get_data_json
 
 app = Flask('Bobiverse visualisations')
 app.config['FREEZER_DESTINATION'] = 'docs'

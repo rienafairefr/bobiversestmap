@@ -1,9 +1,9 @@
-import re
 import os
+import re
 from collections import OrderedDict
 
-from nl import tokenize
-from utils import sorted_by_key, memoize, stripped
+from generator.nl import tokenize
+from generator.utils import sorted_by_key, memoize, stripped
 
 
 @memoize()

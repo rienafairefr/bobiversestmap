@@ -1,7 +1,7 @@
 import csv
 import os
 
-from utils import memoize, stripped
+from generator.utils import memoize, stripped
 
 
 @memoize()

@@ -1,8 +1,8 @@
 import os
 
-from locations import get_locations
-from readcombined import get_book_chapters
-from utils import json_dump, memoize, sorted_by_key
+from generator.books import get_book_chapters
+from generator.utils import json_dump, memoize, sorted_by_key
+from generator.locations import get_locations
 
 
 @memoize()

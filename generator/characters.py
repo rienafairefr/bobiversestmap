@@ -3,7 +3,7 @@ import os
 
 import colorcet as cc
 
-from utils import json_dump, memoize, sorted_by_key
+from generator.utils import json_dump, memoize, sorted_by_key
 
 
 @memoize()

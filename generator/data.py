@@ -1,10 +1,10 @@
-from genealogy import get_characters
-from scenes import get_scenes_books
-from scenes_locations import get_scenes_locations_book
-from utils import json_dump
+from generator.characters import get_characters
+from generator.scenes import get_scenes_books
+from generator.scenes_locations import get_scenes_locations_book
+from generator.utils import json_dump
 
 
-def get_data_json(nb=None):
+def data_json(nb=None):
     characters = get_characters()
 
     scenes = list(get_scenes_books(nb).values())
@@ -18,7 +18,7 @@ def get_data_json(nb=None):
 
 
 def write_data_json(nb=None):
-    json_dump(get_data_json(nb), 'data%s.json' % ('' if nb is None else nb))
+    json_dump(data_json(nb), 'data%s.json' % ('' if nb is None else nb))
 
 
 if __name__ == '__main__':

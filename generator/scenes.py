@@ -1,66 +1,13 @@
+import itertools
 import os
 
-from enum import Enum
-
-import itertools
-
-from genealogy import get_characters_map
-from readcombined import get_book_chapters
-from utils import json_dump, memoize, sorted_by_key, stripped
-
-
-@memoize()
-def get_thresholds_deaths():
-    return get_thresholds('thresholds_deaths.txt')
-
-
-@memoize()
-def get_thresholds_births():
-    return get_thresholds('thresholds_births.txt')
-
-
-@memoize()
-def get_thresholds(filename):
-    thresholds = {}
-    thresholds_deaths = open(os.path.join('public_data', filename), encoding='utf-8').readlines()
-    for line in thresholds_deaths:
-        element = stripped(line.split(','))
-        thresholds[element[0]] = (int(element[1]), int(element[2]))
-    return thresholds
-
-
-@memoize()
-def get_chapter_characters(book_chapter):
-    lines = book_chapter['content']
-    all_lines = '\n'.join(lines)
-    characters_map = get_characters_map()
-    chapter_characters = list(characters_map.values())
-    chapter_characters.append({'id': book_chapter['bob'], 'all_names': ['I']})
-
-    chapter_characters = [character for character in chapter_characters if
-                          any(name in all_lines for name in character['all_names'])]
-    return chapter_characters
-
-
-@memoize()
-def get_links():
-    chapters_books = get_book_chapters()
-
-    links = {}
-    for k, book_chapter in chapters_books.items():
-        links[k] = []
-        chapter_characters = get_chapter_characters(book_chapter)
-
-        for tokenized_sentence in book_chapter['tokenized_content']:
-            for character_pair in itertools.combinations(chapter_characters, 2):
-                character0 = character_pair[0]
-                character1 = character_pair[1]
-                for name0 in character0['all_names']:
-                    for name1 in character1['all_names']:
-                        if name0 > name1 and name0 in tokenized_sentence and name1 in tokenized_sentence:
-                            links[k].append(character_pair)
-
-    return links
+from generator.books import get_book_chapters
+from generator.chapter_characters import get_chapter_characters
+from generator.characters import get_characters_map
+from generator.links import get_links
+from generator.thresholds import get_thresholds_deaths, get_thresholds_births
+from generator.travels import get_travels_book
+from generator.utils import json_dump, memoize, sorted_by_key
 
 
 @memoize()
@@ -96,6 +43,7 @@ def get_character_lines():
 def get_scenes():
     chapters_books = get_book_chapters()
     links = get_links()
+    travels = get_travels_book()
 
     scenes = {}
 

@@ -1,12 +1,11 @@
-import os
-
 import datetime
+import os
 from collections import OrderedDict
 
 from dateutil import parser
 
-from readcombined import get_book_chapters
-from utils import json_dump, memoize, sorted_by_key
+from generator.books import get_book_chapters
+from generator.utils import json_dump, memoize
 
 
 @memoize()

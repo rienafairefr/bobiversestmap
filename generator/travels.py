@@ -1,26 +1,19 @@
 import contextlib
-import csv
+import os
 from collections import OrderedDict
 
-import os
-
-from io import StringIO
-
-from datetime import datetime
-
-from genealogy import get_characters_map, get_characters, get_bob_characters, is_bob
-from locations import get_locations
-from read_dates import get_dates
-from readcombined import get_book_chapters, get_keys
-from scenes import get_scenes_books, get_thresholds_deaths, get_thresholds_births
-from scenes_locations import get_scenes_locations_book
-from stars import get_starsmap
-from utils import memoize, sorted_by_key
+from generator.characters import get_characters_map, is_bob
+from generator.dates import get_dates
+from generator.books import get_book_chapters, get_keys
+from generator.presences import get_characters_presences
+from generator.thresholds import get_thresholds_deaths, get_thresholds_births
+from generator.scenes_locations import get_scenes_locations_book
+from generator.utils import memoize
 
 
 @memoize()
 def get_travels_book(nb=None):
-    scenes = get_scenes_books(nb)
+    presences = get_characters_presences()
     book_chapters = get_book_chapters()
     scenes_locations = get_scenes_locations_book(nb)
     characters_map = get_characters_map()
@@ -32,7 +25,7 @@ def get_travels_book(nb=None):
         threshold_death = threshold_deaths.get(character_id)
         threshold_birth = threshold_births.get(character_id)
         current_location = {}
-        for k, scene in scenes.items():
+        for k, present_characters in presences.items():
             if threshold_birth is not None and k < threshold_birth:
                 continue
             if threshold_death is not None and k > threshold_death:
@@ -41,7 +34,7 @@ def get_travels_book(nb=None):
                 if character_id == book_chapters[k]['bob']:
                     current_location = scenes_locations[k]
             else:
-                if character_id in scene['character_ids']:
+                if character_id in present_characters:
                     current_location = scenes_locations[k]
 
             if isinstance(current_location, list):
@@ -280,46 +273,3 @@ def write_travels(data_travels_dict):
                                                                 location_id[1]))
 
 
-@memoize()
-def get_travels_book_json(nb=None):
-    characters = get_characters()
-    locations = get_locations()
-    dates = get_dates()
-
-    def _treatvalue(val):
-        return list(sorted_by_key(val).values())
-
-    travels = [{'character_id': character_id, 'travels': _treatvalue(value)} for character_id, value in
-               get_travels_book(nb).items()]
-
-    return {'locations': locations,
-            'dates': _treatvalue(dates),
-            'characters': characters,
-            'travels': travels}
-
-
-@memoize()
-def get_travels_book_csv(nb=None):
-    dates = get_dates()
-
-    def _treatvalue(val):
-        return list(sorted_by_key(val).values())
-
-    travels_books = get_travels_book(nb)
-
-    output = StringIO()
-    rows = []
-    fieldnames = ['nb', 'nc', 'date']
-    fieldnames.extend(travels_books.keys())
-    writer = csv.DictWriter(output, fieldnames=fieldnames)
-    for k, date in dates.items():
-        row = dict(nb=k[0], nc=k[1], date=date['datetime'].strftime('%Y-%m-%d'))
-        for character_id in travels_books:
-            travel = travels_books[character_id].get(k)
-            if travel is not None:
-                row[character_id] = travel.get('location_id')
-        rows.append(row)
-    writer.writeheader()
-    writer.writerows(rows)
-    data = output.getvalue()
-    return data

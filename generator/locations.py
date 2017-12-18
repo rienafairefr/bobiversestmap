@@ -1,7 +1,7 @@
 import os
 
-from stars import get_stars
-from utils import json_dump, memoize
+from generator.stars import get_stars
+from generator.utils import json_dump, memoize
 
 
 @memoize()
