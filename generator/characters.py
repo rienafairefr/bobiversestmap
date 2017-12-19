@@ -3,7 +3,18 @@ import os
 
 import colorcet as cc
 
-from generator.utils import json_dump, memoize, sorted_by_key
+from generator.utils import json_dump, memoize, sorted_by_key, JsonSerializable
+
+
+class Character(JsonSerializable):
+    def __init__(self, id, name, affiliation=None, other_names=None):
+        self.id = id
+        self.name = name
+        self.affiliation = affiliation
+        self.other_names = [] if other_names is None else other_names
+
+    def __repr__(self):
+        return '[%s %s %s]'% (self.id, self.name, ','.join(self.other_names))
 
 
 @memoize()
@@ -19,44 +30,45 @@ def get_bob_characters():
 
         bob = [el.strip() for el in stripped.split(':')]
 
-        char = {'id': bob[-1], 'name': bob[-1]}
+        char = Character(bob[-1], name=bob[-1])
         if len(bob) != 1:
-            char['affiliation'] = bob[-2]
+            char.affiliation = bob[-2]
         else:
-            char['affiliation'] = bob[-1]
-        char['level'] = len(bob)
-        if char['id'] == 'Riker':
-            char['other_names'] = ['Will', 'William']
-        if char['id'] == 'Arthur':
-            char['other_names'] = ['Eeyore']
-        if char['id'] == 'Sam':
-            char['other_names'] = ['Exodus-3']
-        if char['id'] == 'Dexter':
-            char['other_names'] = ['Dex']
-        if char['id'] == 'Daedalus':
-            char['other_names'] = ['Dae']
+            char.affiliation = bob[-1]
+
+        if char.id == 'Riker':
+            char.other_names = ['Will', 'William']
+        if char.id == 'Arthur':
+            char.other_names = ['Eeyore']
+        if char.id == 'Sam':
+            char.other_names = ['Exodus-3']
+        if char.id == 'Dexter':
+            char.other_names = ['Dex']
+        if char.id == 'Daedalus':
+            char.other_names = ['Dae']
         bob_characters.append(char)
 
     return bob_characters
 
 
 def is_bob(character_id):
-    return character_id in [el['id'] for el in get_bob_characters()]
+    return character_id in [el.id for el in get_bob_characters()]
 
 
 @memoize()
 def get_characters():
     characters = list(get_bob_characters()) # copy
-    characters.extend(json.load(open(os.path.join('public_data', 'nonbob_characters.json'))))
+    nonbobs = json.load(open(os.path.join('public_data', 'nonbob_characters.json')))
+    characters.extend([Character(**nonbob) for nonbob in nonbobs])
     for char in characters:
-        char['all_names'] = [char['name']]
-        char['all_names'].extend(char.get('other_names', []))
+        char.all_names = [char.name]
+        char.all_names.extend(char.other_names)
     return characters
 
 
 @memoize()
 def get_characters_map():
-    return sorted_by_key({character['id']:character for character in get_characters()})
+    return sorted_by_key({character.id: character for character in get_characters()})
 
 
 @memoize()
@@ -66,7 +78,7 @@ def get_bob_styles():
     for i, bob_character in enumerate(bob_characters):
         template = 'path.%s {stroke: %s;}\n'
 
-        styles += template % (bob_character['id'], cc.colorwheel[int(256 * i / len(bob_characters))])
+        styles += template % (bob_character.id, cc.colorwheel[int(256 * i / len(bob_characters))])
     return styles
 
 

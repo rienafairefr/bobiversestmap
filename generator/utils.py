@@ -1,4 +1,5 @@
 import copy
+import inspect
 import os
 
 import json
@@ -15,8 +16,9 @@ file = make_region().configure('dogpile.cache.dbm', expiration_time=30, argument
 })
 memory = make_region().configure('dogpile.cache.memory')
 
+
 def json_dump(obj, filename):
-    return json.dump(obj, open(filename, 'w', encoding='utf-8'), indent=2, sort_keys=True)
+    return json.dump(obj, open(filename, 'w', encoding='utf-8'), indent=2, sort_keys=True, cls=ObjectEncoder)
 
 
 def make_hash(obj):
@@ -93,3 +95,16 @@ def sorted_by_key(dictionary):
 
 def stripped(li):
     return [el.strip() for el in li]
+
+
+class JsonSerializable(object):
+    def to_json(self):
+        return self.__dict__
+
+
+class ObjectEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if hasattr(obj, "to_json"):
+            return self.default(obj.to_json())
+        else:
+            return obj

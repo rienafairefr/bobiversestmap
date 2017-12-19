@@ -6,9 +6,11 @@ from generator.characters import get_bob_characters, get_bob_styles
 from generator.travels_out import get_travels_book_json, get_travels_book_csv
 from generator.locations import get_locations
 from generator.data import data_json as get_data_json
+from generator.utils import ObjectEncoder
 
 app = Flask('Bobiverse visualisations')
 app.config['FREEZER_DESTINATION'] = 'docs'
+app.json_encoder = ObjectEncoder
 
 nav = Nav()
 bootstrap = Bootstrap(app)

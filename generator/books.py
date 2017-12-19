@@ -2,7 +2,7 @@ import os
 import re
 from collections import OrderedDict
 
-from generator.nl import tokenize
+from generator.nl import tokenize, word_tokenize_sentences
 from generator.utils import sorted_by_key, memoize, stripped
 
 
@@ -55,6 +55,7 @@ def get_book_chapters():
     book_chapters = OrderedDict()
     for (nb, nc), chap in chapters_books.items():
         matched = re.match('^(\d*)\.(.*)$', chap[0])
+        tokenized_content = tokenize(chap[4:])
         new_chapter = sorted_by_key({
             'nb': nb,
             'nc': nc,
@@ -62,9 +63,9 @@ def get_book_chapters():
             'bob': chap[1],
             'date': chap[2],
             'location': chap[3],
-            'content': chap[4],
+            'content': chap[4:],
             'raw': chap,
-            'tokenized_content': tokenize(chap[4:])
+            'tokenized_content': tokenized_content,
         })
 
         book_chapters[nb, nc] = new_chapter

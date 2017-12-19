@@ -17,22 +17,22 @@ def get_character_lines():
 
     character_lines = {}
     for character in characters_map.values():
-        character_lines[character['id']] = {}
+        character_lines[character.id] = {}
 
     for k, book_chapter in chapters_books.items():
         character_lines[book_chapter['bob']][k] = ['**NAMED CHAPTER**']
-        chapter_characters = get_chapter_characters(book_chapter)
+        chapter_characters = get_chapter_characters(k)
 
         for tokenized_sentence in book_chapter['tokenized_content']:
             line = ' '.join(tokenized_sentence)
             for character_pair in itertools.combinations(chapter_characters, 2):
                 character0 = character_pair[0]
                 character1 = character_pair[1]
-                for name0 in character0['all_names']:
-                    for name1 in character1['all_names']:
+                for name0 in character0.all_names:
+                    for name1 in character1.all_names:
                         if name0 > name1 and name0 in tokenized_sentence and name1 in tokenized_sentence:
-                            character_lines[character0['id']].setdefault(k, []).append(line)
-                            character_lines[character1['id']].setdefault(k, []).append(line)
+                            character_lines[character0.id].setdefault(k, []).append(line)
+                            character_lines[character1.id].setdefault(k, []).append(line)
 
     write_characters_lines(character_lines)
 
@@ -43,16 +43,15 @@ def get_character_lines():
 def get_scenes():
     chapters_books = get_book_chapters()
     links = get_links()
-    travels = get_travels_book()
 
     scenes = {}
 
     for k, book_chapter in chapters_books.items():
         linkset = {book_chapter['bob']}
-        for pair in links[k]:
-            linkset.add(pair[0]['id'])
-            linkset.add(pair[1]['id'])
-        scenes[k]={'character_ids':list(linkset)}
+        for link in links[k]:
+            linkset.add(link.character0.id)
+            linkset.add(link.character1.id)
+        scenes[k]={'character_ids': list(linkset)}
 
     scenes = postprocess(scenes)
 
@@ -216,15 +215,15 @@ def write_characters_lines(scenes):
     characters_map = get_characters_map()
 
     for character in characters_map.values():
-        os.makedirs(os.path.join('generated', character['id']), exist_ok=True)
-        with open(os.path.join('generated', character['id'], 'lines'), 'w', encoding='utf-8') as lines_file:
+        os.makedirs(os.path.join('generated', character.id), exist_ok=True)
+        with open(os.path.join('generated', character.id, 'lines'), 'w', encoding='utf-8') as lines_file:
             for (nb, nc), s in sorted_by_key(scenes).items():
-                if character['id'] not in s['character_ids']:
+                if character.id not in s['character_ids']:
                     continue
-                if character['id'] not in s['character_line']:
+                if character.id not in s['character_line']:
                     continue
-                for cline in s['character_line'][character['id']]:
-                    lines_file.write('{:^10s} {:3d} {:3d} {:s}\n'.format(character['id'], nb, nc, cline))
+                for cline in s['character_line'][character.id]:
+                    lines_file.write('{:^10s} {:3d} {:3d} {:s}\n'.format(character.id, nb, nc, cline))
 
 
 def get_scenes_books(nb=None):

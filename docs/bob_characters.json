@@ -2,187 +2,186 @@
   {
     "affiliation": "Bob", 
     "id": "Bob", 
-    "level": 1, 
-    "name": "Bob"
+    "name": "Bob", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bob", 
     "id": "Bill", 
-    "level": 2, 
-    "name": "Bill"
+    "name": "Bill", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Garfield", 
-    "level": 3, 
-    "name": "Garfield"
+    "name": "Garfield", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Calvin", 
-    "level": 3, 
-    "name": "Calvin"
+    "name": "Calvin", 
+    "other_names": []
   }, 
   {
     "affiliation": "Calvin", 
     "id": "Bart", 
-    "level": 4, 
-    "name": "Bart"
+    "name": "Bart", 
+    "other_names": []
   }, 
   {
     "affiliation": "Calvin", 
     "id": "Thor", 
-    "level": 4, 
-    "name": "Thor"
+    "name": "Thor", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Goku", 
-    "level": 3, 
-    "name": "Goku"
+    "name": "Goku", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Linus", 
-    "level": 3, 
-    "name": "Linus"
+    "name": "Linus", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Mulder", 
-    "level": 3, 
-    "name": "Mulder"
+    "name": "Mulder", 
+    "other_names": []
   }, 
   {
     "affiliation": "Mulder", 
     "id": "Jonny", 
-    "level": 4, 
-    "name": "Jonny"
+    "name": "Jonny", 
+    "other_names": []
   }, 
   {
     "affiliation": "Mulder", 
     "id": "Skinner", 
-    "level": 4, 
-    "name": "Skinner"
+    "name": "Skinner", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Oliver", 
-    "level": 3, 
-    "name": "Oliver"
+    "name": "Oliver", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Khan", 
-    "level": 3, 
-    "name": "Khan"
+    "name": "Khan", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Elmer", 
-    "level": 3, 
-    "name": "Elmer"
+    "name": "Elmer", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Hannibal", 
-    "level": 3, 
-    "name": "Hannibal"
+    "name": "Hannibal", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Tom", 
-    "level": 3, 
-    "name": "Tom"
+    "name": "Tom", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Barney", 
-    "level": 3, 
-    "name": "Barney"
+    "name": "Barney", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Fred", 
-    "level": 3, 
-    "name": "Fred"
+    "name": "Fred", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Kyle", 
-    "level": 3, 
-    "name": "Kyle"
+    "name": "Kyle", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Ned", 
-    "level": 3, 
-    "name": "Ned"
+    "name": "Ned", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bob", 
     "id": "Mario", 
-    "level": 2, 
-    "name": "Mario"
+    "name": "Mario", 
+    "other_names": []
   }, 
   {
     "affiliation": "Mario", 
     "id": "Bashful", 
-    "level": 3, 
-    "name": "Bashful"
+    "name": "Bashful", 
+    "other_names": []
   }, 
   {
     "affiliation": "Mario", 
     "id": "Dopey", 
-    "level": 3, 
-    "name": "Dopey"
+    "name": "Dopey", 
+    "other_names": []
   }, 
   {
     "affiliation": "Mario", 
     "id": "Sleepy", 
-    "level": 3, 
-    "name": "Sleepy"
+    "name": "Sleepy", 
+    "other_names": []
   }, 
   {
     "affiliation": "Mario", 
     "id": "Hungry", 
-    "level": 3, 
-    "name": "Hungry"
+    "name": "Hungry", 
+    "other_names": []
   }, 
   {
     "affiliation": "Mario", 
     "id": "Hal", 
-    "level": 3, 
-    "name": "Hal"
+    "name": "Hal", 
+    "other_names": []
   }, 
   {
     "affiliation": "Mario", 
     "id": "Claude", 
-    "level": 3, 
-    "name": "Claude"
+    "name": "Claude", 
+    "other_names": []
   }, 
   {
     "affiliation": "Mario", 
     "id": "Jacques", 
-    "level": 3, 
-    "name": "Jacques"
+    "name": "Jacques", 
+    "other_names": []
   }, 
   {
     "affiliation": "Jacques", 
     "id": "Phineas", 
-    "level": 4, 
-    "name": "Phineas"
+    "name": "Phineas", 
+    "other_names": []
   }, 
   {
     "affiliation": "Jacques", 
     "id": "Ferb", 
-    "level": 4, 
-    "name": "Ferb"
+    "name": "Ferb", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bob", 
     "id": "Riker", 
-    "level": 2, 
     "name": "Riker", 
     "other_names": [
       "Will", 
@@ -192,31 +191,30 @@
   {
     "affiliation": "Riker", 
     "id": "Homer", 
-    "level": 3, 
-    "name": "Homer"
+    "name": "Homer", 
+    "other_names": []
   }, 
   {
     "affiliation": "Riker", 
     "id": "Ralph", 
-    "level": 3, 
-    "name": "Ralph"
+    "name": "Ralph", 
+    "other_names": []
   }, 
   {
     "affiliation": "Riker", 
     "id": "Charles", 
-    "level": 3, 
-    "name": "Charles"
+    "name": "Charles", 
+    "other_names": []
   }, 
   {
     "affiliation": "Charles", 
     "id": "Howard", 
-    "level": 4, 
-    "name": "Howard"
+    "name": "Howard", 
+    "other_names": []
   }, 
   {
     "affiliation": "Charles", 
     "id": "Dexter", 
-    "level": 4, 
     "name": "Dexter", 
     "other_names": [
       "Dex"
@@ -225,19 +223,18 @@
   {
     "affiliation": "Riker", 
     "id": "Rudy", 
-    "level": 3, 
-    "name": "Rudy"
+    "name": "Rudy", 
+    "other_names": []
   }, 
   {
     "affiliation": "Riker", 
     "id": "Edwin", 
-    "level": 3, 
-    "name": "Edwin"
+    "name": "Edwin", 
+    "other_names": []
   }, 
   {
     "affiliation": "Riker", 
     "id": "Arthur", 
-    "level": 3, 
     "name": "Arthur", 
     "other_names": [
       "Eeyore"
@@ -246,55 +243,54 @@
   {
     "affiliation": "Riker", 
     "id": "Bert", 
-    "level": 3, 
-    "name": "Bert"
+    "name": "Bert", 
+    "other_names": []
   }, 
   {
     "affiliation": "Riker", 
     "id": "Ernie", 
-    "level": 3, 
-    "name": "Ernie"
+    "name": "Ernie", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bob", 
     "id": "Milo", 
-    "level": 2, 
-    "name": "Milo"
+    "name": "Milo", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bob", 
     "id": "Marvin", 
-    "level": 2, 
-    "name": "Marvin"
+    "name": "Marvin", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bob", 
     "id": "Luke", 
-    "level": 2, 
-    "name": "Luke"
+    "name": "Luke", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bob", 
     "id": "Bender", 
-    "level": 2, 
-    "name": "Bender"
+    "name": "Bender", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bob", 
     "id": "Victor", 
-    "level": 2, 
-    "name": "Victor"
+    "name": "Victor", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Icarus", 
-    "level": 3, 
-    "name": "Icarus"
+    "name": "Icarus", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bill", 
     "id": "Daedalus", 
-    "level": 3, 
     "name": "Daedalus", 
     "other_names": [
       "Dae"
@@ -303,103 +299,102 @@
   {
     "affiliation": "Riker", 
     "id": "Mack", 
-    "level": 3, 
-    "name": "Mack"
+    "name": "Mack", 
+    "other_names": []
   }, 
   {
     "affiliation": "Riker", 
     "id": "Verne", 
-    "level": 3, 
-    "name": "Verne"
+    "name": "Verne", 
+    "other_names": []
   }, 
   {
     "affiliation": "Mulder", 
     "id": "Marcus", 
-    "level": 4, 
-    "name": "Marcus"
+    "name": "Marcus", 
+    "other_names": []
   }, 
   {
     "affiliation": "Khan", 
     "id": "Loki", 
-    "level": 4, 
-    "name": "Loki"
+    "name": "Loki", 
+    "other_names": []
   }, 
   {
     "affiliation": "Jacques", 
     "id": "Herschel", 
-    "level": 4, 
-    "name": "Herschel"
+    "name": "Herschel", 
+    "other_names": []
   }, 
   {
     "affiliation": "Jacques", 
     "id": "Neil", 
-    "level": 4, 
-    "name": "Neil"
+    "name": "Neil", 
+    "other_names": []
   }, 
   {
     "affiliation": "Marvin", 
     "id": "Pete", 
-    "level": 3, 
-    "name": "Pete"
+    "name": "Pete", 
+    "other_names": []
   }, 
   {
     "affiliation": "Marvin", 
     "id": "Victor", 
-    "level": 3, 
-    "name": "Victor"
+    "name": "Victor", 
+    "other_names": []
   }, 
   {
     "affiliation": "Bart", 
     "id": "Isaac", 
-    "level": 5, 
-    "name": "Isaac"
+    "name": "Isaac", 
+    "other_names": []
   }, 
   {
     "affiliation": "Calvin", 
     "id": "Bruce", 
-    "level": 4, 
-    "name": "Bruce"
+    "name": "Bruce", 
+    "other_names": []
   }, 
   {
     "affiliation": "Zeke", 
     "id": "Zeke", 
-    "level": 1, 
-    "name": "Zeke"
+    "name": "Zeke", 
+    "other_names": []
   }, 
   {
     "affiliation": "Jeffrey", 
     "id": "Jeffrey", 
-    "level": 1, 
-    "name": "Jeffrey"
+    "name": "Jeffrey", 
+    "other_names": []
   }, 
   {
     "affiliation": "Milton", 
     "id": "Milton", 
-    "level": 1, 
-    "name": "Milton"
+    "name": "Milton", 
+    "other_names": []
   }, 
   {
     "affiliation": "Yoshi", 
     "id": "Yoshi", 
-    "level": 1, 
-    "name": "Yoshi"
+    "name": "Yoshi", 
+    "other_names": []
   }, 
   {
     "affiliation": "Tony", 
     "id": "Tony", 
-    "level": 1, 
-    "name": "Tony"
+    "name": "Tony", 
+    "other_names": []
   }, 
   {
     "affiliation": "Jackson", 
     "id": "Jackson", 
-    "level": 1, 
-    "name": "Jackson"
+    "name": "Jackson", 
+    "other_names": []
   }, 
   {
     "affiliation": "Sam", 
     "id": "Sam", 
-    "level": 1, 
     "name": "Sam", 
     "other_names": [
       "Exodus-3"
@@ -408,7 +403,7 @@
   {
     "affiliation": "Hank", 
     "id": "Hank", 
-    "level": 1, 
-    "name": "Hank"
+    "name": "Hank", 
+    "other_names": []
   }
 ]
