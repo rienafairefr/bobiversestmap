@@ -1,46 +1,20 @@
 [
   {
+    "id": "Tau Ceti", 
+    "name": "Tau Ceti", 
+    "other_names": []
+  }, 
+  {
+    "id": "Eta Cassiopeiae_Poseidon", 
+    "name": "Poseidon", 
+    "other_names": [], 
+    "star_id": "Eta Cassiopeiae"
+  }, 
+  {
     "id": "HIP 14101_Odin", 
     "name": "Odin", 
     "other_names": [], 
     "star_id": "HIP 14101"
-  }, 
-  {
-    "id": "P Eridani", 
-    "name": "P Eridani", 
-    "other_names": []
-  }, 
-  {
-    "id": "Eta Cassiopeiae", 
-    "name": "Eta Cassiopeiae", 
-    "other_names": []
-  }, 
-  {
-    "id": "Omicron2 Eridani_Vulcan", 
-    "name": "Vulcan", 
-    "other_names": [], 
-    "star_id": "Omicron2 Eridani"
-  }, 
-  {
-    "id": "Epsilon Indi_KKP", 
-    "name": "KKP", 
-    "other_names": [], 
-    "star_id": "Epsilon Indi"
-  }, 
-  {
-    "id": "Kappa Ceti", 
-    "name": "Kappa Ceti", 
-    "other_names": []
-  }, 
-  {
-    "id": "Alpha Centauri A", 
-    "name": "Alpha Centauri A", 
-    "other_names": []
-  }, 
-  {
-    "id": "11 Leonis Minoris", 
-    "name": "11 Leonis Minoris", 
-    "other_names": []
   }, 
   {
     "id": "Omicron2 Eridani_Romulus", 
@@ -49,28 +23,18 @@
     "star_id": "Omicron2 Eridani"
   }, 
   {
-    "id": "82 Eridani", 
-    "name": "82 Eridani", 
+    "id": "Gamma Pavonis", 
+    "name": "Gamma Pavonis", 
     "other_names": []
   }, 
   {
-    "id": "Beta Hydri", 
-    "name": "Beta Hydri", 
+    "id": "Alpha Centauri B", 
+    "name": "Alpha Centauri B", 
     "other_names": []
   }, 
   {
-    "id": "Omicron2 Eridani", 
-    "name": "Omicron2 Eridani", 
-    "other_names": []
-  }, 
-  {
-    "id": "Delta Eridani", 
-    "name": "Delta Eridani", 
-    "other_names": []
-  }, 
-  {
-    "id": "Epsilon Eridani", 
-    "name": "Epsilon Eridani", 
+    "id": "BobNet", 
+    "name": "BobNet", 
     "other_names": []
   }, 
   {
@@ -80,10 +44,40 @@
     "star_id": "Sol"
   }, 
   {
-    "id": "Delta Eridani_Eden", 
-    "name": "Eden", 
+    "id": "Sol", 
+    "name": "Sol", 
+    "other_names": []
+  }, 
+  {
+    "id": "Epsilon Indi_KKP", 
+    "name": "KKP", 
     "other_names": [], 
-    "star_id": "Delta Eridani"
+    "star_id": "Epsilon Indi"
+  }, 
+  {
+    "id": "Zeta Tucanae", 
+    "name": "Zeta Tucanae", 
+    "other_names": []
+  }, 
+  {
+    "id": "Epsilon Eridani", 
+    "name": "Epsilon Eridani", 
+    "other_names": []
+  }, 
+  {
+    "id": "HIP 14101", 
+    "name": "HIP 14101", 
+    "other_names": []
+  }, 
+  {
+    "id": "Omicron2 Eridani", 
+    "name": "Omicron2 Eridani", 
+    "other_names": []
+  }, 
+  {
+    "id": "P Eridani", 
+    "name": "P Eridani", 
+    "other_names": []
   }, 
   {
     "id": "Epsilon Indi_Big Top", 
@@ -92,15 +86,24 @@
     "star_id": "Epsilon Indi"
   }, 
   {
-    "id": "GL 54", 
-    "name": "GL 54", 
-    "other_names": [
-      "Gliese 54"
-    ]
+    "id": "Gamma Leporis A", 
+    "name": "Gamma Leporis A", 
+    "other_names": []
   }, 
   {
-    "id": "Alpha Centauri B", 
-    "name": "Alpha Centauri B", 
+    "id": "Beta Hydri", 
+    "name": "Beta Hydri", 
+    "other_names": []
+  }, 
+  {
+    "id": "Omicron2 Eridani_Vulcan", 
+    "name": "Vulcan", 
+    "other_names": [], 
+    "star_id": "Omicron2 Eridani"
+  }, 
+  {
+    "id": "Alpha Centauri A", 
+    "name": "Alpha Centauri A", 
     "other_names": []
   }, 
   {
@@ -109,43 +112,8 @@
     "other_names": []
   }, 
   {
-    "id": "Zeta Tucanae", 
-    "name": "Zeta Tucanae", 
-    "other_names": []
-  }, 
-  {
-    "id": "Alpha Centauri", 
-    "name": "Alpha Centauri", 
-    "other_names": []
-  }, 
-  {
-    "id": "Gamma Leporis A", 
-    "name": "Gamma Leporis A", 
-    "other_names": []
-  }, 
-  {
-    "id": "Sol", 
-    "name": "Sol", 
-    "other_names": []
-  }, 
-  {
-    "id": "Tau Ceti", 
-    "name": "Tau Ceti", 
-    "other_names": []
-  }, 
-  {
-    "id": "Gamma Pavonis", 
-    "name": "Gamma Pavonis", 
-    "other_names": []
-  }, 
-  {
-    "id": "Delta Pavonis", 
-    "name": "Delta Pavonis", 
-    "other_names": []
-  }, 
-  {
-    "id": "BobNet", 
-    "name": "BobNet", 
+    "id": "82 Eridani", 
+    "name": "82 Eridani", 
     "other_names": []
   }, 
   {
@@ -154,8 +122,24 @@
     "other_names": []
   }, 
   {
-    "id": "HIP 14101", 
-    "name": "HIP 14101", 
+    "id": "Kappa Ceti", 
+    "name": "Kappa Ceti", 
+    "other_names": []
+  }, 
+  {
+    "id": "Alpha Centauri", 
+    "name": "Alpha Centauri", 
+    "other_names": []
+  }, 
+  {
+    "id": "Delta Eridani_Eden", 
+    "name": "Eden", 
+    "other_names": [], 
+    "star_id": "Delta Eridani"
+  }, 
+  {
+    "id": "Delta Pavonis", 
+    "name": "Delta Pavonis", 
     "other_names": []
   }, 
   {
@@ -166,9 +150,25 @@
     ]
   }, 
   {
-    "id": "Eta Cassiopeiae_Poseidon", 
-    "name": "Poseidon", 
-    "other_names": [], 
-    "star_id": "Eta Cassiopeiae"
+    "id": "Eta Cassiopeiae", 
+    "name": "Eta Cassiopeiae", 
+    "other_names": []
+  }, 
+  {
+    "id": "GL 54", 
+    "name": "GL 54", 
+    "other_names": [
+      "Gliese 54"
+    ]
+  }, 
+  {
+    "id": "Delta Eridani", 
+    "name": "Delta Eridani", 
+    "other_names": []
+  }, 
+  {
+    "id": "11 Leonis Minoris", 
+    "name": "11 Leonis Minoris", 
+    "other_names": []
   }
 ]

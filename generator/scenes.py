@@ -3,9 +3,11 @@ import os
 
 from generator.books import get_book_chapters
 from generator.chapter_characters import get_chapter_characters
-from generator.characters import get_characters_map
+from generator.characters import get_characters_map, is_bob
 from generator.links import get_links
+from generator.presences import get_characters_presences
 from generator.thresholds import get_thresholds_deaths, get_thresholds_births
+from generator.timeline import get_timeline_descriptions
 from generator.travels import get_travels_book
 from generator.utils import json_dump, memoize, sorted_by_key
 
@@ -14,16 +16,20 @@ from generator.utils import json_dump, memoize, sorted_by_key
 def get_character_lines():
     chapters_books = get_book_chapters()
     characters_map = get_characters_map()
+    links = get_links()
+
+    for k, link in links.items():
+        pass
 
     character_lines = {}
     for character in characters_map.values():
         character_lines[character.id] = {}
 
     for k, book_chapter in chapters_books.items():
-        character_lines[book_chapter['bob']][k] = ['**NAMED CHAPTER**']
+        character_lines[book_chapter.bob][k] = ['**NAMED CHAPTER**']
         chapter_characters = get_chapter_characters(k)
 
-        for tokenized_sentence in book_chapter['tokenized_content']:
+        for tokenized_sentence in book_chapter.tokenized_content:
             line = ' '.join(tokenized_sentence)
             for character_pair in itertools.combinations(chapter_characters, 2):
                 character0 = character_pair[0]
@@ -40,33 +46,42 @@ def get_character_lines():
 
 
 @memoize()
-def get_scenes():
+def get_scenes(nb=None):
     chapters_books = get_book_chapters()
-    links = get_links()
+    links = get_links(nb)
+    presences = get_characters_presences(nb)
+    descriptions = get_timeline_descriptions(nb)
 
     scenes = {}
 
     for k, book_chapter in chapters_books.items():
-        linkset = {book_chapter['bob']}
-        for link in links[k]:
-            linkset.add(link.character0.id)
-            linkset.add(link.character1.id)
-        scenes[k]={'character_ids': list(linkset)}
+        if nb is None or k[0] == nb:
+            presset = {book_chapter.bob}
+            for pres in presences[k]:
+                if not is_bob(pres.id):
+                    presset.add(pres.id)
+            for link in links[k]:
+                if not link.is_scut:
+                    presset.add(link.character0.id)
+                    presset.add(link.character1.id)
+
+            scenes[k] = {'character_ids': list(presset), 'description': descriptions[k]}
 
     scenes = postprocess(scenes)
 
-    return scenes
-
+    return sorted_by_key(scenes)
 
 def postprocess(scenes):
     # False positive/ negative matches:
     def remove(nb, nc, id):
         try:
             if isinstance(nc, int):
-                scenes[nb, nc]['character_ids'].remove(id)
+                if (nb,nc) in scenes:
+                    scenes[nb, nc]['character_ids'].remove(id)
             else:
                 for nc_element in nc:
-                    scenes[nb, nc_element]['character_ids'].remove(id)
+                    if (nb, nc_element) in scenes:
+                        scenes[nb, nc_element]['character_ids'].remove(id)
         except ValueError:
             pass
 
@@ -226,13 +241,9 @@ def write_characters_lines(scenes):
                     lines_file.write('{:^10s} {:3d} {:3d} {:s}\n'.format(character.id, nb, nc, cline))
 
 
-def get_scenes_books(nb=None):
-    return sorted_by_key({k: v for k, v in get_scenes().items() if nb is None or k[0] == nb})
-
-
 def write_scenes():
     def write_scenes_(nb=None):
-        json_dump(list(get_scenes_books(nb).values()), open(os.path.join('generated', 'scenes%s.json' % nb), 'w'))
+        json_dump(list(get_scenes(nb).values()), open(os.path.join('generated', 'scenes%s.json' % nb), 'w'))
 
     write_scenes_()
     write_scenes_(1)

@@ -61,8 +61,7 @@ def travels_csv():
     return Response(get_travels_book_csv(), mimetype='test/csv')
 
 
-@app.route('/index.html')
-@app.route('/narrative_chart.html')
+@app.route('/')
 def index_view():
     return render_template('narrative_chart.html')
 

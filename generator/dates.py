@@ -31,9 +31,9 @@ def get_dates():
     parsed_dates = OrderedDict()
     for k, book_chapter in chapters_books.items():
         default_datetime = datetime.datetime(year=1, month=1, day=1)
-        parsed_datetime = parser.parse(book_chapter['date'], default=default_datetime)
+        parsed_datetime = parser.parse(book_chapter.date, default=default_datetime)
         parsed_date = Date(id='date %d %d' % k,
-                           raw=book_chapter['date'],
+                           raw=book_chapter.date,
                            datetime=parsed_datetime,
                            duration=month)
         parsed_dates[k] = parsed_date

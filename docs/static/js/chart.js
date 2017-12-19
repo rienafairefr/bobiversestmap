@@ -50,6 +50,12 @@ function get_data(datafile, parent) {
         // Get the extent so we can re-size the SVG appropriately.
         svg.attr('height', narrative.extent()[1]);
 
+
+        // Define the div for the tooltip
+        var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
         // Draw the scenes
         svg.selectAll('.scene').data(narrative.scenes()).enter()
             .append('g').attr('class', 'scene')
@@ -60,6 +66,9 @@ function get_data(datafile, parent) {
                 return 'translate(' + [x, y] + ')';
             })
             .append('rect')
+            .attr('pointer-events',function(){
+                return 'visible';
+            })
             .attr('width', sceneWidth)
             .attr('height', function (d) {
                 return d.height;
@@ -67,7 +76,15 @@ function get_data(datafile, parent) {
             .attr('y', 0)
             .attr('x', 0)
             .attr('rx', 3)
-            .attr('ry', 3);
+            .attr('ry', 3)
+            .on('click', function(d) {
+                div.transition()
+                    .duration(200)
+                    .style("opacity", .9);
+                div	.html(d.description)
+                    .style("left", (d3.event.pageX) + "px")
+                    .style("top", (d3.event.pageY - 28) + "px");
+            });
 
         // Draw appearances
         svg.selectAll('.scene').selectAll('.appearance').data(function (d) {
@@ -109,7 +126,6 @@ function get_data(datafile, parent) {
 
             g.on('click',function(d){
                 d.selected = true;
-
                 svg.selectAll('')
 
             });
@@ -156,7 +172,7 @@ get_data("book/3/data.json",'#book3');
 
 function wrangle(data) {
 	return data.scenes.map(function(scene){
-		return {characters: scene.character_ids.map(characterById), links:scene.links, y:scene.y_pos
+		return {characters: scene.character_ids.map(characterById), description:scene.description, y:scene.y_pos
         };
 	});
 

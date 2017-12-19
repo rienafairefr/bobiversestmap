@@ -839,60 +839,39 @@
   "scenes": [
     {
       "character_ids": [
-        "Bob"
+        "Archimedes", 
+        "Fred_Carleon", 
+        "Bob", 
+        "Fred_Deltan"
       ]
     }, 
     {
       "character_ids": [
-        "Dexter", 
+        "Butterworth", 
+        "Bridget", 
         "Howard", 
-        "Butterworth"
+        "Riker", 
+        "Dexter"
       ]
     }, 
     {
       "character_ids": [
-        "Marcus"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bob"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill", 
-        "Daedalus", 
-        "Icarus"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Gina", 
         "Marcus", 
-        "Vinnie", 
         "Kal", 
-        "Denu"
+        "Gina"
       ]
     }, 
     {
       "character_ids": [
+        "Bridget", 
         "Howard"
       ]
     }, 
     {
       "character_ids": [
-        "Bob"
+        "Fred_Carleon", 
+        "Bob", 
+        "Fred_Deltan"
       ]
     }, 
     {
@@ -902,20 +881,58 @@
     }, 
     {
       "character_ids": [
-        "Riker"
+        "Bridget", 
+        "Howard"
       ]
     }, 
     {
       "character_ids": [
+        "Denu", 
         "Gina", 
-        "Marcus", 
-        "Vinnie", 
         "Kal", 
-        "Yoshi"
+        "Bob", 
+        "Vinnie", 
+        "Marcus"
       ]
     }, 
     {
       "character_ids": [
+        "Bridget", 
+        "Howard"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Archimedes", 
+        "Fred_Carleon", 
+        "Bob", 
+        "Fred_Deltan"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Bill"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Riker", 
+        "Justin", 
+        "Charles"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Vinnie", 
+        "Marcus", 
+        "Kal", 
+        "Gina"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
         "Howard"
       ]
     }, 
@@ -926,7 +943,8 @@
     }, 
     {
       "character_ids": [
-        "Marcus"
+        "Marcus", 
+        "Kal"
       ]
     }, 
     {
@@ -941,20 +959,22 @@
     }, 
     {
       "character_ids": [
+        "Vinnie", 
         "Marcus", 
-        "Kal", 
-        "Denu"
+        "Denu", 
+        "Kal"
       ]
     }, 
     {
       "character_ids": [
+        "Bridget", 
         "Howard"
       ]
     }, 
     {
       "character_ids": [
-        "Bill", 
         "Isaac", 
+        "Bill", 
         "Oliver"
       ]
     }, 
@@ -965,12 +985,62 @@
     }, 
     {
       "character_ids": [
+        "Bridget", 
         "Howard"
       ]
     }, 
     {
       "character_ids": [
         "Herschel"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Bill", 
+        "Bridget", 
+        "Richards", 
+        "Kiroshi"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Marcus", 
+        "Kal", 
+        "Gina"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Herschel"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Archimedes", 
+        "Fred_Carleon", 
+        "Bob", 
+        "Fred_Deltan"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Howard"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Bill", 
+        "Richards", 
+        "Kiroshi"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Marcus", 
+        "Denu", 
+        "Kal", 
+        "Gina"
       ]
     }, 
     {
@@ -981,70 +1051,38 @@
     {
       "character_ids": [
         "Bill", 
-        "Marcus", 
-        "Riker"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Herschel"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bob"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Marcus"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill"
-      ]
-    }, 
-    {
-      "character_ids": [
+        "Bob", 
         "Herschel", 
         "Neil"
       ]
     }, 
     {
       "character_ids": [
-        "Bob"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Gina", 
-        "Marcus", 
-        "Kal", 
-        "Vinnie", 
-        "Denu"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Riker"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill", 
-        "Riker", 
+        "Archimedes", 
+        "Fred_Carleon", 
         "Bob", 
+        "Fred_Deltan"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Vinnie", 
+        "Marcus", 
+        "Denu", 
+        "Kal", 
+        "Gina"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Riker", 
+        "Neil", 
+        "Herschel"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
         "Howard"
       ]
     }, 
@@ -1055,16 +1093,21 @@
     }, 
     {
       "character_ids": [
-        "Marcus"
+        "Marcus", 
+        "Kal", 
+        "Gina"
       ]
     }, 
     {
       "character_ids": [
-        "Bob"
+        "Archimedes", 
+        "Bob", 
+        "Fred_Deltan"
       ]
     }, 
     {
       "character_ids": [
+        "Bridget", 
         "Howard"
       ]
     }, 
@@ -1081,20 +1124,19 @@
     {
       "character_ids": [
         "Bridget", 
-        "Bob", 
         "Howard", 
         "Henry"
       ]
     }, 
     {
       "character_ids": [
-        "Bill", 
         "Phineas", 
         "Jacques"
       ]
     }, 
     {
       "character_ids": [
+        "Bridget", 
         "Howard"
       ]
     }, 
@@ -1105,6 +1147,8 @@
     }, 
     {
       "character_ids": [
+        "Ferb", 
+        "Phineas", 
         "Jacques"
       ]
     }, 
@@ -1115,15 +1159,19 @@
     }, 
     {
       "character_ids": [
+        "Archimedes", 
         "Bob"
       ]
     }, 
     {
       "character_ids": [
+        "Riker", 
         "Dexter", 
+        "Herschel", 
         "Bill", 
+        "Oliver", 
         "Bob", 
-        "Oliver"
+        "Neil"
       ]
     }, 
     {
@@ -1138,63 +1186,68 @@
     }, 
     {
       "character_ids": [
-        "Riker"
+        "Riker", 
+        "Justin"
       ]
     }, 
     {
       "character_ids": [
         "Bill", 
-        "Riker", 
-        "Oliver"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Thor", 
-        "Herschel", 
-        "Riker", 
         "Oliver", 
-        "Neil", 
-        "Jacques"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Herschel", 
         "Riker"
       ]
     }, 
     {
       "character_ids": [
-        "Dexter", 
         "Bridget", 
         "Howard"
       ]
     }, 
     {
       "character_ids": [
+        "Riker", 
+        "Herschel", 
+        "Bill", 
+        "Neil", 
+        "Garfield"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Riker", 
+        "Herschel"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Howard", 
+        "Dexter"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Bill", 
+        "Garfield", 
         "Riker"
       ]
     }, 
     {
       "character_ids": [
+        "Archimedes", 
         "Bob"
       ]
     }, 
     {
       "character_ids": [
+        "Bridget", 
         "Howard"
       ]
     }, 
     {
       "character_ids": [
-        "Herschel", 
         "Riker", 
+        "Herschel", 
         "Neil"
       ]
     }, 
@@ -1238,21 +1291,25 @@
     }, 
     {
       "character_ids": [
-        "Herschel"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bob", 
-        "Marvin"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Milo", 
         "Bill", 
-        "Mario", 
-        "Marvin"
+        "Herschel", 
+        "Neil"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Bob"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Icarus", 
+        "Riker", 
+        "Daedalus", 
+        "Bill", 
+        "Henry", 
+        "Milo", 
+        "Mario"
       ]
     }, 
     {

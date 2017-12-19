@@ -13,7 +13,7 @@ def get_scenes_locations():
 
     scenes_locations = {}
     for k, book_chapter in chapters_books.items():
-        scenes_locations[k] = book_chapter['location']
+        scenes_locations[k] = book_chapter.location
 
     # Bob on Earth
     for i in range(1, 13):

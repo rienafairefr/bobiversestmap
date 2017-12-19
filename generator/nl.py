@@ -30,3 +30,9 @@ def tokenize(lines):
     content = '\n'.join(lines)
 
     return word_tokenize_sentences(sent_tokenize(content))
+
+
+def sentences_tokenize(lines):
+    content = '\n'.join(lines)
+
+    return sent_tokenize(content)

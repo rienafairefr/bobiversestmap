@@ -7,7 +7,7 @@ from generator.utils import memoize
 def get_chapter_characters(k):
     chapters_books = get_book_chapters()
     book_chapter = chapters_books[k]
-    all_lines = '\n'.join(book_chapter['content'])
+    all_lines = '\n'.join(book_chapter.content)
     characters_map = get_characters_map()
     chapter_characters = list(characters_map.values())
 
@@ -15,6 +15,6 @@ def get_chapter_characters(k):
                           any(name in all_lines for name in character.all_names)}
 
     if 'I' in all_lines:
-        chapter_characters.add(characters_map[book_chapter['bob']])
+        chapter_characters.add(characters_map[book_chapter.bob])
 
     return list(chapter_characters)

@@ -839,33 +839,39 @@
   "scenes": [
     {
       "character_ids": [
-        "Bob"
+        "Archimedes", 
+        "Fred_Carleon", 
+        "Bob", 
+        "Fred_Deltan"
       ]
     }, 
     {
       "character_ids": [
-        "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bob"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Mulder", 
-        "Jonny", 
-        "Skinner"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Sam", 
-        "St\u00e9phane", 
-        "Howard", 
         "Butterworth", 
-        "Riker"
+        "Bridget", 
+        "Howard", 
+        "St\u00e9phane"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Archimedes", 
+        "Moses", 
+        "Marvin", 
+        "Bob"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Mulder"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Butterworth", 
+        "Bridget", 
+        "Howard", 
+        "St\u00e9phane"
       ]
     }, 
     {
@@ -881,8 +887,8 @@
     }, 
     {
       "character_ids": [
-        "Howard", 
         "Butterworth", 
+        "Howard", 
         "Valter"
       ]
     }, 
@@ -898,114 +904,132 @@
     }, 
     {
       "character_ids": [
+        "Archimedes", 
+        "Moses", 
         "Bob"
       ]
     }, 
     {
       "character_ids": [
-        "Bill"
+        "Bill", 
+        "Marvin"
       ]
     }, 
     {
       "character_ids": [
         "Dopey", 
-        "Sleepy", 
+        "Hungry", 
         "Mario", 
-        "Hungry"
+        "Bashful", 
+        "Sleepy"
       ]
     }, 
     {
       "character_ids": [
-        "Riker", 
-        "Homer"
+        "Bill", 
+        "Riker"
       ]
     }, 
     {
       "character_ids": [
-        "Sleepy", 
+        "Hungry", 
         "Mario", 
-        "Hungry"
+        "Sleepy"
       ]
     }, 
     {
       "character_ids": [
+        "Butterworth", 
+        "Bill", 
+        "Howard", 
         "St\u00e9phane", 
         "Bob", 
-        "Howard", 
-        "Butterworth"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bob"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Riker"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bob"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Riker", 
-        "Howard", 
-        "Julia"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Riker"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bob"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Riker"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bob", 
-        "Luke", 
-        "Victor"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Riker"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bob", 
-        "Luke", 
         "Archimedes"
       ]
     }, 
     {
       "character_ids": [
-        "Riker", 
+        "Bob"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Riker"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Archimedes", 
+        "Moses", 
+        "Bob"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Butterworth", 
+        "Julia", 
+        "Howard", 
+        "Justin"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Riker"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Archimedes", 
+        "Bob"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Riker"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Pete", 
+        "Luke", 
+        "Bob", 
+        "Archimedes", 
+        "Victor"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Butterworth", 
+        "Bridget", 
+        "Howard"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Riker"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Archimedes", 
+        "Luke", 
+        "Bob"
+      ]
+    }, 
+    {
+      "character_ids": [
         "Homer", 
+        "Riker", 
         "Charles"
       ]
     }, 
     {
       "character_ids": [
-        "Howard"
+        "Butterworth", 
+        "Bridget", 
+        "Howard", 
+        "St\u00e9phane", 
+        "Valter"
       ]
     }, 
     {
@@ -1015,12 +1039,24 @@
     }, 
     {
       "character_ids": [
-        "St\u00e9phane", 
         "Howard", 
-        "Riker", 
+        "St\u00e9phane", 
         "Bob", 
-        "Bridget", 
-        "Julia"
+        "Justin", 
+        "Julia", 
+        "Bridget"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Bill", 
+        "Henry"
+      ]
+    }, 
+    {
+      "character_ids": [
+        "Archimedes", 
+        "Bob"
       ]
     }, 
     {
@@ -1032,18 +1068,8 @@
     }, 
     {
       "character_ids": [
-        "Bob"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill", 
-        "Bob", 
-        "Loki"
-      ]
-    }, 
-    {
-      "character_ids": [
+        "Butterworth", 
+        "Bridget", 
         "Howard"
       ]
     }, 
@@ -1054,8 +1080,7 @@
     }, 
     {
       "character_ids": [
-        "Riker", 
-        "Charles"
+        "Riker"
       ]
     }, 
     {
@@ -1075,17 +1100,26 @@
     }, 
     {
       "character_ids": [
+        "Archimedes", 
         "Bob"
       ]
     }, 
     {
       "character_ids": [
-        "Howard"
+        "Charles", 
+        "Howard", 
+        "St\u00e9phane", 
+        "Bob", 
+        "Bridget"
       ]
     }, 
     {
       "character_ids": [
-        "Riker"
+        "Bill", 
+        "Ralph", 
+        "Riker", 
+        "Vickers", 
+        "Charles"
       ]
     }, 
     {
@@ -1095,6 +1129,7 @@
     }, 
     {
       "character_ids": [
+        "Bridget", 
         "Howard"
       ]
     }, 
@@ -1105,39 +1140,43 @@
     }, 
     {
       "character_ids": [
+        "Archimedes", 
         "Bob"
       ]
     }, 
     {
       "character_ids": [
-        "Howard"
+        "Bridget", 
+        "Howard", 
+        "St\u00e9phane"
       ]
     }, 
     {
       "character_ids": [
-        "Mulder", 
+        "Butterworth", 
         "Pete", 
-        "Marcus"
+        "Marcus", 
+        "Mulder"
       ]
     }, 
     {
       "character_ids": [
         "Milton", 
         "Jeffrey", 
-        "Loki", 
-        "Hank"
+        "Hank", 
+        "Loki"
       ]
     }, 
     {
       "character_ids": [
-        "St\u00e9phane", 
-        "Howard"
+        "Bridget", 
+        "Howard", 
+        "St\u00e9phane"
       ]
     }, 
     {
       "character_ids": [
         "Bill", 
-        "Marvin", 
         "Luke", 
         "Victor"
       ]
@@ -1160,6 +1199,7 @@
     }, 
     {
       "character_ids": [
+        "Archimedes", 
         "Bob"
       ]
     }, 
@@ -1170,6 +1210,8 @@
     }, 
     {
       "character_ids": [
+        "Butterworth", 
+        "Bridget", 
         "Howard"
       ]
     }, 
@@ -1185,6 +1227,7 @@
     }, 
     {
       "character_ids": [
+        "Butterworth", 
         "Oliver"
       ]
     }, 
@@ -1200,24 +1243,30 @@
     }, 
     {
       "character_ids": [
+        "Butterworth", 
         "Bill"
       ]
     }, 
     {
       "character_ids": [
+        "Archimedes", 
         "Bob"
       ]
     }, 
     {
       "character_ids": [
-        "Bill"
+        "Bill", 
+        "Oliver", 
+        "Mario"
       ]
     }, 
     {
       "character_ids": [
-        "St\u00e9phane", 
+        "Bill", 
         "Bridget", 
-        "Howard"
+        "Howard", 
+        "St\u00e9phane", 
+        "Garfield"
       ]
     }, 
     {
@@ -1227,32 +1276,34 @@
     }, 
     {
       "character_ids": [
-        "Dexter", 
-        "Bridget", 
-        "Bob", 
+        "Garfield", 
+        "Butterworth", 
+        "Bill", 
         "Howard", 
-        "Butterworth"
+        "Bridget"
       ]
     }, 
     {
       "character_ids": [
+        "Butterworth", 
+        "Bridget", 
         "Howard"
       ]
     }, 
     {
       "character_ids": [
+        "Archimedes", 
         "Bob"
       ]
     }, 
     {
       "character_ids": [
+        "Butterworth", 
         "Bill"
       ]
     }, 
     {
       "character_ids": [
-        "Bill", 
-        "Ferb", 
         "Phineas"
       ]
     }, 
@@ -1263,6 +1314,7 @@
     }, 
     {
       "character_ids": [
+        "Bridget", 
         "Howard"
       ]
     }, 
@@ -1275,7 +1327,8 @@
     }, 
     {
       "character_ids": [
-        "Bill"
+        "Bill", 
+        "Archimedes"
       ]
     }
   ], 

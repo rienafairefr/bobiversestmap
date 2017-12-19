@@ -5,7 +5,7 @@ from collections import OrderedDict
 from generator.characters import get_characters_map, is_bob
 from generator.dates import get_dates
 from generator.books import get_book_chapters, get_keys
-from generator.presences import get_characters_presences_book
+from generator.presences import get_characters_presences
 from generator.thresholds import get_thresholds_deaths, get_thresholds_births
 from generator.scenes_locations import get_scenes_locations_book
 from generator.utils import memoize, JsonSerializable
@@ -13,7 +13,7 @@ from generator.utils import memoize, JsonSerializable
 
 @memoize()
 def get_travels_book(nb=None):
-    presences = get_characters_presences_book(nb)
+    presences = get_characters_presences(nb)
     book_chapters = get_book_chapters()
     scenes_locations = get_scenes_locations_book(nb)
     characters_map = get_characters_map()
@@ -31,7 +31,7 @@ def get_travels_book(nb=None):
             elif threshold_death is not None and k > threshold_death:
                 pass
             elif is_bob(character_id):
-                if character_id == book_chapters[k]['bob']:
+                if character_id == book_chapters[k].bob :
                     current_location = scenes_locations[k]
             else:
                 if character_id in present_characters:
