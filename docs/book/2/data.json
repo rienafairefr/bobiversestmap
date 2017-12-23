@@ -2,281 +2,186 @@
   "characters": [
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Bob"
-      ], 
       "id": "Bob", 
       "name": "Bob", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Bill"
-      ], 
       "id": "Bill", 
       "name": "Bill", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Garfield"
-      ], 
       "id": "Garfield", 
       "name": "Garfield", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Calvin"
-      ], 
       "id": "Calvin", 
       "name": "Calvin", 
       "other_names": []
     }, 
     {
       "affiliation": "Calvin", 
-      "all_names": [
-        "Bart"
-      ], 
       "id": "Bart", 
       "name": "Bart", 
       "other_names": []
     }, 
     {
       "affiliation": "Calvin", 
-      "all_names": [
-        "Thor"
-      ], 
       "id": "Thor", 
       "name": "Thor", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Goku"
-      ], 
       "id": "Goku", 
       "name": "Goku", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Linus"
-      ], 
       "id": "Linus", 
       "name": "Linus", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Mulder"
-      ], 
       "id": "Mulder", 
       "name": "Mulder", 
       "other_names": []
     }, 
     {
       "affiliation": "Mulder", 
-      "all_names": [
-        "Jonny"
-      ], 
       "id": "Jonny", 
       "name": "Jonny", 
       "other_names": []
     }, 
     {
       "affiliation": "Mulder", 
-      "all_names": [
-        "Skinner"
-      ], 
       "id": "Skinner", 
       "name": "Skinner", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Oliver"
-      ], 
       "id": "Oliver", 
       "name": "Oliver", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Khan"
-      ], 
       "id": "Khan", 
       "name": "Khan", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Elmer"
-      ], 
       "id": "Elmer", 
       "name": "Elmer", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Hannibal"
-      ], 
       "id": "Hannibal", 
       "name": "Hannibal", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Tom"
-      ], 
       "id": "Tom", 
       "name": "Tom", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Barney"
-      ], 
       "id": "Barney", 
       "name": "Barney", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Fred"
-      ], 
       "id": "Fred", 
       "name": "Fred", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Kyle"
-      ], 
       "id": "Kyle", 
       "name": "Kyle", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Ned"
-      ], 
       "id": "Ned", 
       "name": "Ned", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Mario"
-      ], 
       "id": "Mario", 
       "name": "Mario", 
       "other_names": []
     }, 
     {
       "affiliation": "Mario", 
-      "all_names": [
-        "Bashful"
-      ], 
       "id": "Bashful", 
       "name": "Bashful", 
       "other_names": []
     }, 
     {
       "affiliation": "Mario", 
-      "all_names": [
-        "Dopey"
-      ], 
       "id": "Dopey", 
       "name": "Dopey", 
       "other_names": []
     }, 
     {
       "affiliation": "Mario", 
-      "all_names": [
-        "Sleepy"
-      ], 
       "id": "Sleepy", 
       "name": "Sleepy", 
       "other_names": []
     }, 
     {
       "affiliation": "Mario", 
-      "all_names": [
-        "Hungry"
-      ], 
       "id": "Hungry", 
       "name": "Hungry", 
       "other_names": []
     }, 
     {
       "affiliation": "Mario", 
-      "all_names": [
-        "Hal"
-      ], 
       "id": "Hal", 
       "name": "Hal", 
       "other_names": []
     }, 
     {
       "affiliation": "Mario", 
-      "all_names": [
-        "Claude"
-      ], 
       "id": "Claude", 
       "name": "Claude", 
       "other_names": []
     }, 
     {
       "affiliation": "Mario", 
-      "all_names": [
-        "Jacques"
-      ], 
       "id": "Jacques", 
       "name": "Jacques", 
       "other_names": []
     }, 
     {
       "affiliation": "Jacques", 
-      "all_names": [
-        "Phineas"
-      ], 
       "id": "Phineas", 
       "name": "Phineas", 
       "other_names": []
     }, 
     {
       "affiliation": "Jacques", 
-      "all_names": [
-        "Ferb"
-      ], 
       "id": "Ferb", 
       "name": "Ferb", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Riker", 
-        "Will", 
-        "William"
-      ], 
       "id": "Riker", 
       "name": "Riker", 
       "other_names": [
@@ -286,46 +191,30 @@
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Homer"
-      ], 
       "id": "Homer", 
       "name": "Homer", 
       "other_names": []
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Ralph"
-      ], 
       "id": "Ralph", 
       "name": "Ralph", 
       "other_names": []
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Charles"
-      ], 
       "id": "Charles", 
       "name": "Charles", 
       "other_names": []
     }, 
     {
       "affiliation": "Charles", 
-      "all_names": [
-        "Howard"
-      ], 
       "id": "Howard", 
       "name": "Howard", 
       "other_names": []
     }, 
     {
       "affiliation": "Charles", 
-      "all_names": [
-        "Dexter", 
-        "Dex"
-      ], 
       "id": "Dexter", 
       "name": "Dexter", 
       "other_names": [
@@ -334,28 +223,18 @@
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Rudy"
-      ], 
       "id": "Rudy", 
       "name": "Rudy", 
       "other_names": []
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Edwin"
-      ], 
       "id": "Edwin", 
       "name": "Edwin", 
       "other_names": []
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Arthur", 
-        "Eeyore"
-      ], 
       "id": "Arthur", 
       "name": "Arthur", 
       "other_names": [
@@ -364,82 +243,54 @@
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Bert"
-      ], 
       "id": "Bert", 
       "name": "Bert", 
       "other_names": []
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Ernie"
-      ], 
       "id": "Ernie", 
       "name": "Ernie", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Milo"
-      ], 
       "id": "Milo", 
       "name": "Milo", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Marvin"
-      ], 
       "id": "Marvin", 
       "name": "Marvin", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Luke"
-      ], 
       "id": "Luke", 
       "name": "Luke", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Bender"
-      ], 
       "id": "Bender", 
       "name": "Bender", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Victor"
-      ], 
       "id": "Victor", 
       "name": "Victor", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Icarus"
-      ], 
       "id": "Icarus", 
       "name": "Icarus", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Daedalus", 
-        "Dae"
-      ], 
       "id": "Daedalus", 
       "name": "Daedalus", 
       "other_names": [
@@ -448,154 +299,102 @@
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Mack"
-      ], 
       "id": "Mack", 
       "name": "Mack", 
       "other_names": []
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Verne"
-      ], 
       "id": "Verne", 
       "name": "Verne", 
       "other_names": []
     }, 
     {
       "affiliation": "Mulder", 
-      "all_names": [
-        "Marcus"
-      ], 
       "id": "Marcus", 
       "name": "Marcus", 
       "other_names": []
     }, 
     {
       "affiliation": "Khan", 
-      "all_names": [
-        "Loki"
-      ], 
       "id": "Loki", 
       "name": "Loki", 
       "other_names": []
     }, 
     {
       "affiliation": "Jacques", 
-      "all_names": [
-        "Herschel"
-      ], 
       "id": "Herschel", 
       "name": "Herschel", 
       "other_names": []
     }, 
     {
       "affiliation": "Jacques", 
-      "all_names": [
-        "Neil"
-      ], 
       "id": "Neil", 
       "name": "Neil", 
       "other_names": []
     }, 
     {
       "affiliation": "Marvin", 
-      "all_names": [
-        "Pete"
-      ], 
       "id": "Pete", 
       "name": "Pete", 
       "other_names": []
     }, 
     {
       "affiliation": "Marvin", 
-      "all_names": [
-        "Victor"
-      ], 
       "id": "Victor", 
       "name": "Victor", 
       "other_names": []
     }, 
     {
       "affiliation": "Bart", 
-      "all_names": [
-        "Isaac"
-      ], 
       "id": "Isaac", 
       "name": "Isaac", 
       "other_names": []
     }, 
     {
       "affiliation": "Calvin", 
-      "all_names": [
-        "Bruce"
-      ], 
       "id": "Bruce", 
       "name": "Bruce", 
       "other_names": []
     }, 
     {
       "affiliation": "Zeke", 
-      "all_names": [
-        "Zeke"
-      ], 
       "id": "Zeke", 
       "name": "Zeke", 
       "other_names": []
     }, 
     {
       "affiliation": "Jeffrey", 
-      "all_names": [
-        "Jeffrey"
-      ], 
       "id": "Jeffrey", 
       "name": "Jeffrey", 
       "other_names": []
     }, 
     {
       "affiliation": "Milton", 
-      "all_names": [
-        "Milton"
-      ], 
       "id": "Milton", 
       "name": "Milton", 
       "other_names": []
     }, 
     {
       "affiliation": "Yoshi", 
-      "all_names": [
-        "Yoshi"
-      ], 
       "id": "Yoshi", 
       "name": "Yoshi", 
       "other_names": []
     }, 
     {
       "affiliation": "Tony", 
-      "all_names": [
-        "Tony"
-      ], 
       "id": "Tony", 
       "name": "Tony", 
       "other_names": []
     }, 
     {
       "affiliation": "Jackson", 
-      "all_names": [
-        "Jackson"
-      ], 
       "id": "Jackson", 
       "name": "Jackson", 
       "other_names": []
     }, 
     {
       "affiliation": "Sam", 
-      "all_names": [
-        "Sam", 
-        "Exodus-3"
-      ], 
       "id": "Sam", 
       "name": "Sam", 
       "other_names": [
@@ -604,19 +403,12 @@
     }, 
     {
       "affiliation": "Hank", 
-      "all_names": [
-        "Hank"
-      ], 
       "id": "Hank", 
       "name": "Hank", 
       "other_names": []
     }, 
     {
       "affiliation": "Howard", 
-      "all_names": [
-        "Bridget", 
-        "Sheehy"
-      ], 
       "id": "Bridget", 
       "name": "Bridget", 
       "other_names": [
@@ -625,10 +417,6 @@
     }, 
     {
       "affiliation": "USE", 
-      "all_names": [
-        "Colonel Butterworth", 
-        "Butterworth"
-      ], 
       "id": "Butterworth", 
       "name": "Colonel Butterworth", 
       "other_names": [
@@ -637,11 +425,6 @@
     }, 
     {
       "affiliation": "USE", 
-      "all_names": [
-        "St\u00e9phane Brodeur", 
-        "Chief Brodeur", 
-        "St\u00e9phane"
-      ], 
       "id": "St\u00e9phane", 
       "name": "St\u00e9phane Brodeur", 
       "other_names": [
@@ -651,10 +434,6 @@
     }, 
     {
       "affiliation": "Family", 
-      "all_names": [
-        "Julia Hendricks", 
-        "Julia"
-      ], 
       "id": "Julia", 
       "name": "Julia Hendricks", 
       "other_names": [
@@ -663,11 +442,6 @@
     }, 
     {
       "affiliation": "Family", 
-      "all_names": [
-        "Justin Hendricks", 
-        "Justin", 
-        "Cadet"
-      ], 
       "id": "Justin", 
       "name": "Justin Hendricks", 
       "other_names": [
@@ -677,19 +451,12 @@
     }, 
     {
       "affiliation": "Deltans", 
-      "all_names": [
-        "Archimedes"
-      ], 
       "id": "Archimedes", 
       "name": "Archimedes", 
       "other_names": []
     }, 
     {
       "affiliation": "FAITH", 
-      "all_names": [
-        "Captain Richards", 
-        "Richards"
-      ], 
       "id": "Richards", 
       "name": "Captain Richards", 
       "other_names": [
@@ -698,10 +465,6 @@
     }, 
     {
       "affiliation": "Japanese colony", 
-      "all_names": [
-        "General Kiroshi", 
-        "Kiroshi"
-      ], 
       "id": "Kiroshi", 
       "name": "General Kiroshi", 
       "other_names": [
@@ -710,25 +473,16 @@
     }, 
     {
       "affiliation": "FAITH", 
-      "all_names": [
-        "Dr. Landers", 
-        "Dr. Landers", 
-        "Landers"
-      ], 
       "id": "Landers", 
       "name": "Dr. Landers", 
       "other_names": [
         "Dr. Landers", 
-        "Landers"
+        "Landers", 
+        "doc"
       ]
     }, 
     {
       "affiliation": "FAITH", 
-      "all_names": [
-        "Dr. Doucette", 
-        "Dr. Doucette", 
-        "Doucette"
-      ], 
       "id": "Doucette", 
       "name": "Dr. Doucette", 
       "other_names": [
@@ -738,19 +492,12 @@
     }, 
     {
       "affiliation": "Deltans", 
-      "all_names": [
-        "Moses"
-      ], 
       "id": "Moses", 
       "name": "Moses", 
       "other_names": []
     }, 
     {
       "affiliation": "Deltans", 
-      "all_names": [
-        "Fred (Deltan)", 
-        "Fred"
-      ], 
       "id": "Fred_Deltan", 
       "name": "Fred (Deltan)", 
       "other_names": [
@@ -759,10 +506,6 @@
     }, 
     {
       "affiliation": "Deltans", 
-      "all_names": [
-        "Fred (Carleon)", 
-        "Fred"
-      ], 
       "id": "Fred_Carleon", 
       "name": "Fred (Carleon)", 
       "other_names": [
@@ -771,55 +514,36 @@
     }, 
     {
       "affiliation": "Poseidon Revolution", 
-      "all_names": [
-        "Kal"
-      ], 
       "id": "Kal", 
       "name": "Kal", 
       "other_names": []
     }, 
     {
       "affiliation": "Poseidon Revolution", 
-      "all_names": [
-        "Denu"
-      ], 
       "id": "Denu", 
       "name": "Denu", 
       "other_names": []
     }, 
     {
       "affiliation": "Poseidon Revolution", 
-      "all_names": [
-        "Gina"
-      ], 
       "id": "Gina", 
       "name": "Gina", 
       "other_names": []
     }, 
     {
       "affiliation": "Poseidon Revolution", 
-      "all_names": [
-        "Vinnie"
-      ], 
       "id": "Vinnie", 
       "name": "Vinnie", 
       "other_names": []
     }, 
     {
       "affiliation": "VEHEMENT", 
-      "all_names": [
-        "Vickers"
-      ], 
       "id": "Vickers", 
       "name": "Vickers", 
       "other_names": []
     }, 
     {
       "affiliation": "Australian Replicant", 
-      "all_names": [
-        "Henry Roberts", 
-        "Henry"
-      ], 
       "id": "Henry", 
       "name": "Henry Roberts", 
       "other_names": [
@@ -828,9 +552,6 @@
     }, 
     {
       "affiliation": "Spitsbergans", 
-      "all_names": [
-        "Valter"
-      ], 
       "id": "Valter", 
       "name": "Valter", 
       "other_names": []
@@ -839,497 +560,548 @@
   "scenes": [
     {
       "character_ids": [
+        "Bob", 
         "Archimedes", 
         "Fred_Carleon", 
-        "Bob", 
         "Fred_Deltan"
-      ]
+      ], 
+      "description": "Start of second book, Marvin determines origin area of Deltans"
     }, 
     {
       "character_ids": [
-        "Butterworth", 
         "Bridget", 
-        "Howard", 
-        "St\u00e9phane"
-      ]
+        "Butterworth", 
+        "St\u00e9phane", 
+        "Howard"
+      ], 
+      "description": "First raptor attack on Vulcan colony"
     }, 
     {
       "character_ids": [
+        "Bob", 
         "Archimedes", 
         "Moses", 
-        "Marvin", 
-        "Bob"
-      ]
+        "Marvin"
+      ], 
+      "description": "Archimedes learns that Bob builds other Bobs"
     }, 
     {
       "character_ids": [
+        "Milo", 
+        "Mario", 
         "Mulder"
-      ]
+      ], 
+      "description": "Mulder discovers Poseidon in Eta Cassiopeiae, brings Skinner and Johnny online months later"
     }, 
     {
       "character_ids": [
-        "Butterworth", 
         "Bridget", 
-        "Howard", 
-        "St\u00e9phane"
-      ]
+        "Bert", 
+        "Butterworth", 
+        "St\u00e9phane", 
+        "Howard"
+      ], 
+      "description": "Security fence around Vulcan colony town, Landing, completed, offloading of colonists begins"
     }, 
     {
       "character_ids": [
         "Mulder"
-      ]
+      ], 
+      "description": "SCUT (Subspace Communications Universal Transceiver) plans reach Mulder at Eta Cassiopeiae, Mulder joins BobNet"
     }, 
     {
       "character_ids": [
-        "Riker", 
-        "Bob"
-      ]
+        "Riker"
+      ], 
+      "description": "VEHEMENT introduced (Earth)"
     }, 
     {
       "character_ids": [
         "Butterworth", 
-        "Howard", 
-        "Valter"
-      ]
+        "Valter", 
+        "Howard"
+      ], 
+      "description": "Exodus 3 (Sam) arrives at Romulous"
     }, 
     {
       "character_ids": [
         "Bob"
-      ]
+      ], 
+      "description": "Marvin discovers that something hunted Deltans to near extinction at their original (source) site"
     }, 
     {
       "character_ids": [
         "Mario"
-      ]
+      ], 
+      "description": "Mario discovers Others' clean out of Zeta Tucani"
     }, 
     {
       "character_ids": [
+        "Bob", 
         "Archimedes", 
-        "Moses", 
-        "Bob"
-      ]
+        "Moses"
+      ], 
+      "description": "Bob teaches Archimedes jujitsu during mating season. Archimedes hooks up with Diana. Marvin discovers preyed Deltan remains near Camelot."
     }, 
     {
       "character_ids": [
-        "Bill", 
-        "Marvin"
-      ]
+        "Bill"
+      ], 
+      "description": "Bob receives SCUT plans and connects to Bobiverse"
     }, 
     {
       "character_ids": [
-        "Dopey", 
-        "Hungry", 
         "Mario", 
         "Bashful", 
-        "Sleepy"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill", 
-        "Riker"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Hungry", 
-        "Mario", 
-        "Sleepy"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Butterworth", 
-        "Bill", 
-        "Howard", 
-        "St\u00e9phane", 
-        "Bob", 
-        "Archimedes"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bob"
-      ]
+        "Dopey"
+      ], 
+      "description": "Mario builds space station and 4 Bobs at Gleese 54"
     }, 
     {
       "character_ids": [
         "Riker"
-      ]
+      ], 
+      "description": "Riker deals with Maldeves' livestock sabotage at Sol. Homer admits he's been underreporting production to establish a surplus"
+    }, 
+    {
+      "character_ids": [
+        "Mario"
+      ], 
+      "description": "Mario gets SCUT and joins Bobnet, reports on Others"
     }, 
     {
       "character_ids": [
         "Archimedes", 
-        "Moses", 
-        "Bob"
-      ]
+        "Butterworth", 
+        "St\u00e9phane", 
+        "Howard"
+      ], 
+      "description": "Howard informs Butterworth of the Others"
     }, 
     {
       "character_ids": [
-        "Butterworth", 
+        "Bob"
+      ], 
+      "description": "Marvin & Bob lose a drone to flying predator (first contact with Deltans' original predator)"
+    }, 
+    {
+      "character_ids": [
+        "Riker"
+      ], 
+      "description": "Riker deals with another VEHEMENT attack"
+    }, 
+    {
+      "character_ids": [
+        "Bob", 
+        "Archimedes", 
+        "Moses"
+      ], 
+      "description": "Bob & Marvin see and engage flying Deltan predator, hippogriffs, after first attack on Deltans, destroy hippogriffs' island with ship buster. Bob kicked out of Delta"
+    }, 
+    {
+      "character_ids": [
         "Julia", 
+        "Butterworth", 
         "Howard", 
         "Justin"
-      ]
+      ], 
+      "description": "Family (Julia) comes out of stasis and disembark on Romulous, colonization of Romulus begins, egg"
     }, 
     {
       "character_ids": [
         "Riker"
-      ]
+      ], 
+      "description": "Riker and Charles investigate more VEHEMENT attacks"
     }, 
     {
       "character_ids": [
-        "Archimedes", 
-        "Bob"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Riker"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Pete", 
-        "Luke", 
         "Bob", 
-        "Archimedes", 
-        "Victor"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Butterworth", 
-        "Bridget", 
-        "Howard"
-      ]
+        "Archimedes"
+      ], 
+      "description": "Bob visits Archimedes, Marvin leaves Delta"
     }, 
     {
       "character_ids": [
         "Riker"
-      ]
+      ], 
+      "description": "VEHEMENT blows up donut at Earth"
     }, 
     {
       "character_ids": [
-        "Archimedes", 
-        "Luke", 
-        "Bob"
-      ]
+        "Bob", 
+        "Archimedes"
+      ], 
+      "description": "Bob clones, Pete and Victor, are online and preparing to leave Delan system"
     }, 
     {
       "character_ids": [
-        "Homer", 
-        "Riker", 
-        "Charles"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Butterworth", 
         "Bridget", 
-        "Howard", 
+        "Butterworth", 
+        "Howard"
+      ], 
+      "description": "Howard meets Bridget"
+    }, 
+    {
+      "character_ids": [
+        "Riker"
+      ], 
+      "description": "Communication to Homer detected"
+    }, 
+    {
+      "character_ids": [
+        "Bob", 
+        "Archimedes"
+      ], 
+      "description": "Luke contacts Bob from Kappa Ceti"
+    }, 
+    {
+      "character_ids": [
+        "Riker"
+      ], 
+      "description": "Homer discovered infected by VEHEMENT and cleaned. VEHEMENT tech HQ discovered"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Valter", 
+        "Butterworth", 
         "St\u00e9phane", 
-        "Valter"
-      ]
+        "Howard"
+      ], 
+      "description": "Raptors break through fence at Vulcan settlement, discovered to be capable of digging"
     }, 
     {
       "character_ids": [
         "Bashful"
-      ]
+      ], 
+      "description": "Bashful discovers advanced tech at GL877, is attacked and self"
     }, 
     {
       "character_ids": [
-        "Howard", 
-        "St\u00e9phane", 
-        "Bob", 
-        "Justin", 
+        "Bridget", 
         "Julia", 
-        "Bridget"
-      ]
+        "St\u00e9phane", 
+        "Howard", 
+        "Justin"
+      ], 
+      "description": "Howard rolls out AMI"
     }, 
     {
       "character_ids": [
         "Bill", 
         "Henry"
-      ]
+      ], 
+      "description": "Linus and Henry arrive back at Bill, joins Bobnet, reports on KKP (Klown Kar Planet), and introduces Henry (Australian replicant) to Bobnet"
     }, 
     {
       "character_ids": [
-        "Archimedes", 
-        "Bob"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill", 
-        "Henry", 
-        "Linus"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Butterworth", 
-        "Bridget", 
-        "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Riker"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Hal"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Riker"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Archimedes", 
-        "Bob"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Charles", 
-        "Howard", 
-        "St\u00e9phane", 
         "Bob", 
-        "Bridget"
-      ]
+        "Archimedes"
+      ], 
+      "description": "Buster has mated, tents have become widespread, Deltan population growth issues lead to gang activity"
     }, 
     {
       "character_ids": [
         "Bill", 
-        "Ralph", 
+        "Elmer", 
+        "Henry"
+      ], 
+      "description": "Strike on 82 Eridani against Medeiros launched, Henry joins large group VR session, Bill tests first Bullwinkle prototype"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Butterworth", 
+        "Howard"
+      ], 
+      "description": "Howard and Bridget produce acceptable batch of whiskey"
+    }, 
+    {
+      "character_ids": [
+        "Bill"
+      ], 
+      "description": "Bill demonstrates working asteroid moving system"
+    }, 
+    {
+      "character_ids": [
+        "Riker"
+      ], 
+      "description": "Homer suicides"
+    }, 
+    {
+      "character_ids": [
+        "Hal"
+      ], 
+      "description": "Hal receives Bashful's last transmission, cautiously closes in on GL877, finds \"others\" home system, is attacked with gamma ray emitter and self"
+    }, 
+    {
+      "character_ids": [
+        "Bill"
+      ], 
+      "description": "Bill hosts Bobmoot to discuss Others"
+    }, 
+    {
+      "character_ids": [
+        "Riker"
+      ], 
+      "description": "Riker finds VEHEMENT leader"
+    }, 
+    {
+      "character_ids": [
+        "Bob", 
+        "Archimedes"
+      ], 
+      "description": "Deltan riot occurs, Bob and Archimedes begin plans to repopulate other villages"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "St\u00e9phane", 
+        "Howard"
+      ], 
+      "description": "Howard chats with Bridget and St\u00e9phane about distillery business and life as a replicant"
+    }, 
+    {
+      "character_ids": [
         "Riker", 
-        "Vickers", 
-        "Charles"
-      ]
+        "Vickers"
+      ], 
+      "description": "Riker takes out VEHEMENT leader, Vickers, and HQ after learning that Vickers invented replicant systems"
     }, 
     {
       "character_ids": [
         "Bill"
-      ]
+      ], 
+      "description": "Garfield tests flying android"
     }, 
     {
       "character_ids": [
         "Bridget", 
         "Howard"
-      ]
+      ], 
+      "description": "Howard and Riker begin looking into replicant tech"
     }, 
     {
       "character_ids": [
-        "Rudy"
-      ]
+        "Rudy", 
+        "Edwin"
+      ], 
+      "description": "Rudy and Edwin arrive at KKP with colonists"
     }, 
     {
       "character_ids": [
-        "Archimedes", 
-        "Bob"
-      ]
+        "Bob", 
+        "Archimedes"
+      ], 
+      "description": "Deltan gangs leave to form second village"
     }, 
     {
       "character_ids": [
         "Bridget", 
-        "Howard", 
-        "St\u00e9phane"
-      ]
+        "St\u00e9phane", 
+        "Howard"
+      ], 
+      "description": "Bridget surgery"
     }, 
     {
       "character_ids": [
         "Butterworth", 
-        "Pete", 
-        "Marcus", 
         "Mulder"
-      ]
+      ], 
+      "description": "Colonization of Poseidon begins with Mulder overseeing"
     }, 
     {
       "character_ids": [
-        "Milton", 
-        "Jeffrey", 
-        "Hank", 
-        "Loki"
-      ]
+        "Loki", 
+        "Verne"
+      ], 
+      "description": "Strike on 82 Eridani takes place with Loki leading, Bobs claim system, discover 2 habitable planets and 1 moon"
     }, 
     {
       "character_ids": [
         "Bridget", 
-        "Howard", 
-        "St\u00e9phane"
-      ]
+        "St\u00e9phane", 
+        "Howard"
+      ], 
+      "description": "Bridget and Stephane married. Howard leaves Vulcan, Dexter takes over"
+    }, 
+    {
+      "character_ids": [
+        "Bill"
+      ], 
+      "description": "82 Eridani report reaches Bill, talk of looking for Bender begins"
+    }, 
+    {
+      "character_ids": [
+        "Hal"
+      ], 
+      "description": "Hal returns to GL877, scouts and heads to GL 54"
+    }, 
+    {
+      "character_ids": [
+        "Hal"
+      ], 
+      "description": "Hal receives message that others group is headed to GL 54"
+    }, 
+    {
+      "character_ids": [
+        "Bill"
+      ], 
+      "description": "Bill makes contact with others via probe in GL 54"
+    }, 
+    {
+      "character_ids": [
+        "Bob", 
+        "Archimedes"
+      ], 
+      "description": "Minor update on Deltans"
+    }, 
+    {
+      "character_ids": [
+        "Bill"
+      ], 
+      "description": "Bill holds moot to discuss Others and reveal images"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Butterworth", 
+        "Howard"
+      ], 
+      "description": "FAITH colony separates church from state, Cranston steps down"
     }, 
     {
       "character_ids": [
         "Bill", 
-        "Luke", 
-        "Victor"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Thor", 
-        "Hal"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Hal"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Archimedes", 
         "Bob"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Butterworth", 
-        "Bridget", 
-        "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill"
-      ]
+      ], 
+      "description": "Others launch mission to NN 4285"
     }, 
     {
       "character_ids": [
         "Claude"
-      ]
+      ], 
+      "description": "Claude arrives in Gamma Pavonis"
     }, 
     {
       "character_ids": [
+        "Howard", 
         "Butterworth", 
         "Oliver"
-      ]
+      ], 
+      "description": "Oliver (Bill clone) comes online in Alpha Centauri"
     }, 
     {
       "character_ids": [
         "Mulder"
-      ]
+      ], 
+      "description": "Mulder leaves Poseidon"
     }, 
     {
       "character_ids": [
         "Jacques"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Butterworth", 
-        "Bill"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Archimedes", 
-        "Bob"
-      ]
+      ], 
+      "description": "Jacques discovers intelligent life (Pavs) at Delta Pavonis"
     }, 
     {
       "character_ids": [
         "Bill", 
-        "Oliver", 
-        "Mario"
-      ]
+        "Butterworth"
+      ], 
+      "description": "Bill holds another moot to discuss Others"
     }, 
     {
       "character_ids": [
-        "Bill", 
-        "Bridget", 
-        "Howard", 
-        "St\u00e9phane", 
-        "Garfield"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Jacques"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Garfield", 
-        "Butterworth", 
-        "Bill", 
-        "Howard", 
-        "Bridget"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Butterworth", 
-        "Bridget", 
-        "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Archimedes", 
-        "Bob"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Butterworth", 
-        "Bill"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Phineas"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bridget", 
-        "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Archimedes", 
         "Bob", 
-        "Pete"
-      ]
+        "Archimedes"
+      ], 
+      "description": "Archimedes becomes grandfather"
+    }, 
+    {
+      "character_ids": [
+        "Bill"
+      ], 
+      "description": "Others launch convoy to Delta Pavonis"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "St\u00e9phane", 
+        "Howard"
+      ], 
+      "description": "Howard explores HIP 14101, human android prototype experimenting begins prior to Stephane's death"
+    }, 
+    {
+      "character_ids": [
+        "Jacques"
+      ], 
+      "description": "Jacques catalogs Pav planet and society"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Butterworth", 
+        "Howard"
+      ], 
+      "description": "Howard uses human android prototype to attend Stephane's funeral"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Butterworth", 
+        "Howard"
+      ], 
+      "description": "Howard talks Butterworth into being replicated upon death"
+    }, 
+    {
+      "character_ids": [
+        "Bob", 
+        "Archimedes"
+      ], 
+      "description": "Bob uses Deltan android on Delta Eridani"
     }, 
     {
       "character_ids": [
         "Bill", 
-        "Archimedes"
-      ]
+        "Butterworth"
+      ], 
+      "description": "First real battle with Others takes place at Delta Pavonis, Others decide to go after Sol and Epsilon Eridani next"
+    }, 
+    {
+      "character_ids": [
+        "Phineas", 
+        "Ferb"
+      ], 
+      "description": "Collection of 20,000 Pavs takes place"
+    }, 
+    {
+      "character_ids": [
+        "Bill"
+      ], 
+      "description": "Bill gets an idea to deal with the Others"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Howard"
+      ], 
+      "description": "Howard uses realistic android to meet Bridget"
+    }, 
+    {
+      "character_ids": [
+        "Bob", 
+        "Archimedes", 
+        "Pete"
+      ], 
+      "description": "Archimedes' wife Diana dies"
+    }, 
+    {
+      "character_ids": [
+        "Archimedes", 
+        "Bill", 
+        "Jacques"
+      ], 
+      "description": "Others finish stripping Delta Pavonis, Bill wakes 8 Pavs to decide if they want to go back to their home planet (Aszjan) or find a new one"
     }
   ], 
   "scenes_locations": [

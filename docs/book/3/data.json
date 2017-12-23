@@ -2,281 +2,186 @@
   "characters": [
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Bob"
-      ], 
       "id": "Bob", 
       "name": "Bob", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Bill"
-      ], 
       "id": "Bill", 
       "name": "Bill", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Garfield"
-      ], 
       "id": "Garfield", 
       "name": "Garfield", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Calvin"
-      ], 
       "id": "Calvin", 
       "name": "Calvin", 
       "other_names": []
     }, 
     {
       "affiliation": "Calvin", 
-      "all_names": [
-        "Bart"
-      ], 
       "id": "Bart", 
       "name": "Bart", 
       "other_names": []
     }, 
     {
       "affiliation": "Calvin", 
-      "all_names": [
-        "Thor"
-      ], 
       "id": "Thor", 
       "name": "Thor", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Goku"
-      ], 
       "id": "Goku", 
       "name": "Goku", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Linus"
-      ], 
       "id": "Linus", 
       "name": "Linus", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Mulder"
-      ], 
       "id": "Mulder", 
       "name": "Mulder", 
       "other_names": []
     }, 
     {
       "affiliation": "Mulder", 
-      "all_names": [
-        "Jonny"
-      ], 
       "id": "Jonny", 
       "name": "Jonny", 
       "other_names": []
     }, 
     {
       "affiliation": "Mulder", 
-      "all_names": [
-        "Skinner"
-      ], 
       "id": "Skinner", 
       "name": "Skinner", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Oliver"
-      ], 
       "id": "Oliver", 
       "name": "Oliver", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Khan"
-      ], 
       "id": "Khan", 
       "name": "Khan", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Elmer"
-      ], 
       "id": "Elmer", 
       "name": "Elmer", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Hannibal"
-      ], 
       "id": "Hannibal", 
       "name": "Hannibal", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Tom"
-      ], 
       "id": "Tom", 
       "name": "Tom", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Barney"
-      ], 
       "id": "Barney", 
       "name": "Barney", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Fred"
-      ], 
       "id": "Fred", 
       "name": "Fred", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Kyle"
-      ], 
       "id": "Kyle", 
       "name": "Kyle", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Ned"
-      ], 
       "id": "Ned", 
       "name": "Ned", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Mario"
-      ], 
       "id": "Mario", 
       "name": "Mario", 
       "other_names": []
     }, 
     {
       "affiliation": "Mario", 
-      "all_names": [
-        "Bashful"
-      ], 
       "id": "Bashful", 
       "name": "Bashful", 
       "other_names": []
     }, 
     {
       "affiliation": "Mario", 
-      "all_names": [
-        "Dopey"
-      ], 
       "id": "Dopey", 
       "name": "Dopey", 
       "other_names": []
     }, 
     {
       "affiliation": "Mario", 
-      "all_names": [
-        "Sleepy"
-      ], 
       "id": "Sleepy", 
       "name": "Sleepy", 
       "other_names": []
     }, 
     {
       "affiliation": "Mario", 
-      "all_names": [
-        "Hungry"
-      ], 
       "id": "Hungry", 
       "name": "Hungry", 
       "other_names": []
     }, 
     {
       "affiliation": "Mario", 
-      "all_names": [
-        "Hal"
-      ], 
       "id": "Hal", 
       "name": "Hal", 
       "other_names": []
     }, 
     {
       "affiliation": "Mario", 
-      "all_names": [
-        "Claude"
-      ], 
       "id": "Claude", 
       "name": "Claude", 
       "other_names": []
     }, 
     {
       "affiliation": "Mario", 
-      "all_names": [
-        "Jacques"
-      ], 
       "id": "Jacques", 
       "name": "Jacques", 
       "other_names": []
     }, 
     {
       "affiliation": "Jacques", 
-      "all_names": [
-        "Phineas"
-      ], 
       "id": "Phineas", 
       "name": "Phineas", 
       "other_names": []
     }, 
     {
       "affiliation": "Jacques", 
-      "all_names": [
-        "Ferb"
-      ], 
       "id": "Ferb", 
       "name": "Ferb", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Riker", 
-        "Will", 
-        "William"
-      ], 
       "id": "Riker", 
       "name": "Riker", 
       "other_names": [
@@ -286,46 +191,30 @@
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Homer"
-      ], 
       "id": "Homer", 
       "name": "Homer", 
       "other_names": []
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Ralph"
-      ], 
       "id": "Ralph", 
       "name": "Ralph", 
       "other_names": []
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Charles"
-      ], 
       "id": "Charles", 
       "name": "Charles", 
       "other_names": []
     }, 
     {
       "affiliation": "Charles", 
-      "all_names": [
-        "Howard"
-      ], 
       "id": "Howard", 
       "name": "Howard", 
       "other_names": []
     }, 
     {
       "affiliation": "Charles", 
-      "all_names": [
-        "Dexter", 
-        "Dex"
-      ], 
       "id": "Dexter", 
       "name": "Dexter", 
       "other_names": [
@@ -334,28 +223,18 @@
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Rudy"
-      ], 
       "id": "Rudy", 
       "name": "Rudy", 
       "other_names": []
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Edwin"
-      ], 
       "id": "Edwin", 
       "name": "Edwin", 
       "other_names": []
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Arthur", 
-        "Eeyore"
-      ], 
       "id": "Arthur", 
       "name": "Arthur", 
       "other_names": [
@@ -364,82 +243,54 @@
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Bert"
-      ], 
       "id": "Bert", 
       "name": "Bert", 
       "other_names": []
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Ernie"
-      ], 
       "id": "Ernie", 
       "name": "Ernie", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Milo"
-      ], 
       "id": "Milo", 
       "name": "Milo", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Marvin"
-      ], 
       "id": "Marvin", 
       "name": "Marvin", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Luke"
-      ], 
       "id": "Luke", 
       "name": "Luke", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Bender"
-      ], 
       "id": "Bender", 
       "name": "Bender", 
       "other_names": []
     }, 
     {
       "affiliation": "Bob", 
-      "all_names": [
-        "Victor"
-      ], 
       "id": "Victor", 
       "name": "Victor", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Icarus"
-      ], 
       "id": "Icarus", 
       "name": "Icarus", 
       "other_names": []
     }, 
     {
       "affiliation": "Bill", 
-      "all_names": [
-        "Daedalus", 
-        "Dae"
-      ], 
       "id": "Daedalus", 
       "name": "Daedalus", 
       "other_names": [
@@ -448,154 +299,102 @@
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Mack"
-      ], 
       "id": "Mack", 
       "name": "Mack", 
       "other_names": []
     }, 
     {
       "affiliation": "Riker", 
-      "all_names": [
-        "Verne"
-      ], 
       "id": "Verne", 
       "name": "Verne", 
       "other_names": []
     }, 
     {
       "affiliation": "Mulder", 
-      "all_names": [
-        "Marcus"
-      ], 
       "id": "Marcus", 
       "name": "Marcus", 
       "other_names": []
     }, 
     {
       "affiliation": "Khan", 
-      "all_names": [
-        "Loki"
-      ], 
       "id": "Loki", 
       "name": "Loki", 
       "other_names": []
     }, 
     {
       "affiliation": "Jacques", 
-      "all_names": [
-        "Herschel"
-      ], 
       "id": "Herschel", 
       "name": "Herschel", 
       "other_names": []
     }, 
     {
       "affiliation": "Jacques", 
-      "all_names": [
-        "Neil"
-      ], 
       "id": "Neil", 
       "name": "Neil", 
       "other_names": []
     }, 
     {
       "affiliation": "Marvin", 
-      "all_names": [
-        "Pete"
-      ], 
       "id": "Pete", 
       "name": "Pete", 
       "other_names": []
     }, 
     {
       "affiliation": "Marvin", 
-      "all_names": [
-        "Victor"
-      ], 
       "id": "Victor", 
       "name": "Victor", 
       "other_names": []
     }, 
     {
       "affiliation": "Bart", 
-      "all_names": [
-        "Isaac"
-      ], 
       "id": "Isaac", 
       "name": "Isaac", 
       "other_names": []
     }, 
     {
       "affiliation": "Calvin", 
-      "all_names": [
-        "Bruce"
-      ], 
       "id": "Bruce", 
       "name": "Bruce", 
       "other_names": []
     }, 
     {
       "affiliation": "Zeke", 
-      "all_names": [
-        "Zeke"
-      ], 
       "id": "Zeke", 
       "name": "Zeke", 
       "other_names": []
     }, 
     {
       "affiliation": "Jeffrey", 
-      "all_names": [
-        "Jeffrey"
-      ], 
       "id": "Jeffrey", 
       "name": "Jeffrey", 
       "other_names": []
     }, 
     {
       "affiliation": "Milton", 
-      "all_names": [
-        "Milton"
-      ], 
       "id": "Milton", 
       "name": "Milton", 
       "other_names": []
     }, 
     {
       "affiliation": "Yoshi", 
-      "all_names": [
-        "Yoshi"
-      ], 
       "id": "Yoshi", 
       "name": "Yoshi", 
       "other_names": []
     }, 
     {
       "affiliation": "Tony", 
-      "all_names": [
-        "Tony"
-      ], 
       "id": "Tony", 
       "name": "Tony", 
       "other_names": []
     }, 
     {
       "affiliation": "Jackson", 
-      "all_names": [
-        "Jackson"
-      ], 
       "id": "Jackson", 
       "name": "Jackson", 
       "other_names": []
     }, 
     {
       "affiliation": "Sam", 
-      "all_names": [
-        "Sam", 
-        "Exodus-3"
-      ], 
       "id": "Sam", 
       "name": "Sam", 
       "other_names": [
@@ -604,19 +403,12 @@
     }, 
     {
       "affiliation": "Hank", 
-      "all_names": [
-        "Hank"
-      ], 
       "id": "Hank", 
       "name": "Hank", 
       "other_names": []
     }, 
     {
       "affiliation": "Howard", 
-      "all_names": [
-        "Bridget", 
-        "Sheehy"
-      ], 
       "id": "Bridget", 
       "name": "Bridget", 
       "other_names": [
@@ -625,10 +417,6 @@
     }, 
     {
       "affiliation": "USE", 
-      "all_names": [
-        "Colonel Butterworth", 
-        "Butterworth"
-      ], 
       "id": "Butterworth", 
       "name": "Colonel Butterworth", 
       "other_names": [
@@ -637,11 +425,6 @@
     }, 
     {
       "affiliation": "USE", 
-      "all_names": [
-        "St\u00e9phane Brodeur", 
-        "Chief Brodeur", 
-        "St\u00e9phane"
-      ], 
       "id": "St\u00e9phane", 
       "name": "St\u00e9phane Brodeur", 
       "other_names": [
@@ -651,10 +434,6 @@
     }, 
     {
       "affiliation": "Family", 
-      "all_names": [
-        "Julia Hendricks", 
-        "Julia"
-      ], 
       "id": "Julia", 
       "name": "Julia Hendricks", 
       "other_names": [
@@ -663,11 +442,6 @@
     }, 
     {
       "affiliation": "Family", 
-      "all_names": [
-        "Justin Hendricks", 
-        "Justin", 
-        "Cadet"
-      ], 
       "id": "Justin", 
       "name": "Justin Hendricks", 
       "other_names": [
@@ -677,19 +451,12 @@
     }, 
     {
       "affiliation": "Deltans", 
-      "all_names": [
-        "Archimedes"
-      ], 
       "id": "Archimedes", 
       "name": "Archimedes", 
       "other_names": []
     }, 
     {
       "affiliation": "FAITH", 
-      "all_names": [
-        "Captain Richards", 
-        "Richards"
-      ], 
       "id": "Richards", 
       "name": "Captain Richards", 
       "other_names": [
@@ -698,10 +465,6 @@
     }, 
     {
       "affiliation": "Japanese colony", 
-      "all_names": [
-        "General Kiroshi", 
-        "Kiroshi"
-      ], 
       "id": "Kiroshi", 
       "name": "General Kiroshi", 
       "other_names": [
@@ -710,25 +473,16 @@
     }, 
     {
       "affiliation": "FAITH", 
-      "all_names": [
-        "Dr. Landers", 
-        "Dr. Landers", 
-        "Landers"
-      ], 
       "id": "Landers", 
       "name": "Dr. Landers", 
       "other_names": [
         "Dr. Landers", 
-        "Landers"
+        "Landers", 
+        "doc"
       ]
     }, 
     {
       "affiliation": "FAITH", 
-      "all_names": [
-        "Dr. Doucette", 
-        "Dr. Doucette", 
-        "Doucette"
-      ], 
       "id": "Doucette", 
       "name": "Dr. Doucette", 
       "other_names": [
@@ -738,19 +492,12 @@
     }, 
     {
       "affiliation": "Deltans", 
-      "all_names": [
-        "Moses"
-      ], 
       "id": "Moses", 
       "name": "Moses", 
       "other_names": []
     }, 
     {
       "affiliation": "Deltans", 
-      "all_names": [
-        "Fred (Deltan)", 
-        "Fred"
-      ], 
       "id": "Fred_Deltan", 
       "name": "Fred (Deltan)", 
       "other_names": [
@@ -759,10 +506,6 @@
     }, 
     {
       "affiliation": "Deltans", 
-      "all_names": [
-        "Fred (Carleon)", 
-        "Fred"
-      ], 
       "id": "Fred_Carleon", 
       "name": "Fred (Carleon)", 
       "other_names": [
@@ -771,55 +514,36 @@
     }, 
     {
       "affiliation": "Poseidon Revolution", 
-      "all_names": [
-        "Kal"
-      ], 
       "id": "Kal", 
       "name": "Kal", 
       "other_names": []
     }, 
     {
       "affiliation": "Poseidon Revolution", 
-      "all_names": [
-        "Denu"
-      ], 
       "id": "Denu", 
       "name": "Denu", 
       "other_names": []
     }, 
     {
       "affiliation": "Poseidon Revolution", 
-      "all_names": [
-        "Gina"
-      ], 
       "id": "Gina", 
       "name": "Gina", 
       "other_names": []
     }, 
     {
       "affiliation": "Poseidon Revolution", 
-      "all_names": [
-        "Vinnie"
-      ], 
       "id": "Vinnie", 
       "name": "Vinnie", 
       "other_names": []
     }, 
     {
       "affiliation": "VEHEMENT", 
-      "all_names": [
-        "Vickers"
-      ], 
       "id": "Vickers", 
       "name": "Vickers", 
       "other_names": []
     }, 
     {
       "affiliation": "Australian Replicant", 
-      "all_names": [
-        "Henry Roberts", 
-        "Henry"
-      ], 
       "id": "Henry", 
       "name": "Henry Roberts", 
       "other_names": [
@@ -828,9 +552,6 @@
     }, 
     {
       "affiliation": "Spitsbergans", 
-      "all_names": [
-        "Valter"
-      ], 
       "id": "Valter", 
       "name": "Valter", 
       "other_names": []
@@ -839,493 +560,536 @@
   "scenes": [
     {
       "character_ids": [
+        "Bob", 
         "Archimedes", 
         "Fred_Carleon", 
-        "Bob", 
         "Fred_Deltan"
-      ]
+      ], 
+      "description": "Start of third book, Bob hunts with Deltans via android, including Arnold's son Donald. group is accosted by a group from other village, Caerleon, led by Fred"
     }, 
     {
       "character_ids": [
-        "Butterworth", 
         "Bridget", 
+        "Butterworth", 
+        "Howard"
+      ], 
+      "description": "Howard goes to Bridget for consolation after battle with Others"
+    }, 
+    {
+      "character_ids": [
+        "Marcus", 
+        "Gina", 
+        "Kal"
+      ], 
+      "description": "Marcus discusses concerning governing on Poseidon with Kal and Gina"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Howard"
+      ], 
+      "description": "Howard is in a relationship with Bridget"
+    }, 
+    {
+      "character_ids": [
+        "Bob", 
+        "Fred_Carleon", 
+        "Fred_Deltan"
+      ], 
+      "description": "Bob executes ploy to outsmart Fred's group"
+    }, 
+    {
+      "character_ids": [
+        "Bill"
+      ], 
+      "description": "Bill is capable of moving planets, has cloned Icarus and Daedalus"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Howard"
+      ], 
+      "description": "Butterworth suicides after being diagnosed with dementia,"
+    }, 
+    {
+      "character_ids": [
+        "Marcus", 
+        "Denu", 
+        "Kal", 
+        "Vinnie", 
+        "Gina"
+      ], 
+      "description": "Marcus uses android for the first time, helps plot revolution on Poseidon"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Howard"
+      ], 
+      "description": "Howard is confronted by Bridget's daughter"
+    }, 
+    {
+      "character_ids": [
+        "Bob", 
+        "Archimedes", 
+        "Fred_Carleon", 
+        "Fred_Deltan"
+      ], 
+      "description": "Bob avoids Fred's group while solo hunting"
+    }, 
+    {
+      "character_ids": [
+        "Bill"
+      ], 
+      "description": "Mario reports to Bill on further discovery of Others' system stripping"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Charles", 
         "Howard", 
         "Riker", 
-        "Dexter"
-      ]
+        "Justin"
+      ], 
+      "description": "Julia dies, Riker uses android to attend funeral"
     }, 
     {
       "character_ids": [
         "Marcus", 
-        "Kal", 
-        "Gina"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bridget", 
-        "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Fred_Carleon", 
-        "Bob", 
-        "Fred_Deltan"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bridget", 
-        "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Denu", 
         "Gina", 
         "Kal", 
-        "Bob", 
-        "Vinnie", 
-        "Marcus"
-      ]
+        "Vinnie"
+      ], 
+      "description": "Marcus unveils aerial cities to revolutionaries"
     }, 
     {
       "character_ids": [
         "Bridget", 
         "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Archimedes", 
-        "Fred_Carleon", 
-        "Bob", 
-        "Fred_Deltan"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bridget", 
-        "Riker", 
-        "Justin", 
-        "Charles"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Vinnie", 
-        "Marcus", 
-        "Kal", 
-        "Gina"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bridget", 
-        "Howard"
-      ]
+      ], 
+      "description": "Howard meets some of Bridget's friends over dinner"
     }, 
     {
       "character_ids": [
         "Riker"
-      ]
+      ], 
+      "description": "Charles reports material shortages to Riker, Riker tries to sell UN on putting Earth population in stasis"
     }, 
     {
       "character_ids": [
         "Marcus", 
         "Kal"
-      ]
+      ], 
+      "description": "Marcus moves some Poseidon residences to aerial cities"
     }, 
     {
       "character_ids": [
         "Icarus"
-      ]
+      ], 
+      "description": "Icarus and Daedalus are in transit, likely to Others' home system with planet and moon"
     }, 
     {
       "character_ids": [
         "Mack"
-      ]
+      ], 
+      "description": "Mack arrives with first colonists at 82 Eridani. Vancouver colonists settle on Asgard (outer, steppe), Japanese settle on Takama"
     }, 
     {
       "character_ids": [
-        "Vinnie", 
         "Marcus", 
         "Denu", 
+        "Kal", 
+        "Vinnie"
+      ], 
+      "description": "Poseidon council cuts off aerial residents, blows up Marcus's decoy"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Howard"
+      ], 
+      "description": "Howard discovers life in atmosphere of a gas giant at HIP 14101, brings Bridget into his VR using VR gear"
+    }, 
+    {
+      "character_ids": [
+        "Bill", 
+        "Isaac"
+      ], 
+      "description": "Mack destroyed by Medeiros during a conversation with Bill, his matrix survives"
+    }, 
+    {
+      "character_ids": [
+        "Herschel"
+      ], 
+      "description": "Herschel and Neil investigate 2 Others cargo ship remains at Delta Pavonis, find non"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Howard"
+      ], 
+      "description": "Bridget dies, children block efforts to replicate her"
+    }, 
+    {
+      "character_ids": [
+        "Herschel"
+      ], 
+      "description": "Herschel and Neil continue investigating Others wreckage"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Bill", 
+        "Richards", 
+        "Kiroshi"
+      ], 
+      "description": "Bill begins dealing with Medeiros at 82 Eridani"
+    }, 
+    {
+      "character_ids": [
+        "Marcus", 
+        "Gina", 
         "Kal"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bridget", 
-        "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Isaac", 
-        "Bill", 
-        "Oliver"
-      ]
+      ], 
+      "description": "Poseidon council strikes at revolutionaries, Marcus strikes back"
     }, 
     {
       "character_ids": [
         "Herschel"
-      ]
+      ], 
+      "description": "Herschel and Neil power up Others cargo ship, report to Bill"
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Herschel"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill", 
-        "Bridget", 
-        "Richards", 
-        "Kiroshi"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Marcus", 
-        "Kal", 
-        "Gina"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Herschel"
-      ]
-    }, 
-    {
-      "character_ids": [
+        "Bob", 
         "Archimedes", 
         "Fred_Carleon", 
-        "Bob", 
         "Fred_Deltan"
-      ]
+      ], 
+      "description": "Bob catches Fred alone, threatens him"
     }, 
     {
       "character_ids": [
         "Bridget", 
         "Howard"
-      ]
+      ], 
+      "description": "Howard deals with the trial"
     }, 
     {
       "character_ids": [
         "Bill", 
         "Richards", 
         "Kiroshi"
-      ]
+      ], 
+      "description": "Bill takes out Medeiros, brings Mack back online"
+    }, 
+    {
+      "character_ids": [
+        "Kal", 
+        "Marcus", 
+        "Denu", 
+        "Gina"
+      ], 
+      "description": "Marcus seems to have won the war against the council"
+    }, 
+    {
+      "character_ids": [
+        "Bill"
+      ], 
+      "description": "Bill and Garfield test prototype of Others power source"
+    }, 
+    {
+      "character_ids": [
+        "Herschel"
+      ], 
+      "description": "Bill holds moot to discuss Herschel & Neil's findings, announces some monitoring drones have been found by Others"
+    }, 
+    {
+      "character_ids": [
+        "Bob", 
+        "Archimedes", 
+        "Fred_Carleon", 
+        "Fred_Deltan"
+      ], 
+      "description": "Fred and co. kidnap Archimedes, Buster kills Fred during rescue"
     }, 
     {
       "character_ids": [
         "Marcus", 
         "Denu", 
         "Kal", 
-        "Gina"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill", 
-        "Bob", 
-        "Herschel", 
-        "Neil"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Archimedes", 
-        "Fred_Carleon", 
-        "Bob", 
-        "Fred_Deltan"
-      ]
-    }, 
-    {
-      "character_ids": [
         "Vinnie", 
-        "Marcus", 
-        "Denu", 
-        "Kal", 
         "Gina"
-      ]
+      ], 
+      "description": "Marcus and revolutionaries discuss fate of the council and future plans for Poseidon"
     }, 
     {
       "character_ids": [
-        "Riker", 
-        "Neil", 
-        "Herschel"
-      ]
+        "Riker"
+      ], 
+      "description": "Riker informs UN of the Others' ship, Bellerophon"
     }, 
     {
       "character_ids": [
         "Bridget", 
         "Howard"
-      ]
+      ], 
+      "description": "Judge rules in favor of Bridget's will, Rosie attempts to sabotage Bridget's stasis pod, Howard has Bill replicate Bridget during the trial"
     }, 
     {
       "character_ids": [
         "Herschel"
-      ]
+      ], 
+      "description": "Herschel and Neil are en route to Earth in large Others ship"
     }, 
     {
       "character_ids": [
-        "Marcus", 
         "Kal", 
+        "Marcus", 
         "Gina"
-      ]
+      ], 
+      "description": "Marcus has no further duties on Poseidon, considers exploring the ocean"
     }, 
     {
       "character_ids": [
-        "Archimedes", 
         "Bob", 
+        "Archimedes", 
         "Fred_Deltan"
-      ]
+      ], 
+      "description": "Archimedes develops a plan to make peace with the other village"
     }, 
     {
       "character_ids": [
         "Bridget", 
         "Howard"
-      ]
+      ], 
+      "description": "Howard brings Bridget online"
     }, 
     {
       "character_ids": [
         "Bill"
-      ]
+      ], 
+      "description": "Mack has been unable to detect any signs of Medeiros at 82 Eridani, feels they should've found something"
     }, 
     {
       "character_ids": [
         "Icarus"
-      ]
+      ], 
+      "description": "Icarus and Daedalus are approaching Others'home system"
     }, 
     {
       "character_ids": [
         "Bridget", 
         "Howard", 
         "Henry"
-      ]
+      ], 
+      "description": "Bridget and Howard check out Odin life via flying android. Bridget attends her first moot"
     }, 
     {
       "character_ids": [
-        "Phineas", 
         "Jacques"
-      ]
+      ], 
+      "description": "Jacques arrives ahead of Pavs (Phineas and Ferb controlling colony ships) at HIP 84051"
     }, 
     {
       "character_ids": [
         "Bridget", 
         "Howard"
-      ]
+      ], 
+      "description": "Howard and Bridget discuss building a prototype floating city on Odin"
     }, 
     {
       "character_ids": [
         "Riker"
-      ]
+      ], 
+      "description": "Bill, Riker, and Mario develop plans for surveillance of Others' home system"
     }, 
     {
       "character_ids": [
-        "Ferb", 
-        "Phineas", 
-        "Jacques"
-      ]
+        "Jacques", 
+        "Ferb"
+      ], 
+      "description": "Jacques helps Pavs colonize 84051"
     }, 
     {
       "character_ids": [
         "Riker"
-      ]
+      ], 
+      "description": "Mario updates Riker on surveillance of Others"
     }, 
     {
       "character_ids": [
-        "Archimedes", 
-        "Bob"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Riker", 
-        "Dexter", 
-        "Herschel", 
-        "Bill", 
-        "Oliver", 
         "Bob", 
-        "Neil"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Riker"
-      ]
+        "Archimedes"
+      ], 
+      "description": "The two Deltan villages have established trade"
     }, 
     {
       "character_ids": [
         "Bill"
-      ]
+      ], 
+      "description": "Bill holds status update moot, monitoring sphere planned for Sol"
+    }, 
+    {
+      "character_ids": [
+        "Riker"
+      ], 
+      "description": "Last large farm on Earth fails,"
+    }, 
+    {
+      "character_ids": [
+        "Bill"
+      ], 
+      "description": "Bill fails to convince Claude to divert his growing Gamma Pavonis defense Force to Sol"
     }, 
     {
       "character_ids": [
         "Riker", 
         "Justin"
-      ]
+      ], 
+      "description": "Riker attends Justin's 75th birthday party"
     }, 
     {
       "character_ids": [
-        "Bill", 
-        "Oliver", 
-        "Riker"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bridget", 
-        "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Riker", 
-        "Herschel", 
-        "Bill", 
-        "Neil", 
-        "Garfield"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Riker", 
-        "Herschel"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bridget", 
-        "Howard", 
-        "Dexter"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill", 
-        "Garfield", 
-        "Riker"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Archimedes", 
-        "Bob"
-      ]
+        "Bill"
+      ], 
+      "description": "Bill's terraforming of Ragnarok has reached livability stage"
     }, 
     {
       "character_ids": [
         "Bridget", 
         "Howard"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Riker", 
-        "Herschel", 
-        "Neil"
-      ]
+      ], 
+      "description": "Howard and Bridget deploy floating city, Rivendell, in Odin's atmosphere, floating blimp animal promptly attempts to mate with it"
     }, 
     {
       "character_ids": [
         "Riker"
-      ]
+      ], 
+      "description": "Others detected approaching Sol, Herschel and Neil arrive at Sol"
     }, 
     {
       "character_ids": [
-        "Herschel"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill", 
-        "Neil", 
-        "Herschel"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Herschel"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Riker", 
-        "Herschel"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bob"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Icarus"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Bill", 
         "Herschel", 
-        "Neil"
-      ]
+        "Riker"
+      ], 
+      "description": "Herschel, Neil, and Riker discuss the evacuation of Earth"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Howard"
+      ], 
+      "description": "Howard and Bridget attend Howie's wedding"
+    }, 
+    {
+      "character_ids": [
+        "Riker"
+      ], 
+      "description": "Sneak attack on the Others"
+    }, 
+    {
+      "character_ids": [
+        "Bob", 
+        "Archimedes"
+      ], 
+      "description": "Bob comes to terms with Archimedes eventual death"
+    }, 
+    {
+      "character_ids": [
+        "Bridget", 
+        "Howard"
+      ], 
+      "description": "Howard and Bridget reside in floating city on Big Top (KKP's parent planet), discuss adoption"
+    }, 
+    {
+      "character_ids": [
+        "Herschel", 
+        "Riker"
+      ], 
+      "description": "Herschel and Neil arrive at Earth, Herschel comes up with plan to save all remaining humans, begins collecting them"
+    }, 
+    {
+      "character_ids": [
+        "Riker"
+      ], 
+      "description": "Battle with Others begins"
+    }, 
+    {
+      "character_ids": [
+        "Herschel"
+      ], 
+      "description": "Collection of humans at Sol continues"
+    }, 
+    {
+      "character_ids": [
+        "Bill", 
+        "Riker"
+      ], 
+      "description": "Battle with Others continues"
+    }, 
+    {
+      "character_ids": [
+        "Herschel"
+      ], 
+      "description": "Herschel and Neil finish evacuating Earth"
+    }, 
+    {
+      "character_ids": [
+        "Riker"
+      ], 
+      "description": "Battle with others ends"
     }, 
     {
       "character_ids": [
         "Bob"
-      ]
+      ], 
+      "description": "Archimedes dies, Bob leaves Eden"
     }, 
     {
       "character_ids": [
         "Icarus", 
-        "Riker", 
-        "Daedalus", 
-        "Bill", 
-        "Henry", 
-        "Milo", 
-        "Mario"
-      ]
+        "Daedalus"
+      ], 
+      "description": "Icarus and Daedalus destroy GL 877, Others' home star"
     }, 
     {
       "character_ids": [
-        "Jacques"
-      ]
-    }, 
-    {
-      "character_ids": [
-        "Herschel"
-      ]
+        "Herschel", 
+        "Riker"
+      ], 
+      "description": "Post"
     }, 
     {
       "character_ids": [
         "Bob"
-      ]
+      ], 
+      "description": "Bob says goodbye to Eden"
+    }, 
+    {
+      "character_ids": [
+        "Bill", 
+        "Henry"
+      ], 
+      "description": "Bobs discuss formally announcing that they are not, collectively, humanity's slaves"
+    }, 
+    {
+      "character_ids": [
+        "Jacques"
+      ], 
+      "description": "Jacques updates Pavs on the defeat of the Others"
+    }, 
+    {
+      "character_ids": [
+        "Herschel"
+      ], 
+      "description": "Herschel and Neil leave Sol with the rest of humanity, heading for 82 Eridani"
+    }, 
+    {
+      "character_ids": [
+        "Bob"
+      ], 
+      "description": "Bob returns to Earth for a pilgrimage, then head out to the stars"
     }
   ], 
   "scenes_locations": [

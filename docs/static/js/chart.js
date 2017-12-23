@@ -33,7 +33,22 @@ function get_data(datafile, parent) {
             });
         });
 
-        // Remove all the temporary labels.
+
+        var tip = d3.tip()
+          .attr('class', 'd3-tip')
+          .offset([-10, 0])
+          .html(function(d) {
+            return "<span style='color:red'>" + d.description + "</span>";
+          });
+
+        var tip2 = d3.tip()
+          .attr('class', 'd3-tip')
+          .offset([-10, 0])
+          .html(function(d) {
+            return "<span style='color:blue'>" + d.character.name + "</span>";
+          });
+
+            // Remove all the temporary labels.
         svg.selectAll('text.temp').remove();
 
         // Do the layout
@@ -50,11 +65,25 @@ function get_data(datafile, parent) {
         // Get the extent so we can re-size the SVG appropriately.
         svg.attr('height', narrative.extent()[1]);
 
+        function strongLinkCharacter(character){
+            svg.selectAll('.link ').filter('.'+character.id).call(function(l){
+                       l.attr('stroke-opacity', 1);
+                   });
+        }
+        function transparentAllLinks(){
+            svg.selectAll('.link')
+                    .call(function(l){
+                       l.attr('stroke-opacity', 0.1);
+                   });
+        }
+        function strongAllLinks(){
+            svg.selectAll('.link')
+                    .call(function(l){
+                       l.attr('stroke-opacity', 1);
+                   });
+        }
 
-        // Define the div for the tooltip
-        var div = d3.select("body").append("div")
-            .attr("class", "tooltip")
-            .style("opacity", 0);
+        svg.on('click', strongAllLinks);
 
         // Draw the scenes
         svg.selectAll('.scene').data(narrative.scenes()).enter()
@@ -77,13 +106,17 @@ function get_data(datafile, parent) {
             .attr('x', 0)
             .attr('rx', 3)
             .attr('ry', 3)
-            .on('click', function(d) {
-                div.transition()
-                    .duration(200)
-                    .style("opacity", .9);
-                div	.html(d.description)
-                    .style("left", (d3.event.pageX) + "px")
-                    .style("top", (d3.event.pageY - 28) + "px");
+            .on('mouseover', tip.show)
+            .on('mouseout', tip.hide)
+            .on('click', function(d){
+                if (this.hasAttribute('highlighted')) {
+                    strongAllLinks();
+                    this.removeAttribute('highlighted');
+                }else{
+                    transparentAllLinks();
+                    d.characters.forEach(strongLinkCharacter);
+                    this.setAttribute('highlighted', true)
+                }
             });
 
         // Draw appearances
@@ -109,7 +142,23 @@ function get_data(datafile, parent) {
             .attr('class', function (d) {
                 return 'link ' + d.character.id;
             })
-            .attr('d', narrative.link());
+            .attr('d', narrative.link())
+            .on('click', function(d){
+                if (this.hasAttribute('highlighted')) {
+                    strongAllLinks();
+                    this.removeAttribute('highlighted');
+                }else{
+                    transparentAllLinks();
+                    strongLinkCharacter(d.character);
+                    this.setAttribute('highlighted', true)
+                }
+            })
+            .on('mouseover', tip2.show)
+            .on('mouseout', tip2.hide);
+
+
+        svg.call(tip);
+        svg.call(tip2);
 
         // Draw intro nodes
         svg.selectAll('.intro').data(narrative.introductions())
@@ -123,12 +172,6 @@ function get_data(datafile, parent) {
                 .attr('x', -4)
                 .attr('width', 4)
                 .attr('height', 8);
-
-            g.on('click',function(d){
-                d.selected = true;
-                svg.selectAll('')
-
-            });
 
             text = g.append('g').attr('class', 'text');
 

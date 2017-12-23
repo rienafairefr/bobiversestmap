@@ -14,7 +14,13 @@ class Character(JsonSerializable):
         self.other_names = [] if other_names is None else other_names
 
     def __repr__(self):
-        return '[%s %s %s]'% (self.id, self.name, ','.join(self.other_names))
+        return '[%s %s %s]' % (self.id, self.name, ','.join(self.other_names))
+
+    @property
+    def all_names(self):
+        return_value = [self.name]
+        return_value.extend(self.other_names)
+        return return_value
 
 
 @memoize()
@@ -57,12 +63,9 @@ def is_bob(character_id):
 
 @memoize()
 def get_characters():
-    characters = list(get_bob_characters()) # copy
+    characters = list(get_bob_characters())  # copy
     nonbobs = json.load(open(os.path.join('public_data', 'nonbob_characters.json')))
     characters.extend([Character(**nonbob) for nonbob in nonbobs])
-    for char in characters:
-        char.all_names = [char.name]
-        char.all_names.extend(char.other_names)
     return characters
 
 

@@ -60,10 +60,13 @@ def get_scenes(nb=None):
             for pres in presences[k]:
                 if not is_bob(pres.id):
                     presset.add(pres.id)
-            for link in links[k]:
-                if not link.is_scut:
-                    presset.add(link.character0.id)
-                    presset.add(link.character1.id)
+
+            for isent, tokenized_sentence in enumerate(book_chapter.tokenized_content):
+                link = links.get((k[0], k[1], isent + 1))
+                if link is not None:
+                    if not link.is_scut:
+                        presset.add(link.character0_id)
+                        presset.add(link.character1_id)
 
             scenes[k] = {'character_ids': list(presset), 'description': descriptions[k]}
 
