@@ -1,6 +1,6 @@
 import contextlib
 import os
-from collections import OrderedDict
+from sortedcontainers import SortedDict
 
 from generator.characters import get_characters_map, is_bob
 from generator.dates import get_dates
@@ -8,7 +8,7 @@ from generator.books import get_book_chapters, get_keys
 from generator.presences import get_characters_presences
 from generator.thresholds import get_thresholds_deaths, get_thresholds_births
 from generator.scenes_locations import get_scenes_locations_book
-from generator.utils import memoize, JsonSerializable
+from generator.utils import memoize
 
 
 @memoize()
@@ -17,20 +17,12 @@ def get_travels_book(nb=None):
     book_chapters = get_book_chapters()
     scenes_locations = get_scenes_locations_book(nb)
     characters_map = get_characters_map()
-    threshold_deaths = get_thresholds_deaths()
-    threshold_births = get_thresholds_births()
 
-    data_travels_dict = OrderedDict()
+    data_travels_dict = SortedDict()
     for character_id, character in sorted(characters_map.items()):
-        threshold_death = threshold_deaths.get(character_id)
-        threshold_birth = threshold_births.get(character_id)
         for k, present_characters in presences.items():
             current_location = {}
-            if threshold_birth is not None and k < threshold_birth:
-                pass
-            elif threshold_death is not None and k > threshold_death:
-                pass
-            elif is_bob(character_id):
+            if is_bob(character_id):
                 if character_id == book_chapters[k].bob :
                     current_location = scenes_locations[k]
             else:
@@ -45,8 +37,21 @@ def get_travels_book(nb=None):
             data_travels_dict[character_id, nb, nc] = {'location_id': current_location_id}
 
     data_travels_dict = postprocess(data_travels_dict)
+    data_travels_dict = postproces_births_deaths(data_travels_dict)
     write_travels(data_travels_dict)
 
+    return data_travels_dict
+
+
+def postproces_births_deaths(data_travels_dict):
+    threshold_deaths = get_thresholds_deaths()
+    threshold_births = get_thresholds_births()
+    for (character_id, nb, nc), element in data_travels_dict.items():
+        threshold_death = threshold_deaths.get(character_id)
+        threshold_birth = threshold_births.get(character_id)
+        if (threshold_birth is not None and (nb, nc) < threshold_birth) \
+                or (threshold_death is not None and (nb, nc) > threshold_death):
+            data_travels_dict[character_id, nb, nc] = {}
     return data_travels_dict
 
 
@@ -108,14 +113,19 @@ def postprocess(data_travels_dict):
     fix('Bert', 2, 5, 'Omicron2 Eridani')
     fix('Ernie', 2, 5, 'Omicron2 Eridani')
 
+    # Bridget arrives on Vulcan at (1, 61)
+    fix('Bridget', 1, 61, 'Omicron2 Eridani_Vulcan')
     # Bridget doesnt leave Vulcan before being replicated
-    for k in keys:
-        if k < (3, 41):
-            fix('Bridget', *k, 'Omicron2 Eridani_Vulcan')
+    fix('Bridget', 3, 40, 'Omicron2 Eridani_Vulcan')
 
     # Bruce from Calvin and Goku, born in Alpha Centauri
     fix('Bruce', 1, 45, 'Alpha Centauri')
     fix('Bruce', 2, 37, '11 Leonis Minoris')
+
+    # Milo
+    fix('Milo', 1, 17, 'Epsilon Eridani')
+    fix('Milo', 1, 19, 'Omicron2 Eridani')
+    fix('Milo', 1, 46, '82 Eridani')
 
     # Landers on Vulcan
     for k in keys:
@@ -217,10 +227,12 @@ def postprocess(data_travels_dict):
     #  Homer going to Sol with Riker
     fix('Homer', 1, 20, 'Epsilon Eridani')
     fix('Homer', 1, 21, 'Sol')
+    fix('Riker', 1, 20, 'Epsilon Eridani')
+    fix('Riker', 1, 21, 'Sol')
 
     # Howard from Sol to Omicron2 Eridani/Vulcan
     fix('Howard', 1, 58, 'Sol')
-    fix('Howard', 1, 58, 'Omicron2 Eridani')
+    fix('Howard', 1, 61, 'Omicron2 Eridani')
     fix('Howard', 3, 20, 'HIP 14101_Odin')
 
     fix('Howard', 3, 62, 'Epsilon Indi_Big Top')

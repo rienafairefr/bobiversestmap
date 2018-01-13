@@ -63,7 +63,6 @@ Bob:Bill:Calvin:Bruce
 Zeke
 Jeffrey
 Milton
-Yoshi
 Tony
 Jackson
 Sam; Exodus-3

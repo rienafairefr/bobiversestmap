@@ -7,3 +7,4 @@ Stéphane, 2, 67
 Julia, 2, 31
 Butterworth, 3, 2
 Bashful, 2, 30
+Milo, 1, 46

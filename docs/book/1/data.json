@@ -376,12 +376,6 @@
       "other_names": []
     }, 
     {
-      "affiliation": "Yoshi", 
-      "id": "Yoshi", 
-      "name": "Yoshi", 
-      "other_names": []
-    }, 
-    {
       "affiliation": "Tony", 
       "id": "Tony", 
       "name": "Tony", 
@@ -537,6 +531,12 @@
       "other_names": []
     }, 
     {
+      "affiliation": "Poseidon Revolution", 
+      "id": "Yoshi", 
+      "name": "Yoshi", 
+      "other_names": []
+    }, 
+    {
       "affiliation": "VEHEMENT", 
       "id": "Vickers", 
       "name": "Vickers", 
@@ -566,87 +566,87 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
       ], 
       "description": "Bob brought online as a replicant"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
       ], 
       "description": ""
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
       ], 
       "description": ""
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
       ], 
       "description": ""
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
       ], 
       "description": ""
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
       ], 
       "description": ""
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
       ], 
       "description": "Attack on facility"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
-      ], 
-      "description": ""
-    }, 
-    {
-      "character_ids": [
-        "Bob", 
-        "Landers"
-      ], 
-      "description": ""
-    }, 
-    {
-      "character_ids": [
-        "Bob", 
         "Landers", 
-        "Doucette"
+        "Bob"
       ], 
       "description": ""
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
+      ], 
+      "description": ""
+    }, 
+    {
+      "character_ids": [
+        "Landers", 
+        "Doucette", 
+        "Bob"
+      ], 
+      "description": ""
+    }, 
+    {
+      "character_ids": [
+        "Landers", 
+        "Bob"
       ], 
       "description": "Bob launches"
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Landers", 
-        "Doucette"
+        "Doucette", 
+        "Bob"
       ], 
       "description": "Bob travels"
     }, 
@@ -670,15 +670,19 @@
     }, 
     {
       "character_ids": [
+        "Riker", 
+        "Bill", 
         "Bob"
       ], 
       "description": "Bill, Riker, Milo, and Mario come online. Bob moves to Heaven 1A ship (v2)"
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Bill", 
-        "Mario"
+        "Mario", 
+        "Riker", 
+        "Bob", 
+        "Milo"
       ], 
       "description": "Bob leaves for Delta Eridan, Milo for Omicron2 Eridani, and Mario for Beta Hydri. Bill and Riker work on clones of themselves"
     }, 
@@ -690,26 +694,21 @@
     }, 
     {
       "character_ids": [
-        "Garfield", 
-        "Bill", 
-        "Homer"
+        "Bill"
       ], 
       "description": "Homer (Riker clone) and Garfield (Bill clone) come online, Riker and Homer leave for Sol"
     }, 
     {
       "character_ids": [
-        "Homer", 
         "Riker"
       ], 
       "description": "Riker and Homer arrive at Sol"
     }, 
     {
       "character_ids": [
-        "Linus", 
-        "Garfield", 
-        "Homer", 
         "Bill", 
-        "Riker"
+        "Riker", 
+        "Homer"
       ], 
       "description": "Bill and Garfield create Calvin, Goku, and Linus, who then leave Epsilon Eridani in v3 ships"
     }, 
@@ -721,7 +720,6 @@
     }, 
     {
       "character_ids": [
-        "Homer", 
         "Riker"
       ], 
       "description": "Riker and Homer take out remaining Brazilian forces in Sol"
@@ -734,9 +732,8 @@
     }, 
     {
       "character_ids": [
-        "Butterworth", 
-        "Homer", 
-        "Riker"
+        "Riker", 
+        "Butterworth"
       ], 
       "description": "Bill receivs transmission from Col. Butterworth of USE, receive colony ship plans and status of Earth & history of war"
     }, 
@@ -754,23 +751,22 @@
     }, 
     {
       "character_ids": [
-        "Butterworth", 
-        "Homer", 
-        "Riker"
+        "Riker", 
+        "Butterworth"
       ], 
       "description": "Riker and Homer work on preparing to build colony ships"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "Bob clones Marvin, Luke, and Bender"
     }, 
     {
       "character_ids": [
-        "Butterworth", 
-        "Riker"
+        "Riker", 
+        "Butterworth"
       ], 
       "description": "Arthur and Charles (Riker clones) are online, Earth population estimated at 15 million"
     }, 
@@ -782,61 +778,56 @@
     }, 
     {
       "character_ids": [
-        "Butterworth", 
-        "Homer", 
+        "Riker", 
         "Valter", 
-        "Riker"
+        "Butterworth"
       ], 
       "description": "Riker hosts first UN sessions"
     }, 
     {
       "character_ids": [
-        "Homer", 
-        "Valter", 
         "Butterworth", 
-        "Riker"
+        "Valter", 
+        "Homer"
       ], 
       "description": "Homer monologues"
     }, 
     {
       "character_ids": [
-        "Bender", 
-        "Bob", 
+        "Moses", 
         "Archimedes", 
-        "Moses"
+        "Bob"
       ], 
       "description": "Bob witnesses gorilloid attack on Deltans, delivers flint to Archimedes"
     }, 
     {
       "character_ids": [
-        "Butterworth", 
+        "Riker", 
         "Valter", 
-        "Riker"
+        "Butterworth"
       ], 
       "description": "FAITH discovers they have no control over Riker, Butterworth concedes 4 months of first two ships' schedule to shorten 3rd ship schedule by 1 year"
     }, 
     {
       "character_ids": [
-        "Bender", 
-        "Bob", 
+        "Moses", 
         "Archimedes", 
-        "Moses"
+        "Bob"
       ], 
       "description": "Deltan Arnold uses axe as weapon for first time in large gorilloid attack"
     }, 
     {
       "character_ids": [
         "Julia", 
-        "Butterworth", 
-        "Riker"
+        "Riker", 
+        "Butterworth"
       ], 
       "description": "VEHEMENT introduced, Bill meets Julia (relative, descendant of sister)"
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Archimedes", 
-        "Luke"
+        "Bob"
       ], 
       "description": "Luke leaves Delta Eridani for Kappa Ceti, Bender for Gamma Leporis A"
     }, 
@@ -849,40 +840,40 @@
     }, 
     {
       "character_ids": [
-        "Butterworth", 
+        "Bill", 
+        "Riker", 
         "Valter", 
-        "Riker"
+        "Butterworth", 
+        "Homer"
       ], 
       "description": "Riker (and all Sol) receive SCUT plans, join Bobnet, learn about Romulous and Vulcan, share the news with Earth"
     }, 
     {
       "character_ids": [
-        "Garfield", 
         "Bill", 
-        "Homer", 
-        "Riker"
+        "Riker", 
+        "Homer"
       ], 
       "description": "Garfield talks to Bill about their working relationship, they begin fine"
     }, 
     {
       "character_ids": [
+        "Riker", 
         "Butterworth", 
-        "Homer", 
-        "Riker"
+        "Homer"
       ], 
       "description": "Colony ships halfway done, Sol Bob's discuss plans"
     }, 
     {
       "character_ids": [
-        "Bob", 
+        "Moses", 
         "Archimedes", 
-        "Moses"
+        "Bob"
       ], 
       "description": "Bob makes first contact with Archimedes, begins discussions to move Deltan camp to flint site"
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Bill"
       ], 
       "description": "Bart (Calvin clone) contacts Bill and joins Bobnet, updates Bill on situation at Alpha Centauri"
@@ -895,39 +886,37 @@
     }, 
     {
       "character_ids": [
-        "Butterworth", 
-        "Riker"
+        "Riker", 
+        "Butterworth"
       ], 
       "description": "Arthur destroyed by booby trap near Saturn"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes", 
         "Moses", 
-        "Luke"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "Deltan migration begins"
     }, 
     {
       "character_ids": [
         "Julia", 
-        "Butterworth", 
-        "Riker"
+        "Riker", 
+        "Butterworth"
       ], 
       "description": "Riker intercepts attempted hack from New Zealand, discovers Heaven plans were stolen from Australians. Homer reveals plans for farming space stations (donuts), FAITH agrees to give up some reserve food for space on 3rd ship"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "Gorilloids attack Deltan migration party"
     }, 
     {
       "character_ids": [
-        "Bill", 
-        "Homer"
+        "Bill"
       ], 
       "description": "Bill receives Milo's last transmissions concerning 82 Eridani"
     }, 
@@ -940,28 +929,27 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Archimedes", 
-        "Homer", 
-        "Riker"
+        "Bob"
       ], 
       "description": "Deltans attacked by leopard"
     }, 
     {
       "character_ids": [
-        "Ralph", 
-        "Julia", 
+        "Charles", 
         "Butterworth", 
+        "Julia", 
         "Riker", 
+        "Ralph", 
         "Justin"
       ], 
       "description": "First 2 colony ships, Exodus"
     }, 
     {
       "character_ids": [
-        "Bob", 
+        "Moses", 
         "Archimedes", 
-        "Moses"
+        "Bob"
       ], 
       "description": "Deltans arrive at flint site (former home)"
     }, 
@@ -979,35 +967,34 @@
     }, 
     {
       "character_ids": [
-        "Valter", 
-        "Riker"
+        "Riker", 
+        "Howard", 
+        "Valter"
       ], 
       "description": "First 2 colony ships loaded and depart for Vulcan, with Howard (Charles clone) as overseer"
     }, 
     {
       "character_ids": [
-        "Bill"
+        "Bill", 
+        "Riker", 
+        "Homer"
       ], 
       "description": "Bill hosts first Bobmoot"
     }, 
     {
       "character_ids": [
-        "Tom", 
-        "Hannibal", 
-        "Fred", 
-        "Elmer", 
-        "Kyle", 
         "Khan", 
-        "Bill"
+        "Bill", 
+        "Fred"
       ], 
       "description": "Khan and 7 other Bobs arrive at 82 Eridani and are attacked, first use of plasma spikes, 7 Bobs are destroyed"
     }, 
     {
       "character_ids": [
+        "Howard", 
         "Bert", 
         "Butterworth", 
-        "Ernie", 
-        "Howard"
+        "Ernie"
       ], 
       "description": "Colonization of Vulcan begins with Howard overseeing"
     }

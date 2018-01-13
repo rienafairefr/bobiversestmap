@@ -376,12 +376,6 @@
       "other_names": []
     }, 
     {
-      "affiliation": "Yoshi", 
-      "id": "Yoshi", 
-      "name": "Yoshi", 
-      "other_names": []
-    }, 
-    {
       "affiliation": "Tony", 
       "id": "Tony", 
       "name": "Tony", 
@@ -537,6 +531,12 @@
       "other_names": []
     }, 
     {
+      "affiliation": "Poseidon Revolution", 
+      "id": "Yoshi", 
+      "name": "Yoshi", 
+      "other_names": []
+    }, 
+    {
       "affiliation": "VEHEMENT", 
       "id": "Vickers", 
       "name": "Vickers", 
@@ -566,87 +566,87 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
       ], 
       "description": "Bob brought online as a replicant"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
       ], 
       "description": ""
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
       ], 
       "description": ""
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
       ], 
       "description": ""
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
       ], 
       "description": ""
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
       ], 
       "description": ""
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
       ], 
       "description": "Attack on facility"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
-      ], 
-      "description": ""
-    }, 
-    {
-      "character_ids": [
-        "Bob", 
-        "Landers"
-      ], 
-      "description": ""
-    }, 
-    {
-      "character_ids": [
-        "Bob", 
         "Landers", 
-        "Doucette"
+        "Bob"
       ], 
       "description": ""
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Landers"
+        "Landers", 
+        "Bob"
+      ], 
+      "description": ""
+    }, 
+    {
+      "character_ids": [
+        "Landers", 
+        "Doucette", 
+        "Bob"
+      ], 
+      "description": ""
+    }, 
+    {
+      "character_ids": [
+        "Landers", 
+        "Bob"
       ], 
       "description": "Bob launches"
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Landers", 
-        "Doucette"
+        "Doucette", 
+        "Bob"
       ], 
       "description": "Bob travels"
     }, 
@@ -670,15 +670,19 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Milo", 
-        "Riker"
+        "Riker", 
+        "Bill", 
+        "Bob"
       ], 
       "description": "Bill, Riker, Milo, and Mario come online. Bob moves to Heaven 1A ship (v2)"
     }, 
     {
       "character_ids": [
-        "Bill"
+        "Bill", 
+        "Mario", 
+        "Riker", 
+        "Bob", 
+        "Milo"
       ], 
       "description": "Bob leaves for Delta Eridan, Milo for Omicron2 Eridani, and Mario for Beta Hydri. Bill and Riker work on clones of themselves"
     }, 
@@ -690,24 +694,21 @@
     }, 
     {
       "character_ids": [
-        "Garfield", 
-        "Bill", 
-        "Homer"
+        "Bill"
       ], 
       "description": "Homer (Riker clone) and Garfield (Bill clone) come online, Riker and Homer leave for Sol"
     }, 
     {
       "character_ids": [
-        "Homer", 
         "Riker"
       ], 
       "description": "Riker and Homer arrive at Sol"
     }, 
     {
       "character_ids": [
-        "Garfield", 
         "Bill", 
-        "Linus"
+        "Riker", 
+        "Homer"
       ], 
       "description": "Bill and Garfield create Calvin, Goku, and Linus, who then leave Epsilon Eridani in v3 ships"
     }, 
@@ -731,9 +732,8 @@
     }, 
     {
       "character_ids": [
-        "Butterworth", 
-        "Homer", 
-        "Riker"
+        "Riker", 
+        "Butterworth"
       ], 
       "description": "Bill receivs transmission from Col. Butterworth of USE, receive colony ship plans and status of Earth & history of war"
     }, 
@@ -751,22 +751,22 @@
     }, 
     {
       "character_ids": [
-        "Butterworth", 
-        "Riker"
+        "Riker", 
+        "Butterworth"
       ], 
       "description": "Riker and Homer work on preparing to build colony ships"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "Bob clones Marvin, Luke, and Bender"
     }, 
     {
       "character_ids": [
-        "Butterworth", 
-        "Riker"
+        "Riker", 
+        "Butterworth"
       ], 
       "description": "Arthur and Charles (Riker clones) are online, Earth population estimated at 15 million"
     }, 
@@ -778,59 +778,56 @@
     }, 
     {
       "character_ids": [
-        "Butterworth", 
-        "Homer", 
+        "Riker", 
         "Valter", 
-        "Riker"
+        "Butterworth"
       ], 
       "description": "Riker hosts first UN sessions"
     }, 
     {
       "character_ids": [
-        "Homer", 
-        "Valter", 
         "Butterworth", 
-        "Riker"
+        "Valter", 
+        "Homer"
       ], 
       "description": "Homer monologues"
     }, 
     {
       "character_ids": [
-        "Bob", 
+        "Moses", 
         "Archimedes", 
-        "Moses"
+        "Bob"
       ], 
       "description": "Bob witnesses gorilloid attack on Deltans, delivers flint to Archimedes"
     }, 
     {
       "character_ids": [
-        "Butterworth", 
+        "Riker", 
         "Valter", 
-        "Riker"
+        "Butterworth"
       ], 
       "description": "FAITH discovers they have no control over Riker, Butterworth concedes 4 months of first two ships' schedule to shorten 3rd ship schedule by 1 year"
     }, 
     {
       "character_ids": [
-        "Bob", 
+        "Moses", 
         "Archimedes", 
-        "Moses"
+        "Bob"
       ], 
       "description": "Deltan Arnold uses axe as weapon for first time in large gorilloid attack"
     }, 
     {
       "character_ids": [
         "Julia", 
-        "Butterworth", 
-        "Riker"
+        "Riker", 
+        "Butterworth"
       ], 
       "description": "VEHEMENT introduced, Bill meets Julia (relative, descendant of sister)"
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Archimedes", 
-        "Luke"
+        "Bob"
       ], 
       "description": "Luke leaves Delta Eridani for Kappa Ceti, Bender for Gamma Leporis A"
     }, 
@@ -843,86 +840,83 @@
     }, 
     {
       "character_ids": [
-        "Butterworth", 
+        "Bill", 
+        "Riker", 
         "Valter", 
-        "Riker"
+        "Butterworth", 
+        "Homer"
       ], 
       "description": "Riker (and all Sol) receive SCUT plans, join Bobnet, learn about Romulous and Vulcan, share the news with Earth"
     }, 
     {
       "character_ids": [
-        "Garfield", 
         "Bill", 
-        "Homer", 
-        "Riker"
+        "Riker", 
+        "Homer"
       ], 
       "description": "Garfield talks to Bill about their working relationship, they begin fine"
     }, 
     {
       "character_ids": [
+        "Riker", 
         "Butterworth", 
-        "Homer", 
-        "Riker"
+        "Homer"
       ], 
       "description": "Colony ships halfway done, Sol Bob's discuss plans"
     }, 
     {
       "character_ids": [
-        "Bob", 
+        "Moses", 
         "Archimedes", 
-        "Moses"
+        "Bob"
       ], 
       "description": "Bob makes first contact with Archimedes, begins discussions to move Deltan camp to flint site"
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Bill"
       ], 
       "description": "Bart (Calvin clone) contacts Bill and joins Bobnet, updates Bill on situation at Alpha Centauri"
     }, 
     {
       "character_ids": [
-        "Bill", 
         "Milo"
       ], 
       "description": "Milo arrives at 82 Eridani and is destroyed, likely by Brazilians"
     }, 
     {
       "character_ids": [
-        "Butterworth", 
-        "Riker"
+        "Riker", 
+        "Butterworth"
       ], 
       "description": "Arthur destroyed by booby trap near Saturn"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes", 
         "Moses", 
-        "Luke"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "Deltan migration begins"
     }, 
     {
       "character_ids": [
         "Julia", 
-        "Butterworth", 
-        "Riker"
+        "Riker", 
+        "Butterworth"
       ], 
       "description": "Riker intercepts attempted hack from New Zealand, discovers Heaven plans were stolen from Australians. Homer reveals plans for farming space stations (donuts), FAITH agrees to give up some reserve food for space on 3rd ship"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "Gorilloids attack Deltan migration party"
     }, 
     {
       "character_ids": [
-        "Bill", 
-        "Homer"
+        "Bill"
       ], 
       "description": "Bill receives Milo's last transmissions concerning 82 Eridani"
     }, 
@@ -935,28 +929,27 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Archimedes", 
-        "Homer", 
-        "Riker"
+        "Bob"
       ], 
       "description": "Deltans attacked by leopard"
     }, 
     {
       "character_ids": [
-        "Ralph", 
-        "Julia", 
+        "Charles", 
         "Butterworth", 
+        "Julia", 
         "Riker", 
+        "Ralph", 
         "Justin"
       ], 
       "description": "First 2 colony ships, Exodus"
     }, 
     {
       "character_ids": [
-        "Bob", 
+        "Moses", 
         "Archimedes", 
-        "Moses"
+        "Bob"
       ], 
       "description": "Deltans arrive at flint site (former home)"
     }, 
@@ -974,80 +967,81 @@
     }, 
     {
       "character_ids": [
-        "Valter", 
-        "Riker"
+        "Riker", 
+        "Howard", 
+        "Valter"
       ], 
       "description": "First 2 colony ships loaded and depart for Vulcan, with Howard (Charles clone) as overseer"
     }, 
     {
       "character_ids": [
-        "Bill"
+        "Bill", 
+        "Riker", 
+        "Homer"
       ], 
       "description": "Bill hosts first Bobmoot"
     }, 
     {
       "character_ids": [
-        "Tom", 
-        "Hannibal", 
-        "Fred", 
-        "Elmer", 
-        "Kyle", 
         "Khan", 
-        "Bill"
+        "Bill", 
+        "Fred"
       ], 
       "description": "Khan and 7 other Bobs arrive at 82 Eridani and are attacked, first use of plasma spikes, 7 Bobs are destroyed"
     }, 
     {
       "character_ids": [
+        "Howard", 
         "Bert", 
         "Butterworth", 
-        "Ernie", 
-        "Howard"
+        "Ernie"
       ], 
       "description": "Colonization of Vulcan begins with Howard overseeing"
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Archimedes", 
-        "Fred_Carleon", 
-        "Fred_Deltan"
+        "Bob"
       ], 
       "description": "Start of second book, Marvin determines origin area of Deltans"
     }, 
     {
       "character_ids": [
-        "Bridget", 
         "Butterworth", 
-        "St\u00e9phane", 
-        "Howard"
+        "Bridget", 
+        "Howard", 
+        "St\u00e9phane"
       ], 
       "description": "First raptor attack on Vulcan colony"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes", 
         "Moses", 
-        "Marvin"
+        "Archimedes", 
+        "Marvin", 
+        "Bob"
       ], 
       "description": "Archimedes learns that Bob builds other Bobs"
     }, 
     {
       "character_ids": [
+        "Bill", 
+        "Riker", 
+        "Mario", 
+        "Homer", 
+        "Mulder", 
         "Jonny", 
-        "Skinner", 
-        "Mulder"
+        "Skinner"
       ], 
       "description": "Mulder discovers Poseidon in Eta Cassiopeiae, brings Skinner and Johnny online months later"
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Bert", 
         "Butterworth", 
-        "St\u00e9phane", 
-        "Howard"
+        "Bert", 
+        "Bridget", 
+        "Howard", 
+        "St\u00e9phane"
       ], 
       "description": "Security fence around Vulcan colony town, Landing, completed, offloading of colonists begins"
     }, 
@@ -1059,18 +1053,17 @@
     }, 
     {
       "character_ids": [
-        "Homer", 
         "Riker"
       ], 
       "description": "VEHEMENT introduced (Earth)"
     }, 
     {
       "character_ids": [
-        "Butterworth", 
+        "Riker", 
         "Homer", 
-        "Valter", 
         "Howard", 
-        "Riker"
+        "Valter", 
+        "Butterworth"
       ], 
       "description": "Exodus 3 (Sam) arrives at Romulous"
     }, 
@@ -1088,9 +1081,9 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
+        "Moses", 
         "Archimedes", 
-        "Moses"
+        "Bob"
       ], 
       "description": "Bob teaches Archimedes jujitsu during mating season. Archimedes hooks up with Diana. Marvin discovers preyed Deltan remains near Camelot."
     }, 
@@ -1103,6 +1096,7 @@
     }, 
     {
       "character_ids": [
+        "Hungry", 
         "Mario", 
         "Bashful", 
         "Dopey"
@@ -1123,10 +1117,13 @@
     }, 
     {
       "character_ids": [
-        "Archimedes", 
+        "Bill", 
         "Butterworth", 
-        "St\u00e9phane", 
-        "Howard"
+        "Archimedes", 
+        "Riker", 
+        "Bob", 
+        "Howard", 
+        "St\u00e9phane"
       ], 
       "description": "Howard informs Butterworth of the Others"
     }, 
@@ -1144,19 +1141,19 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Archimedes", 
+        "Bob", 
         "Moses"
       ], 
       "description": "Bob & Marvin see and engage flying Deltan predator, hippogriffs, after first attack on Deltans, destroy hippogriffs' island with ship buster. Bob kicked out of Delta"
     }, 
     {
       "character_ids": [
-        "Riker", 
         "Julia", 
-        "Butterworth", 
+        "Riker", 
         "Howard", 
-        "Justin"
+        "Justin", 
+        "Butterworth"
       ], 
       "description": "Family (Julia) comes out of stasis and disembark on Romulous, colonization of Romulus begins, egg"
     }, 
@@ -1168,31 +1165,29 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "Bob visits Archimedes, Marvin leaves Delta"
     }, 
     {
       "character_ids": [
-        "Homer", 
         "Riker"
       ], 
       "description": "VEHEMENT blows up donut at Earth"
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Archimedes", 
-        "Pete"
+        "Bob"
       ], 
       "description": "Bob clones, Pete and Victor, are online and preparing to leave Delan system"
     }, 
     {
       "character_ids": [
         "Bridget", 
-        "Butterworth", 
-        "Howard"
+        "Howard", 
+        "Butterworth"
       ], 
       "description": "Howard meets Bridget"
     }, 
@@ -1204,68 +1199,64 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "Luke contacts Bob from Kappa Ceti"
     }, 
     {
       "character_ids": [
-        "Ralph", 
-        "Homer", 
         "Charles", 
-        "Riker"
+        "Riker", 
+        "Ralph", 
+        "Homer"
       ], 
       "description": "Homer discovered infected by VEHEMENT and cleaned. VEHEMENT tech HQ discovered"
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Valter", 
         "Butterworth", 
         "St\u00e9phane", 
-        "Howard"
+        "Howard", 
+        "Valter", 
+        "Bridget"
       ], 
       "description": "Raptors break through fence at Vulcan settlement, discovered to be capable of digging"
     }, 
     {
       "character_ids": [
-        "Bashful", 
-        "Mario"
+        "Bashful"
       ], 
       "description": "Bashful discovers advanced tech at GL877, is attacked and self"
     }, 
     {
       "character_ids": [
-        "Bridget", 
         "Julia", 
         "St\u00e9phane", 
         "Howard", 
-        "Justin"
+        "Justin", 
+        "Bridget"
       ], 
       "description": "Howard rolls out AMI"
     }, 
     {
       "character_ids": [
         "Bill", 
-        "Linus", 
         "Henry"
       ], 
       "description": "Linus and Henry arrive back at Bill, joins Bobnet, reports on KKP (Klown Kar Planet), and introduces Henry (Australian replicant) to Bobnet"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "Buster has mated, tents have become widespread, Deltan population growth issues lead to gang activity"
     }, 
     {
       "character_ids": [
-        "Garfield", 
-        "Bill", 
         "Elmer", 
-        "Linus", 
+        "Bill", 
         "Henry"
       ], 
       "description": "Strike on 82 Eridani against Medeiros launched, Henry joins large group VR session, Bill tests first Bullwinkle prototype"
@@ -1273,8 +1264,8 @@
     {
       "character_ids": [
         "Bridget", 
-        "Butterworth", 
-        "Howard"
+        "Howard", 
+        "Butterworth"
       ], 
       "description": "Howard and Bridget produce acceptable batch of whiskey"
     }, 
@@ -1298,7 +1289,9 @@
     }, 
     {
       "character_ids": [
-        "Bill"
+        "Bill", 
+        "Mario", 
+        "Thor"
       ], 
       "description": "Bill hosts Bobmoot to discuss Others"
     }, 
@@ -1310,31 +1303,32 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "Deltan riot occurs, Bob and Archimedes begin plans to repopulate other villages"
     }, 
     {
       "character_ids": [
+        "Charles", 
+        "Riker", 
         "Bridget", 
-        "St\u00e9phane", 
-        "Howard"
+        "Howard", 
+        "St\u00e9phane"
       ], 
       "description": "Howard chats with Bridget and St\u00e9phane about distillery business and life as a replicant"
     }, 
     {
       "character_ids": [
-        "Ralph", 
         "Charles", 
+        "Vickers", 
         "Riker", 
-        "Vickers"
+        "Ralph"
       ], 
       "description": "Riker takes out VEHEMENT leader, Vickers, and HQ after learning that Vickers invented replicant systems"
     }, 
     {
       "character_ids": [
-        "Garfield", 
         "Bill", 
         "Howard", 
         "Dopey"
@@ -1343,8 +1337,9 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Riker", 
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Howard and Riker begin looking into replicant tech"
     }, 
@@ -1357,58 +1352,54 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "Deltan gangs leave to form second village"
     }, 
     {
       "character_ids": [
-        "Bridget", 
         "St\u00e9phane", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Bridget surgery"
     }, 
     {
       "character_ids": [
+        "Pete", 
         "Marcus", 
         "Butterworth", 
-        "Mulder", 
-        "Pete"
+        "Mulder"
       ], 
       "description": "Colonization of Poseidon begins with Mulder overseeing"
     }, 
     {
       "character_ids": [
-        "Loki", 
         "Zeke", 
+        "Loki", 
         "Jeffrey", 
-        "Verne"
+        "Elmer"
       ], 
       "description": "Strike on 82 Eridani takes place with Loki leading, Bobs claim system, discover 2 habitable planets and 1 moon"
     }, 
     {
       "character_ids": [
-        "Bridget", 
         "St\u00e9phane", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Bridget and Stephane married. Howard leaves Vulcan, Dexter takes over"
     }, 
     {
       "character_ids": [
-        "Garfield", 
         "Bill"
       ], 
       "description": "82 Eridani report reaches Bill, talk of looking for Bender begins"
     }, 
     {
       "character_ids": [
-        "Thor", 
-        "Bill", 
-        "Hal", 
-        "Mario"
+        "Hal"
       ], 
       "description": "Hal returns to GL877, scouts and heads to GL 54"
     }, 
@@ -1426,8 +1417,8 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "Minor update on Deltans"
     }, 
@@ -1439,19 +1430,20 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
         "Butterworth", 
-        "Howard"
+        "Dexter", 
+        "Howard", 
+        "Bill", 
+        "Bridget"
       ], 
       "description": "FAITH colony separates church from state, Cranston steps down"
     }, 
     {
       "character_ids": [
         "Jacques", 
-        "Bob", 
-        "Claude", 
         "Bill", 
-        "Mario"
+        "Bob", 
+        "Claude"
       ], 
       "description": "Others launch mission to NN 4285"
     }, 
@@ -1463,7 +1455,6 @@
     }, 
     {
       "character_ids": [
-        "Howard", 
         "Butterworth", 
         "Oliver"
       ], 
@@ -1471,7 +1462,6 @@
     }, 
     {
       "character_ids": [
-        "Marcus", 
         "Mulder"
       ], 
       "description": "Mulder leaves Poseidon"
@@ -1484,36 +1474,37 @@
     }, 
     {
       "character_ids": [
-        "Claude", 
         "Jacques", 
         "Bill", 
-        "Butterworth", 
-        "Garfield"
+        "Claude", 
+        "Butterworth"
       ], 
       "description": "Bill holds another moot to discuss Others"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "Archimedes becomes grandfather"
     }, 
     {
       "character_ids": [
-        "Claude", 
         "Jacques", 
         "Bill", 
         "Mario", 
+        "Claude", 
         "Oliver"
       ], 
       "description": "Others launch convoy to Delta Pavonis"
     }, 
     {
       "character_ids": [
-        "Bridget", 
+        "Garfield", 
+        "Bill", 
         "St\u00e9phane", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Howard explores HIP 14101, human android prototype experimenting begins prior to Stephane's death"
     }, 
@@ -1525,26 +1516,28 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
+        "Bill", 
         "Butterworth", 
+        "Bob", 
+        "Bridget", 
         "Howard"
       ], 
       "description": "Howard uses human android prototype to attend Stephane's funeral"
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Butterworth", 
         "Charles", 
+        "Butterworth", 
+        "Riker", 
         "Howard", 
-        "Riker"
+        "Bridget"
       ], 
       "description": "Howard talks Butterworth into being replicated upon death"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "Bob uses Deltan android on Delta Eridani"
     }, 
@@ -1557,8 +1550,7 @@
     }, 
     {
       "character_ids": [
-        "Phineas", 
-        "Ferb"
+        "Phineas"
       ], 
       "description": "Collection of 20,000 Pavs takes place"
     }, 
@@ -1570,104 +1562,97 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Howard uses realistic android to meet Bridget"
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Archimedes", 
-        "Pete"
+        "Bob"
       ], 
       "description": "Archimedes' wife Diana dies"
     }, 
     {
       "character_ids": [
-        "Archimedes", 
-        "Bill"
+        "Bill", 
+        "Archimedes"
       ], 
       "description": "Others finish stripping Delta Pavonis, Bill wakes 8 Pavs to decide if they want to go back to their home planet (Aszjan) or find a new one"
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Archimedes", 
-        "Fred_Carleon", 
-        "Fred_Deltan"
+        "Bob"
       ], 
       "description": "Start of third book, Bob hunts with Deltans via android, including Arnold's son Donald. group is accosted by a group from other village, Caerleon, led by Fred"
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Jacques", 
         "Butterworth", 
         "Howard", 
-        "Riker"
+        "Bridget"
       ], 
       "description": "Howard goes to Bridget for consolation after battle with Others"
     }, 
     {
       "character_ids": [
-        "Marcus", 
+        "Kal", 
         "Gina", 
-        "Kal"
+        "Marcus"
       ], 
       "description": "Marcus discusses concerning governing on Poseidon with Kal and Gina"
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Howard is in a relationship with Bridget"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Fred_Carleon", 
-        "Fred_Deltan"
+        "Bob"
       ], 
       "description": "Bob executes ploy to outsmart Fred's group"
     }, 
     {
       "character_ids": [
-        "Bill"
+        "Bill", 
+        "Icarus", 
+        "Daedalus"
       ], 
       "description": "Bill is capable of moving planets, has cloned Icarus and Daedalus"
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Butterworth suicides after being diagnosed with dementia,"
     }, 
     {
       "character_ids": [
-        "Marcus", 
-        "Denu", 
         "Kal", 
+        "Gina", 
+        "Marcus", 
         "Vinnie", 
-        "Gina"
+        "Denu"
       ], 
       "description": "Marcus uses android for the first time, helps plot revolution on Poseidon"
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Howard is confronted by Bridget's daughter"
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Archimedes", 
-        "Fred_Carleon", 
-        "Fred_Deltan"
+        "Bob"
       ], 
       "description": "Bob avoids Fred's group while solo hunting"
     }, 
@@ -1680,41 +1665,39 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Charles", 
         "Riker", 
-        "Justin"
+        "Justin", 
+        "Bridget"
       ], 
       "description": "Julia dies, Riker uses android to attend funeral"
     }, 
     {
       "character_ids": [
-        "Marcus", 
-        "Gina", 
-        "Yoshi", 
         "Kal", 
+        "Yoshi", 
+        "Gina", 
+        "Marcus", 
         "Vinnie"
       ], 
       "description": "Marcus unveils aerial cities to revolutionaries"
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Howard meets some of Bridget's friends over dinner"
     }, 
     {
       "character_ids": [
-        "Charles", 
         "Riker"
       ], 
       "description": "Charles reports material shortages to Riker, Riker tries to sell UN on putting Earth population in stasis"
     }, 
     {
       "character_ids": [
-        "Marcus", 
-        "Kal"
+        "Kal", 
+        "Marcus"
       ], 
       "description": "Marcus moves some Poseidon residences to aerial cities"
     }, 
@@ -1726,31 +1709,29 @@
     }, 
     {
       "character_ids": [
-        "Isaac", 
         "Mack"
       ], 
       "description": "Mack arrives with first colonists at 82 Eridani. Vancouver colonists settle on Asgard (outer, steppe), Japanese settle on Takama"
     }, 
     {
       "character_ids": [
-        "Marcus", 
-        "Denu", 
         "Kal", 
-        "Vinnie"
+        "Marcus", 
+        "Vinnie", 
+        "Denu"
       ], 
       "description": "Poseidon council cuts off aerial residents, blows up Marcus's decoy"
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Howard discovers life in atmosphere of a gas giant at HIP 14101, brings Bridget into his VR using VR gear"
     }, 
     {
       "character_ids": [
-        "Bill", 
-        "Isaac"
+        "Bill"
       ], 
       "description": "Mack destroyed by Medeiros during a conversation with Bill, his matrix survives"
     }, 
@@ -1762,8 +1743,8 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Bridget dies, children block efforts to replicate her"
     }, 
@@ -1775,18 +1756,18 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
         "Bill", 
         "Richards", 
-        "Kiroshi"
+        "Kiroshi", 
+        "Bridget"
       ], 
       "description": "Bill begins dealing with Medeiros at 82 Eridani"
     }, 
     {
       "character_ids": [
-        "Marcus", 
+        "Kal", 
         "Gina", 
-        "Kal"
+        "Marcus"
       ], 
       "description": "Poseidon council strikes at revolutionaries, Marcus strikes back"
     }, 
@@ -1798,22 +1779,21 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Archimedes", 
-        "Fred_Carleon", 
-        "Fred_Deltan"
+        "Bob"
       ], 
       "description": "Bob catches Fred alone, threatens him"
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Howard deals with the trial"
     }, 
     {
       "character_ids": [
+        "Mack", 
         "Bill", 
         "Richards", 
         "Kiroshi"
@@ -1823,9 +1803,9 @@
     {
       "character_ids": [
         "Kal", 
+        "Gina", 
         "Marcus", 
-        "Denu", 
-        "Gina"
+        "Denu"
       ], 
       "description": "Marcus seems to have won the war against the council"
     }, 
@@ -1837,27 +1817,26 @@
     }, 
     {
       "character_ids": [
-        "Neil", 
-        "Herschel"
+        "Herschel", 
+        "Bill", 
+        "Neil"
       ], 
       "description": "Bill holds moot to discuss Herschel & Neil's findings, announces some monitoring drones have been found by Others"
     }, 
     {
       "character_ids": [
-        "Bob", 
         "Archimedes", 
-        "Fred_Carleon", 
-        "Fred_Deltan"
+        "Bob"
       ], 
       "description": "Fred and co. kidnap Archimedes, Buster kills Fred during rescue"
     }, 
     {
       "character_ids": [
-        "Marcus", 
-        "Denu", 
         "Kal", 
+        "Gina", 
+        "Marcus", 
         "Vinnie", 
-        "Gina"
+        "Denu"
       ], 
       "description": "Marcus and revolutionaries discuss fate of the council and future plans for Poseidon"
     }, 
@@ -1869,14 +1848,15 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Bill", 
+        "Bob", 
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Judge rules in favor of Bridget's will, Rosie attempts to sabotage Bridget's stasis pod, Howard has Bill replicate Bridget during the trial"
     }, 
     {
       "character_ids": [
-        "Neil", 
         "Herschel"
       ], 
       "description": "Herschel and Neil are en route to Earth in large Others ship"
@@ -1884,22 +1864,25 @@
     {
       "character_ids": [
         "Kal", 
+        "Gina", 
         "Marcus", 
-        "Gina"
+        "Bob", 
+        "Bill"
       ], 
       "description": "Marcus has no further duties on Poseidon, considers exploring the ocean"
     }, 
     {
       "character_ids": [
+        "Archimedes", 
         "Bob", 
-        "Archimedes"
+        "Fred_Deltan"
       ], 
       "description": "Archimedes develops a plan to make peace with the other village"
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Howard brings Bridget online"
     }, 
@@ -1917,9 +1900,11 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
+        "Bill", 
+        "Bob", 
+        "Henry", 
         "Howard", 
-        "Henry"
+        "Bridget"
       ], 
       "description": "Bridget and Howard check out Odin life via flying android. Bridget attends her first moot"
     }, 
@@ -1931,8 +1916,8 @@
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Howard and Bridget discuss building a prototype floating city on Odin"
     }, 
@@ -1945,6 +1930,7 @@
     {
       "character_ids": [
         "Jacques", 
+        "Phineas", 
         "Ferb"
       ], 
       "description": "Jacques helps Pavs colonize 84051"
@@ -1957,16 +1943,16 @@
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "The two Deltan villages have established trade"
     }, 
     {
       "character_ids": [
-        "Oliver", 
         "Bill", 
-        "Riker"
+        "Riker", 
+        "Oliver"
       ], 
       "description": "Bill holds status update moot, monitoring sphere planned for Sol"
     }, 
@@ -1978,8 +1964,9 @@
     }, 
     {
       "character_ids": [
-        "Claude", 
-        "Bill"
+        "Jacques", 
+        "Bill", 
+        "Claude"
       ], 
       "description": "Bill fails to convince Claude to divert his growing Gamma Pavonis defense Force to Sol"
     }, 
@@ -1992,74 +1979,76 @@
     }, 
     {
       "character_ids": [
-        "Garfield", 
         "Bill", 
-        "Oliver", 
-        "Riker"
+        "Riker", 
+        "Oliver"
       ], 
       "description": "Bill's terraforming of Ragnarok has reached livability stage"
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Howard and Bridget deploy floating city, Rivendell, in Odin's atmosphere, floating blimp animal promptly attempts to mate with it"
     }, 
     {
       "character_ids": [
-        "Neil", 
-        "Herschel", 
-        "Riker"
+        "Garfield", 
+        "Bill", 
+        "Oliver", 
+        "Riker", 
+        "Thor"
       ], 
       "description": "Others detected approaching Sol, Herschel and Neil arrive at Sol"
     }, 
     {
       "character_ids": [
-        "Herschel", 
-        "Riker"
+        "Herschel"
       ], 
       "description": "Herschel, Neil, and Riker discuss the evacuation of Earth"
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Dexter", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Howard and Bridget attend Howie's wedding"
     }, 
     {
       "character_ids": [
+        "Garfield", 
+        "Bill", 
         "Riker"
       ], 
       "description": "Sneak attack on the Others"
     }, 
     {
       "character_ids": [
-        "Bob", 
-        "Archimedes"
+        "Archimedes", 
+        "Bob"
       ], 
       "description": "Bob comes to terms with Archimedes eventual death"
     }, 
     {
       "character_ids": [
-        "Bridget", 
-        "Howard"
+        "Howard", 
+        "Bridget"
       ], 
       "description": "Howard and Bridget reside in floating city on Big Top (KKP's parent planet), discuss adoption"
     }, 
     {
       "character_ids": [
-        "Neil", 
         "Herschel", 
-        "Riker"
+        "Riker", 
+        "Neil"
       ], 
       "description": "Herschel and Neil arrive at Earth, Herschel comes up with plan to save all remaining humans, begins collecting them"
     }, 
     {
       "character_ids": [
-        "Riker"
+        "Riker", 
+        "Hannibal"
       ], 
       "description": "Battle with Others begins"
     }, 
@@ -2071,10 +2060,7 @@
     }, 
     {
       "character_ids": [
-        "Neil", 
-        "Herschel", 
-        "Bill", 
-        "Riker"
+        "Bill"
       ], 
       "description": "Battle with Others continues"
     }, 
@@ -2086,7 +2072,6 @@
     }, 
     {
       "character_ids": [
-        "Herschel", 
         "Riker"
       ], 
       "description": "Battle with others ends"
@@ -2106,8 +2091,11 @@
     }, 
     {
       "character_ids": [
-        "Neil", 
-        "Herschel"
+        "Herschel", 
+        "Mario", 
+        "Riker", 
+        "Bill", 
+        "Neil"
       ], 
       "description": "Post"
     }, 
@@ -2119,8 +2107,9 @@
     }, 
     {
       "character_ids": [
-        "Icarus", 
         "Bill", 
+        "Icarus", 
+        "Riker", 
         "Daedalus", 
         "Henry"
       ], 

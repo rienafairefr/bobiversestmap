@@ -1,6 +1,6 @@
 import datetime
 import os
-from collections import OrderedDict
+from sortedcontainers import SortedDict
 
 from dateutil import parser
 
@@ -28,7 +28,7 @@ def get_dates():
     # unit is day
     month = 30.4375
 
-    parsed_dates = OrderedDict()
+    parsed_dates = SortedDict()
     for k, book_chapter in chapters_books.items():
         default_datetime = datetime.datetime(year=1, month=1, day=1)
         parsed_datetime = parser.parse(book_chapter.date, default=default_datetime)

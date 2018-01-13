@@ -7,3 +7,5 @@ Flask-Nav
 nltk
 dogpile.cache
 numpy
+astropy
+sortedcontainers

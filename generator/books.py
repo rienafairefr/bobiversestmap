@@ -1,6 +1,6 @@
 import os
 import re
-from collections import OrderedDict
+from sortedcontainers import SortedDict
 
 from generator.nl import tokenize, word_tokenize_sentences, sentences_tokenize
 from generator.utils import sorted_by_key, memoize, stripped
@@ -32,7 +32,7 @@ chapter_re = re.compile('^(\d*)\.(.*)$')
 @memoize()
 def get_book_chapters():
     books = get_books()
-    book_chapters = OrderedDict()
+    book_chapters = SortedDict()
     for index_book, book in enumerate(books):
         chapter = []
         index_chapter = 0

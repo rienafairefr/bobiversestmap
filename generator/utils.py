@@ -1,12 +1,10 @@
 import copy
-import inspect
-import os
-
 import json
-from collections import OrderedDict
+import os
 from inspect import ismethod
 
 from dogpile.cache import make_region
+from sortedcontainers import SortedDict
 
 os.makedirs('generated', exist_ok=True)
 
@@ -87,7 +85,7 @@ def memoize(cache_region=memory, ttl=300, ttl_ignore=False):
 
 
 def sorted_by_key(dictionary):
-    return_value = OrderedDict()
+    return_value = SortedDict()
     for k in sorted(dictionary):
         return_value[k] = dictionary[k]
     return return_value

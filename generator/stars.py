@@ -1,3 +1,6 @@
+from astropy import units as u
+from astropy.coordinates import SkyCoord
+
 import csv
 import os
 
@@ -30,6 +33,17 @@ def get_starsmap():
         csv_reader = csv.DictReader(starsmap_file)
         for row in csv_reader:
             starsmap[row['ProperName']] = row
+            try:
+                c = SkyCoord(ra=float(row['RA'])*u.degree, dec=float(row['Dec'])*u.degree,
+                             distance=float(row['Distance'])*u.lyr)
+                c.representation = 'cartesian'
+                row['x'] = c.x
+                row['y'] = c.y
+                row['z'] = c.z
+            except:
+                row['x'] = None
+                row['y'] = None
+                row['z'] = None
 
     return starsmap
 

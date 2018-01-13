@@ -2,10 +2,11 @@ from flask import Flask, jsonify, render_template, Response
 from flask_bootstrap import Bootstrap
 from flask_nav import Nav
 from flask_nav.elements import Navbar, View
-from generator.characters import get_bob_characters, get_bob_styles
-from generator.travels_out import get_travels_book_json, get_travels_book_csv
+
+from generator.characters import get_bob_characters, get_bob_styles, get_characters
 from generator.locations import get_locations
-from generator.data import data_json as get_data_json
+from generator.out.data import data_json as get_data_json
+from generator.out.travels import get_travels_book_json, get_travels_book_csv
 from generator.utils import ObjectEncoder
 
 app = Flask('Bobiverse visualisations')
@@ -24,6 +25,16 @@ def locations():
 @app.route('/bob_characters.json')
 def bob_characters():
     return jsonify(get_bob_characters())
+
+
+@app.route('/characters.json')
+def all_characters():
+    return jsonify(get_characters())
+
+
+@app.route('/locations.json')
+def all_locations():
+    return jsonify(get_locations())
 
 
 @app.route('/css/bob_styles.css')
