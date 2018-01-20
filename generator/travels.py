@@ -2,37 +2,41 @@ import contextlib
 import os
 from sortedcontainers import SortedDict
 
-from generator.characters import get_characters_map, is_bob
+from generator.characters import get_characters_map
 from generator.dates import get_dates
 from generator.books import get_book_chapters, get_keys
 from generator.presences import get_characters_presences
-from generator.thresholds import get_thresholds_deaths, get_thresholds_births
+from generator.thresholds import get_thresholds_last, get_thresholds_first
 from generator.scenes_locations import get_scenes_locations_book
 from generator.utils import memoize
 
 
 @memoize()
-def get_travels_book(nb=None):
-    presences = get_characters_presences(nb)
-    book_chapters = get_book_chapters()
-    scenes_locations = get_scenes_locations_book(nb)
-    characters_map = get_characters_map()
+def get_travels_book(nb=None, presences=None, book_chapters=None, scenes_locations=None, characters_map=None):
+    if presences is None:
+        presences = get_characters_presences(nb)
+    if book_chapters is None:
+        book_chapters = get_book_chapters()
+    if scenes_locations is None:
+        scenes_locations = get_scenes_locations_book(nb)
+    if characters_map is None:
+        characters_map = get_characters_map()
 
     data_travels_dict = SortedDict()
     for character_id, character in sorted(characters_map.items()):
         for k, present_characters in presences.items():
-            current_location = {}
-            if is_bob(character_id):
+            current_location = None
+            if character.is_bob:
                 if character_id == book_chapters[k].bob :
                     current_location = scenes_locations[k]
             else:
                 if character_id in present_characters:
                     current_location = scenes_locations[k]
 
-            if isinstance(current_location, list):
-                current_location_id = current_location[0]['id'] + '->' + current_location[1]['id']
+            if current_location is not None:
+                current_location_id = current_location.id
             else:
-                current_location_id = current_location.get('id')
+                current_location_id = None
             nb, nc = k
             data_travels_dict[character_id, nb, nc] = {'location_id': current_location_id}
 
@@ -43,9 +47,12 @@ def get_travels_book(nb=None):
     return data_travels_dict
 
 
-def postproces_births_deaths(data_travels_dict):
-    threshold_deaths = get_thresholds_deaths()
-    threshold_births = get_thresholds_births()
+def postproces_births_deaths(data_travels_dict, threshold_deaths=None, threshold_births=None):
+    if threshold_deaths is None:
+        threshold_deaths = get_thresholds_last()
+    if threshold_births is None:
+        threshold_births = get_thresholds_first()
+
     for (character_id, nb, nc), element in data_travels_dict.items():
         threshold_death = threshold_deaths.get(character_id)
         threshold_birth = threshold_births.get(character_id)
@@ -55,10 +62,14 @@ def postproces_births_deaths(data_travels_dict):
     return data_travels_dict
 
 
-def postprocess(data_travels_dict):
-    dates = get_dates()
-    characters_map = get_characters_map()
-    keys = get_keys()
+def postprocess(data_travels_dict, dates=None, characters_map=None, keys=None):
+    if dates is None:
+        dates = get_dates()
+    if characters_map is None:
+        characters_map = get_characters_map()
+    if keys is None:
+        keys = get_keys()
+
     for (character_id, nb, nc), element in data_travels_dict.items():
         character = characters_map[character_id]
         if character.affiliation == 'Deltans':
@@ -263,8 +274,9 @@ def postprocess(data_travels_dict):
     return data_travels_dict
 
 
-def write_travels(data_travels_dict):
-    characters_map = get_characters_map()
+def write_travels(data_travels_dict, characters_map=None):
+    if characters_map is None:
+        characters_map = get_characters_map()
 
     with contextlib.ExitStack() as stack:
 

@@ -4,11 +4,14 @@ from astropy.coordinates import SkyCoord
 import csv
 import os
 
+from sqlalchemy import inspect
+
+from app import db
+from generator.models.locations import Star
 from generator.utils import memoize, stripped
 
 
-@memoize()
-def get_stars():
+def import_stars():
     with open(os.path.join('public_data', 'locations.txt')) as location:
         lines = location.readlines()
 
@@ -16,14 +19,17 @@ def get_stars():
     for line in lines:
         place = stripped(line.strip().split(':'))
         if len(place) == 1:
-            star = {'name': place[0], 'other_names':[]}
+            stars[place[0]] = Star(id=place[0], name=place[0], other_names=[])
 
-            stars[place[0]] = star
+    stars['GL 877'].other_names.append('Gliese 877')
+    stars['GL 54'].other_names.append('Gliese 54')
 
-    stars['GL 877']['other_names'].append('Gliese 877')
-    stars['GL 54']['other_names'].append('Gliese 54')
+    db.session.add_all(stars.values())
+    db.session.commit()
 
-    return stars
+
+def get_stars():
+    return {s.id:s for s in db.session.query(Star).all()}
 
 
 @memoize()

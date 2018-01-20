@@ -3,12 +3,10 @@ import os
 
 from generator.books import get_book_chapters
 from generator.chapter_characters import get_chapter_characters
-from generator.characters import get_characters_map, is_bob
+from generator.characters import get_characters_map
 from generator.links import get_links
 from generator.presences import get_characters_presences
-from generator.thresholds import get_thresholds_deaths, get_thresholds_births
-from generator.timeline import get_timeline_descriptions
-from generator.travels import get_travels_book
+from generator.thresholds import get_thresholds_last, get_thresholds_first
 from generator.utils import json_dump, memoize, sorted_by_key
 
 
@@ -50,29 +48,29 @@ def get_scenes(nb=None):
     chapters_books = get_book_chapters()
     links = get_links(nb)
     presences = get_characters_presences(nb)
-    descriptions = get_timeline_descriptions(nb)
 
     scenes = {}
 
     for k, book_chapter in chapters_books.items():
         if nb is None or k[0] == nb:
-            presset = {book_chapter.bob}
-            for pres in presences[k]:
-                if not is_bob(pres.id):
-                    presset.add(pres.id)
+            present_set = {book_chapter.bob}
+            for character in presences[k]:
+                if not character.is_bob:
+                    present_set.add(character.id)
 
             for isent, tokenized_sentence in enumerate(book_chapter.tokenized_content):
                 link = links.get((k[0], k[1], isent + 1))
                 if link is not None:
                     if not link.is_scut:
-                        presset.add(link.character0_id)
-                        presset.add(link.character1_id)
+                        present_set.add(link.character0_id)
+                        present_set.add(link.character1_id)
 
-            scenes[k] = {'character_ids': list(presset), 'description': descriptions[k]}
+            scenes[k] = {'character_ids': list(present_set), 'description': book_chapter.description}
 
     scenes = postprocess(scenes)
 
     return sorted_by_key(scenes)
+
 
 def postprocess(scenes):
     # False positive/ negative matches:
@@ -94,38 +92,19 @@ def postprocess(scenes):
     remove(1, 3, 'Riker')
     remove(1, 37, 'Riker')
 
-    thresholds_last = {
-        'Bart': (1, 59),
-        'Bender': (1, 37),
-        'Calvin': (1, 40),
-        'Verne': (2, 50),
-        'Valter': (2, 29),
-        'Tom': (1, 60),
-        'Marcus': (3, 39),
-        'Linus': (2, 34),
-        'Khan': (1, 60),
-        'Jeffrey': (2, 50),  # ignore the deltan
-        'Howard': (3, 62),
-        'Goku': (1, 28),
-        'Ernie': (1, 61),
-        'Bridget': (3, 62),
-        'Sam': (2, 8),
-        'Doucette': (1, 13)
-    }
+    thresholds_last = get_thresholds_last()
+    thresholds_first = get_thresholds_first()
 
-    thresholds_first = {
-        'Archimedes': (1, 30),
-        'Bridget': (2, 2)
-    }
-
-    thresholds_last.update(get_thresholds_deaths())
-    thresholds_first.update(get_thresholds_births())
-
-    for character_id, tup in thresholds_last.items():
-        # mentioned after last mentions (deaths or otherwise)
-        for k, s in scenes.items():
+    for k, s in scenes.items():
+        for character_id, tup in thresholds_last.items():
+            # mentioned after last mentions (deaths or otherwise)
             if k > tup and character_id in s['character_ids']:
                 scenes[k]['character_ids'].remove(character_id)
+        for character_id, tup in thresholds_first.items():
+            # mentioned before first mentions (births or otherwise)
+            if k < tup and character_id in s['character_ids']:
+                scenes[k]['character_ids'].remove(character_id)
+
 
     # 1-39 Bob talking about others
     remove(1, 39, 'Milo')

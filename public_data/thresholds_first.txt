@@ -1,0 +1,2 @@
+Archimedes,1,30
+Bridget,2,2

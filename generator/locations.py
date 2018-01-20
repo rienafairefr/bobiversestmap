@@ -1,39 +1,31 @@
 import os
 
+from app import db
+from generator.models.locations import Location
 from generator.stars import get_stars
 from generator.utils import json_dump, memoize
 
 
-@memoize()
-def get_locations():
+def import_locations():
     with open(os.path.join('public_data', 'locations.txt')) as location:
         lines = location.readlines()
 
-    places = get_stars().copy()
+    stars = get_stars().values()
+
+    locations = [Location(id=s.name, star=s) for s in stars]
     for line in lines:
 
         place = line.strip().split(':')
         if len(place) == 2:
-
-            place_dict = dict(id='_'.join(place),
-                              name=place[1],
-                              star_id=place[0],
-                              other_names=[])
-
-            places['_'.join(place)] = place_dict
-
-    def treat_one(id, element):
-        element['id'] = id
-        return element
-
-    places_list = [treat_one(id, element) for id,element in places.items()]
-    return places_list
+            locations.append(Location(id='_'.join(place),
+                              planet_name=place[1],
+                              star_id=place[0]))
 
 
-def write_locations():
-    places = get_locations()
-    json_dump(places, os.path.join('generated', 'locations.json'))
+    db.session.add_all(locations)
+    db.session.commit()
+    return get_locations()
 
 
-if __name__ == '__main__':
-    write_locations()
+def get_locations():
+    return db.session.query(Location).all()

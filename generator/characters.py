@@ -2,33 +2,21 @@ import json
 import os
 
 import colorcet as cc
+from sqlalchemy import inspect
 
-from generator.utils import json_dump, memoize, sorted_by_key, JsonSerializable
-
-
-class Character(JsonSerializable):
-    def __init__(self, id, name, affiliation=None, other_names=None):
-        self.id = id
-        self.name = name
-        self.affiliation = affiliation
-        self.other_names = [] if other_names is None else other_names
-
-    def __repr__(self):
-        return '[%s %s %s]' % (self.id, self.name, ','.join(self.other_names))
-
-    @property
-    def all_names(self):
-        return_value = [self.name]
-        return_value.extend(self.other_names)
-        return return_value
+from app import db
+from generator.models.characters import Character
+from generator.utils import json_dump, memoize, sorted_by_key
 
 
-@memoize()
 def get_bob_characters():
+    return db.session.query(Character).filter_by(is_bob=True).all()
+
+
+def import_bob_characters():
     with open(os.path.join('public_data', 'genealogy.txt')) as genealogy:
         lines = genealogy.readlines()
 
-    bob_characters = []
     for line in lines:
         stripped = line.strip().split(';')[0]
         if len(stripped) == 0:
@@ -36,7 +24,7 @@ def get_bob_characters():
 
         bob = [el.strip() for el in stripped.split(':')]
 
-        char = Character(bob[-1], name=bob[-1])
+        char = Character(id=bob[-1], name=bob[-1], is_bob=True)
         if len(bob) != 1:
             char.affiliation = bob[-2]
         else:
@@ -52,24 +40,26 @@ def get_bob_characters():
             char.other_names = ['Dex']
         if char.id == 'Daedalus':
             char.other_names = ['Dae']
-        bob_characters.append(char)
+        db.session.add(char)
 
-    return bob_characters
-
-
-def is_bob(character_id):
-    return character_id in [el.id for el in get_bob_characters()]
+    db.session.commit()
+    return get_bob_characters()
 
 
-@memoize()
-def get_characters():
-    characters = list(get_bob_characters())  # copy
+def import_characters():
+    import_bob_characters()
+
     nonbobs = json.load(open(os.path.join('public_data', 'nonbob_characters.json')))
-    characters.extend([Character(**nonbob) for nonbob in nonbobs])
-    return characters
+    mapper = inspect(Character)
+    db.session.bulk_insert_mappings(mapper, nonbobs)
+    db.session.commit()
+    return get_characters()
 
 
-@memoize()
+def get_characters():
+    return db.session.query(Character).all()
+
+
 def get_characters_map():
     return sorted_by_key({character.id: character for character in get_characters()})
 

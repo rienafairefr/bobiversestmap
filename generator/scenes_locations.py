@@ -1,28 +1,30 @@
 import os
 
+from sqlalchemy import or_
+
+from app import db
 from generator.books import get_book_chapters
-from generator.utils import json_dump, memoize, sorted_by_key
+from generator.models.locations import Location, Star
+from generator.utils import json_dump, memoize, sorted_by_key, get_one_or_create
 from generator.locations import get_locations
 
 
-@memoize()
-def get_scenes_locations():
-    chapters_books = get_book_chapters()
-
-    locations = get_locations()
+def treat_scenes_locations(chapters_books=None):
+    if chapters_books is None:
+        chapters_books = get_book_chapters()
 
     scenes_locations = {}
     for k, book_chapter in chapters_books.items():
-        scenes_locations[k] = book_chapter.location
+        scenes_locations[k] = book_chapter.raw_location
 
     # Bob on Earth
     for i in range(1, 13):
-        scenes_locations[1, i] = 'Earth'
+        scenes_locations[1, i] = 'Sol_Earth'
 
     # Bob first voyage
-    scenes_locations[1, 13] = 'Earth -> Epsilon Eridani'
+    scenes_locations[1, 13] = 'Sol -> Epsilon Eridani'
 
-    for k,v in scenes_locations.items():
+    for k, v in scenes_locations.items():
         if v == 'Gliese 877':
             scenes_locations[k] = 'GL 877'
         if v == 'Gliese 54':
@@ -32,19 +34,19 @@ def get_scenes_locations():
     scenes_locations[1, 28] = 'Alpha Centauri B'
 
     # Mulder in Poseidon
-    scenes_locations[2, 49] = 'Poseidon'
+    scenes_locations[2, 49] = 'Eta Cassiopeiae_Poseidon'
 
     # Hal going to GL 54
     scenes_locations[2, 54] = 'GL 877 -> GL 54'
 
     # Howard moving on
-    scenes_locations[2, 58] = 'Vulcan -> HIP 14101'
+    scenes_locations[2, 58] = 'Omicron2 Eridani -> HIP 14101'
 
     # Mulder Leaving Poseidon
-    scenes_locations[2, 62] = 'Poseidon'
+    scenes_locations[2, 62] = 'Eta Cassiopeiae_Poseidon'
 
-    # Bob in Camelot
-    scenes_locations[3, 10] = 'Eden'
+    #  Bob in Camelot
+    scenes_locations[3, 10] = 'Delta Eridani_Eden'
 
     # Icarus & Deadalus
     scenes_locations[3, 17] = 'Epsilon Eridani -> Epsilon Indi'
@@ -52,7 +54,7 @@ def get_scenes_locations():
     scenes_locations[3, 22] = 'Delta Pavonis'
     scenes_locations[3, 24] = 'Delta Pavonis'
     # Bob on Eden
-    scenes_locations[3, 34] = 'Eden'
+    scenes_locations[3, 34] = 'Delta Eridani_Eden'
 
     # Neil & Herschel moving the Bellerophon
     scenes_locations[3, 38] = 'Delta Pavonis -> Sol'
@@ -63,57 +65,42 @@ def get_scenes_locations():
     # Icarus & Deadalus destroying GL877
     scenes_locations[3, 70] = 'GL 877'
 
-    def treat_one_scene_location(scene_location):
-        for location in locations:
-            if location['name'] == scene_location\
-                    or scene_location in location['other_names']:
-                return location
-        return None
-
     def treat_scene_location(scene_location):
-        treat_one = treat_one_scene_location(scene_location)
-        if treat_one:
-            return treat_one
-
-        places = [el.strip() for el in scene_location.split('->')]
-        return_value = list(map(treat_one_scene_location, places))
-        if return_value[0] is None or return_value[1] is None:
+        if '->' in scene_location:
+            places = [el.strip() for el in scene_location.split('->')]
+            star0 = db.session.query(Star).get(places[0])
+            star1 = db.session.query(Star).get(places[1])
+            returnvalue, _ = get_one_or_create(db.session, Location,
+                                               id=scene_location,
+                                               star=star0,
+                                               star_destination=star1,
+                                               is_travel=True)
             pass
-        return return_value
+        else:
+            potential_planet = db.session.query(Location).filter(Location.planet_name == scene_location).first()
+            if potential_planet:
+                returnvalue = potential_planet
+                pass
+            else:
+                returnvalue = db.session.query(Location).get(scene_location)
+                pass
+        return returnvalue
 
-    scenes_locations = sorted_by_key({k: treat_scene_location(v.strip()) for k, v in scenes_locations.items()})
+    for k, v in scenes_locations.items():
+        book_chapter = chapters_books[k]
+        book_chapter.location = treat_scene_location(v.strip())
+
+    db.session.commit()
+
+    # treat_scene_location(v.strip())
+
+
+def get_scenes_locations(book_chapters=None):
+    if book_chapters is None:
+        book_chapters = get_book_chapters()
+    scenes_locations = sorted_by_key({k: book_chapter.location for k, book_chapter in book_chapters.items()})
 
     return scenes_locations
 
-
 def get_scenes_locations_book(nb=None):
     return sorted_by_key({k: v for k, v in get_scenes_locations().items() if nb is None or k[0] == nb})
-
-
-@memoize()
-def get_sorted_locations():
-    scenes_locations = get_scenes_locations()
-    list_scenes_locations = list(scenes_locations.values())
-    locations = get_locations()
-
-    def get_index(element):
-        try:
-            return list_scenes_locations.index(element)
-        except ValueError:
-            return len(scenes_locations)
-
-    return sorted(locations, key=get_index)
-
-
-def write_scenes_locations():
-    def write_scenes_locations_(nb=None):
-        json_dump(get_scenes_locations_book(nb), os.path.join('generated', 'scenes_locations%s.json' % nb))
-
-    write_scenes_locations_()
-    write_scenes_locations_(1)
-    write_scenes_locations_(2)
-    write_scenes_locations_(3)
-
-
-if __name__ == '__main__':
-    write_scenes_locations()

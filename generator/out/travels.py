@@ -34,7 +34,7 @@ def get_travels_book_csv(nb=None):
     travels_books = get_travels_book(nb)
     characters = get_characters()
     locations = get_locations()
-    locations_ids = list(loc['id'] for loc in locations)
+    locations_ids = list(loc.id for loc in locations)
 
     output = StringIO()
     fieldnames = ['nb', 'nc', 'date']

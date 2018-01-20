@@ -1,0 +1,28 @@
+Landers, 1, 13
+Homer, 2, 28
+Moses, 2, 55
+Archimedes, 3, 61
+Arthur, 1, 43
+Stéphane, 2, 67
+Julia, 2, 31
+Butterworth, 3, 2
+Bashful, 2, 30
+Milo, 1, 46
+
+
+Bart,1, 59
+Bender,1, 37
+Calvin,1, 40
+Verne,2, 50
+Valter,2, 29
+Tom,1, 60
+Marcus,3, 39
+Linus,2, 34
+Khan,1, 60
+Jeffrey,2, 50
+Howard,3, 62
+Goku,1, 28
+Ernie,1, 61
+Bridget,3, 62
+Sam,2, 8
+Doucette,1, 13

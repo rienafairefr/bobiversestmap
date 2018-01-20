@@ -1,37 +1,25 @@
 import os
 import re
+
 from sortedcontainers import SortedDict
 
-from generator.nl import tokenize, word_tokenize_sentences, sentences_tokenize
-from generator.utils import sorted_by_key, memoize, stripped
+from app import db
+from generator.models.books import Book
+from generator.models.chapters import BookChapter
+from generator.utils import memoize
 
 
-@memoize()
 def get_books():
-    with open(os.path.join('data', 'Combined.txt'), encoding='utf-8') as combined:
-        content = combined.readlines()
-
-    books = []
-    book = []
-
-    for line in content:
-        if line.startswith('##'):
-            if len(book) > 0:
-                books.append(stripped(book))
-            book = []
-        else:
-            book.append(line.strip())
-
-    books.append(stripped(book))
-    return books
+    return [[book_line.content for book_line in book.lines] for book in Book.query.all()]
 
 
 chapter_re = re.compile('^(\d*)\.(.*)$')
 
 
-@memoize()
-def get_book_chapters():
-    books = get_books()
+def import_book_chapters(books=None):
+    if books is None:
+        books = get_books()
+
     book_chapters = SortedDict()
     for index_book, book in enumerate(books):
         chapter = []
@@ -41,32 +29,30 @@ def get_book_chapters():
                 continue
             if re.match('^\d*\.', line):
                 if len(chapter) > 0:
-                    book_chapters[index_book + 1, index_chapter + 1] = BookChapter(chapter)
+                    book_chapter = BookChapter.from_chapter(chapter)
+                    book_chapter.nb = index_book + 1
+                    book_chapter.nc = index_chapter + 1
+                    book_chapters[index_book + 1, index_chapter + 1] = book_chapter
                     index_chapter = index_chapter + 1
                 chapter = []
             chapter.append(line)
-        book_chapters[index_book + 1, index_chapter + 1] = BookChapter(chapter)
+        book_chapter = BookChapter.from_chapter(chapter)
+        book_chapter.nb = index_book + 1
+        book_chapter.nc = index_chapter + 1
+        book_chapters[index_book + 1, index_chapter + 1] = book_chapter
 
     # Error in the book ? Big Top is in Epsilon Indi
-    book_chapters[3, 62].location = 'Epsilon Indi'
+    book_chapters[3, 62].location_id = 'Epsilon Indi'
 
-    return book_chapters
-
-
-class BookChapter(object):
-    def __init__(self, chapter):
-        self.bob = chapter[1]
-        self.date = chapter[2]
-        self.location = chapter[3]
-
-        self.raw = chapter
-
-        self.content = chapter[4:]
-        self.sentences = list(sentences_tokenize(self.content))
-        self.tokenized_content = list(word_tokenize_sentences(self.sentences))
+    db.session.add_all(book_chapters.values())
+    db.session.commit()
+    return get_book_chapters()
 
 
-@memoize()
+def get_book_chapters():
+    return {(b.nb, b.nc): b for b in db.session.query(BookChapter).all()}
+
+
 def get_keys():
     return get_book_chapters().keys()
 

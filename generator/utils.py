@@ -5,6 +5,10 @@ from inspect import ismethod
 
 from dogpile.cache import make_region
 from sortedcontainers import SortedDict
+from sqlalchemy import TypeDecorator, String
+from sqlalchemy.exc import IntegrityError
+from sqlalchemy.ext.declarative import DeclarativeMeta
+from sqlalchemy.orm.exc import NoResultFound
 
 os.makedirs('generated', exist_ok=True)
 
@@ -102,7 +106,58 @@ class JsonSerializable(object):
 
 class ObjectEncoder(json.JSONEncoder):
     def default(self, obj):
-        if hasattr(obj, "to_json"):
-            return self.default(obj.to_json())
-        else:
-            return obj
+        if isinstance(obj.__class__, DeclarativeMeta):
+            # an SQLAlchemy class
+            fields = {}
+            for field in [x for x in dir(obj) if not x.startswith('_') and x != 'metadata']:
+                data = obj.__getattribute__(field)
+                try:
+                    json.dumps(data)  # this will fail on non-encodable values, like other classes
+                    fields[field] = data
+                except TypeError:
+                    fields[field] = None
+            # a json-encodable dict
+            return fields
+
+        return json.JSONEncoder.default(self, obj)
+
+
+class ArrayType(TypeDecorator):
+    """ Sqlite-like does not support arrays.
+        Let's use a custom type decorator.
+
+        See http://docs.sqlalchemy.org/en/latest/core/types.html#sqlalchemy.types.TypeDecorator
+    """
+    impl = String
+
+    def process_bind_param(self, value, dialect):
+        if value is None:
+            pass
+        return json.dumps(value)
+
+    def process_result_value(self, value, dialect):
+        return json.loads(value)
+
+    def copy(self):
+        return ArrayType(self.impl.length)
+
+
+
+
+def get_one_or_create(session,
+                      model,
+                      create_method='',
+                      create_method_kwargs=None,
+                      **kwargs):
+    try:
+        return session.query(model).filter_by(**kwargs).one(), False
+    except NoResultFound:
+        kwargs.update(create_method_kwargs or {})
+        created = getattr(model, create_method, model)(**kwargs)
+        try:
+            session.add(created)
+            session.flush()
+            return created, True
+        except IntegrityError as e:
+            session.rollback()
+            return session.query(model).filter_by(**kwargs).one(), True

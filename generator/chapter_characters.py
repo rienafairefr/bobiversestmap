@@ -1,20 +1,23 @@
+from app import db
 from generator.books import get_book_chapters
-from generator.characters import get_characters_map, Character
-from generator.utils import memoize
+from generator.characters import get_characters
+from generator.models.chapter_characters import ChaptersCharacters
+from generator.models.chapters import BookChapter
 
 
-@memoize()
+def import_chapter_characters(book_chapters=None, characters=None):
+    if book_chapters is None:
+        book_chapters = get_book_chapters()
+    if characters is None:
+        characters = get_characters()
+
+    for k, book_chapter in book_chapters.items():
+        for character in characters:
+            for name in character.all_names:
+                if name in book_chapter.all_lines:
+                    db.session.add(ChaptersCharacters(character=character,chapter=book_chapter))
+    db.session.commit()
+
+
 def get_chapter_characters(k):
-    chapters_books = get_book_chapters()
-    book_chapter = chapters_books[k]
-    all_lines = '\n'.join(book_chapter.content)
-    characters_map = get_characters_map()
-    chapter_characters = list(characters_map.values())
-
-    chapter_characters = {character for character in chapter_characters if
-                          any(name in all_lines for name in character.all_names)}
-
-    if 'I' in all_lines:
-        chapter_characters.add(Character(name='I', id=book_chapter.bob))
-
-    return list(chapter_characters)
+    return db.session.query(BookChapter).get(k).characters
