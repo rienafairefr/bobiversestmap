@@ -3,21 +3,23 @@ from sqlalchemy.orm import relationship
 
 from app import db
 from generator.models.chapters import BookChapter
-from generator.models.characters import Character
+from generator.models.links import Link
 
 
-class ChaptersCharacters(db.Model):
-    __tablename__ = 'chapterscharacters'
+class ChaptersLink(db.Model):
+    __tablename__ = 'chapterslinks'
 
     id = Column(Integer, primary_key=True)
 
+
     chapter_nb = Column(Integer)
     chapter_nc = Column(Integer)
+    ns = Column(Integer)
 
     __table_args__ = (ForeignKeyConstraint([chapter_nb, chapter_nc],
                                            [BookChapter.nb, BookChapter.nc]),
                       {})
     chapter = relationship(BookChapter)
 
-    character_id = Column(Integer, ForeignKey('characters.id'))
-    character = relationship(Character, cascade="all")
+    link_id = Column(Integer, ForeignKey('links.id'))
+    link = relationship(Link)

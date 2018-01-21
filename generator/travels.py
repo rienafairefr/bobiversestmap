@@ -3,34 +3,30 @@ import os
 from sortedcontainers import SortedDict
 
 from generator.characters import get_characters_map
-from generator.dates import get_dates
 from generator.books import get_book_chapters, get_keys
-from generator.presences import get_characters_presences
 from generator.thresholds import get_thresholds_last, get_thresholds_first
-from generator.scenes_locations import get_scenes_locations_book
+from generator.chapters_locations import get_chapters_locations_book
 from generator.utils import memoize
 
 
 @memoize()
-def get_travels_book(nb=None, presences=None, book_chapters=None, scenes_locations=None, characters_map=None):
-    if presences is None:
-        presences = get_characters_presences(nb)
+def get_travels(nb=None, book_chapters=None, scenes_locations=None, characters_map=None):
     if book_chapters is None:
         book_chapters = get_book_chapters()
     if scenes_locations is None:
-        scenes_locations = get_scenes_locations_book(nb)
+        scenes_locations = get_chapters_locations_book(nb)
     if characters_map is None:
         characters_map = get_characters_map()
 
     data_travels_dict = SortedDict()
     for character_id, character in sorted(characters_map.items()):
-        for k, present_characters in presences.items():
+        for k, book_chapter in book_chapters.items():
             current_location = None
             if character.is_bob:
-                if character_id == book_chapters[k].bob :
+                if character == book_chapters[k].bob:
                     current_location = scenes_locations[k]
             else:
-                if character_id in present_characters:
+                if character in book_chapter.characters:
                     current_location = scenes_locations[k]
 
             if current_location is not None:
@@ -62,9 +58,7 @@ def postproces_births_deaths(data_travels_dict, threshold_deaths=None, threshold
     return data_travels_dict
 
 
-def postprocess(data_travels_dict, dates=None, characters_map=None, keys=None):
-    if dates is None:
-        dates = get_dates()
+def postprocess(data_travels_dict, characters_map=None, keys=None):
     if characters_map is None:
         characters_map = get_characters_map()
     if keys is None:
@@ -80,7 +74,7 @@ def postprocess(data_travels_dict, dates=None, characters_map=None, keys=None):
                 data_travels_dict[character_id, nb, nc]['location_id'] = 'Eta Cassiopeiae_Poseidon'
 
     def fix(bob, nb, nc, new_id):
-        data_travels_dict.setdefault((bob, nb, nc), {'date_id': dates[nb, nc].id})['location_id'] = new_id
+        data_travels_dict.setdefault((bob, nb, nc), {})['location_id'] = new_id
 
     def remove(bob, nb, nc):
         data_travels_dict[bob, nb, nc] = {}

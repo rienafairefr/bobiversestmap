@@ -25,8 +25,8 @@ class Character(db.Model):
     last_appearance_chapter_nb = Column(Integer)
     last_appearance_chapter_nc = Column(Integer)
 
-    first_appearance = relationship('BookChapter')
-    last_appearance = relationship('BookChapter')
+    first_appearance = relationship('BookChapter', foreign_keys=[first_appearance_chapter_nb, first_appearance_chapter_nc])
+    last_appearance = relationship('BookChapter', foreign_keys=[last_appearance_chapter_nb, last_appearance_chapter_nc])
 
 
     __table_args__ = (ForeignKeyConstraint([first_appearance_chapter_nb, first_appearance_chapter_nc, last_appearance_chapter_nb, last_appearance_chapter_nc],

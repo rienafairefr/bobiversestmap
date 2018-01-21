@@ -64,7 +64,6 @@ def get_characters_map():
     return sorted_by_key({character.id: character for character in get_characters()})
 
 
-@memoize()
 def get_bob_styles():
     bob_characters = get_bob_characters()
     styles = ''
@@ -73,18 +72,3 @@ def get_bob_styles():
 
         styles += template % (bob_character.id, cc.colorwheel[int(256 * i / len(bob_characters))])
     return styles
-
-
-def write_genealogy():
-    bob_characters = get_bob_characters()
-    json_dump(bob_characters, os.path.join('generated', 'bob_characters.json'))
-
-
-def write_bob_styles():
-    with open(os.path.join('css', 'bob_styles.css'), 'w') as css:
-        css.write(get_bob_styles())
-
-
-if __name__ == '__main__':
-    write_genealogy()
-    write_bob_styles()

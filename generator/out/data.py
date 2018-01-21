@@ -1,6 +1,6 @@
 from generator.characters import get_characters
 from generator.scenes import get_scenes
-from generator.scenes_locations import get_scenes_locations_book
+from generator.chapters_locations import get_chapters_locations_book
 from generator.utils import json_dump
 
 
@@ -8,7 +8,7 @@ def data_json(nb=None):
     characters = get_characters()
 
     scenes = list(get_scenes(nb).values())
-    scenes_locations = list(get_scenes_locations_book(nb).values())
+    scenes_locations = list(get_chapters_locations_book(nb).values())
 
     data = dict(characters=characters,
                 scenes=scenes,

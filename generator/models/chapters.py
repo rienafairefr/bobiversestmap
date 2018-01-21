@@ -3,8 +3,9 @@ from sqlalchemy.orm import relationship
 
 from app import db
 from generator.models.characters import Character
+from generator.models.dates import Period
+from generator.models.links import Link
 from generator.models.locations import Location
-from generator.nl import sentences_tokenize, word_tokenize_sentences
 from generator.utils import ArrayType
 
 
@@ -13,7 +14,7 @@ class BookChapter(db.Model):
 
     nb = Column(Integer, primary_key=True)
     nc = Column(Integer, primary_key=True)
-    bob = Column(String)
+    bob = Column(String, ForeignKey('characters.id'))
     date = Column(String)
     location_id = Column(String, ForeignKey('locations.id'))
     location = relationship(Location)
@@ -25,17 +26,8 @@ class BookChapter(db.Model):
     sentences = Column(ArrayType)
     tokenized_content = Column(ArrayType)
 
-    @classmethod
-    def from_chapter(cls, chapter):
-        obj = BookChapter()
-        obj.bob = chapter[1]
-        obj.date = chapter[2]
-        obj.raw_location = chapter[3]
-
-        obj.content = chapter[4:]
-        obj.all_lines = '\n'.join(chapter[4:])
-        obj.sentences = list(sentences_tokenize(obj.content))
-        obj.tokenized_content = list(word_tokenize_sentences(obj.sentences))
-        return obj
-
     characters = relationship(Character, secondary='chapterscharacters')
+    links = relationship(Link, secondary='chapterslinks', backref='chapter')
+    period_id = Column(Integer, ForeignKey('periods.id'))
+    period = relationship(Period)
+    bob_character = relationship(Character, foreign_keys=[bob])

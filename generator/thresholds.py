@@ -22,6 +22,8 @@ def get_thresholds(filename):
     thresholds_deaths = open(os.path.join('public_data', filename), encoding='utf-8').readlines()
     for line in thresholds_deaths:
         element = stripped(line.split(','))
+        if len(element) != 3:
+            continue
         thresholds[element[0]] = (int(element[1]), int(element[2]))
     return thresholds
 
@@ -30,6 +32,8 @@ def treat_threshold_lines(set_func, filename):
     lines = open(os.path.join('public_data', filename), encoding='utf-8').readlines()
     for line in lines:
         element = stripped(line.split(','))
+        if len(element) != 3:
+            continue
         character = db.session.query(Character).get(element[0])
         chapter = db.session.query(BookChapter).get((element[1], element[2]))
         if character is not None and chapter is not None:
@@ -37,6 +41,6 @@ def treat_threshold_lines(set_func, filename):
 
 
 def import_thresholds():
-    treat_threshold_lines(lambda c, v: setattr(c, 'last_appearance', v), 'thresholds_deaths.txt')
-    treat_threshold_lines(lambda c, v: setattr(c, 'first_appearance', v), 'thresholds_births.txt')
+    treat_threshold_lines(lambda c, v: setattr(c, 'last_appearance', v), 'thresholds_last.txt')
+    treat_threshold_lines(lambda c, v: setattr(c, 'first_appearance', v), 'thresholds_first.txt')
     db.session.commit()

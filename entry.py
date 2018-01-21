@@ -4,12 +4,15 @@ from app import db
 from generator.books import import_book_chapters, get_books
 from generator.chapter_characters import get_chapter_characters, import_chapter_characters
 from generator.characters import import_characters
+from generator.links import import_links, treat_scut_links
 from generator.locations import import_locations
 from generator.models.books import Book, BookLine
-from generator.scenes_locations import treat_scenes_locations
+from generator.models.character_lines import CharacterLine
+from generator.chapters_locations import treat_chapters_locations
 from generator.stars import import_stars
 from generator.thresholds import import_thresholds
 from generator.timeline import import_timeline_descriptions
+from generator.travels import get_travels
 
 
 def import_books(path):
@@ -40,7 +43,11 @@ def import_combined(path):
     locations = import_locations()
     characters = import_characters()
     book_chapters = import_book_chapters(books)
-    import_thresholds()
-    treat_scenes_locations(book_chapters)
-    import_timeline_descriptions()
+
     import_chapter_characters(book_chapters, characters)
+    import_links(book_chapters)
+    import_thresholds()
+    treat_chapters_locations(book_chapters)
+    import_timeline_descriptions()
+    travels = get_travels()
+    treat_scut_links()

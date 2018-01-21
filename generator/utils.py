@@ -41,12 +41,6 @@ def make_hash(obj):
     return hash(tuple(frozenset(new_obj.items())))
 
 
-def fun(t):
-    def fun1():
-        def fun2():
-            return t
-
-
 def memoize(cache_region=memory, ttl=300, ttl_ignore=False):
     """ Memoized value cache decorator with expiration TTL support.
 
@@ -140,8 +134,6 @@ class ArrayType(TypeDecorator):
 
     def copy(self):
         return ArrayType(self.impl.length)
-
-
 
 
 def get_one_or_create(session,
