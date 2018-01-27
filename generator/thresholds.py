@@ -3,32 +3,20 @@ import os
 from app import db
 from generator.models.chapters import BookChapter
 from generator.models.characters import Character
-from generator.utils import memoize, stripped
+from generator.utils import stripped
 
 
-@memoize()
 def get_thresholds_last():
-    return get_thresholds('thresholds_last.txt')
+    characters = db.session.query(Character).all()
+    return {c.id:c.last_appearance for c in characters if c.last_appearance is not None}
 
 
-@memoize()
 def get_thresholds_first():
-    return get_thresholds('thresholds_first.txt')
+    characters = db.session.query(Character).all()
+    return {c.id: c.first_appearance for c in characters if c.first_appearance is not None}
 
 
-@memoize()
-def get_thresholds(filename):
-    thresholds = {}
-    thresholds_deaths = open(os.path.join('public_data', filename), encoding='utf-8').readlines()
-    for line in thresholds_deaths:
-        element = stripped(line.split(','))
-        if len(element) != 3:
-            continue
-        thresholds[element[0]] = (int(element[1]), int(element[2]))
-    return thresholds
-
-
-def treat_threshold_lines(set_func, filename):
+def import_threshold(set_func, filename):
     lines = open(os.path.join('public_data', filename), encoding='utf-8').readlines()
     for line in lines:
         element = stripped(line.split(','))
@@ -41,6 +29,6 @@ def treat_threshold_lines(set_func, filename):
 
 
 def import_thresholds():
-    treat_threshold_lines(lambda c, v: setattr(c, 'last_appearance', v), 'thresholds_last.txt')
-    treat_threshold_lines(lambda c, v: setattr(c, 'first_appearance', v), 'thresholds_first.txt')
+    import_threshold(lambda c, v: setattr(c, 'last_appearance', v), 'thresholds_last.txt')
+    import_threshold(lambda c, v: setattr(c, 'first_appearance', v), 'thresholds_first.txt')
     db.session.commit()

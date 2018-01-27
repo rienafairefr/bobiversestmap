@@ -1,5 +1,6 @@
 from sqlalchemy import String, Column, ForeignKey, Integer
 from sqlalchemy.orm import relationship
+from sqlalchemy.util import hybridproperty
 
 from app import db
 from generator.models.characters import Character
@@ -14,20 +15,23 @@ class BookChapter(db.Model):
 
     nb = Column(Integer, primary_key=True)
     nc = Column(Integer, primary_key=True)
-    bob = Column(String, ForeignKey('characters.id'))
-    date = Column(String)
+
+    @hybridproperty
+    def k(self):
+        return self.nb, self.nc
+
+    bob_id = Column(ForeignKey('characters.id'))
     location_id = Column(String, ForeignKey('locations.id'))
     location = relationship(Location)
     raw_location = Column(String)
     description = Column(String)
 
-    content = Column(ArrayType)
     all_lines = Column(String)
     sentences = Column(ArrayType)
     tokenized_content = Column(ArrayType)
 
     characters = relationship(Character, secondary='chapterscharacters')
     links = relationship(Link, secondary='chapterslinks', backref='chapter')
-    period_id = Column(Integer, ForeignKey('periods.id'))
+    period_id = Column(String, ForeignKey('periods.id'))
     period = relationship(Period)
-    bob_character = relationship(Character, foreign_keys=[bob])
+    bob_character = relationship(Character, foreign_keys=[bob_id])

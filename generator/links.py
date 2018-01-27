@@ -3,47 +3,32 @@ import itertools
 import os
 
 from app import db
-from generator.books import get_book_chapters, get_keys
-from generator.chapter_characters import get_chapter_characters
+from generator.common import get_keys
 from generator.models import ChaptersLink
-from generator.models.books import Book
 from generator.models.chapters import BookChapter
 from generator.models.links import Link
 from generator.travels import get_travels
-from generator.utils import memoize
 
 
-def import_links(book_chapters=None):
-    if book_chapters is None:
-        book_chapters = get_book_chapters()
+def treat_one_chapter_link(book_chapter):
+    book_chapter_links = []
+    for isent, tokenized_sentence in enumerate(book_chapter.tokenized_content):
+        ns = isent + 1
+        for character_pair in itertools.combinations(book_chapter.characters, 2):
+            characterA = character_pair[0]
+            characterB = character_pair[1]
 
-    links = {}
-    for k, book_chapter in book_chapters.items():
-        nb, nc = k
-        chapter_characters = get_chapter_characters(k)
-
-        for isent, tokenized_sentence in enumerate(book_chapter.tokenized_content):
-            ns = isent + 1
-            for character_pair in itertools.combinations(chapter_characters, 2):
-                characterA = character_pair[0]
-                characterB = character_pair[1]
-
-                for name0 in characterA.all_names:
-                    for name1 in characterB.all_names:
-                        if characterB.id > characterA.id \
-                                and name0 in tokenized_sentence \
-                                and name1 in tokenized_sentence:
-                            link = Link(characterA=characterA,
-                                         characterB=characterB,
-                                        ns = ns,
-                                         sentence=book_chapter.sentences[isent])
-                            book_chapter.links.append(link)
-
-    # write_links(links)
-    db.session.commit()
-    postprocess_links()
-
-    return get_links()
+            for name0 in characterA.all_names:
+                for name1 in characterB.all_names:
+                    if characterB.id > characterA.id \
+                            and name0 in tokenized_sentence \
+                            and name1 in tokenized_sentence:
+                        link = Link(characterA=characterA,
+                                    characterB=characterB,
+                                    ns=ns,
+                                    sentence=book_chapter.sentences[isent])
+                        book_chapter.links.append(link)
+    return book_chapter_links
 
 
 def treat_scut_links(travels=None):
@@ -58,7 +43,6 @@ def treat_scut_links(travels=None):
         link.is_scut = locationA != {} and locationB != {} and locationA != locationB
 
 
-@memoize()
 def get_links(nb=None):
     q = db.session.query(BookChapter, BookChapter.links)
     if nb is not None:

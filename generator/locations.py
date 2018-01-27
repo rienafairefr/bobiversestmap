@@ -3,14 +3,13 @@ import os
 from app import db
 from generator.models.locations import Location
 from generator.stars import get_stars
-from generator.utils import json_dump, memoize
 
 
 def import_locations():
     with open(os.path.join('public_data', 'locations.txt')) as location:
         lines = location.readlines()
 
-    stars = get_stars().values()
+    stars = get_stars()
 
     locations = [Location(id=s.name, star=s) for s in stars]
     for line in lines:

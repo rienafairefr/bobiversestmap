@@ -4,8 +4,13 @@ import re
 from sortedcontainers import SortedDict
 
 from app import db
+from generator.chapter_characters import treat_one_chapters_characters
+from generator.chapters_locations import treat_one_location
+from generator.dates import treat_one
+from generator.links import treat_one_chapter_link
 from generator.models.books import Book
 from generator.models.chapters import BookChapter
+from generator.models.characters import Character
 from generator.nl import sentences_tokenize, word_tokenize_sentences
 
 
@@ -18,14 +23,19 @@ chapter_re = re.compile('^(\d*)\.(.*)$')
 
 def from_chapter(chapter):
     obj = BookChapter()
-    obj.bob = chapter[1]
-    obj.date = chapter[2]
-    obj.raw_location = chapter[3]
+    obj.bob_character = db.session.query(Character).get(chapter[1].content)
+    obj.period =treat_one(chapter[2].content)
+    obj.raw_location = chapter[3].content
+    obj.location = treat_one_location(chapter[3].content)
 
-    obj.content = chapter[4:]
-    obj.all_lines = '\n'.join(chapter[4:])
-    obj.sentences = list(sentences_tokenize(obj.content))
+    obj.lines = chapter[4:]
+    content = [line.content for line in obj.lines]
+    obj.all_lines = '\n'.join(content)
+    obj.sentences = list(sentences_tokenize(content))
     obj.tokenized_content = list(word_tokenize_sentences(obj.sentences))
+
+    obj.characters = treat_one_chapters_characters(obj)
+    obj.links = treat_one_chapter_link(obj)
 
     return obj
 
@@ -39,12 +49,13 @@ def import_book_chapters(books=None):
         chapter = []
         index_chapter = 0
 
-        def create(idx, ch):
-            book_chapter = from_chapter([book_line.content for book_line in ch])
-            book_chapter.nb = index_book + 1
-            book_chapter.nc = idx + 1
-            book_chapter.lines = ch
-            book_chapters[index_book + 1, idx + 1] = book_chapter
+        def create(idx, chapter):
+            with db.session.no_autoflush:
+                book_chapter = from_chapter(chapter)
+                book_chapter.nb = index_book + 1
+                book_chapter.nc = idx + 1
+                book_chapter.lines = book_chapter.lines
+                book_chapters[index_book + 1, idx + 1] = book_chapter
 
         for book_line in book_lines:
             line = book_line.content
@@ -71,10 +82,6 @@ def get_book_chapters(nb=None):
     if nb is not None:
         q = q.filter(BookChapter.nb == nb)
     return {(b.nb, b.nc): b for b in q.all()}
-
-
-def get_keys():
-    return get_book_chapters().keys()
 
 
 def write_chapters(book_chapters):

@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, DateTime
+from sqlalchemy import Column, Integer, DateTime, String
 from sqlalchemy.ext.hybrid import hybrid_property
 
 from app import db
@@ -13,3 +13,11 @@ class Period(db.Model):
     @hybrid_property
     def duration(self):
         return self.time_end-self.time_start
+
+    @duration.setter
+    def duration(self, value):
+        time_end = self.time_start + value
+        self.time_end = time_end
+
+    def __repr__(self):
+        return '< Period ' + self.time_start + ' ' + self.duration + '>'

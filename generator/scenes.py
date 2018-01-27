@@ -1,13 +1,7 @@
-import itertools
 import os
 
 from generator.books import get_book_chapters
-from generator.chapter_characters import get_chapter_characters
-from generator.characters import get_characters_map, get_characters
 from generator.utils import json_dump, memoize, sorted_by_key
-
-
-
 
 
 @memoize()

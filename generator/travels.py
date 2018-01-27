@@ -1,83 +1,82 @@
 import contextlib
 import os
-from sortedcontainers import SortedDict
 
-from generator.characters import get_characters_map
-from generator.books import get_book_chapters, get_keys
+from app import db
+from generator.characters import get_characters_map, get_characters
+from generator.common import get_keys
+from generator.models.chapter_characters_travel import CharacterTravel
 from generator.thresholds import get_thresholds_last, get_thresholds_first
-from generator.chapters_locations import get_chapters_locations_book
-from generator.utils import memoize
 
 
-@memoize()
-def get_travels(nb=None, book_chapters=None, scenes_locations=None, characters_map=None):
-    if book_chapters is None:
-        book_chapters = get_book_chapters()
-    if scenes_locations is None:
-        scenes_locations = get_chapters_locations_book(nb)
-    if characters_map is None:
-        characters_map = get_characters_map()
+def treat_one(character, book_chapter):
+    current_location = None
+    if (character.is_bob and character == book_chapter.bob_character)\
+            or (character in book_chapter.characters):
+        current_location = book_chapter.location
 
-    data_travels_dict = SortedDict()
-    for character_id, character in sorted(characters_map.items()):
-        for k, book_chapter in book_chapters.items():
-            current_location = None
-            if character.is_bob:
-                if character == book_chapters[k].bob:
-                    current_location = scenes_locations[k]
-            else:
-                if character in book_chapter.characters:
-                    current_location = scenes_locations[k]
-
-            if current_location is not None:
-                current_location_id = current_location.id
-            else:
-                current_location_id = None
-            nb, nc = k
-            data_travels_dict[character_id, nb, nc] = {'location_id': current_location_id}
-
-    data_travels_dict = postprocess(data_travels_dict)
-    data_travels_dict = postproces_births_deaths(data_travels_dict)
-    write_travels(data_travels_dict)
-
-    return data_travels_dict
+    character_travel = CharacterTravel(character=character,
+                                       chapter=book_chapter,
+                                       location=current_location)
+    character.travels.append(character_travel)
 
 
-def postproces_births_deaths(data_travels_dict, threshold_deaths=None, threshold_births=None):
-    if threshold_deaths is None:
-        threshold_deaths = get_thresholds_last()
-    if threshold_births is None:
-        threshold_births = get_thresholds_first()
-
-    for (character_id, nb, nc), element in data_travels_dict.items():
-        threshold_death = threshold_deaths.get(character_id)
-        threshold_birth = threshold_births.get(character_id)
-        if (threshold_birth is not None and (nb, nc) < threshold_birth) \
-                or (threshold_death is not None and (nb, nc) > threshold_death):
-            data_travels_dict[character_id, nb, nc] = {}
-    return data_travels_dict
+def import_chapter_characters_travels(book_chapters):
+    for character in get_characters():
+        for book_chapter in book_chapters.values():
+            treat_one(character, book_chapter)
+    postprocess_character_travels()
+    db.session.commit()
+    write_travels()
 
 
-def postprocess(data_travels_dict, characters_map=None, keys=None):
-    if characters_map is None:
-        characters_map = get_characters_map()
-    if keys is None:
-        keys = get_keys()
+def get_travels(nb=None):
+    q = db.session.query(CharacterTravel)
+    if nb is not None:
+        q = q.filter(CharacterTravel.chapter.nb==nb)
+    return {(ct.character.character_id,ct.chapter.nb, ct.chapter.nc):ct.location.id for ct in
+            q.all()}
 
-    for (character_id, nb, nc), element in data_travels_dict.items():
-        character = characters_map[character_id]
+
+def postproces_births_deaths(thresholds_last=None, thresholds_first=None):
+    characters_travels = db.session.query(CharacterTravel).all()
+    if thresholds_last is None:
+        thresholds_last = get_thresholds_last()
+    if thresholds_first is None:
+        thresholds_first = get_thresholds_first()
+
+    for character_travel in characters_travels:
+        character_id = character_travel.character_id
+        nb, nc = character_travel.chapter.k
+        threshold_last = thresholds_last.get(character_id)
+        threshold_first = thresholds_first.get(character_id)
+        if (threshold_first is not None and (nb, nc) < threshold_first) \
+                or (threshold_last is not None and (nb, nc) > threshold_last):
+            db.session.remove(character_travel)
+    db.session.commit()
+
+
+def postprocess_character_travels():
+    keys = get_keys()
+    characters_travels = db.session.query(CharacterTravel).all()
+    postproces_births_deaths()
+
+    for characters_travel in characters_travels:
+        character = characters_travel.character
         if character.affiliation == 'Deltans':
-            if element['location_id'] is not None:
-                data_travels_dict[character_id, nb, nc]['location_id'] = 'Delta Eridani_Eden'
+            if characters_travel.location_id is not None:
+                characters_travel.location_id = 'Delta Eridani_Eden'
         if character.affiliation == 'Poseidon Revolution':
-            if element['location_id'] is not None:
-                data_travels_dict[character_id, nb, nc]['location_id'] = 'Eta Cassiopeiae_Poseidon'
+            if characters_travel.location_id is not None:
+                characters_travel.location_id = 'Eta Cassiopeiae_Poseidon'
 
-    def fix(bob, nb, nc, new_id):
-        data_travels_dict.setdefault((bob, nb, nc), {})['location_id'] = new_id
+    def get(character_id, nb, nc):
+        return db.session.query(CharacterTravel).get(character_id, nb, nc)
 
-    def remove(bob, nb, nc):
-        data_travels_dict[bob, nb, nc] = {}
+    def fix(character_id, nb, nc, new_id):
+        get(character_id, nb, nc).location_id = new_id
+
+    def remove(character_id, nb, nc):
+        db.session.remove(get(character_id, nb, nc))
 
     fix('Arthur', 1, 31, 'Sol_Earth')
     fix('Arthur', 1, 43, 'Sol_Earth')
@@ -127,14 +126,14 @@ def postprocess(data_travels_dict, characters_map=None, keys=None):
     fix('Bruce', 1, 45, 'Alpha Centauri')
     fix('Bruce', 2, 37, '11 Leonis Minoris')
 
-    # Milo
+    #  Milo
     fix('Milo', 1, 17, 'Epsilon Eridani')
     fix('Milo', 1, 19, 'Omicron2 Eridani')
     fix('Milo', 1, 46, '82 Eridani')
 
     # Landers on Vulcan
     for k in keys:
-        if k> (1, 1) and k <= (1, 13):
+        if k > (1, 1) and k <= (1, 13):
             fix('Landers', *k, 'Sol_Earth')
 
     # Butterworth on Vulcan
@@ -247,28 +246,28 @@ def postprocess(data_travels_dict, characters_map=None, keys=None):
     delete = []
     current_location_id = None
     # fill gaps with current known location
-    for (character_id, nb, nc), element in data_travels_dict.items():
+    for characters_travel in characters_travels:
+        nb, nc = characters_travel.chapter.k
+
         if (nb, nc) == (1, 1):
             current_location_id = None
 
-        if element.get('location_id') is not None:
+        if characters_travel.location_id is not None:
             # location is filled
-            current_location_id = element['location_id']
+            current_location_id = characters_travel.location_id
         else:
             # no location
             if current_location_id is None:
                 # mark for deletion
-                delete.append((character_id, nb, nc))
+                delete.append(characters_travel)
             else:
                 # propagate in the gaps
-                data_travels_dict[character_id, nb, nc]['location_id'] = current_location_id
-    for k in delete:
-        data_travels_dict[k] = {}
-
-    return data_travels_dict
+                current_location_id.location_id = current_location_id
+    for characters_travel in delete:
+        db.session.remove(characters_travel)
 
 
-def write_travels(data_travels_dict, characters_map=None):
+def write_travels(characters_map=None):
     if characters_map is None:
         characters_map = get_characters_map()
 
@@ -277,22 +276,22 @@ def write_travels(data_travels_dict, characters_map=None):
         locations_files = {}
         for character_id in characters_map.keys():
             os.makedirs(os.path.join('generated', character_id), exist_ok=True)
-            locations_files[character_id] = stack.enter_context(open(os.path.join('generated', character_id, 'locations'), 'w',
-                                                 encoding='utf-8'))
+            locations_files[character_id] = stack.enter_context(
+                open(os.path.join('generated', character_id, 'locations'), 'w',
+                     encoding='utf-8'))
 
-        for (character_id, nb, nc), element in data_travels_dict.items():
+        for character_travel in db.session.query(CharacterTravel).all():
             locations_file = locations_files[character_id]
 
-            if element.get('location_id') is None:
+            if character_travel.location_id is None:
                 location_id = '-----'
             else:
-                location_id = element['location_id']
+                location_id = character_travel.location_id
 
+            nb, nc = character_travel.chapter.k
             try:
                 locations_file.write('{:^10s} {:3d} {:3d} {:s}\n'.format(character_id, nb, nc, location_id))
             except TypeError:
                 locations_file.write(
                     '{:^10s} {:3d} {:3d} {:s} -> {:s}\n'.format(character_id, nb, nc, location_id[0],
                                                                 location_id[1]))
-
-

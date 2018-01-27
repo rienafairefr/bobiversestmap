@@ -5,6 +5,7 @@ from flask_script import Manager, Server
 
 from app import create_app, db
 from entry import import_combined
+from generator.nl import download_ntlk
 from generator.out.data import data_json as get_data_json
 from generator.out.travels import get_travels_book_json, get_travels_book_csv
 
@@ -22,6 +23,7 @@ def custom_call():
     db.init_app(c_app)
     db.create_all()
 
+    download_ntlk()
 
     import_combined(os.path.join('data', 'Combined.txt'))
 

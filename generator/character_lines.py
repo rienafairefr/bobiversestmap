@@ -2,7 +2,6 @@ import itertools
 import os
 
 from generator.books import get_book_chapters
-from generator.chapter_characters import get_chapter_characters
 from generator.characters import get_characters_map, get_characters
 from generator.utils import sorted_by_key
 
@@ -19,7 +18,7 @@ def import_character_lines(book_chapters=None, characters=None):
 
     for k, book_chapter in book_chapters.items():
         character_lines[book_chapter.bob][k] = ['**NAMED CHAPTER**']
-        chapter_characters = get_chapter_characters(k)
+        chapter_characters = book_chapter.characters
 
         for tokenized_sentence in book_chapter.tokenized_content:
             line = ' '.join(tokenized_sentence)

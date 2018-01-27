@@ -1,7 +1,19 @@
+from generator.books import get_book_chapters
 from generator.characters import get_characters
 from generator.scenes import get_scenes
-from generator.chapters_locations import get_chapters_locations_book
-from generator.utils import json_dump
+from generator.utils import json_dump, sorted_by_key
+
+
+def get_chapters_locations(book_chapters=None):
+    if book_chapters is None:
+        book_chapters = get_book_chapters()
+    scenes_locations = sorted_by_key({k: book_chapter.location for k, book_chapter in book_chapters.items()})
+
+    return scenes_locations
+
+
+def get_chapters_locations_book(nb=None):
+    return sorted_by_key({k: v for k, v in get_chapters_locations().items() if nb is None or k[0] == nb})
 
 
 def data_json(nb=None):

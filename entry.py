@@ -2,17 +2,18 @@ from sqlalchemy import inspect
 
 from app import db
 from generator.books import import_book_chapters, get_books
-from generator.chapter_characters import get_chapter_characters, import_chapter_characters
+from generator.chapter_characters import postprocess_chapter_characters
+from generator.chapters_locations import psotprocess_chapters_locations
 from generator.characters import import_characters
-from generator.links import import_links, treat_scut_links
+from generator.dates import postprocess_dates
+from generator.links import treat_scut_links, postprocess_links
 from generator.locations import import_locations
 from generator.models.books import Book, BookLine
-from generator.models.character_lines import CharacterLine
-from generator.chapters_locations import treat_chapters_locations
-from generator.stars import import_stars
+from generator.stars import import_stars, import_starsmap
 from generator.thresholds import import_thresholds
 from generator.timeline import import_timeline_descriptions
-from generator.travels import get_travels
+from generator.travels import get_travels, import_chapter_characters_travels, postprocess_character_travels, \
+    write_travels
 
 
 def import_books(path):
@@ -40,14 +41,18 @@ def import_books(path):
 def import_combined(path):
     books = import_books(path)
     stars = import_stars()
+    import_starsmap()
     locations = import_locations()
     characters = import_characters()
     book_chapters = import_book_chapters(books)
+    import_chapter_characters_travels(book_chapters)
 
-    import_chapter_characters(book_chapters, characters)
-    import_links(book_chapters)
+    postprocess_dates()
+    postprocess_chapter_characters(book_chapters)
+    postprocess_links()
+
     import_thresholds()
-    treat_chapters_locations(book_chapters)
+    psotprocess_chapters_locations()
     import_timeline_descriptions()
     travels = get_travels()
     treat_scut_links()

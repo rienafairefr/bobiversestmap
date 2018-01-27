@@ -2,15 +2,8 @@ from sqlalchemy import String, Column, Boolean, ForeignKey
 from sqlalchemy.orm import relationship
 
 from app import db
-from generator.utils import ArrayType
+from generator.models.stars import Star
 
-
-class Star(db.Model):
-    __tablename__ = 'stars'
-    id = Column(String, primary_key=True)
-
-    name = Column(String)
-    other_names = Column(ArrayType)
 
 
 class Location(db.Model):

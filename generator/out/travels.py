@@ -15,9 +15,9 @@ def get_travels_book_json(nb=None):
     def _treatvalue(val):
         return list(sorted_by_key(val).values())
 
-    travels_books = get_travels(nb).items()
+    travels_books = get_travels(nb)
 
-    travels = [{'character_id': character_id, 'travels': _treatvalue(value)} for character_id, value in travels_books]
+    travels = [{'character_id': character_id, 'travels': _treatvalue(value)} for character_id, value in travels_books.items()]
 
     return {'locations': locations,
             'characters': characters,
@@ -29,8 +29,6 @@ def get_travels_book_csv(nb=None):
 
     travels_books = get_travels(nb)
     characters = get_characters()
-    locations = get_locations()
-    locations_ids = list(loc.id for loc in locations)
 
     output = StringIO()
     fieldnames = ['nb', 'nc', 'date']

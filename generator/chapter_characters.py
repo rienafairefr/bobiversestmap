@@ -1,37 +1,32 @@
 from app import db
-from generator.books import get_book_chapters
 from generator.characters import get_characters
-from generator.models.chapter_characters import ChaptersCharacters
 from generator.models.chapters import BookChapter
 from generator.models.characters import Character
 from generator.thresholds import get_thresholds_last, get_thresholds_first
 
 
-def import_chapter_characters(book_chapters=None, characters=None):
-    if book_chapters is None:
-        book_chapters = get_book_chapters()
+def treat_one_chapters_characters(book_chapter, characters=None):
     if characters is None:
         characters = get_characters()
 
-    for k, book_chapter in book_chapters.items():
-        current_bob_character = db.session.query(Character).get(book_chapter.bob)
-        if current_bob_character not in book_chapter.characters:
-            book_chapter.characters.append(current_bob_character)
-        for character in characters:
-            for name in character.all_names:
-                for tokenized_sentence in book_chapter.tokenized_content:
-                    if name in tokenized_sentence:
-                        if character not in book_chapter.characters:
-                            book_chapter.characters.append(character)
-    db.session.commit()
-    postprocess_chapter_characters()
+    book_chapter_characters = []
+    current_bob_character = book_chapter.bob_character
+    if current_bob_character not in book_chapter_characters:
+        book_chapter_characters.append(current_bob_character)
+    for character in characters:
+        for name in character.all_names:
+            for tokenized_sentence in book_chapter.tokenized_content:
+                if name in tokenized_sentence:
+                    if character not in book_chapter_characters:
+                        book_chapter_characters.append(character)
 
-
-def get_chapter_characters(k):
-    return db.session.query(BookChapter).get(k).characters
+    return book_chapter_characters
 
 
 def postprocess_chapter_characters():
+    book_chapters = db.session.query(BookChapter).all()
+
+
     # False positive/ negative matches:
     def remove(nb, nc, character_id):
         character = db.session.query(Character).get(character_id)
@@ -59,8 +54,8 @@ def postprocess_chapter_characters():
     thresholds_last = get_thresholds_last()
     thresholds_first = get_thresholds_first()
 
-    book_chapters = get_book_chapters()
-    for k, book_chapter in book_chapters.items():
+    for book_chapter in book_chapters:
+        k = book_chapter.k
         for character in list(book_chapter.characters):
             for character_id, tup in thresholds_last.items():
                 if k > tup and character.id == character_id:
