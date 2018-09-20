@@ -57,11 +57,11 @@ def postprocess_chapter_characters():
     for book_chapter in book_chapters:
         k = book_chapter.k
         for character in list(book_chapter.characters):
-            for character_id, tup in thresholds_last.items():
-                if k > tup and character.id == character_id:
+            for character_id, bc in thresholds_last.items():
+                if book_chapter > bc and character.id == character_id:
                     remove(*k, character_id)
-            for character_id, tup in thresholds_first.items():
-                if k < tup and character.id == character_id:
+            for character_id, bc in thresholds_first.items():
+                if book_chapter < bc and character.id == character_id:
                     remove(*k, character_id)
 
     # 1-39 Bob talking about others
@@ -142,7 +142,8 @@ def postprocess_chapter_characters():
     remove(1, range(1, 44), 'Archimedes')  # remove instances before first contact with Archimedes
 
     # Fred represents 3 different characters
-    for (nb, nc), book_chapter in book_chapters.items():
+    for book_chapter in book_chapters:
+        nb, nc = book_chapter.k
         if any('Fred' in char.id for char in book_chapter.characters):
             # the Bob clone in book1
             if nb == 1:

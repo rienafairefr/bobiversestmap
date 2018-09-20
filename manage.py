@@ -1,40 +1,51 @@
 import os
 
-from flask import current_app
-from flask_script import Manager, Server
+from flask_script import Manager, Server, Command
+from flask_frozen import Freezer
 
 from app import create_app, db
 from entry import import_combined
 from generator.nl import download_ntlk
-from generator.out.data import data_json as get_data_json
-from generator.out.travels import get_travels_book_json, get_travels_book_csv
 
 
-class CustomServer(Server):
-    def __call__(self, app, *args, **kwargs):
-        with app.app_context():
-            with app.app_context():
-                custom_call()
-                return Server.__call__(self, app, *args, **kwargs)
+class ImportData(Command):
+    def run(self):
+        db.init_app(app)
+        db.create_all()
+
+        download_ntlk()
+
+        import_combined(os.path.join('data', 'Combined.txt'))
 
 
-def custom_call():
-    c_app = current_app
-    db.init_app(c_app)
-    db.create_all()
+def get_freezer(app):
+    freezer = Freezer(app)
 
-    download_ntlk()
+    @freezer.register_generator
+    def data_json_book():
+        for i in range(1,4):
+            yield 'main.data_json_book', {'book_number':i}
 
-    import_combined(os.path.join('data', 'Combined.txt'))
+    @freezer.register_generator
+    def travels_csv_book():
+        for i in range(1,4):
+            yield 'main.travels_csv_book', {'book_number':i}
 
-    # cache warmup
-    cached = get_data_json()
-    cached2 = get_travels_book_json()
-    cached3 = get_travels_book_csv()
+    return freezer
 
 
 if __name__ == '__main__':
     app = create_app()
     manager = Manager(app)
-    manager.add_command('runserver', CustomServer)
+    freezer = get_freezer(app)
+    freezer_manager = Manager(app)
+
+    serve = freezer_manager.command(freezer.serve)
+    run = freezer_manager.command(freezer.run)
+    freeze = freezer_manager.command(freezer.freeze)
+
+    manager.add_command('freeze', freezer_manager)
+    manager.add_command('runserver', Server)
+    manager.add_command('importdata', ImportData)
+
     manager.run()

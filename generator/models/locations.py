@@ -5,7 +5,6 @@ from app import db
 from generator.models.stars import Star
 
 
-
 class Location(db.Model):
     __tablename__ = 'locations'
     id = Column(String, primary_key=True)

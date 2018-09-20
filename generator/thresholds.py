@@ -8,7 +8,7 @@ from generator.utils import stripped
 
 def get_thresholds_last():
     characters = db.session.query(Character).all()
-    return {c.id:c.last_appearance for c in characters if c.last_appearance is not None}
+    return {c.id: c.last_appearance for c in characters if c.last_appearance is not None}
 
 
 def get_thresholds_first():

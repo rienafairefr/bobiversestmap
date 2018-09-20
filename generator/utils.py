@@ -2,6 +2,7 @@ import copy
 import json
 import os
 from inspect import ismethod
+from os.path import exists
 
 from dogpile.cache import make_region
 from sortedcontainers import SortedDict
@@ -10,13 +11,14 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.declarative import DeclarativeMeta
 from sqlalchemy.orm.exc import NoResultFound
 
-os.makedirs('generated', exist_ok=True)
+if not exists('generated'):
+    os.makedirs('generated')
 
 # Define basic in memory caches
-file = make_region().configure('dogpile.cache.dbm', expiration_time=30, arguments={
+file_cache = make_region().configure('dogpile.cache.dbm', expiration_time=30, arguments={
     "filename": os.path.join("generated", "cache.dbm")
 })
-memory = make_region().configure('dogpile.cache.memory')
+memory_cache = make_region().configure('dogpile.cache.memory')
 
 
 def json_dump(obj, filename):
@@ -41,7 +43,7 @@ def make_hash(obj):
     return hash(tuple(frozenset(new_obj.items())))
 
 
-def memoize(cache_region=memory, ttl=300, ttl_ignore=False):
+def memoize(cache_region=memory_cache, ttl=300, ttl_ignore=False):
     """ Memoized value cache decorator with expiration TTL support.
 
     :param cache_region:
@@ -69,12 +71,13 @@ def memoize(cache_region=memory, ttl=300, ttl_ignore=False):
 
             value = cache_region.get(cache_key, expiration_time=ttl, ignore_expiration=ttl_ignore)
             if not value:
-                print('Stale result %s ' % str(tup_key))
+                # print('Stale result %s ' % str(tup_key))
                 value = function(*args, **kwargs)
                 if value:
                     cache_region.set(cache_key, value)
             else:
-                print('Cached result %s ' % str(tup_key))
+                pass
+                # print('Cached result %s ' % str(tup_key))
             return value
 
         return wrap
@@ -153,3 +156,31 @@ def get_one_or_create(session,
         except IntegrityError as e:
             session.rollback()
             return session.query(model).filter_by(**kwargs).one(), True
+
+
+class ComparableMixin(object):
+    def _compare(self, other, method):
+        try:
+            return method(self._cmpkey(), other._cmpkey())
+        except (AttributeError, TypeError):
+            # _cmpkey not implemented, or return different type,
+            # so I can't compare with "other".
+            return NotImplemented
+
+    def __lt__(self, other):
+        return self._compare(other, lambda s,o: s < o)
+
+    def __le__(self, other):
+        return self._compare(other, lambda s,o: s <= o)
+
+    def __eq__(self, other):
+       return self._compare(other, lambda s,o: s == o)
+
+    def __ge__(self, other):
+        return self._compare(other, lambda s,o: s >= o)
+
+    def __gt__(self, other):
+        return self._compare(other, lambda s,o: s > o)
+
+    def __ne__(self, other):
+        return self._compare(other, lambda s,o: s != o)

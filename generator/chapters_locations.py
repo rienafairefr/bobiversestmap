@@ -26,7 +26,7 @@ def treat_one_location(scene_location):
     return returnvalue
 
 
-def psotprocess_chapters_locations():
+def postprocess_chapters_locations():
 
     chapters_locations = {}
 

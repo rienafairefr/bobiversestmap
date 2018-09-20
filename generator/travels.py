@@ -2,15 +2,18 @@ import contextlib
 import os
 
 from app import db
+from generator.books import get_book_chapters
+from generator.chapters_locations import treat_one_location
 from generator.characters import get_characters_map, get_characters
 from generator.common import get_keys
+from generator.models import Character, Location
 from generator.models.chapter_characters_travel import CharacterTravel
 from generator.thresholds import get_thresholds_last, get_thresholds_first
 
 
 def treat_one(character, book_chapter):
     current_location = None
-    if (character.is_bob and character == book_chapter.bob_character)\
+    if (character.is_bob and character == book_chapter.bob_character) \
             or (character in book_chapter.characters):
         current_location = book_chapter.location
 
@@ -20,24 +23,37 @@ def treat_one(character, book_chapter):
     character.travels.append(character_travel)
 
 
-def import_chapter_characters_travels(book_chapters):
-    for character in get_characters():
-        for book_chapter in book_chapters.values():
-            treat_one(character, book_chapter)
-    postprocess_character_travels()
+def import_chapter_characters_travels(book_chapters=None):
+    if book_chapters is None:
+        book_chapters = get_book_chapters()
+    with db.session.no_autoflush:
+        for character in get_characters():
+            for book_chapter in book_chapters.values():
+                treat_one(character, book_chapter)
+        postprocess_character_travels()
     db.session.commit()
     write_travels()
+
+
+def get_travels_dict(nb=None):
+    q = db.session.query(CharacterTravel)
+    if nb is not None:
+        q = q.filter(CharacterTravel.chapter.nb == nb)
+
+    returnvalue = {}
+    for ct in q.all():
+        returnvalue[(ct.character.id, ct.chapter.nb, ct.chapter.nc)] = ct
+    return returnvalue
 
 
 def get_travels(nb=None):
     q = db.session.query(CharacterTravel)
     if nb is not None:
-        q = q.filter(CharacterTravel.chapter.nb==nb)
-    return {(ct.character.character_id,ct.chapter.nb, ct.chapter.nc):ct.location.id for ct in
-            q.all()}
+        q = q.filter(CharacterTravel.chapter.nb == nb)
+    return q.all()
 
 
-def postproces_births_deaths(thresholds_last=None, thresholds_first=None):
+def postprocess_births_deaths(thresholds_last=None, thresholds_first=None):
     characters_travels = db.session.query(CharacterTravel).all()
     if thresholds_last is None:
         thresholds_last = get_thresholds_last()
@@ -49,16 +65,18 @@ def postproces_births_deaths(thresholds_last=None, thresholds_first=None):
         nb, nc = character_travel.chapter.k
         threshold_last = thresholds_last.get(character_id)
         threshold_first = thresholds_first.get(character_id)
-        if (threshold_first is not None and (nb, nc) < threshold_first) \
-                or (threshold_last is not None and (nb, nc) > threshold_last):
-            db.session.remove(character_travel)
+
+        if (threshold_first is not None and (nb, nc) < threshold_first.k) \
+                or (threshold_last is not None and (nb, nc) > threshold_last.k):
+            db.session.delete(character_travel)
+
     db.session.commit()
 
 
 def postprocess_character_travels():
     keys = get_keys()
     characters_travels = db.session.query(CharacterTravel).all()
-    postproces_births_deaths()
+    postprocess_births_deaths()
 
     for characters_travel in characters_travels:
         character = characters_travel.character
@@ -69,14 +87,19 @@ def postprocess_character_travels():
             if characters_travel.location_id is not None:
                 characters_travel.location_id = 'Eta Cassiopeiae_Poseidon'
 
-    def get(character_id, nb, nc):
-        return db.session.query(CharacterTravel).get(character_id, nb, nc)
+    def get(tup):
+        return db.session.query(CharacterTravel).get(tup)
 
     def fix(character_id, nb, nc, new_id):
-        get(character_id, nb, nc).location_id = new_id
+        value = get((character_id, nb, nc))
+        value.location = treat_one_location(new_id)
 
     def remove(character_id, nb, nc):
-        db.session.remove(get(character_id, nb, nc))
+        value = get((character_id, nb, nc))
+        if value is not None:
+            db.session.delete(value)
+        else:
+            pass
 
     fix('Arthur', 1, 31, 'Sol_Earth')
     fix('Arthur', 1, 43, 'Sol_Earth')
@@ -133,7 +156,7 @@ def postprocess_character_travels():
 
     # Landers on Vulcan
     for k in keys:
-        if k > (1, 1) and k <= (1, 13):
+        if (1, 1) < k <= (1, 13):
             fix('Landers', *k, 'Sol_Earth')
 
     # Butterworth on Vulcan
@@ -146,8 +169,8 @@ def postprocess_character_travels():
     # Charles one of the first Riker's clones when back to Sol
     fix('Charles', 1, 25, 'Sol')
 
-    fix('Daedalus', 3, 17, ['Epsilon Eridani', 'Epsilon Indi'])
-    fix('Daedalus', 3, 43, ['Epsilon Indi', 'GL 877'])
+    fix('Daedalus', 3, 17, 'Epsilon Eridani -> Epsilon Indi')
+    fix('Daedalus', 3, 43, 'Epsilon Indi -> GL 877')
     fix('Daedalus', 3, 70, 'GL 877')
 
     #  Dexter from Sol to Vulcan
@@ -224,7 +247,7 @@ def postprocess_character_travels():
             fix('Henry', *k, 'Sol_Earth')
 
     remove('Henry', 1, 1)
-    fix('Henry', 1, 13, ['Sol_Earth', 'Epsilon Indi'])
+    fix('Henry', 1, 13, 'Sol -> Epsilon Indi')
 
     # Herschel and Neil leaving for 82 Eridani in (3,75)
 
@@ -243,28 +266,17 @@ def postprocess_character_travels():
 
     # Isaac, Jack, and Owen three colony ships arriving in 82 Eridani from Sol in (3,18)
 
-    delete = []
     current_location_id = None
     # fill gaps with current known location
-    for characters_travel in characters_travels:
-        nb, nc = characters_travel.chapter.k
-
-        if (nb, nc) == (1, 1):
-            current_location_id = None
-
-        if characters_travel.location_id is not None:
-            # location is filled
-            current_location_id = characters_travel.location_id
-        else:
-            # no location
-            if current_location_id is None:
-                # mark for deletion
-                delete.append(characters_travel)
+    for character in db.session.query(Character).all():
+        current_location_id = None
+        for characters_travel in db.session.query(CharacterTravel) \
+                .order_by(CharacterTravel.chapter_nb.asc(), CharacterTravel.chapter_nc.asc()).all():
+            if characters_travel.location_id is not None:
+                # location is filled
+                current_location_id = characters_travel.location_id
             else:
-                # propagate in the gaps
-                current_location_id.location_id = current_location_id
-    for characters_travel in delete:
-        db.session.remove(characters_travel)
+                characters_travel.location_id = current_location_id
 
 
 def write_travels(characters_map=None):
@@ -295,3 +307,7 @@ def write_travels(characters_map=None):
                 locations_file.write(
                     '{:^10s} {:3d} {:3d} {:s} -> {:s}\n'.format(character_id, nb, nc, location_id[0],
                                                                 location_id[1]))
+
+
+if __name__ == '__main__':
+    import_chapter_characters_travels()

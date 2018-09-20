@@ -19,7 +19,7 @@ def get_chapters_locations_book(nb=None):
 def data_json(nb=None):
     characters = get_characters()
 
-    scenes = list(get_scenes(nb).values())
+    scenes = list(get_scenes(nb=nb).values())
     scenes_locations = list(get_chapters_locations_book(nb).values())
 
     data = dict(characters=characters,

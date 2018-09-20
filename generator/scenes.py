@@ -14,12 +14,15 @@ def get_scenes(book_chapters=None, nb=None):
     for k, book_chapter in book_chapters.items():
         book_chapter_characters = book_chapter.characters
 
-        present_set = {book_chapter.bob}
+        present_set = {book_chapter.bob_character.id}
         for character in book_chapter_characters:
             if not character.is_bob:
                 present_set.add(character.id)
 
-        scenes[k] = {'character_ids': list(present_set), 'description': book_chapter.description}
+        scenes[k] = {
+            'character_ids': list(present_set),
+            'description': book_chapter.description
+        }
 
     return sorted_by_key(scenes)
 

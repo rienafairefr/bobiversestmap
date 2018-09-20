@@ -7,10 +7,10 @@ from generator.models.characters import Character
 from generator.models.dates import Period
 from generator.models.links import Link
 from generator.models.locations import Location
-from generator.utils import ArrayType
+from generator.utils import ArrayType, ComparableMixin
 
 
-class BookChapter(db.Model):
+class BookChapter(db.Model, ComparableMixin):
     __tablename__ = 'bookchapters'
 
     nb = Column(Integer, primary_key=True)
@@ -35,3 +35,6 @@ class BookChapter(db.Model):
     period_id = Column(String, ForeignKey('periods.id'))
     period = relationship(Period)
     bob_character = relationship(Character, foreign_keys=[bob_id])
+
+    def _cmpkey(self):
+         return self.k

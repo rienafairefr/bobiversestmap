@@ -3,7 +3,7 @@ from io import StringIO
 
 from generator.characters import get_characters
 from generator.locations import get_locations
-from generator.travels import get_travels
+from generator.travels import get_travels_dict
 from generator.utils import memoize, sorted_by_key
 
 
@@ -15,7 +15,7 @@ def get_travels_book_json(nb=None):
     def _treatvalue(val):
         return list(sorted_by_key(val).values())
 
-    travels_books = get_travels(nb)
+    travels_books = get_travels_dict(nb)
 
     travels = [{'character_id': character_id, 'travels': _treatvalue(value)} for character_id, value in travels_books.items()]
 
@@ -27,7 +27,7 @@ def get_travels_book_json(nb=None):
 @memoize()
 def get_travels_book_csv(nb=None):
 
-    travels_books = get_travels(nb)
+    travels_books = get_travels_dict(nb)
     characters = get_characters()
 
     output = StringIO()
@@ -35,9 +35,13 @@ def get_travels_book_csv(nb=None):
     fieldnames.extend(ch.id for ch in characters)
     writer = csv.DictWriter(output, fieldnames=fieldnames)
     rows = {}
-    for (character_id, nb, nc), travel_element in travels_books.items():
-        default_row = dict(nb=nb, nc=nc, date=travel_element.datetime.strftime('%Y-%m-%d'))
-        location_id = travel_element.get('location_id')
+    for (character_id, nb, nc), character_travel in travels_books.items():
+        travel_period = character_travel.chapter.period
+
+        default_row = dict(nb=nb,
+                           nc=nc,
+                           date=travel_period.time_start.strftime('%Y-%m-%d'))
+        location_id = character_travel.location_id
 
         if location_id is not None:
             rows.setdefault((nb, nc), default_row)[character_id] = location_id

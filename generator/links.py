@@ -3,15 +3,29 @@ import itertools
 import os
 
 from app import db
+from generator.books import get_book_chapters
 from generator.common import get_keys
 from generator.models import ChaptersLink
+from generator.models.chapter_characters_travel import CharacterTravel
 from generator.models.chapters import BookChapter
 from generator.models.links import Link
-from generator.travels import get_travels
+
+
+def import_links(book_chapters=None):
+    if book_chapters is None:
+        book_chapters = get_book_chapters()
+
+    for book_chapter in book_chapters.values():
+        treat_one_chapter_link(book_chapter)
+
+    db.session.commit()
+    return get_links()
 
 
 def treat_one_chapter_link(book_chapter):
-    book_chapter_links = []
+    if len(book_chapter.characters) < 2:
+        return
+
     for isent, tokenized_sentence in enumerate(book_chapter.tokenized_content):
         ns = isent + 1
         for character_pair in itertools.combinations(book_chapter.characters, 2):
@@ -28,19 +42,21 @@ def treat_one_chapter_link(book_chapter):
                                     ns=ns,
                                     sentence=book_chapter.sentences[isent])
                         book_chapter.links.append(link)
-    return book_chapter_links
 
 
-def treat_scut_links(travels=None):
-    if travels is None:
-        travels = get_travels()
+def postprocess_scut_links():
+    def get_location(characterid, nb, nc):
+        return db.session.query(CharacterTravel).get((characterid, nb, nc)).location
+
     for chapter_link in db.session.query(ChaptersLink).all():
         link = chapter_link.link
 
-        locationA = travels.get((link.characterA.id, chapter_link.chapter_nb, chapter_link.chapter_nc))
-        locationB = travels.get((link.characterB.id, chapter_link.chapter_nb, chapter_link.chapter_nc))
+        locationA = get_location(link.characterA.id, chapter_link.chapter_nb, chapter_link.chapter_nc)
+        locationB = get_location(link.characterB.id, chapter_link.chapter_nb, chapter_link.chapter_nc)
 
         link.is_scut = locationA != {} and locationB != {} and locationA != locationB
+
+    db.session.commit()
 
 
 def get_links(nb=None):

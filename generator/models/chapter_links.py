@@ -11,7 +11,6 @@ class ChaptersLink(db.Model):
 
     id = Column(Integer, primary_key=True)
 
-
     chapter_nb = Column(Integer)
     chapter_nc = Column(Integer)
     ns = Column(Integer)

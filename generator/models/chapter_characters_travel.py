@@ -5,7 +5,7 @@ from generator.models import Character, relationship, Integer, ForeignKeyConstra
 
 
 class CharacterTravel(db.Model):
-    __tablename__ = 'charatertravels'
+    __tablename__ = 'charactertravels'
 
     character_id = Column(String, ForeignKey('characters.id'), primary_key=True)
     character = relationship(Character, backref='travels')

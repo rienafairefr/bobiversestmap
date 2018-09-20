@@ -7,7 +7,6 @@ from app import db
 from generator.chapter_characters import treat_one_chapters_characters
 from generator.chapters_locations import treat_one_location
 from generator.dates import treat_one
-from generator.links import treat_one_chapter_link
 from generator.models.books import Book
 from generator.models.chapters import BookChapter
 from generator.models.characters import Character
@@ -35,7 +34,6 @@ def from_chapter(chapter):
     obj.tokenized_content = list(word_tokenize_sentences(obj.sentences))
 
     obj.characters = treat_one_chapters_characters(obj)
-    obj.links = treat_one_chapter_link(obj)
 
     return obj
 

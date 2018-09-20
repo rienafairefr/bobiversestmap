@@ -22,10 +22,29 @@ Install requirements with `pip3 install -r requirements.txt'
 
 Then,
 
-    python3 prepare_data.py
+    python3 manage.py importdata
 
-Will generate the data.json, containing which characters are found in which chapters, the scenes,
-the characters, etc. That data.json is used in index.html (chart.js)
+This will import the Combined.txt into multiple datasets, all stored in a SQLite database
+
+* Book data (lines, chapters)
+* Characters for each Chapter
+* Characters location
+* Links (each sentence where two characters are is a link, some are SCUT --faster than light--)
+* Lines talked by each character
+* First/last appearances of a character
+* Space location (distances between stars etc)
+
+Then run
+
+    python3 manager.py runserver
+    
+This will serve a Flask-D3.js web-app on localhost:5000 where you can see graphs about
+that dataset 
+
+    python3 manage.py freeze freeze
+    
+Will store in docs/ a frozen dataset. This permits that the web-app to be "run"
+statically on github.io
 
 
 All characters and stories belong to Dennis E. Taylor and are &copy; Dennis E. Taylor

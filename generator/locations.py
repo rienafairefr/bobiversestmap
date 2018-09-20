@@ -17,9 +17,8 @@ def import_locations():
         place = line.strip().split(':')
         if len(place) == 2:
             locations.append(Location(id='_'.join(place),
-                              planet_name=place[1],
-                              star_id=place[0]))
-
+                                      planet_name=place[1],
+                                      star_id=place[0]))
 
     db.session.add_all(locations)
     db.session.commit()

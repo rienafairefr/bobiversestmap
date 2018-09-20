@@ -6,7 +6,7 @@ from sqlalchemy import inspect
 
 from app import db
 from generator.models.characters import Character
-from generator.utils import json_dump, memoize, sorted_by_key
+from generator.utils import sorted_by_key
 
 
 def get_bob_characters():

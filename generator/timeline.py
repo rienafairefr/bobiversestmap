@@ -21,7 +21,7 @@ def import_timeline_descriptions():
         split = strip(line.split('-'))
         matched = re.match('B(\d+)C(\d+)', split[1])
         nb, nc = (int(i) for i in matched.groups())
-        book_chapter = db.session.query(BookChapter).get((nb,nc))
+        book_chapter = db.session.query(BookChapter).get((nb, nc))
         if book_chapter is None:
             pass
         book_chapter.description = split[2]

@@ -26,7 +26,6 @@ def postprocess_dates():
     def get(*k):
         return db.session.query(BookChapter).get(k)
 
-
     # 1 day for the first 13th chapters
     for i in range(1, 14):
         get(1, i).period.duration = day
