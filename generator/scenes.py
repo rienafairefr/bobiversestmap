@@ -1,7 +1,7 @@
 import os
 
 from generator.books import get_book_chapters
-from generator.utils import json_dump, memoize, sorted_by_key
+from generator.utils import json_dump, memoize
 
 
 @memoize()
@@ -9,9 +9,9 @@ def get_scenes(book_chapters=None, nb=None):
     if book_chapters is None:
         book_chapters = get_book_chapters(nb)
 
-    scenes = {}
+    scenes = []
 
-    for k, book_chapter in book_chapters.items():
+    for book_chapter in book_chapters:
         book_chapter_characters = book_chapter.characters
 
         present_set = {book_chapter.bob_character.id}
@@ -19,17 +19,17 @@ def get_scenes(book_chapters=None, nb=None):
             if not character.is_bob:
                 present_set.add(character.id)
 
-        scenes[k] = {
+        scenes.append({
             'character_ids': list(present_set),
             'description': book_chapter.description
-        }
+        })
 
-    return sorted_by_key(scenes)
+    return scenes
 
 
 def write_scenes():
     def write_scenes_(nb=None):
-        json_dump(list(get_scenes(nb).values()), open(os.path.join('generated', 'scenes%s.json' % nb), 'w'))
+        json_dump(get_scenes(nb), open(os.path.join('generated', 'scenes%s.json' % nb), 'w'))
 
     write_scenes_()
     write_scenes_(1)

@@ -15,7 +15,7 @@ def import_links(book_chapters=None):
     if book_chapters is None:
         book_chapters = get_book_chapters()
 
-    for book_chapter in book_chapters.values():
+    for book_chapter in book_chapters:
         treat_one_chapter_link(book_chapter)
 
     db.session.commit()

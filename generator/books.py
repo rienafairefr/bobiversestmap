@@ -1,15 +1,11 @@
 import os
 import re
 
-from sortedcontainers import SortedDict
-
 from app import db
 from generator.chapter_characters import treat_one_chapters_characters
-from generator.chapters_locations import treat_one_location
-from generator.dates import treat_one
+from generator.dates import treat_one_period
 from generator.models.books import Book
 from generator.models.chapters import BookChapter
-from generator.models.characters import Character
 from generator.nl import sentences_tokenize, word_tokenize_sentences
 
 
@@ -22,18 +18,15 @@ chapter_re = re.compile('^(\d*)\.(.*)$')
 
 def from_chapter(chapter):
     obj = BookChapter()
-    obj.bob_character = db.session.query(Character).get(chapter[1].content)
-    obj.period =treat_one(chapter[2].content)
-    obj.raw_location = chapter[3].content
-    obj.location = treat_one_location(chapter[3].content)
+    obj.bob_id = chapter[1].content
+    obj.period = treat_one_period(chapter[2].content)
+    obj.location_id = chapter[3].content
 
     obj.lines = chapter[4:]
-    content = [line.content for line in obj.lines]
-    obj.all_lines = '\n'.join(content)
-    obj.sentences = list(sentences_tokenize(content))
-    obj.tokenized_content = list(word_tokenize_sentences(obj.sentences))
 
-    obj.characters = treat_one_chapters_characters(obj)
+    content = [line.content for line in obj.lines]
+    sentences = list(sentences_tokenize(content))
+    obj.tokenized_content = list(word_tokenize_sentences(sentences))
 
     return obj
 
@@ -42,7 +35,7 @@ def import_book_chapters(books=None):
     if books is None:
         books = get_books()
 
-    book_chapters = SortedDict()
+    book_chapters = {}
     for index_book, book_lines in enumerate(books):
         chapter = []
         index_chapter = 0
@@ -70,7 +63,9 @@ def import_book_chapters(books=None):
     # Error in the book ? Big Top is in Epsilon Indi
     book_chapters[3, 62].location_id = 'Epsilon Indi'
 
-    db.session.add_all(book_chapters.values())
+    book_chapters = list(book_chapters.values())
+
+    db.session.add_all(book_chapters)
     db.session.commit()
     return get_book_chapters()
 
@@ -79,7 +74,7 @@ def get_book_chapters(nb=None):
     q = db.session.query(BookChapter)
     if nb is not None:
         q = q.filter(BookChapter.nb == nb)
-    return {(b.nb, b.nc): b for b in q.all()}
+    return q.all()
 
 
 def write_chapters(book_chapters):

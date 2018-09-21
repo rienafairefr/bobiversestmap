@@ -23,11 +23,8 @@ class BookChapter(db.Model, ComparableMixin):
     bob_id = Column(ForeignKey('characters.id'))
     location_id = Column(String, ForeignKey('locations.id'))
     location = relationship(Location)
-    raw_location = Column(String)
     description = Column(String)
 
-    all_lines = Column(String)
-    sentences = Column(ArrayType)
     tokenized_content = Column(ArrayType)
 
     characters = relationship(Character, secondary='chapterscharacters')

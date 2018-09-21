@@ -4,7 +4,7 @@ from generator.models.locations import Location, Star
 from generator.utils import get_one_or_create
 
 
-def treat_one_location(scene_location):
+def import_location(scene_location):
     if '->' in scene_location:
         places = [el.strip() for el in scene_location.split('->')]
         star0 = db.session.query(Star).get(places[0])
@@ -79,7 +79,13 @@ def postprocess_chapters_locations():
     chapters_locations[3, 70] = 'GL 877'
 
     for k, v in chapters_locations.items():
-        db.session.query(BookChapter).get(k).location=treat_one_location(v)
+        db.session.query(BookChapter).get(k).location_d = import_location(v)
+
+    db.session.commit()
+
+    for book_chapter in db.session.query(BookChapter):
+        if book_chapter.location is None:
+            import_location(book_chapter.location_id)
 
     db.session.commit()
 

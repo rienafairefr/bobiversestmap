@@ -25,5 +25,3 @@ class BookLine(db.Model):
                                            [BookChapter.nb, BookChapter.nc]),
                       {})
     chapter = relationship(BookChapter, backref='lines')
-
-    characters = relationship(Character, secondary='characterlines')

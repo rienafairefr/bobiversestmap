@@ -3,10 +3,9 @@ import os
 
 from app import db
 from generator.books import get_book_chapters
-from generator.chapters_locations import treat_one_location
 from generator.characters import get_characters_map, get_characters
 from generator.common import get_keys
-from generator.models import Character, Location
+from generator.models import Character
 from generator.models.chapter_characters_travel import CharacterTravel
 from generator.thresholds import get_thresholds_last, get_thresholds_first
 
@@ -28,11 +27,10 @@ def import_chapter_characters_travels(book_chapters=None):
         book_chapters = get_book_chapters()
     with db.session.no_autoflush:
         for character in get_characters():
-            for book_chapter in book_chapters.values():
+            for book_chapter in book_chapters:
                 treat_one(character, book_chapter)
         postprocess_character_travels()
     db.session.commit()
-    write_travels()
 
 
 def get_travels_dict(nb=None):
@@ -92,7 +90,7 @@ def postprocess_character_travels():
 
     def fix(character_id, nb, nc, new_id):
         value = get((character_id, nb, nc))
-        value.location = treat_one_location(new_id)
+        value.location_id = new_id
 
     def remove(character_id, nb, nc):
         value = get((character_id, nb, nc))
@@ -270,7 +268,7 @@ def postprocess_character_travels():
     # fill gaps with current known location
     for character in db.session.query(Character).all():
         current_location_id = None
-        for characters_travel in db.session.query(CharacterTravel) \
+        for characters_travel in db.session.query(CharacterTravel).filter(CharacterTravel.character == character) \
                 .order_by(CharacterTravel.chapter_nb.asc(), CharacterTravel.chapter_nc.asc()).all():
             if characters_travel.location_id is not None:
                 # location is filled

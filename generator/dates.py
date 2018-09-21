@@ -13,7 +13,7 @@ day = relativedelta(days=1)
 default_datetime = datetime.datetime(year=1, month=1, day=1)
 
 
-def treat_one(date):
+def treat_one_period(date):
     parsed_datetime = parser.parse(date, default=default_datetime)
     #period = Period(id='period %u %u' % book_chapter.k,
     #                             time_start=parsed_datetime)

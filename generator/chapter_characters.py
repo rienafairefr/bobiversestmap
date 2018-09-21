@@ -9,22 +9,26 @@ def treat_one_chapters_characters(book_chapter, characters=None):
     if characters is None:
         characters = get_characters()
 
-    book_chapter_characters = []
     current_bob_character = book_chapter.bob_character
-    if current_bob_character not in book_chapter_characters:
-        book_chapter_characters.append(current_bob_character)
+    if current_bob_character not in book_chapter.characters:
+        book_chapter.characters.append(current_bob_character)
     for character in characters:
         for name in character.all_names:
             for tokenized_sentence in book_chapter.tokenized_content:
                 if name in tokenized_sentence:
-                    if character not in book_chapter_characters:
-                        book_chapter_characters.append(character)
+                    if character not in book_chapter.characters:
+                        book_chapter.characters.append(character)
 
-    return book_chapter_characters
 
 
 def postprocess_chapter_characters():
     book_chapters = db.session.query(BookChapter).all()
+    characters = get_characters()
+
+    for book_chapter in book_chapters:
+        treat_one_chapters_characters(book_chapter, characters)
+
+    db.session.commit()
 
 
     # False positive/ negative matches:
