@@ -3,7 +3,7 @@ import itertools
 import os
 
 from app import db
-from generator.books import get_book_chapters
+from generator.book_chapters import get_book_chapters
 from generator.common import get_keys
 from generator.models import ChaptersLink
 from generator.models.chapter_characters_travel import CharacterTravel
@@ -15,8 +15,9 @@ def import_links(book_chapters=None):
     if book_chapters is None:
         book_chapters = get_book_chapters()
 
-    for book_chapter in book_chapters:
-        treat_one_chapter_link(book_chapter)
+    with db.session.no_autoflush:
+        for book_chapter in book_chapters:
+            treat_one_chapter_link(book_chapter)
 
     db.session.commit()
     return get_links()
@@ -40,8 +41,9 @@ def treat_one_chapter_link(book_chapter):
                         link = Link(characterA=characterA,
                                     characterB=characterB,
                                     ns=ns,
-                                    sentence=book_chapter.sentences[isent])
+                                    sentence=' '.join(book_chapter.tokenized_content[isent]))
                         book_chapter.links.append(link)
+                        db.session.add(link)
 
 
 def postprocess_scut_links():

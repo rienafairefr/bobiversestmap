@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+
+[packages]
+python-dateutil = "*"
+colorcet = "*"
+flask-nav = "*"
+nltk = "*"
+"dogpile.cache" = "*"
+numpy = "*"
+astropy = "*"
+sortedcontainers = "*"
+Flask = "*"
+Frozen-Flask = "*"
+Flask-Bootstrap = "*"
+Flask-Script = "*"
+Flask-SQLAlchemy = "*"
+
+[requires]
+python_version = "3.6"

@@ -3,6 +3,7 @@ from flask.blueprints import Blueprint
 
 from generator.characters import get_bob_characters, get_bob_styles, get_characters
 from generator.locations import get_locations
+from generator.out.cooccurences import get_cooccurences_json
 from generator.out.data import data_json as get_data_json
 from generator.out.travels import get_travels_book_json, get_travels_book_csv
 
@@ -64,6 +65,16 @@ def travels_csv():
     return Response(get_travels_book_csv(), mimetype='test/csv')
 
 
+@main.route('/cooccurences.json')
+def cooccurences_json():
+    return jsonify(get_cooccurences_json())
+
+
+@main.route('/book/<int:book_number>/cooccurences.json')
+def cooccurences_json_book(book_number):
+    return jsonify(get_cooccurences_json(book_number))
+
+
 @main.route('/')
 def index_view():
     return render_template('narrative_chart.html')
@@ -72,3 +83,8 @@ def index_view():
 @main.route('/timeline.html')
 def timeline_view():
     return render_template('timeline.html')
+
+
+@main.route('/cooccurrences.html')
+def cooccurences_view():
+    return render_template('cooccurrences.html')

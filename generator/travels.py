@@ -2,7 +2,7 @@ import contextlib
 import os
 
 from app import db
-from generator.books import get_book_chapters
+from generator.book_chapters import get_book_chapters
 from generator.characters import get_characters_map, get_characters
 from generator.common import get_keys
 from generator.models import Character

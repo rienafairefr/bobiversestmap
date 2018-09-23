@@ -1,6 +1,6 @@
 import os
 
-from generator.books import get_book_chapters
+from generator.book_chapters import get_book_chapters
 from generator.utils import json_dump, memoize
 
 

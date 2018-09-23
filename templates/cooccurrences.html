@@ -1,0 +1,60 @@
+{% extends "bootstrap/base.html" %}
+
+{% block navbar %}
+{{nav.navbar.render()}}
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<style>
+    d3_plot {
+        font-size: 80%;
+    }
+
+    body.svg {
+        margin-left: 0px;
+    }
+
+    .background {
+        fill: #eee;
+    }
+
+    line {
+        stroke: #fff;
+    }
+
+    text.active {
+        fill: red;
+    }
+</style>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="http://d3js.org/d3.v2.min.js?2.8.1"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="static/js/coocurrences.js"></script>
+{% endblock %}
+
+{% block content %}
+    <h1>Character Co-occurrence</h1>
+<aside style="margin-top:20px;">
+    Order:
+    <select id="order">
+        <option value="name">by Name</option>
+        <option value="count">by Frequency</option>
+        <option value="group">by Cluster</option>
+    </select>
+</aside>
+<div>All books</div>
+<div id="all_books"></div>
+<div>Book 1</div>
+<div id="book1"></div>
+<div>Book2</div>
+<div id="book2"></div>
+<div>Book 3</div>
+<div id="book3"></div>
+
+<d3_plot></d3_plot>
+{% endblock %}
+
+
