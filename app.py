@@ -40,4 +40,5 @@ def navbar():
         View('Timeline Travels', 'main.timeline_view'),
         View('Cooccurences Matrix', 'main.cooccurences_view'),
         View('Genealogy & Characters', 'main.genealogy_view'),
+        View('Timeline Characters Heatmap', 'main.timeline_blocks_view'),
     )

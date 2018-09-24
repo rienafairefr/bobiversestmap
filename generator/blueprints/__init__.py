@@ -6,6 +6,7 @@ from generator.locations import get_locations
 from generator.out.cooccurences import get_cooccurences_json
 from generator.out.data import data_json as get_data_json
 from generator.out.genealogy import get_genealogy
+from generator.out.timeline_blocks import get_timeline_blocks_json
 from generator.out.travels import get_travels_book_json, get_travels_book_csv
 
 main = Blueprint('main', 'name')
@@ -71,15 +72,24 @@ def cooccurences_json():
     return jsonify(get_cooccurences_json())
 
 
-@main.route('/genealogy.json')
-def genealogy_json():
-    return jsonify(get_genealogy())
-
-
 @main.route('/book/<int:book_number>/cooccurences.json')
 def cooccurences_json_book(book_number):
     return jsonify(get_cooccurences_json(book_number))
 
+
+@main.route('/timeline_blocks.json')
+def timeline_blocks_json():
+    return jsonify(get_timeline_blocks_json())
+
+
+@main.route('/book/<int:book_number>/timeline_blocks.json')
+def timeline_blocks_json_book(book_number):
+    return jsonify(get_timeline_blocks_json(book_number))
+
+
+@main.route('/genealogy.json')
+def genealogy_json():
+    return jsonify(get_genealogy())
 
 @main.route('/')
 def index_view():
@@ -89,6 +99,11 @@ def index_view():
 @main.route('/timeline.html')
 def timeline_view():
     return render_template('timeline.html')
+
+
+@main.route('/timeline_blocks.html')
+def timeline_blocks_view():
+    return render_template('timeline_blocks.html')
 
 
 @main.route('/cooccurrences.html')

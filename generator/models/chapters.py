@@ -1,6 +1,3 @@
-import os
-
-import yaml
 from sqlalchemy import String, Column, ForeignKey, Integer
 from sqlalchemy.orm import relationship, deferred
 from sqlalchemy.util import hybridproperty

@@ -1,0 +1,25 @@
+{% extends "bootstrap/base.html" %}
+
+{% block navbar %}
+    {{nav.navbar.render()}}
+{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    <style src="static/css/timeline_blocks.css"></style>
+{% endblock %}
+
+{% block scripts %}
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+    <script src="static/js/rand.js"></script>
+    <script src="static/js/timeline_blocks.js"></script>
+{% endblock %}
+
+{% block content %}
+    <svg width="960" height="500"></svg>
+{% endblock %}

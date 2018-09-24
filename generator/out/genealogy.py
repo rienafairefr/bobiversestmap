@@ -3,23 +3,9 @@ from generator.models import Character
 
 
 def get_genealogy():
-    bobs = db.session.query(Character).filter_by(is_bob=True).all()
+    bobs = db.session.query(Character).filter_by(is_bob=True)
 
-    def get_id(bob):
-        print(bob)
-        if bob.affiliation:
-            parent_bob = db.session.query(Character).get(bob.affiliation)
-            if parent_bob != bob:
-                return get_id(parent_bob) + "." + bob.id
-            else:
-                return bob.id
-        else:
-            return bob.id
-
-
-    data = []
-
-    for bob in bobs:
-        data.append({'id': get_id(bob)})
+    data = [{'id': bob.id, 'parentId': bob.affiliation if bob.affiliation else '__root'} for bob in bobs]
+    data.append({'id': '__root', 'parentId': None})
 
     return data
