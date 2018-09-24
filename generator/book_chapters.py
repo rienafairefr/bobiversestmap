@@ -3,25 +3,12 @@ import re
 
 from app import db
 from generator.books import get_books
+from generator.characters import get_characters
 from generator.dates import treat_one_period
 from generator.models.chapters import BookChapter
 from generator.nl import sentences_tokenize, word_tokenize_sentences
 
 chapter_re = re.compile('^(\d*)\.(.*)$')
-
-
-def from_chapter_lines(chapter_lines):
-    book_chapter = BookChapter()
-    book_chapter.bob_id = chapter_lines[1]
-    book_chapter.period = treat_one_period(chapter_lines[2])
-    book_chapter.location_id = chapter_lines[3]
-
-    book_chapter.lines = chapter_lines[4:]
-
-    sentences = list(sentences_tokenize(book_chapter.lines))
-    book_chapter.tokenized_content = list(word_tokenize_sentences(sentences))
-
-    return book_chapter
 
 
 def postprocess_book_chapters():
@@ -50,17 +37,28 @@ def import_book_chapters(books=None):
 
         with db.session.no_autoflush:
             for index_chapter, chapter_lines in chapters_lines.items():
-                book_chapter = from_chapter_lines(chapter_lines)
+                book_chapter = BookChapter()
+                book_chapter.bob_id = chapter_lines[1]
+                book_chapter.period = treat_one_period(chapter_lines[2])
+                book_chapter.location_id = chapter_lines[3]
+
+                book_chapter_lines = chapter_lines[4:]
+                book_chapter.number_lines = len(book_chapter_lines)
+
                 book_chapter.nb = index_book + 1
                 book_chapter.nc = index_chapter
-                book_chapter.lines = book_chapter.lines
+                book_chapter.number_lines = len(chapter_lines)
+
+                sentences = list(sentences_tokenize(book_chapter_lines))
+                tokenized_content = list(word_tokenize_sentences(sentences))
+
+                book_chapter.tokenized_content = tokenized_content
+
                 db.session.add(book_chapter)
 
     db.session.commit()
 
     postprocess_book_chapters()
-
-    return get_book_chapters()
 
 
 def get_book_chapters(nb=None):

@@ -31,6 +31,11 @@ def get_freezer(app):
         for i in range(1,4):
             yield 'main.travels_csv_book', {'book_number':i}
 
+    @freezer.register_generator
+    def cooccurences_json():
+        for i in range(1, 4):
+            yield 'main.cooccurences_json_book', {'book_number': i}
+
     return freezer
 
 

@@ -10,23 +10,28 @@
 }
 """
 from app import db
-from generator.models import Character, Link, ChaptersCharacters, ChaptersLink
+from generator.models import Character, Link, ChapterCharacter, ChapterLink
 
 
 def get_book_characters(nb=None):
-    q = db.session.query(Character).join(ChaptersCharacters)
+    q = db.session.query(Character).join(ChapterCharacter)
     if nb is not None:
-        q = q.filter(ChaptersCharacters.chapter_nb == nb)
+        q = q.filter(ChapterCharacter.chapter_nb == nb)
 
-    return [{'id': char.id, 'name': char.name} for char in q]
+    return [{
+        'id': char.id,
+        'name': char.name,
+        'group': 'Bob' if char.is_bob else char.affiliation
+    } for char in q]
 
 
 def get_book_links(nb=None):
-    q = db.session.query(ChaptersLink)
+    q = db.session.query(ChapterLink)
     if nb is not None:
-        q = q.filter(ChaptersLink.chapter_nb == nb)
+        q = q.filter(ChapterLink.chapter_nb == nb)
 
     return [{'source': cl.link.characterA_id, 'target': cl.link.characterB_id, 'value': 1} for cl in q]
+
 
 def get_cooccurences_json(nb=None):
     return {

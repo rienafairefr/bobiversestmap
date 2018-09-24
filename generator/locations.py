@@ -1,6 +1,7 @@
 import os
 
 from app import db
+from generator.models import BookChapter
 from generator.models.locations import Location
 from generator.stars import get_stars
 
@@ -22,8 +23,10 @@ def import_locations():
 
     db.session.add_all(locations)
     db.session.commit()
-    return get_locations()
 
 
-def get_locations():
-    return db.session.query(Location).all()
+def get_locations(nb=None):
+    q = db.session.query(BookChapter, BookChapter.location)
+    if nb is not None:
+        q = q.filter(BookChapter.nb == nb)
+    return q.all()

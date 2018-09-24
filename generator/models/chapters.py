@@ -1,5 +1,8 @@
+import os
+
+import yaml
 from sqlalchemy import String, Column, ForeignKey, Integer
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship, deferred
 from sqlalchemy.util import hybridproperty
 
 from app import db
@@ -25,10 +28,11 @@ class BookChapter(db.Model, ComparableMixin):
     location = relationship(Location)
     description = Column(String)
 
-    tokenized_content = Column(ArrayType)
+    tokenized_content = deferred(Column(ArrayType))
+    number_lines = Column(Integer)
 
-    characters = relationship(Character, secondary='chapterscharacters')
-    links = relationship(Link, secondary='chapterslinks', backref='chapter')
+    characters = relationship(Character, secondary='chaptercharacters')
+    links = relationship(Link, secondary='chapterlinks', backref='chapter')
     period_id = Column(String, ForeignKey('periods.id'))
     period = relationship(Period)
     bob_character = relationship(Character, foreign_keys=[bob_id])

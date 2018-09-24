@@ -6,8 +6,8 @@ from generator.models.chapters import BookChapter
 from generator.models.characters import Character
 
 
-class ChaptersCharacters(db.Model):
-    __tablename__ = 'chapterscharacters'
+class ChapterCharacter(db.Model):
+    __tablename__ = 'chaptercharacters'
 
     id = Column(Integer, primary_key=True)
 

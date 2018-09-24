@@ -15,7 +15,8 @@ def create_app(config_dict=None):
     from generator.blueprints import main
     app = Flask('Bobiverse visualisations')
     app.config['FREEZER_DESTINATION'] = 'docs'
-    app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///bobiverse.db?check_same_thread=False"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///bobiverse.db"
+    #app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite://"
     app.config['SQLALCHEMY_ECHO'] = True # for debugging db problems
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.json_encoder = ObjectEncoder
@@ -38,4 +39,5 @@ def navbar():
         View('Narrative Chart', 'main.index_view'),
         View('Timeline Travels', 'main.timeline_view'),
         View('Cooccurences Matrix', 'main.cooccurences_view'),
+        View('Genealogy & Characters', 'main.genealogy_view'),
     )

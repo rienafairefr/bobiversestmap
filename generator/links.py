@@ -5,7 +5,7 @@ import os
 from app import db
 from generator.book_chapters import get_book_chapters
 from generator.common import get_keys
-from generator.models import ChaptersLink
+from generator.models import ChapterLink
 from generator.models.chapter_characters_travel import CharacterTravel
 from generator.models.chapters import BookChapter
 from generator.models.links import Link
@@ -15,12 +15,10 @@ def import_links(book_chapters=None):
     if book_chapters is None:
         book_chapters = get_book_chapters()
 
-    with db.session.no_autoflush:
-        for book_chapter in book_chapters:
-            treat_one_chapter_link(book_chapter)
+    for book_chapter in book_chapters:
+        treat_one_chapter_link(book_chapter)
 
     db.session.commit()
-    return get_links()
 
 
 def treat_one_chapter_link(book_chapter):
@@ -30,43 +28,51 @@ def treat_one_chapter_link(book_chapter):
     for isent, tokenized_sentence in enumerate(book_chapter.tokenized_content):
         ns = isent + 1
         for character_pair in itertools.combinations(book_chapter.characters, 2):
-            characterA = character_pair[0]
-            characterB = character_pair[1]
+            character_a = character_pair[0]
+            character_b = character_pair[1]
 
-            for name0 in characterA.all_names:
-                for name1 in characterB.all_names:
-                    if characterB.id > characterA.id \
-                            and name0 in tokenized_sentence \
-                            and name1 in tokenized_sentence:
-                        link = Link(characterA=characterA,
-                                    characterB=characterB,
-                                    ns=ns,
-                                    sentence=' '.join(book_chapter.tokenized_content[isent]))
-                        book_chapter.links.append(link)
-                        db.session.add(link)
+            if character_b.id > character_a.id:
+
+                character_a_names = character_a.all_names
+                if character_a == book_chapter.bob_character:
+                    character_a_names.append('I')
+
+                character_b_names = character_b.all_names
+                if character_b == book_chapter.bob_character:
+                    character_b_names.append('I')
+
+                for name0 in character_a_names:
+                    for name1 in character_b_names:
+                        if name0 in tokenized_sentence \
+                                and name1 in tokenized_sentence:
+                            link = Link(characterA_id=character_a.id,
+                                        characterB_id=character_b.id,
+                                        ns=ns,
+                                        sentence=' '.join(book_chapter.tokenized_content[isent]))
+                            chapters_link = ChapterLink(chapter_nb=book_chapter.nb,
+                                                        chapter_nc=book_chapter.nc,
+                                                        link=link)
+                            db.session.add(chapters_link)
+                            db.session.add(link)
 
 
 def postprocess_scut_links():
     def get_location(characterid, nb, nc):
-        return db.session.query(CharacterTravel).get((characterid, nb, nc)).location
+        travel = db.session.query(CharacterTravel).get((characterid, nb, nc))
+        if travel is not None:
+            return travel.location
+        else:
+            pass
 
-    for chapter_link in db.session.query(ChaptersLink).all():
+    for chapter_link in db.session.query(ChapterLink).all():
         link = chapter_link.link
 
         locationA = get_location(link.characterA.id, chapter_link.chapter_nb, chapter_link.chapter_nc)
         locationB = get_location(link.characterB.id, chapter_link.chapter_nb, chapter_link.chapter_nc)
 
-        link.is_scut = locationA != {} and locationB != {} and locationA != locationB
+        link.is_scut = locationA is not None and locationB is not None and locationA != locationB
 
     db.session.commit()
-
-
-def get_links(nb=None):
-    q = db.session.query(BookChapter, BookChapter.links)
-    if nb is not None:
-        q = q.filter(BookChapter.nb == nb)
-
-    return q.all()
 
 
 def postprocess_links():
@@ -123,6 +129,3 @@ def write_links(links):
         if not keep.get(k):
             os.remove(file_name(*k))
 
-
-if __name__ == '__main__':
-    write_links(get_links())

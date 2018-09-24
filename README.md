@@ -38,7 +38,7 @@ Then run
 
     python3 manager.py runserver
     
-This will serve a Flask-D3.js web-app on localhost:5000 where you can see graphs about
+This will serve a Flask & D3.js web-app on localhost:5000 where you can see graphs about
 that dataset 
 
     python3 manage.py freeze freeze

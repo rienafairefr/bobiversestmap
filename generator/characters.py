@@ -5,6 +5,7 @@ import colorcet as cc
 from sqlalchemy import inspect
 
 from app import db
+from generator.models import ChapterCharacter
 from generator.models.characters import Character
 from generator.utils import sorted_by_key
 
@@ -27,8 +28,6 @@ def import_bob_characters():
         char = Character(id=bob[-1], name=bob[-1], is_bob=True)
         if len(bob) != 1:
             char.affiliation = bob[-2]
-        else:
-            char.affiliation = bob[-1]
 
         if char.id == 'Riker':
             char.other_names = ['Will', 'William']
@@ -53,11 +52,13 @@ def import_characters():
     mapper = inspect(Character)
     db.session.bulk_insert_mappings(mapper, nonbobs)
     db.session.commit()
-    return get_characters()
 
 
-def get_characters():
-    return db.session.query(Character).all()
+def get_characters(nb=None):
+    q = db.session.query(Character)
+    if nb is not None:
+        q = q.join(ChapterCharacter).filter(ChapterCharacter.chapter_nb == nb)
+    return q.all()
 
 
 def get_characters_map():

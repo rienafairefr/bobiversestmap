@@ -20,7 +20,6 @@ def import_books(path):
 
         db.session.add(book)
     db.session.commit()
-    return get_books()
 
 
 def get_books():

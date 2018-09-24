@@ -20,7 +20,6 @@ def treat_one_chapters_characters(book_chapter, characters=None):
                         book_chapter.characters.append(character)
 
 
-
 def postprocess_chapter_characters():
     book_chapters = db.session.query(BookChapter).all()
     characters = get_characters()

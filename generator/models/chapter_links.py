@@ -6,8 +6,8 @@ from generator.models.chapters import BookChapter
 from generator.models.links import Link
 
 
-class ChaptersLink(db.Model):
-    __tablename__ = 'chapterslinks'
+class ChapterLink(db.Model):
+    __tablename__ = 'chapterlinks'
 
     id = Column(Integer, primary_key=True)
 

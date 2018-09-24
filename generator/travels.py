@@ -40,15 +40,9 @@ def get_travels_dict(nb=None):
 
     returnvalue = {}
     for ct in q.all():
-        returnvalue[(ct.character.id, ct.chapter.nb, ct.chapter.nc)] = ct
+        returnvalue.setdefault(ct.character.id, []).append(ct)
     return returnvalue
 
-
-def get_travels(nb=None):
-    q = db.session.query(CharacterTravel)
-    if nb is not None:
-        q = q.filter(CharacterTravel.chapter.nb == nb)
-    return q.all()
 
 
 def postprocess_births_deaths(thresholds_last=None, thresholds_first=None):

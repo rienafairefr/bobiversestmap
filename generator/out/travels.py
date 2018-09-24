@@ -9,15 +9,13 @@ from generator.utils import memoize, sorted_by_key
 
 @memoize()
 def get_travels_book_json(nb=None):
-    characters = get_characters()
-    locations = get_locations()
+    characters = get_characters(nb)
+    locations = get_locations(nb)
 
-    def _treatvalue(val):
-        return list(sorted_by_key(val).values())
+    travels_dict = get_travels_dict(nb)
 
-    travels_books = get_travels_dict(nb)
-
-    travels = [{'character_id': character_id, 'travels': _treatvalue(value)} for character_id, value in travels_books.items()]
+    travels = [{'character_id': character_id,
+                'travels': value} for character_id, value in travels_dict.items()]
 
     return {'locations': locations,
             'characters': characters,
@@ -27,7 +25,7 @@ def get_travels_book_json(nb=None):
 @memoize()
 def get_travels_book_csv(nb=None):
 
-    travels_books = get_travels_dict(nb)
+    travels_dict = get_travels_dict(nb)
     characters = get_characters()
 
     output = StringIO()
@@ -35,18 +33,21 @@ def get_travels_book_csv(nb=None):
     fieldnames.extend(ch.id for ch in characters)
     writer = csv.DictWriter(output, fieldnames=fieldnames)
     rows = {}
-    for (character_id, nb, nc), character_travel in travels_books.items():
-        travel_period = character_travel.chapter.period
+    for character_id, character_travels in travels_dict.items():
+        for character_travel in character_travels:
+            nb = character_travel.chapter.nb
+            nc = character_travel.chapter.nc
+            travel_period= character_travel.chapter.period
+            location_id = character_travel.location_id
 
-        default_row = dict(nb=nb,
-                           nc=nc,
-                           date=travel_period.time_start.strftime('%Y-%m-%d'))
-        location_id = character_travel.location_id
+            default_row = dict(nb=nb,
+                               nc=nc,
+                               date=travel_period.time_start.strftime('%Y-%m-%d'))
 
-        if location_id is not None:
-            rows.setdefault((nb, nc), default_row)[character_id] = location_id
-        else:
-            rows.setdefault((nb, nc), default_row)[character_id] = "#no_location#"
+            if location_id is not None:
+                rows.setdefault((nb, nc), default_row)[character_id] = location_id
+            else:
+                rows.setdefault((nb, nc), default_row)[character_id] = "#no_location#"
 
     rows = sorted_by_key(rows)
     writer.writeheader()
