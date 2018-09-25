@@ -6,7 +6,7 @@
     
     <!-- Bootstrap -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="static/css/coocurrences.css">
+    <link rel="stylesheet" type="text/css" href= type="text/css" src="static/css/timeline_blocks.css">
 
   </head>
   <body>
@@ -14,7 +14,7 @@
     <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#2bb0d0427d317fcdc8656196af4da9ff4eaffb5e" data-toggle="collapse" type="button">
+      <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#94228d66b78a34732c8bc48c1e0e6a144fa26483" data-toggle="collapse" type="button">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -22,7 +22,7 @@
       </button>
       <span class="navbar-brand">Bobiverse</span>
     </div>
-    <div class="navbar-collapse collapse" id="2bb0d0427d317fcdc8656196af4da9ff4eaffb5e">
+    <div class="navbar-collapse collapse" id="94228d66b78a34732c8bc48c1e0e6a144fa26483">
       <ul class="nav navbar-nav">
         <li>
           <a href="/" title="Narrative Chart">Narrative Chart</a>
@@ -30,13 +30,13 @@
         <li>
           <a href="/timeline.html" title="Timeline Travels">Timeline Travels</a>
         </li>
-        <li class="active">
+        <li>
           <a href="/cooccurrences.html" title="Cooccurences Matrix">Cooccurences Matrix</a>
         </li>
         <li>
           <a href="/genealogy.html" title="Genealogy &amp; Characters">Genealogy &amp; Characters</a>
         </li>
-        <li>
+        <li class="active">
           <a href="/timeline_blocks.html" title="Timeline Characters Heatmap">Timeline Characters Heatmap</a>
         </li>
       </ul>
@@ -45,27 +45,15 @@
 </nav>
 
     
-    <h1>Character Co-occurrence</h1>
-    <p>
-We count any time two characters talk to each other in a sentence.
-Blue are the Bobs, other characters are grouped by affiliation (e.g. Deltans, Poseidonians)
-    </p>
-<div>All books</div>
-<div id="all_books"></div>
-<div>Book 1</div>
-<div id="book1"></div>
-<div>Book2</div>
-<div id="book2"></div>
-<div>Book 3</div>
-<div id="book3"></div>
-
-<d3_plot></d3_plot>
+    <svg width="960" height="500"></svg>
 
 
     
-    <script type="text/javascript" src="http://d3js.org/d3.v2.min.js?2.8.1"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="static/js/coocurrences.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+    <script type="text/javascript" src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script type="text/javascript" src="http://d3js.org/colorbrewer.v1.min.js"></script>
+    <script type="text/javascript" src="static/js/timeline_blocks.js"></script>
 
   </body>
 </html>

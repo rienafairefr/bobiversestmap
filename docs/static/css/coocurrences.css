@@ -1,0 +1,19 @@
+d3_plot {
+    font-size: 80%;
+}
+
+body.svg {
+    margin-left: 0px;
+}
+
+.background {
+    fill: #eee;
+}
+
+line {
+    stroke: #fff;
+}
+
+text.active {
+    fill: red;
+}
