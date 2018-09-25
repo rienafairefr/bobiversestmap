@@ -3,10 +3,6 @@ import os
 import nltk
 import tempfile
 
-from dogpile.cache import make_region
-
-from generator.utils import memoize
-
 
 def download_ntlk():
     tmpnltk_data = os.path.join(tempfile.gettempdir(), 'bob_nltk_data')

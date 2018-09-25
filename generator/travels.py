@@ -36,7 +36,7 @@ def import_chapter_characters_travels(book_chapters=None):
 def get_travels_dict(nb=None):
     q = db.session.query(CharacterTravel)
     if nb is not None:
-        q = q.filter(CharacterTravel.chapter.nb == nb)
+        q = q.filter(CharacterTravel.chapter_nb == nb)
 
     returnvalue = {}
     for ct in q.all():

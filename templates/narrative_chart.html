@@ -1,42 +1,43 @@
 {% extends "bootstrap/base.html" %}
 
 {% block navbar %}
-{{nav.navbar.render()}}
+    {{ nav.navbar.render() }}
 {% endblock %}
 
 {% block styles %}
-{{super()}}
-<link rel="stylesheet" type="text/css" href="static/css/style.css" media="all"/>
-<link rel="stylesheet" type="text/css" href="css/bob_styles.css" media="all"/>
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="static/css/narrative_chart.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/bob_styles.css" media="all"/>
 {% endblock %}
 
 {% block scripts %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.0/es6-shim.js"></script>
-<script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
-<script src="https://cdn.rawgit.com/google/palette.js/master/palette.js"></script>
-<script src="static/js/narrative.js"></script>
-<script src="static/js/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.0/es6-shim.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="https://cdn.rawgit.com/google/palette.js/master/palette.js"></script>
+    <script src="static/js/narrative.js"></script>
+    <script src="static/js/chart.js"></script>
 {% endblock %}
 
 {% block content %}
-<p>
-Some data visualisation based on the books of the Bobiverse by Dennis E. taylor
+    <p>
+        Some data visualisation based on the books of the Bobiverse by Dennis E. taylor
 
-Narrative charts in the style of xkcd, courtesy of D3 narrative-layout from ABC News Simon Elvery and others, inspired from https://xkcd.com/657/large/
+        Narrative charts in the style of xkcd, courtesy of D3 narrative-layout from ABC News Simon Elvery and others,
+        inspired from https://xkcd.com/657/large/
 
-All characters and stories belong to Dennis E. Taylor and are &copy; Dennis E. Taylor
+        All characters and stories belong to Dennis E. Taylor and are &copy; Dennis E. Taylor
 
-</p>
-<h1>Narrative charts</h1>
+    </p>
+    <h1>Narrative charts</h1>
     <p>Displays the scenes in the books, grouped by the characters in it</p>
-<div>All books</div>
-<div id="all_books"></div>
-<div>Book 1</div>
-<div id="book1"></div>
-<div>Book2</div>
-<div id="book2"></div>
-<div>Book 3</div>
-<div id="book3"></div>
+    <div>All books</div>
+    <div id="all_books"></div>
+    <div>Book 1</div>
+    <div id="book1"></div>
+    <div>Book2</div>
+    <div id="book2"></div>
+    <div>Book 3</div>
+    <div id="book3"></div>
 {% endblock %}

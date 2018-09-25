@@ -1,134 +1,75 @@
-var margin = {top: 50, right: 0, bottom: 100, left: 30},
-    width = 960 - margin.left - margin.right,
-    height = 430 - margin.top - margin.bottom,
-    gridSize = Math.floor(width / 100),
-    legendWidth = (gridSize / 2 + 4),
-    buckets = 10;
-    mu = 10,
-    sigma = 5,
-    lambda = 0.1;
+  var itemSize = 22,
+      cellSize = itemSize - 1,
+      margin = {top: 120, right: 20, bottom: 20, left: 110};
 
-var svg = d3.select("svg")
-    .append("g");
+  var width = 960 - margin.right - margin.left,
+      height = 960 - margin.top - margin.bottom;
 
-d3.json("timeline_blocks.json",
+  var formatDate = d3.time.format("%Y-%m-%d");
 
-    function (error, data) {
+  d3.json('timeline_blocks.json', function ( error, data) {
 
-        var maxNum = Math.round(d3.max(data.matrix, function (d) {
-            return d.value;
-        }));
+    var x_elements = d3.set(data.map(function( item ) { return item.x; } )).values(),
+        y_elements = d3.set(data.map(function( item ) { return item.y; } )).values();
 
-        var colors = colorbrewer.RdYlGn[buckets];
+    var xScale = d3.scale.ordinal()
+        .domain(x_elements)
+        .rangeBands([0, x_elements.length * itemSize]);
 
-        var colorScale = d3.scale.quantile()
-            .domain([0, buckets - 1, maxNum])
-            .range(colors);
+    var xAxis = d3.svg.axis()
+        .scale(xScale)
+        .tickFormat(function (d) {
+            return d;
+        })
+        .orient("top");
 
-        var tip = d3.tip()
-            .attr('class', 'd3-tip')
-            .style("visibility", "visible")
-            .offset([-20, 0])
-            .html(function (d) {
-                return "Value:  <span style='color:red'>" + Math.round(d.value);
-            });
+    var yScale = d3.scale.ordinal()
+        .domain(y_elements)
+        .rangeBands([0, y_elements.length * itemSize]);
 
-        tip(svg.append("g"));
+    var yAxis = d3.svg.axis()
+        .scale(yScale)
+        .tickFormat(function (d) {
+            return d;
+        })
+        .orient("left");
 
-        var dim1Labels = svg.selectAll(".dim1Label")
-            .data(data.dim1)
-            .enter().append("text")
-            .text(function (d) {
-                return d.label;
-            })
-            .attr("x", 0)
-            .attr("y", function (d, i) {
-                return i * gridSize;
-            })
-            .style("text-anchor", "end")
-            .attr("transform", "translate(-6," + gridSize / 1.5 + ")")
-            .attr("class", "mono");
+    var colorScale = d3.scale.threshold()
+        .domain([0.85, 1])
+        .range(["#2980B9", "#E67E22", "#27AE60", "#27AE60"]);
 
-        var dim2Labels = svg.selectAll(".dim2Label")
-            .data(data.dim2)
-            .enter().append("text")
-            .text(function (d) {
-                return d.label;
-            })
-            .attr("x", function (d, i) {
-                return i * gridSize;
-            })
-            .attr("y", 0)
-            .style("text-anchor", "middle")
-            .attr("transform", "translate(" + gridSize / 2 + ", -6)")
-            .attr("class", "mono");
+    var svg = d3.select('svg')
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        var heatMap = svg.selectAll(".dim2")
-            .data(data.matrix)
-            .enter().append("rect")
-            .attr("x", function (d) {
-                return (d.dim2 - 1) * gridSize;
-            })
-            .attr("y", function (d) {
-                return (d.dim1 - 1) * gridSize;
-            })
-            .attr("rx", 4)
-            .attr("ry", 4)
-            .attr("class", "dim2 bordered")
-            .attr("width", gridSize - 2)
-            .attr("height", gridSize - 2)
-            .style("fill", colors[0])
-            .attr("class", "square")
-            .on('mouseover', tip.show)
-            .on('mouseout', tip.hide);
+    var cells = svg.selectAll('rect')
+        .data(data)
+        .enter().append('g').append('rect')
+        .attr('class', 'cell')
+        .attr('width', cellSize)
+        .attr('height', cellSize)
+        .attr('y', function(d) { return yScale(d.y); })
+        .attr('x', function(d) { return xScale(d.x); })
+        .attr('fill', function(d) { return colorScale(d.value); });
 
-        heatMap.transition()
-            .style("fill", function (d) {
-                return colorScale(d.value);
-            });
+    svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
+        .selectAll('text')
+        .attr('font-weight', 'normal');
 
-        heatMap.append("title").text(function (d) {
-            return d.value;
+    svg.append("g")
+        .attr("class", "x axis")
+        .call(xAxis)
+        .selectAll('text')
+        .attr('font-weight', 'normal')
+        .style("text-anchor", "start")
+        .attr("dx", ".8em")
+        .attr("dy", ".5em")
+        .attr("transform", function (d) {
+            return "rotate(-65)";
         });
-
-        var legend = svg.selectAll(".legend")
-            .data([0].concat(colorScale.quantiles()), function (d) {
-                return d;
-            })
-            .enter().append("g")
-            .attr("class", "legend");
-
-        legend.append("rect")
-            .attr("x", function (d, i) {
-                return gridSize * 11;
-            })
-            .attr("y", function (d, i) {
-                return (i * legendWidth + 7);
-            })
-            .attr("width", gridSize / 2)
-            .attr("height", gridSize / 2)
-            .style("fill", function (d, i) {
-                return colors[i];
-            })
-            .attr("class", "square");
-
-        legend.append("text")
-            .attr("class", "mono")
-            .text(function (d) {
-                return "≥ " + Math.round(d);
-            })
-            .attr("x", function (d, i) {
-                return gridSize * 11 + 25;
-            })
-            .attr("y", function (d, i) {
-                return (i * legendWidth + 20);
-            });
-
-        var title = svg.append("text")
-            .attr("class", "mono")
-            .attr("x", gridSize * 11)
-            .attr("y", -6)
-            .style("font-size", "14px")
-            .text("Legend");
-    }
-);
+  });

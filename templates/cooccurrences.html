@@ -1,38 +1,18 @@
 {% extends "bootstrap/base.html" %}
 
 {% block navbar %}
-{{nav.navbar.render()}}
+    {{nav.navbar.render()}}
 {% endblock %}
 
 {% block styles %}
-{{super()}}
-<style>
-    d3_plot {
-        font-size: 80%;
-    }
-
-    body.svg {
-        margin-left: 0px;
-    }
-
-    .background {
-        fill: #eee;
-    }
-
-    line {
-        stroke: #fff;
-    }
-
-    text.active {
-        fill: red;
-    }
-</style>
+    {{super()}}
+    <link rel="stylesheet" type="text/css" href="static/css/coocurrences.css">
 {% endblock %}
 
 {% block scripts %}
-<script type="text/javascript" src="http://d3js.org/d3.v2.min.js?2.8.1"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script src="static/js/coocurrences.js"></script>
+    <script type="text/javascript" src="http://d3js.org/d3.v2.min.js?2.8.1"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="static/js/coocurrences.js"></script>
 {% endblock %}
 
 {% block content %}

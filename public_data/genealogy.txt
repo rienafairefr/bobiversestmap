@@ -45,6 +45,7 @@ Bob:Marvin
 Bob:Luke
 Bob:Bender
 Bob:Victor
+Bob:Pete
 
 ; additions, parenting is not 100% certain
 Bob:Bill:Icarus
@@ -55,7 +56,6 @@ Bob:Bill:Mulder:Marcus
 Bob:Bill:Khan:Loki
 Bob:Mario:Jacques:Herschel
 Bob:Mario:Jacques:Neil
-Bob:Marvin:Pete
 Bob:Bill:Calvin:Bart:Isaac
 
 ; Bruce from Calvin or Goku
@@ -64,7 +64,7 @@ Bob:Bill:Calvin:Bruce
 Bob:Bill:Khan:Loki:Zeke
 Bob:Bill:Khan:Loki:Jeffrey
 Bob:Bill:Khan:Loki:Milton
-Tony
+Bob:Mario:Jacques:Tony
 Bob:Bill:Jackson
 ; Exodus-3
 Bob:Bill:Sam

@@ -26,7 +26,7 @@ def import_locations():
 
 
 def get_locations(nb=None):
-    q = db.session.query(BookChapter, BookChapter.location)
+    q = db.session.query(Location).join(BookChapter)
     if nb is not None:
         q = q.filter(BookChapter.nb == nb)
     return q.all()
