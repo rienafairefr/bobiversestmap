@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_bootstrap import Bootstrap
+from flask_frozen import relative_url_for
 from flask_nav import Nav
 from flask_nav.elements import Navbar, View
 from flask_sqlalchemy import SQLAlchemy
@@ -16,6 +17,7 @@ def create_app(config_dict=None):
     app = Flask('Bobiverse visualisations')
     app.config['FREEZER_DESTINATION'] = 'docs'
     app.config['FREEZER_REMOVE_EXTRA_FILES'] = True
+    app.config['FREEZER_RELATIVE_URLS'] = True
     app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///bobiverse.db"
     #app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite://"
     app.config['SQLALCHEMY_ECHO'] = True # for debugging db problems
@@ -33,13 +35,18 @@ def create_app(config_dict=None):
     return app
 
 
+class CustomView(View):
+    def get_url(self):
+        return relative_url_for(self.endpoint, **self.url_for_kwargs)
+
+
 @nav.navigation()
 def navbar():
     return Navbar(
         'Bobiverse',
-        View('Narrative Chart', 'main.index_view'),
-        View('Timeline Travels', 'main.timeline_view'),
-        View('Cooccurences Matrix', 'main.cooccurences_view'),
-        View('Genealogy & Characters', 'main.genealogy_view'),
-        View('Timeline Characters Heatmap', 'main.timeline_blocks_view'),
+        CustomView('Narrative Chart', 'main.index_view'),
+        CustomView('Timeline Travels', 'main.timeline_view'),
+        CustomView('Cooccurences Matrix', 'main.cooccurences_view'),
+        CustomView('Genealogy & Characters', 'main.genealogy_view'),
+        CustomView('Timeline Characters Heatmap', 'main.timeline_blocks_view'),
     )
