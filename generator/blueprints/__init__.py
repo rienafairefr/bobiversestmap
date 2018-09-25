@@ -4,7 +4,7 @@ from flask.blueprints import Blueprint
 from generator.characters import get_bob_characters, get_bob_styles, get_characters
 from generator.locations import get_locations
 from generator.out.cooccurences import get_cooccurences_json
-from generator.out.data import data_json as get_data_json
+from generator.out.narrative import data_json as get_data_json
 from generator.out.genealogy import get_genealogy
 from generator.out.timeline_blocks import get_timeline_blocks_json
 from generator.out.travels import get_travels_book_json, get_travels_book_csv
@@ -93,7 +93,7 @@ def genealogy_json():
 
 @main.route('/')
 def index_view():
-    return render_template('narrative_chart.html')
+    return render_template('narrative.html')
 
 
 @main.route('/timeline.html')

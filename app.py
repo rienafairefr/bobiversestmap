@@ -15,6 +15,7 @@ def create_app(config_dict=None):
     from generator.blueprints import main
     app = Flask('Bobiverse visualisations')
     app.config['FREEZER_DESTINATION'] = 'docs'
+    app.config['FREEZER_REMOVE_EXTRA_FILES'] = True
     app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///bobiverse.db"
     #app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite://"
     app.config['SQLALCHEMY_ECHO'] = True # for debugging db problems
