@@ -1,0 +1,33 @@
+rect.bordered {
+    stroke: #bbb;
+    stroke-width: 3px;
+}
+
+text.mono {
+    font-size: 9pt;
+    font-family: verdana;
+    fill: #aaa;
+}
+
+text.mono:hover {
+    font-size: 12pt;
+    font-family: verdana;
+    fill: #aaa;
+    font-weight: bold;
+}
+
+.square {
+    opacity: 0.5;
+}
+
+.square:hover {
+    opacity: 1.0;
+}
+
+.d3-tip {
+    font-family: Verdana;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 8px;
+    color: #fff;
+    z-index: 5070;
+}
