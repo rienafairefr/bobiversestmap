@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_bootstrap import Bootstrap
+from flask_cors import CORS
 from flask_frozen import relative_url_for
 from flask_nav import Nav
 from flask_nav.elements import Navbar, View
@@ -10,6 +11,7 @@ from generator.utils import ObjectEncoder
 nav = Nav()
 bootstrap = Bootstrap()
 db = SQLAlchemy()
+cors = CORS()
 
 
 def create_app(config_dict=None):
@@ -21,9 +23,10 @@ def create_app(config_dict=None):
     app.config["FREEZER_RELATIVE_URLS"] = True
     app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///bobiverse.db"
     # app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite://"
-    app.config["SQLALCHEMY_ECHO"] = True  # for debugging db problems
+    # app.config["SQLALCHEMY_ECHO"] = True  # for debugging db problems
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     app.config["JSONIFY_PRETTYPRINT_REGULAR"] = True
+    app.config["CORS_ORIGINS"] = "*"
     app.json_encoder = ObjectEncoder
 
     if config_dict is not None:
@@ -32,6 +35,7 @@ def create_app(config_dict=None):
     nav.init_app(app)
     bootstrap.init_app(app)
     db.init_app(app)
+    cors.init_app(app)
     app.register_blueprint(main)
 
     return app

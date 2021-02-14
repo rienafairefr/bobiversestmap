@@ -11,6 +11,7 @@ Flask = "*"
 Flask-Bootstrap = "*"
 Flask-Script = "*"
 Flask-SQLAlchemy = "*"
+Flask-Cors = "^3.0.10"
 
 [tool.poetry.dev-dependencies]
 nltk = "*"

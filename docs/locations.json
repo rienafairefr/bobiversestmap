@@ -1,1 +1,189 @@
-[{"id":"Epsilon Eridani","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"Epsilon Eridani"},{"id":"Omicron2 Eridani","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"Omicron2 Eridani"},{"id":"Sol","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"Sol"},{"id":"Delta Eridani","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"Delta Eridani"},{"id":"Alpha Centauri","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"Alpha Centauri"},{"id":"Epsilon Indi","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"Epsilon Indi"},{"id":"82 Eridani","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"82 Eridani"},{"id":"Beta Hydri","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"Beta Hydri"},{"id":"Eta Cassiopeiae","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"Eta Cassiopeiae"},{"id":"Zeta Tucanae","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"Zeta Tucanae"},{"id":"GL 877","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"GL 877"},{"id":"GL 54","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"GL 54"},{"id":"Gamma Pavonis","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"Gamma Pavonis"},{"id":"Delta Pavonis","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"Delta Pavonis"},{"id":"HIP 14101","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"HIP 14101"},{"id":"HIP 84051","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"HIP 84051"},{"id":"BobNet","is_travel":false,"planet_name":null,"query":null,"query_class":null,"star":null,"star_destination":null,"star_destination_id":null,"star_id":"BobNet"}]
+[
+  {
+    "id": "Epsilon Eridani", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "Epsilon Eridani"
+  }, 
+  {
+    "id": "Omicron2 Eridani", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "Omicron2 Eridani"
+  }, 
+  {
+    "id": "Sol", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "Sol"
+  }, 
+  {
+    "id": "Delta Eridani", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "Delta Eridani"
+  }, 
+  {
+    "id": "Alpha Centauri", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "Alpha Centauri"
+  }, 
+  {
+    "id": "Epsilon Indi", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "Epsilon Indi"
+  }, 
+  {
+    "id": "82 Eridani", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "82 Eridani"
+  }, 
+  {
+    "id": "Beta Hydri", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "Beta Hydri"
+  }, 
+  {
+    "id": "Eta Cassiopeiae", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "Eta Cassiopeiae"
+  }, 
+  {
+    "id": "Zeta Tucanae", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "Zeta Tucanae"
+  }, 
+  {
+    "id": "GL 877", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "GL 877"
+  }, 
+  {
+    "id": "GL 54", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "GL 54"
+  }, 
+  {
+    "id": "Gamma Pavonis", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "Gamma Pavonis"
+  }, 
+  {
+    "id": "Delta Pavonis", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "Delta Pavonis"
+  }, 
+  {
+    "id": "HIP 14101", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "HIP 14101"
+  }, 
+  {
+    "id": "HIP 84051", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "HIP 84051"
+  }, 
+  {
+    "id": "BobNet", 
+    "is_travel": false, 
+    "planet_name": null, 
+    "query": null, 
+    "query_class": null, 
+    "star": null, 
+    "star_destination": null, 
+    "star_destination_id": null, 
+    "star_id": "BobNet"
+  }
+]

@@ -9,6 +9,8 @@
 ]
 }
 """
+from sqlalchemy import not_
+
 from app import db
 from generator.models import Character, Link, ChapterCharacter, ChapterLink
 
@@ -36,6 +38,7 @@ def get_book_links(nb=None):
     return [
         {"source": cl.link.characterA_id, "target": cl.link.characterB_id, "value": 1}
         for cl in q
+        if cl.link.characterA_id != cl.link.characterB_id
     ]
 
 

@@ -3,3 +3,5 @@ generated/
 .idea/
 *.pyc
 *.db
+dist/
+node_modules/
