@@ -91,6 +91,7 @@ def timeline_blocks_json_book(book_number):
 def genealogy_json():
     return jsonify(get_genealogy())
 
+
 @main.route('/')
 def index_view():
     return render_template('narrative.html')

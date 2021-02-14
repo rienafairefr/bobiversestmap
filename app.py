@@ -22,6 +22,7 @@ def create_app(config_dict=None):
     #app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite://"
     app.config['SQLALCHEMY_ECHO'] = True # for debugging db problems
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
     app.json_encoder = ObjectEncoder
 
     if config_dict is not None:
