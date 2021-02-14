@@ -18,7 +18,7 @@ You can get this from the epub of the books
 
 Book 1 deviates a bit from that convention so you'll need to edit a bit manually
 
-Install requirements with `pip3 install -r requirements.txt'
+For dependencies, use poetry: `poetry install`, then `poetry shell`
 
 Then,
 
