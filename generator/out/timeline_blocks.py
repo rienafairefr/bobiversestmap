@@ -7,12 +7,14 @@ def get_timeline_blocks_json(nb=None):
     characters = db.session.query(Character).all()
 
     data = []
-    for ichap,chapter in enumerate(chapters):
-        for ichar,character in enumerate(characters):
-            data.append({
-                'x':ichap,
-                'y':ichar,
-                'value': 1 if character in chapter.characters else 0
-            })
+    for ichap, chapter in enumerate(chapters):
+        for ichar, character in enumerate(characters):
+            data.append(
+                {
+                    "x": ichap,
+                    "y": ichar,
+                    "value": 1 if character in chapter.characters else 0,
+                }
+            )
 
     return data

@@ -7,7 +7,7 @@ from generator.models.links import Link
 
 
 class ChapterLink(db.Model):
-    __tablename__ = 'chapterlinks'
+    __tablename__ = "chapterlinks"
 
     id = Column(Integer, primary_key=True)
 
@@ -15,10 +15,13 @@ class ChapterLink(db.Model):
     chapter_nc = Column(Integer)
     ns = Column(Integer)
 
-    __table_args__ = (ForeignKeyConstraint([chapter_nb, chapter_nc],
-                                           [BookChapter.nb, BookChapter.nc]),
-                      {})
+    __table_args__ = (
+        ForeignKeyConstraint(
+            [chapter_nb, chapter_nc], [BookChapter.nb, BookChapter.nc]
+        ),
+        {},
+    )
     chapter = relationship(BookChapter)
 
-    link_id = Column(Integer, ForeignKey('links.id'))
+    link_id = Column(Integer, ForeignKey("links.id"))
     link = relationship(Link)

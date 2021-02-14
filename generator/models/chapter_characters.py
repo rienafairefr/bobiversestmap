@@ -7,17 +7,20 @@ from generator.models.characters import Character
 
 
 class ChapterCharacter(db.Model):
-    __tablename__ = 'chaptercharacters'
+    __tablename__ = "chaptercharacters"
 
     id = Column(Integer, primary_key=True)
 
     chapter_nb = Column(Integer)
     chapter_nc = Column(Integer)
 
-    __table_args__ = (ForeignKeyConstraint([chapter_nb, chapter_nc],
-                                           [BookChapter.nb, BookChapter.nc]),
-                      {})
+    __table_args__ = (
+        ForeignKeyConstraint(
+            [chapter_nb, chapter_nc], [BookChapter.nb, BookChapter.nc]
+        ),
+        {},
+    )
     chapter = relationship(BookChapter)
 
-    character_id = Column(Integer, ForeignKey('characters.id'))
+    character_id = Column(Integer, ForeignKey("characters.id"))
     character = relationship(Character, cascade="all")

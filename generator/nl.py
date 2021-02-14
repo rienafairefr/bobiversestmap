@@ -5,12 +5,9 @@ import tempfile
 
 
 def download_ntlk():
-    tmpnltk_data = os.path.join(tempfile.gettempdir(), 'bob_nltk_data')
+    tmpnltk_data = os.path.join(tempfile.gettempdir(), "bob_nltk_data")
     os.makedirs(tmpnltk_data, exist_ok=True)
-    required= ['maxent_ne_chunker',
-               'words',
-               'averaged_perceptron_tagger',
-               'punkt']
+    required = ["maxent_ne_chunker", "words", "averaged_perceptron_tagger", "punkt"]
     for req in required:
         nltk.download(info_or_id=req, download_dir=tmpnltk_data)
     nltk.data.path.append(tmpnltk_data)
@@ -29,6 +26,6 @@ def sent_tokenize(content):
 
 
 def sentences_tokenize(lines):
-    content = '\n'.join(lines)
+    content = "\n".join(lines)
 
     return sent_tokenize(content)

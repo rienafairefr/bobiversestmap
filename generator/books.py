@@ -3,13 +3,13 @@ from generator.models import Book
 
 
 def import_books(path):
-    with open(path, encoding='utf-8') as combined:
+    with open(path, encoding="utf-8") as combined:
         content = combined.readlines()
 
     book_id = 0
     book_lines = {}
     for line in content:
-        if line.startswith('##'):
+        if line.startswith("##"):
             book_id += 1
             book_lines[book_id] = []
         else:

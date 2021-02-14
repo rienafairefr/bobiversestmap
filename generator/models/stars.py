@@ -1,4 +1,3 @@
-
 from sqlalchemy import Column, String, Float
 from sqlalchemy.util import hybridproperty
 
@@ -7,7 +6,7 @@ from generator.utils import ArrayType
 
 
 class Star(db.Model):
-    __tablename__ = 'stars'
+    __tablename__ = "stars"
 
     id = Column(String, primary_key=True)
 
@@ -17,5 +16,5 @@ class Star(db.Model):
 
     other_names = Column(ArrayType)
     x = Column(Float)
-    y= Column(Float)
+    y = Column(Float)
     z = Column(Float)

@@ -8,13 +8,13 @@ from generator.dates import treat_one_period
 from generator.models.chapters import BookChapter
 from generator.nl import sentences_tokenize, word_tokenize_sentences
 
-chapter_re = re.compile('^(\d*)\.(.*)$')
+chapter_re = re.compile("^(\d*)\.(.*)$")
 
 
 def postprocess_book_chapters():
     # Error in the book ? Big Top is in Epsilon Indi
     book_chapter = db.session.query(BookChapter).get((3, 62))
-    book_chapter.location_id = 'Epsilon Indi'
+    book_chapter.location_id = "Epsilon Indi"
     db.session.commit()
 
 
@@ -29,7 +29,7 @@ def import_book_chapters(books=None):
         chapters_lines = {}
 
         for book_line in book_lines:
-            if re.match('^\d*\.', book_line):
+            if re.match("^\d*\.", book_line):
                 chapter_id += 1
                 chapters_lines[chapter_id] = []
 
@@ -69,8 +69,12 @@ def get_book_chapters(nb=None):
 
 
 def write_chapters(book_chapters):
-    os.makedirs(os.path.join('generated', 'book_chapters'), exist_ok=True)
+    os.makedirs(os.path.join("generated", "book_chapters"), exist_ok=True)
     for k, chapter in book_chapters.items():
-        os.makedirs(os.path.join('generated', 'chapters', str(k[0])), exist_ok=True)
-        with open(os.path.join('generated', 'chapters', str(k[0]), '%d %d' % k), 'w', encoding='utf-8') as chapter_file:
-            chapter_file.writelines([l+'\n' for l in chapter.raw])
+        os.makedirs(os.path.join("generated", "chapters", str(k[0])), exist_ok=True)
+        with open(
+            os.path.join("generated", "chapters", str(k[0]), "%d %d" % k),
+            "w",
+            encoding="utf-8",
+        ) as chapter_file:
+            chapter_file.writelines([l + "\n" for l in chapter.raw])

@@ -15,7 +15,7 @@ class ImportData(Command):
 
         download_ntlk()
 
-        import_combined(os.path.join('data', 'Combined.txt'))
+        import_combined(os.path.join("data", "Combined.txt"))
 
 
 def get_freezer(app):
@@ -23,23 +23,23 @@ def get_freezer(app):
 
     @freezer.register_generator
     def data_json_book():
-        for i in range(1,4):
-            yield 'main.data_json_book', {'book_number':i}
+        for i in range(1, 4):
+            yield "main.data_json_book", {"book_number": i}
 
     @freezer.register_generator
     def travels_csv_book():
-        for i in range(1,4):
-            yield 'main.travels_csv_book', {'book_number':i}
+        for i in range(1, 4):
+            yield "main.travels_csv_book", {"book_number": i}
 
     @freezer.register_generator
     def cooccurences_json():
         for i in range(1, 4):
-            yield 'main.cooccurences_json_book', {'book_number': i}
+            yield "main.cooccurences_json_book", {"book_number": i}
 
     return freezer
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app = create_app()
     manager = Manager(app)
     freezer = get_freezer(app)
@@ -49,8 +49,8 @@ if __name__ == '__main__':
     run = freezer_manager.command(freezer.run)
     freeze = freezer_manager.command(freezer.freeze)
 
-    manager.add_command('freeze', freezer_manager)
-    manager.add_command('runserver', Server)
-    manager.add_command('importdata', ImportData)
+    manager.add_command("freeze", freezer_manager)
+    manager.add_command("runserver", Server)
+    manager.add_command("importdata", ImportData)
 
     manager.run()

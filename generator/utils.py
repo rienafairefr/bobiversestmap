@@ -11,18 +11,26 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.declarative import DeclarativeMeta
 from sqlalchemy.orm.exc import NoResultFound
 
-if not exists('generated'):
-    os.makedirs('generated')
+if not exists("generated"):
+    os.makedirs("generated")
 
 # Define basic in memory caches
-file_cache = make_region().configure('dogpile.cache.dbm', expiration_time=30, arguments={
-    "filename": os.path.join("generated", "cache.dbm")
-})
-memory_cache = make_region().configure('dogpile.cache.memory')
+file_cache = make_region().configure(
+    "dogpile.cache.dbm",
+    expiration_time=30,
+    arguments={"filename": os.path.join("generated", "cache.dbm")},
+)
+memory_cache = make_region().configure("dogpile.cache.memory")
 
 
 def json_dump(obj, filename):
-    return json.dump(obj, open(filename, 'w', encoding='utf-8'), indent=2, sort_keys=True, cls=ObjectEncoder)
+    return json.dump(
+        obj,
+        open(filename, "w", encoding="utf-8"),
+        indent=2,
+        sort_keys=True,
+        cls=ObjectEncoder,
+    )
 
 
 def make_hash(obj):
@@ -44,7 +52,7 @@ def make_hash(obj):
 
 
 def memoize(cache_region=memory_cache, ttl=300, ttl_ignore=False):
-    """ Memoized value cache decorator with expiration TTL support.
+    """Memoized value cache decorator with expiration TTL support.
 
     :param cache_region:
     :type cache_region: dogpile.cache.CacheRegion
@@ -69,7 +77,9 @@ def memoize(cache_region=memory_cache, ttl=300, ttl_ignore=False):
 
             cache_key = str(tup_key)
 
-            value = cache_region.get(cache_key, expiration_time=ttl, ignore_expiration=ttl_ignore)
+            value = cache_region.get(
+                cache_key, expiration_time=ttl, ignore_expiration=ttl_ignore
+            )
             if not value:
                 # print('Stale result %s ' % str(tup_key))
                 value = function(*args, **kwargs)
@@ -106,10 +116,14 @@ class ObjectEncoder(json.JSONEncoder):
         if isinstance(obj.__class__, DeclarativeMeta):
             # an SQLAlchemy class
             fields = {}
-            for field in [x for x in dir(obj) if not x.startswith('_') and x != 'metadata']:
+            for field in [
+                x for x in dir(obj) if not x.startswith("_") and x != "metadata"
+            ]:
                 data = obj.__getattribute__(field)
                 try:
-                    json.dumps(data)  # this will fail on non-encodable values, like other classes
+                    json.dumps(
+                        data
+                    )  # this will fail on non-encodable values, like other classes
                     fields[field] = data
                 except TypeError:
                     fields[field] = None
@@ -120,11 +134,12 @@ class ObjectEncoder(json.JSONEncoder):
 
 
 class ArrayType(TypeDecorator):
-    """ Sqlite-like does not support arrays.
-        Let's use a custom type decorator.
+    """Sqlite-like does not support arrays.
+    Let's use a custom type decorator.
 
-        See http://docs.sqlalchemy.org/en/latest/core/types.html#sqlalchemy.types.TypeDecorator
+    See http://docs.sqlalchemy.org/en/latest/core/types.html#sqlalchemy.types.TypeDecorator
     """
+
     impl = String
 
     def process_bind_param(self, value, dialect):
@@ -139,11 +154,9 @@ class ArrayType(TypeDecorator):
         return ArrayType(self.impl.length)
 
 
-def get_one_or_create(session,
-                      model,
-                      create_method='',
-                      create_method_kwargs=None,
-                      **kwargs):
+def get_one_or_create(
+    session, model, create_method="", create_method_kwargs=None, **kwargs
+):
     try:
         return session.query(model).filter_by(**kwargs).one(), False
     except NoResultFound:
@@ -168,19 +181,19 @@ class ComparableMixin(object):
             return NotImplemented
 
     def __lt__(self, other):
-        return self._compare(other, lambda s,o: s < o)
+        return self._compare(other, lambda s, o: s < o)
 
     def __le__(self, other):
-        return self._compare(other, lambda s,o: s <= o)
+        return self._compare(other, lambda s, o: s <= o)
 
     def __eq__(self, other):
-       return self._compare(other, lambda s,o: s == o)
+        return self._compare(other, lambda s, o: s == o)
 
     def __ge__(self, other):
-        return self._compare(other, lambda s,o: s >= o)
+        return self._compare(other, lambda s, o: s >= o)
 
     def __gt__(self, other):
-        return self._compare(other, lambda s,o: s > o)
+        return self._compare(other, lambda s, o: s > o)
 
     def __ne__(self, other):
-        return self._compare(other, lambda s,o: s != o)
+        return self._compare(other, lambda s, o: s != o)

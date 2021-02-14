@@ -13,44 +13,44 @@ from generator.travels import import_chapter_characters_travels
 
 
 def import_combined(path):
-    print('import characters...')
+    print("import characters...")
     import_characters()
-    print('OK')
+    print("OK")
 
-    print('import books...')
+    print("import books...")
     import_books(path)
-    print('OK')
+    print("OK")
 
-    print('import book chapters...')
+    print("import book chapters...")
     import_book_chapters()
-    print('OK')
+    print("OK")
 
-    print('import stars...')
+    print("import stars...")
     import_stars()
     import_starsmap()
-    print('OK')
+    print("OK")
 
-    print('import locations...')
+    print("import locations...")
     import_locations()
-    print('OK')
+    print("OK")
 
     postprocess_chapter_characters()
 
-    print('import links between characters...')
+    print("import links between characters...")
     import_links()
-    print('OK')
+    print("OK")
 
-    print('import chapter characters travels...')
+    print("import chapter characters travels...")
     import_chapter_characters_travels()
-    print('OK')
+    print("OK")
 
-    print('import thresholds...')
+    print("import thresholds...")
     import_thresholds()
-    print('OK')
+    print("OK")
 
-    print('import timeline descriptions...')
+    print("import timeline descriptions...")
     import_timeline_descriptions()
-    print('OK')
+    print("OK")
 
     postprocess_dates()
 

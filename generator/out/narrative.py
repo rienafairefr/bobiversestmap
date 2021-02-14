@@ -13,7 +13,7 @@ def get_scenes_locations(nb=None):
 
 def data_json(nb=None):
     return {
-        'characters': get_characters(),
-        'scenes': get_scenes(nb=nb),
-        'scenes_locations': get_scenes_locations(nb=nb)
+        "characters": get_characters(),
+        "scenes": get_scenes(nb=nb),
+        "scenes_locations": get_scenes_locations(nb=nb),
     }

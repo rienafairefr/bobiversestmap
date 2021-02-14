@@ -35,23 +35,28 @@ def treat_one_chapter_link(book_chapter):
 
                 character_a_names = character_a.all_names
                 if character_a == book_chapter.bob_character:
-                    character_a_names.append('I')
+                    character_a_names.append("I")
 
                 character_b_names = character_b.all_names
                 if character_b == book_chapter.bob_character:
-                    character_b_names.append('I')
+                    character_b_names.append("I")
 
                 for name0 in character_a_names:
                     for name1 in character_b_names:
-                        if name0 in tokenized_sentence \
-                                and name1 in tokenized_sentence:
-                            link = Link(characterA_id=character_a.id,
-                                        characterB_id=character_b.id,
-                                        ns=ns,
-                                        sentence=' '.join(book_chapter.tokenized_content[isent]))
-                            chapters_link = ChapterLink(chapter_nb=book_chapter.nb,
-                                                        chapter_nc=book_chapter.nc,
-                                                        link=link)
+                        if name0 in tokenized_sentence and name1 in tokenized_sentence:
+                            link = Link(
+                                characterA_id=character_a.id,
+                                characterB_id=character_b.id,
+                                ns=ns,
+                                sentence=" ".join(
+                                    book_chapter.tokenized_content[isent]
+                                ),
+                            )
+                            chapters_link = ChapterLink(
+                                chapter_nb=book_chapter.nb,
+                                chapter_nc=book_chapter.nc,
+                                link=link,
+                            )
                             db.session.add(chapters_link)
                             db.session.add(link)
 
@@ -67,17 +72,23 @@ def postprocess_scut_links():
     for chapter_link in db.session.query(ChapterLink).all():
         link = chapter_link.link
 
-        locationA = get_location(link.characterA.id, chapter_link.chapter_nb, chapter_link.chapter_nc)
-        locationB = get_location(link.characterB.id, chapter_link.chapter_nb, chapter_link.chapter_nc)
+        locationA = get_location(
+            link.characterA.id, chapter_link.chapter_nb, chapter_link.chapter_nc
+        )
+        locationB = get_location(
+            link.characterB.id, chapter_link.chapter_nb, chapter_link.chapter_nc
+        )
 
-        link.is_scut = locationA is not None and locationB is not None and locationA != locationB
+        link.is_scut = (
+            locationA is not None and locationB is not None and locationA != locationB
+        )
 
     db.session.commit()
 
 
 def postprocess_links():
     def remove(nb, nc, ns):
-        book_chapter = db.session.query(BookChapter).get((nb,nc))
+        book_chapter = db.session.query(BookChapter).get((nb, nc))
         for link in book_chapter.links:
             if link.ns == ns:
                 db.session.remove(link)
@@ -95,8 +106,8 @@ def postprocess_links():
     # '"And with Archimedes gone, well…" "Will we be okay?"'
     remove(3, 69, 53)
 
-    fix(1, 60, 96, 'Fred', 'Bill')
-    fix(1, 60, 177, 'Fred', 'Bill')
+    fix(1, 60, 96, "Fred", "Bill")
+    fix(1, 60, 177, "Fred", "Bill")
 
     db.session.commit()
 
@@ -105,27 +116,27 @@ def write_links(links):
     keep = {}
 
     def file_name(nb, nc):
-        return os.path.join('generated', 'links', str(nb), '%d %d' % (nb, nc))
+        return os.path.join("generated", "links", str(nb), "%d %d" % (nb, nc))
 
     with contextlib.ExitStack() as stack:
         links_files = {}
         for nb, nc in get_keys():
-            os.makedirs(os.path.join('generated', 'links', str(nb)), exist_ok=True)
+            os.makedirs(os.path.join("generated", "links", str(nb)), exist_ok=True)
             links_files[nb, nc] = stack.enter_context(
-                open(file_name(nb, nc), 'w',
-                     encoding='utf-8'))
+                open(file_name(nb, nc), "w", encoding="utf-8")
+            )
 
         for (nb, nc, ns), link in links.items():
             if link.is_scut:
                 continue
             links_file = links_files[nb, nc]
             keep[nb, nc] = True
-            to_write = '{:^10s} {:^10s} {:3d} {:3d} {:3d} {:s}\n'.format(link.characterA_id, link.characterB_id, nb, nc,
-                                                                         ns, link.sentence)
+            to_write = "{:^10s} {:^10s} {:3d} {:3d} {:3d} {:s}\n".format(
+                link.characterA_id, link.characterB_id, nb, nc, ns, link.sentence
+            )
             links_file.write(to_write)
             print(to_write)
 
     for k in get_keys():
         if not keep.get(k):
             os.remove(file_name(*k))
-

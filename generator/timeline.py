@@ -11,15 +11,17 @@ def strip(li):
 
 
 def import_timeline_descriptions():
-    lines = open(os.path.join('public_data', 'timeline_books_1-3.txt'), encoding='utf-8').readlines()
+    lines = open(
+        os.path.join("public_data", "timeline_books_1-3.txt"), encoding="utf-8"
+    ).readlines()
     lines = strip(lines)
 
     for line in lines:
-        line = line.strip().split(';')[0]
+        line = line.strip().split(";")[0]
         if len(line) == 0:
             continue
-        split = strip(line.split('-'))
-        matched = re.match('B(\d+)C(\d+)', split[1])
+        split = strip(line.split("-"))
+        matched = re.match("B(\d+)C(\d+)", split[1])
         nb, nc = (int(i) for i in matched.groups())
         book_chapter = db.session.query(BookChapter).get((nb, nc))
         book_chapter.description = split[2]

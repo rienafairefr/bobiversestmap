@@ -14,15 +14,16 @@ db = SQLAlchemy()
 
 def create_app(config_dict=None):
     from generator.blueprints import main
-    app = Flask('Bobiverse visualisations')
-    app.config['FREEZER_DESTINATION'] = 'docs'
-    app.config['FREEZER_REMOVE_EXTRA_FILES'] = True
-    app.config['FREEZER_RELATIVE_URLS'] = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///bobiverse.db"
-    #app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite://"
-    app.config['SQLALCHEMY_ECHO'] = True # for debugging db problems
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
+
+    app = Flask("Bobiverse visualisations")
+    app.config["FREEZER_DESTINATION"] = "docs"
+    app.config["FREEZER_REMOVE_EXTRA_FILES"] = True
+    app.config["FREEZER_RELATIVE_URLS"] = True
+    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///bobiverse.db"
+    # app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite://"
+    app.config["SQLALCHEMY_ECHO"] = True  # for debugging db problems
+    app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+    app.config["JSONIFY_PRETTYPRINT_REGULAR"] = True
     app.json_encoder = ObjectEncoder
 
     if config_dict is not None:
@@ -44,10 +45,10 @@ class CustomView(View):
 @nav.navigation()
 def navbar():
     return Navbar(
-        'Bobiverse',
-        CustomView('Narrative Chart', 'main.index_view'),
-        CustomView('Timeline Travels', 'main.timeline_view'),
-        CustomView('Cooccurences Matrix', 'main.cooccurences_view'),
-        CustomView('Genealogy & Characters', 'main.genealogy_view'),
-        CustomView('Timeline Characters Heatmap', 'main.timeline_blocks_view'),
+        "Bobiverse",
+        CustomView("Narrative Chart", "main.index_view"),
+        CustomView("Timeline Travels", "main.timeline_view"),
+        CustomView("Cooccurences Matrix", "main.cooccurences_view"),
+        CustomView("Genealogy & Characters", "main.genealogy_view"),
+        CustomView("Timeline Characters Heatmap", "main.timeline_blocks_view"),
     )

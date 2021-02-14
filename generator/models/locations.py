@@ -6,25 +6,25 @@ from generator.models.stars import Star
 
 
 class Location(db.Model):
-    __tablename__ = 'locations'
+    __tablename__ = "locations"
     id = Column(String, primary_key=True)
 
     is_travel = Column(Boolean, default=False)
-    star_id = Column(String, ForeignKey('stars.id'))
+    star_id = Column(String, ForeignKey("stars.id"))
     star = relationship(Star, foreign_keys=[star_id])
     planet_name = Column(String)
 
-    star_destination_id = Column(String, ForeignKey('stars.id'), nullable=True)
+    star_destination_id = Column(String, ForeignKey("stars.id"), nullable=True)
     star_destination = relationship(Star, foreign_keys=[star_destination_id])
 
     def __repr__(self):
-        returnvalue = '<Location '
+        returnvalue = "<Location "
         if self.is_travel:
-            returnvalue += self.star.name+' => '+self.star_destination.name
+            returnvalue += self.star.name + " => " + self.star_destination.name
         else:
             if self.planet_name is not None:
-                returnvalue += self.star.name + ':' + self.planet_name
+                returnvalue += self.star.name + ":" + self.planet_name
             else:
                 returnvalue += self.star.name
-        returnvalue += '>'
+        returnvalue += ">"
         return returnvalue

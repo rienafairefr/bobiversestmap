@@ -6,13 +6,13 @@ from generator.utils import ArrayType
 
 
 class Character(db.Model):
-    __tablename__ = 'characters'
+    __tablename__ = "characters"
 
     id = Column(String, primary_key=True)
     is_bob = Column(Boolean)
     name = Column(String)
     affiliation = Column(String)
-    other_names = Column(ArrayType, default=lambda:[])
+    other_names = Column(ArrayType, default=lambda: [])
 
     @property
     def all_names(self):
@@ -25,10 +25,29 @@ class Character(db.Model):
     last_appearance_chapter_nb = Column(Integer)
     last_appearance_chapter_nc = Column(Integer)
 
-    first_appearance = relationship('BookChapter', foreign_keys=[first_appearance_chapter_nb, first_appearance_chapter_nc])
-    last_appearance = relationship('BookChapter', foreign_keys=[last_appearance_chapter_nb, last_appearance_chapter_nc])
+    first_appearance = relationship(
+        "BookChapter",
+        foreign_keys=[first_appearance_chapter_nb, first_appearance_chapter_nc],
+    )
+    last_appearance = relationship(
+        "BookChapter",
+        foreign_keys=[last_appearance_chapter_nb, last_appearance_chapter_nc],
+    )
 
-
-    __table_args__ = (ForeignKeyConstraint([first_appearance_chapter_nb, first_appearance_chapter_nc, last_appearance_chapter_nb, last_appearance_chapter_nc],
-                                           ['bookchapters.nb', 'bookchapters.nc', 'bookchapters.nb', 'bookchapters.nc']),
-                      {})
+    __table_args__ = (
+        ForeignKeyConstraint(
+            [
+                first_appearance_chapter_nb,
+                first_appearance_chapter_nc,
+                last_appearance_chapter_nb,
+                last_appearance_chapter_nc,
+            ],
+            [
+                "bookchapters.nb",
+                "bookchapters.nc",
+                "bookchapters.nb",
+                "bookchapters.nc",
+            ],
+        ),
+        {},
+    )

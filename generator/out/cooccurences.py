@@ -18,11 +18,14 @@ def get_book_characters(nb=None):
     if nb is not None:
         q = q.filter(ChapterCharacter.chapter_nb == nb)
 
-    return [{
-        'id': char.id,
-        'name': char.name,
-        'group': 'Bob' if char.is_bob else char.affiliation
-    } for char in q]
+    return [
+        {
+            "id": char.id,
+            "name": char.name,
+            "group": "Bob" if char.is_bob else char.affiliation,
+        }
+        for char in q
+    ]
 
 
 def get_book_links(nb=None):
@@ -30,11 +33,11 @@ def get_book_links(nb=None):
     if nb is not None:
         q = q.filter(ChapterLink.chapter_nb == nb)
 
-    return [{'source': cl.link.characterA_id, 'target': cl.link.characterB_id, 'value': 1} for cl in q]
+    return [
+        {"source": cl.link.characterA_id, "target": cl.link.characterB_id, "value": 1}
+        for cl in q
+    ]
 
 
 def get_cooccurences_json(nb=None):
-    return {
-        'nodes': get_book_characters(nb),
-        'links': get_book_links(nb)
-    }
+    return {"nodes": get_book_characters(nb), "links": get_book_links(nb)}

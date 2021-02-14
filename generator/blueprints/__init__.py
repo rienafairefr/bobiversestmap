@@ -9,109 +9,109 @@ from generator.out.genealogy import get_genealogy
 from generator.out.timeline_blocks import get_timeline_blocks_json
 from generator.out.travels import get_travels_book_json, get_travels_book_csv
 
-main = Blueprint('main', 'name')
+main = Blueprint("main", "name")
 
 
-@main.route('/locations.json')
+@main.route("/locations.json")
 def locations():
     return jsonify(get_locations())
 
 
-@main.route('/bob_characters.json')
+@main.route("/bob_characters.json")
 def bob_characters():
     return jsonify(get_bob_characters())
 
 
-@main.route('/characters.json')
+@main.route("/characters.json")
 def all_characters():
     return jsonify(get_characters())
 
 
-@main.route('/locations.json')
+@main.route("/locations.json")
 def all_locations():
     return jsonify(get_locations())
 
 
-@main.route('/css/bob_styles.css')
+@main.route("/css/bob_styles.css")
 def bob_styles():
-    return Response(get_bob_styles(), mimetype='text/css')
+    return Response(get_bob_styles(), mimetype="text/css")
 
 
-@main.route('/book/<int:book_number>/data.json')
+@main.route("/book/<int:book_number>/data.json")
 def data_json_book(book_number):
     return jsonify(get_data_json(book_number))
 
 
-@main.route('/data.json')
+@main.route("/data.json")
 def data_json():
     return jsonify(get_data_json())
 
 
-@main.route('/book/<int:book_number>/travels.json')
+@main.route("/book/<int:book_number>/travels.json")
 def travels_json_book(book_number):
     return jsonify(get_travels_book_json(book_number))
 
 
-@main.route('/travels.json')
+@main.route("/travels.json")
 def travels_json():
     return jsonify(get_travels_book_json())
 
 
-@main.route('/book/<int:book_number>/travels.csv')
+@main.route("/book/<int:book_number>/travels.csv")
 def travels_csv_book(book_number):
-    return Response(get_travels_book_csv(book_number), mimetype='text/csv')
+    return Response(get_travels_book_csv(book_number), mimetype="text/csv")
 
 
-@main.route('/travels.csv')
+@main.route("/travels.csv")
 def travels_csv():
-    return Response(get_travels_book_csv(), mimetype='text/csv')
+    return Response(get_travels_book_csv(), mimetype="text/csv")
 
 
-@main.route('/cooccurences.json')
+@main.route("/cooccurences.json")
 def cooccurences_json():
     return jsonify(get_cooccurences_json())
 
 
-@main.route('/book/<int:book_number>/cooccurences.json')
+@main.route("/book/<int:book_number>/cooccurences.json")
 def cooccurences_json_book(book_number):
     return jsonify(get_cooccurences_json(book_number))
 
 
-@main.route('/timeline_blocks.json')
+@main.route("/timeline_blocks.json")
 def timeline_blocks_json():
     return jsonify(get_timeline_blocks_json())
 
 
-@main.route('/book/<int:book_number>/timeline_blocks.json')
+@main.route("/book/<int:book_number>/timeline_blocks.json")
 def timeline_blocks_json_book(book_number):
     return jsonify(get_timeline_blocks_json(book_number))
 
 
-@main.route('/genealogy.json')
+@main.route("/genealogy.json")
 def genealogy_json():
     return jsonify(get_genealogy())
 
 
-@main.route('/')
+@main.route("/")
 def index_view():
-    return render_template('narrative.html')
+    return render_template("narrative.html")
 
 
-@main.route('/timeline.html')
+@main.route("/timeline.html")
 def timeline_view():
-    return render_template('timeline.html')
+    return render_template("timeline.html")
 
 
-@main.route('/timeline_blocks.html')
+@main.route("/timeline_blocks.html")
 def timeline_blocks_view():
-    return render_template('timeline_blocks.html')
+    return render_template("timeline_blocks.html")
 
 
-@main.route('/cooccurrences.html')
+@main.route("/cooccurrences.html")
 def cooccurences_view():
-    return render_template('cooccurrences.html')
+    return render_template("cooccurrences.html")
 
 
-@main.route('/genealogy.html')
+@main.route("/genealogy.html")
 def genealogy_view():
-    return render_template('genealogy.html')
+    return render_template("genealogy.html")

@@ -15,30 +15,30 @@ def get_bob_characters():
 
 
 def import_bob_characters():
-    with open(os.path.join('public_data', 'genealogy.txt')) as genealogy:
+    with open(os.path.join("public_data", "genealogy.txt")) as genealogy:
         lines = genealogy.readlines()
 
     for line in lines:
-        stripped = line.strip().split(';')[0]
+        stripped = line.strip().split(";")[0]
         if len(stripped) == 0:
             continue
 
-        bob = [el.strip() for el in stripped.split(':')]
+        bob = [el.strip() for el in stripped.split(":")]
 
         char = Character(id=bob[-1], name=bob[-1], is_bob=True)
         if len(bob) != 1:
             char.affiliation = bob[-2]
 
-        if char.id == 'Riker':
-            char.other_names = ['Will', 'William']
-        if char.id == 'Arthur':
-            char.other_names = ['Eeyore']
-        if char.id == 'Sam':
-            char.other_names = ['Exodus-3']
-        if char.id == 'Dexter':
-            char.other_names = ['Dex']
-        if char.id == 'Daedalus':
-            char.other_names = ['Dae']
+        if char.id == "Riker":
+            char.other_names = ["Will", "William"]
+        if char.id == "Arthur":
+            char.other_names = ["Eeyore"]
+        if char.id == "Sam":
+            char.other_names = ["Exodus-3"]
+        if char.id == "Dexter":
+            char.other_names = ["Dex"]
+        if char.id == "Daedalus":
+            char.other_names = ["Dae"]
         db.session.add(char)
 
     db.session.commit()
@@ -48,7 +48,7 @@ def import_bob_characters():
 def import_characters():
     import_bob_characters()
 
-    nonbobs = json.load(open(os.path.join('public_data', 'nonbob_characters.json')))
+    nonbobs = json.load(open(os.path.join("public_data", "nonbob_characters.json")))
     mapper = inspect(Character)
     db.session.bulk_insert_mappings(mapper, nonbobs)
     db.session.commit()
@@ -67,9 +67,12 @@ def get_characters_map():
 
 def get_bob_styles():
     bob_characters = get_bob_characters()
-    styles = ''
+    styles = ""
     for i, bob_character in enumerate(bob_characters):
-        template = 'path.%s {stroke: %s;}\n'
+        template = "path.%s {stroke: %s;}\n"
 
-        styles += template % (bob_character.id, cc.colorwheel[int(256 * i / len(bob_characters))])
+        styles += template % (
+            bob_character.id,
+            cc.colorwheel[int(256 * i / len(bob_characters))],
+        )
     return styles

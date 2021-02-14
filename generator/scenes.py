@@ -19,17 +19,21 @@ def get_scenes(book_chapters=None, nb=None):
             if not character.is_bob:
                 present_set.add(character.id)
 
-        scenes.append({
-            'character_ids': list(present_set),
-            'description': book_chapter.description
-        })
+        scenes.append(
+            {
+                "character_ids": list(present_set),
+                "description": book_chapter.description,
+            }
+        )
 
     return scenes
 
 
 def write_scenes():
     def write_scenes_(nb=None):
-        json_dump(get_scenes(nb), open(os.path.join('generated', 'scenes%s.json' % nb), 'w'))
+        json_dump(
+            get_scenes(nb), open(os.path.join("generated", "scenes%s.json" % nb), "w")
+        )
 
     write_scenes_()
     write_scenes_(1)
@@ -37,5 +41,5 @@ def write_scenes():
     write_scenes_(3)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     write_scenes()
